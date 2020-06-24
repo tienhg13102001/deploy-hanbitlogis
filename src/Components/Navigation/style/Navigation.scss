@@ -1,31 +1,54 @@
 .NaviContainer{
     display: flex;
     justify-content: center;
-    border-bottom: solid 1px #ffffff;
-    z-index: 99;
-    position : fixed;
     width : 100%;
-    height: auto;
-    background-color: #ffffff;
-    
+    max-width: 1230px;
+    margin: auto;
+    height: 79px;
     .TopNavi{
         display: flex;
         justify-content: space-between;
-        max-width: 1920px;
+        max-width: 1230px;
         width : 100%;
-        padding: 0 20px;
-        position: relative;
         align-items: center;
-        .Menu_Logo{
-
-        }
+        .Left_Menu{
+          display: flex;
+          .Menu_Logo{
+            padding-right: 76px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+            .Menu_Element{
+            display: flex;
+            max-width: 600px;
+              .Element {
+              font-size: 16px;
+              width: 80px;
+              padding: 10px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+      }
         .Member_Box{
             display: flex;
+            justify-content: center;
+            align-items: center;
             .Login{
-
+              font-size: 14px;
+              padding-right: 30px;
+              &:hover {
+                cursor: pointer;
+              }
             }
             .Sign_Up{
-
+              font-size: 14px;
+              padding-right: 30px;
+              &:hover {
+                cursor: pointer;
+              }
             }
         }
 

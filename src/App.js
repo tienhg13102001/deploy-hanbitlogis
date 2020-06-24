@@ -10,7 +10,6 @@ class App extends Component {
     return (
       <Router>
         <Route component={Navigation} path={"/"}></Route>
-        <div className = 'PaddingTop'> </div>
       {
         Pages().map(({exact, component, path})=>{
           return <Route exact={exact} component={component} isMobile = {this.isMobile} path={path}></Route>
