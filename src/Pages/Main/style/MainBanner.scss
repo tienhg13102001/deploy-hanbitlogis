@@ -1,0 +1,32 @@
+.BannerContainer {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    .MainSwiperBox{
+        
+        .MainSwiperImgBox{
+            img {
+                width: 100%;
+            }
+        }
+        .MainSwiperImg{
+
+        }
+    }
+    .TextBox {
+        position: relative;
+        width: 500px;
+        height: 140px;
+        bottom: 415px;
+        left: 780px;
+        .NewText{
+            font-weight: 600;
+            font-size: 42.5px;
+            padding-bottom: 30px;
+        }
+        .Text {
+            font-size: 21.5px;
+        }
+    }
+    
+}

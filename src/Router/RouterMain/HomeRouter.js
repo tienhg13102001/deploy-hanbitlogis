@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Home from '../../Pages/Main/Home'
+import MainBanner from '../../Pages/Main/MainBanner'
 
 class HomeRouter extends Component {
     render() {
         return (
             <div>
-                <Home></Home>
+                <MainBanner></MainBanner>
             </div>
         );
     }
