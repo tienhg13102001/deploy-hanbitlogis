@@ -1,0 +1,9 @@
+.Menu_List {
+    max-width: 1920px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .Menu {
+        max-width: 300px;
+    }
+}

@@ -1,4 +1,4 @@
-import Home from "./";
+import Home from "./RouterMain/HomeRouter";
 
 
 var routes = [

@@ -5,15 +5,17 @@
     z-index: 99;
     position : fixed;
     width : 100%;
+    height: auto;
     background-color: #ffffff;
+    
     .TopNavi{
         display: flex;
         justify-content: space-between;
-        max-width: 1024px;
+        max-width: 1920px;
         width : 100%;
         padding: 0 20px;
         position: relative;
-
+        align-items: center;
         .Menu_Logo{
 
         }
