@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "NanumSquareOTF_acEB";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../src/_asset/fonts/NanumSquareOTF_acEB.otf");
+}
+@font-face {
+  font-family: "NanumSquareOTF_acB";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../src/_asset/fonts/NanumSquareOTF_acB.otf");
+}
+@font-face {
+  font-family: "NanumSquareOTF_acR.otf";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../src/_asset/fonts/NanumSquareOTF_acR.otf");
+}
+@font-face {
+  font-family: "NanumSquareOTF_acL.otf";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../src/_asset/fonts/NanumSquareOTF_acL.otf");
+}

@@ -11,34 +11,16 @@
         max-width: 1230px;
         width : 100%;
         align-items: center;
-        .Left_Menu{
-          display: flex;
-          .Menu_Logo{
-            padding-right: 76px;
-            &:hover {
-              cursor: pointer;
-            }
-          }
-            .Menu_Element{
-            display: flex;
-            max-width: 600px;
-              .Element {
-              font-size: 16px;
-              width: 80px;
-              padding: 10px;
-              &:hover {
-                cursor: pointer;
-              }
-            }
-          }
-      }
+        
         .Member_Box{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 300;
             .Login{
               font-size: 14px;
               padding-right: 30px;
+              width: 50px;
               &:hover {
                 cursor: pointer;
               }
@@ -46,6 +28,7 @@
             .Sign_Up{
               font-size: 14px;
               padding-right: 30px;
+              width: 60px;
               &:hover {
                 cursor: pointer;
               }

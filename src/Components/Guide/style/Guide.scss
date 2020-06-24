@@ -1,0 +1,32 @@
+.GuideContainer{
+    width: 55%;
+    .GuideTop {
+        display: flex;
+        max-width: 600px;
+        .GuideAbout{
+            display: flex;
+            width: 100%;
+            padding: 5px;
+        }
+        .GuideInfo{
+            display: flex;
+            width: 100%;
+            padding: 5px;
+        }
+        .GuideCar{
+            display: flex;
+            width: 100%;
+            padding: 5px;
+        }
+        .GuideBoard{
+            display: flex;
+            width: 100%;
+            padding: 5px;
+        }
+        .GuideNotice{
+            display: flex;
+            width: 100%;
+            padding: 5px;
+        }
+    }
+}
