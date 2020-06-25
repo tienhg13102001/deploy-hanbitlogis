@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Board.scss'
+import './Hanbit.scss'
 
 import icon from '../../_asset/image/common/add-icon.png'
 
-class Board extends Component {
+class Hanbit extends Component {
     list = [
         { id: 0, text: '당사는 화물 운송 서비스를 제공하고 있는 국내 최고의 물류 전문 회사.....', date: '2022.04.11' },
         { id: 1, text: '한빛로지스 국토부장관상 수상!', date: '2022.04.11' },
@@ -13,10 +13,10 @@ class Board extends Component {
     render() {
 
         return (
-            <div className="Notice">
+            <div className="Hanbit">
                 <div className="TitleBox">
                     <div className="Title">
-                        공지사항
+                        한빛게시판
                     </div>
                     <img className="Icon" src={icon} alt='plus icon'></img>
                 </div>
@@ -36,4 +36,4 @@ class Board extends Component {
     }
 }
 
-export default Board;
+export default Hanbit;

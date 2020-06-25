@@ -1,0 +1,29 @@
+.FooterContainer{
+    max-width: 1250px;
+    margin: auto;
+    height: 171px;
+    width: 100%;
+    .Box{
+        display: flex;
+        padding-top: 40px;
+        justify-content: space-around;
+        .LogoBox{
+        }
+        .Info{
+            font-size: 14px;
+            font-weight: 200;
+        }
+    .TermsBox{
+        display: flex;
+        .One{
+            font-weight: 200;
+            padding: 0 5px 0 5px;
+        }
+        .Two{
+            font-weight: 200;
+            padding: 0 5px 0 5px;
+        }
+        }
+    }
+    
+}
