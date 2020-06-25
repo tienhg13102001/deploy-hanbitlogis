@@ -1,0 +1,26 @@
+.MainInfoContainer{
+    background-color: #f5f4f4;
+    height: 300px;
+    text-align: center;
+    .InfoTitle{
+        padding-top: 36px;
+        font-size: 20px;
+        font-weight: 600;
+        span{
+            color: #da2320;
+        }
+    }
+    .MapBox{
+        display: flex;
+        justify-content: center;
+        .ListBox{
+            padding: 30px;
+        }
+        .IconBox{
+            padding-bottom: 22px;
+        }
+        .TextBox{
+            
+        }
+    }
+}

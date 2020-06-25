@@ -1,0 +1,17 @@
+.LicenseContainer{
+    background-image: url(../../../_asset/image/main/banner-01.png);
+    width: 290px;
+    height: 140px;
+    margin: 15px 15px 15px 0;
+    .TextBox{
+        padding: 32px 0 0 31px;
+        .Title{
+            font-size: 22px;
+            font-weight: 600;
+            padding-bottom: 13px;
+        }
+        .Text{
+            font-size: 15px;
+        }
+    }
+}

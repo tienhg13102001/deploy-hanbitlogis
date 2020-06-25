@@ -1,0 +1,24 @@
+.Container{
+    background-image: url(../../_asset/image/main/location.png);
+    width: 610px;
+    height: 207px;
+    margin: 0 0 0 15px;;
+    .TextBox{
+        display: block;
+        padding: 32px 27px ;
+        .Title{
+            color: #da2320;
+            font-weight: 900;
+            padding-bottom: 20px;
+        }
+        .Location{
+            font-size: 40px;
+            font-weight: 700;
+            padding-bottom: 15px;
+        }
+        .Adress{
+            font-size: 15px;
+            font-weight: 200;
+        }
+    }
+}
