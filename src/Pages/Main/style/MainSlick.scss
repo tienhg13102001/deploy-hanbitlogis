@@ -1,0 +1,16 @@
+.SlickContainer{
+    height: 100px;
+    display: flex !important;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    .ListBox{
+        display: flex;
+        max-width: 1250px;
+        text-align: center;
+        margin: auto;
+        overflow: hidden;
+        .Banner{
+            padding: 5px;
+        }
+    }
+}
