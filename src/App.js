@@ -4,6 +4,7 @@ import './App.scss'
 import Footer from './Components/Footer/Footer';
 import Pages from './Router/index';
 import Navigation from '../src/Components/Navigation/Navigation';
+import MainSlick from './Pages/Main/MainSlick'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           return <Route exact={exact} component={component} isMobile = {this.isMobile} path={path}></Route>
         })
       }
+      <MainSlick></MainSlick>
       <Footer></Footer>
     </Router>
     );
