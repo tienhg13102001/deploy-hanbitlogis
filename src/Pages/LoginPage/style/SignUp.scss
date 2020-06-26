@@ -1,0 +1,98 @@
+.SignContainer{
+    max-width: 1250px;
+    width: 100%;
+    text-align: center;
+    height: 1200px;
+    margin: auto;
+    .TextBox{
+        padding-top: 80px;
+        max-width: 610px;
+        margin: auto;
+        border-bottom: solid 3px #535353;
+        .SignTitle{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .SignText{
+            padding-top: 14px;
+            font-size: 16px;
+            font-weight: 200;
+            margin-bottom: 40px;
+        }
+    }
+    .SignBox{
+        .Wrap{
+            display: flex;
+            max-width: 610px;
+            margin: auto;
+            justify-content: space-between;
+            padding: 30px 0 30px 0;
+            .Text{
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                >span{
+                    color: #e84438;
+                }
+            }
+            .Adress{
+                width: 379px;
+                height: 50px;
+            }
+            .Password{
+                width: 379px;
+                height: 50px;
+            }
+            .PasswordConfilm{
+                width: 379px;
+                height: 50px;
+            }
+            .Email{
+                width: 379px;
+                height: 50px;
+            }
+            .Name{
+                width: 379px;
+                height: 50px;
+            }
+            .NickName{
+                width: 379px;
+                height: 50px;
+            }
+            .Birth{
+                width: 379px;
+                height: 50px;
+            }
+        }
+    }
+    .BtnBox{
+        max-width: 610px;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 60px;
+        .Registration{
+            background-color: #535353;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 50px;
+            margin: 0 5px 0 5px;
+            cursor: pointer;
+        }
+        .Cancellation{
+            background-color: #f5f4f4;
+            color: #535353;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 50px;
+            margin: 0 5px 0 5px;
+            cursor: pointer;
+        }
+    }
+}

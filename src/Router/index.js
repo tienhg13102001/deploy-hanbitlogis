@@ -1,5 +1,7 @@
 import Home from "./RouterMain/HomeRouter";
-
+import Login from './RouterLogin/LogRouter';
+import Sign from './RouterSign/SignUpRouter';
+import Find from './RouterFind/FindRouter';
 
 var routes = [
  {
@@ -8,7 +10,25 @@ var routes = [
      component:Home,
      menuName:"Home"
     
- }
+ },
+ {
+    path:"/Login",
+    component:Login,
+    menuName:"/Login"
+   
+},
+{
+    path:"/Sign",
+    component:Sign,
+    menuName:"/Sign"
+   
+},
+{
+    path:"/Find",
+    component:Find,
+    menuName:"/Find"
+   
+}
 
  
 ];

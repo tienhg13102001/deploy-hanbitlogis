@@ -12,6 +12,9 @@
         width : 100%;
         align-items: center;
         height: 79px;
+        .Menu_Logo{
+          cursor: pointer;
+        }
         
         .Member_Box{
             display: flex;
@@ -116,6 +119,7 @@
     background: #fdfdfd;
     padding: 7.5em 3.5em 0;
     font-size: 1.15em;
+    overflow: hidden;
   }
   // .menu-item.active{
   //   font-weight : 500;
@@ -160,6 +164,7 @@
     // background: rgba(0, 0, 0, 0.3);
     display : absolute ;
     left : 0px;
+    top: 0px;
   }
   // .menu-item.active{
   //     color : #333333;
@@ -172,48 +177,6 @@
     text-decoration-color: #333333 ;
         
   }
-
-  .SNSLinksBox{
-    display: flex !important;
-    flex-wrap: wrap;
-    width: 193px;
-    max-width: 177.63px;
-    height: 14px;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 5.08;
-    letter-spacing: normal;
-    text-align: left;
-    color: #999999;
-    justify-content: space-between;
-    
-    .SnsName{
-      text-decoration: none;
-      text-decoration-line:none;
-      a{
-        text-decoration-line:none;
-        color : #999999;
-        font-weight: normal;
-      }
-      a:hover{
-        text-decoration-line:line-through ;
-        text-decoration-color: #999999 ;
-        color : #999999;
-        font-weight: normal;
-      }
-      
-    }
-    
-  }
-  .SNSLinksBox:hover{
-    text-decoration: none;
-    text-decoration-line:none;
-    }
-  
-
-
   @media screen and (max-width : 575px){
     .bm-menu-wrap {
         position: fixed;

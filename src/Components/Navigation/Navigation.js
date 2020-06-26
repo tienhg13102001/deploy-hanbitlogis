@@ -10,28 +10,31 @@ import Guide from '../Guide/Guide';
 
 
 class Navigation extends Component {
-    
-
+    movePage = (pageName) => {
+        this.props.history.push({
+            pathname: pageName
+        })
+    }
     render() {
         return (
             <div className="NaviContainer">
                 <div className="TopNavi">
-                        <div className="Menu_Logo">
+                        <div onClick={() => this.movePage("/")} className="Menu_Logo">
                             <img src={logo} alt='Logo'></img>
                         </div>
                         <Guide />
                     <div className="Member_Box">
-                        <div className="Login">로그인</div>
-                        <div className="Sign_Up">회원가입</div>
+                        <div onClick={() => this.movePage("/Login")} className="Login">로그인</div>
+                        <div onClick={() => this.movePage("/Sign")} className="Sign_Up">회원가입</div>
 
                         <BurMenu className="Menu_Button" right customCrossIcon={<img src={""} alt='closeicon' />} customBurgerIcon={<img className='MenuIcon' src={menuicon} alt=""></img>}>
-                            <NavLink onClick={() => this.closeMenu()} exact={true} id="home" ClassName="menu-item" to="/">한빛로지스</NavLink>
-                            <NavLink onClick={() => this.closeMenu()} id="Company" ClassName="menu-item" to="/Company">회사소개</NavLink>
-                            <NavLink onClick={() => this.closeMenu()} id="Info" ClassName="menu-item" to="/Info">지입정보</NavLink>
-                            <NavLink onClick={() => this.closeMenu()} id="Car" ClassName="menu-item" to="/Car">당사차량</NavLink>
-                            <NavLink onClick={() => this.closeMenu()} id="Board" ClassName="menu-item" to="/Board">한빛게시판</NavLink>
-                            <NavLink onClick={() => this.closeMenu()} id="Notice" ClassName="menu-item" to="/Notice">공지사항</NavLink>
-                            <NavLink onClick={() => this.closeMenu()} id="QnA" ClassName="menu-item" to="/QnA">QnA</NavLink>
+                            <NavLink exact={true} id="home" ClassName="menu-item" to="/">한빛로지스</NavLink>
+                            <NavLink id="Company" ClassName="menu-item" to="/Company">회사소개</NavLink>
+                            <NavLink id="Info" ClassName="menu-item" to="/Info">지입정보</NavLink>
+                            <NavLink id="Car" ClassName="menu-item" to="/Car">당사차량</NavLink>
+                            <NavLink id="Board" ClassName="menu-item" to="/Board">한빛게시판</NavLink>
+                            <NavLink id="Notice" ClassName="menu-item" to="/Notice">공지사항</NavLink>
+                            <NavLink id="QnA" ClassName="menu-item" to="/QnA">QnA</NavLink>
                         </BurMenu>
                     </div>
                 </div>
