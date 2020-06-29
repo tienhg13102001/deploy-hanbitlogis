@@ -4,6 +4,7 @@ import Sign from './RouterSign/SignUpRouter';
 import Find from './RouterFind/FindRouter';
 import Intro from './RouterInto/IntroRouter';
 import Policy from './RouterInto/PolicyRouter';
+import History from './RouterInto/RouterHistory';
 
 var routes = [
  {
@@ -41,6 +42,12 @@ var routes = [
     path:"/Policy",
     component:Policy,
     menuName:"Policy"
+   
+},
+{
+    path:"/History",
+    component:History,
+    menuName:"History"
    
 },
 
