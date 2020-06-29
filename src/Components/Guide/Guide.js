@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './style/Guide.scss'
+import { NavLink } from "react-router-dom";
 
 class Guide extends Component {
     render() {
@@ -7,7 +8,9 @@ class Guide extends Component {
             <div className="GuideContainer">
                 <div className="GuideTop">
                     <div className="GuideAbout">
-                        회사소개
+                        <NavLink to="/Intro">
+                            회사소개
+                        </NavLink>
                     </div>
                     <div className="GuideInfo">
                         지입정보

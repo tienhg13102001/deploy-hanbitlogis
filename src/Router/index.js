@@ -3,6 +3,7 @@ import Login from './RouterLogin/LogRouter';
 import Sign from './RouterSign/SignUpRouter';
 import Find from './RouterFind/FindRouter';
 import Intro from './RouterInto/IntroRouter';
+import Policy from './RouterInto/PolicyRouter';
 
 var routes = [
  {
@@ -15,25 +16,31 @@ var routes = [
  {
     path:"/Login",
     component:Login,
-    menuName:"/Login"
+    menuName:"Login"
    
 },
 {
     path:"/Sign",
     component:Sign,
-    menuName:"/Sign"
+    menuName:"Sign"
    
 },
 {
     path:"/Find",
     component:Find,
-    menuName:"/Find"
+    menuName:"Find"
    
 },
 {
     path:"/Intro",
     component:Intro,
-    menuName:"/Intro"
+    menuName:"Intro"
+   
+},
+{
+    path:"/Policy",
+    component:Policy,
+    menuName:"Policy"
    
 },
 
