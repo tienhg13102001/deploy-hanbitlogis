@@ -2,6 +2,7 @@ import Home from "./RouterMain/HomeRouter";
 import Login from './RouterLogin/LogRouter';
 import Sign from './RouterSign/SignUpRouter';
 import Find from './RouterFind/FindRouter';
+import Intro from './RouterInto/IntroRouter';
 
 var routes = [
  {
@@ -28,7 +29,14 @@ var routes = [
     component:Find,
     menuName:"/Find"
    
-}
+},
+{
+    path:"/Intro",
+    component:Intro,
+    menuName:"/Intro"
+   
+},
+
 
  
 ];

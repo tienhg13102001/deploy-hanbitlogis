@@ -3,30 +3,54 @@
     .GuideTop {
         display: flex;
         max-width: 600px;
+        margin: auto;
         .GuideAbout{
+            font-weight: 600;
             display: flex;
             width: 100%;
             padding: 5px;
+            cursor: pointer;
+            justify-content:center;
         }
         .GuideInfo{
+            font-weight: 600;
             display: flex;
             width: 100%;
             padding: 5px;
+            cursor: pointer;
+            justify-content:center;
         }
         .GuideCar{
+            font-weight: 600;
             display: flex;
             width: 100%;
             padding: 5px;
+            cursor: pointer;
+            justify-content:center;
         }
         .GuideBoard{
+            font-weight: 600;
             display: flex;
             width: 100%;
             padding: 5px;
+            cursor: pointer;
+            justify-content:center;
         }
         .GuideNotice{
+            font-weight: 600;
             display: flex;
             width: 100%;
             padding: 5px;
+            cursor: pointer;
+            justify-content:center;
+        }
+        .GuideQnA{
+            font-weight: 600;
+            display: flex;
+            width: 100%;
+            padding: 5px;
+            cursor: pointer;
+            justify-content:center;
         }
     }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './style/Login.scss'
+import { NavLink } from 'react-router-dom';
 
 class Login extends Component {
     state = {
@@ -52,9 +53,13 @@ class Login extends Component {
                         로그인
                     </div>
                     <div className="Account">
+                        <NavLink to="/Find">
                         <div className="Find">ID / PW 찾기</div>
+                        </NavLink>
                         <div>|</div>
+                        <NavLink to="/Sign">
                         <div className="Sign">회원가입</div>
+                        </NavLink>
                     </div>
                 </form>
             </div>

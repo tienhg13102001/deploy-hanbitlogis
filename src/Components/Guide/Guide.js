@@ -21,9 +21,9 @@ class Guide extends Component {
                     <div className="GuideNotice">
                         공지사항
                     </div>
-                </div>
-                <div className="GuideBottom">
-                    
+                    <div className="GuideQnA">
+                        QnA
+                    </div>
                 </div>
             </div>
         );
