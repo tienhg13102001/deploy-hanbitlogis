@@ -1,0 +1,26 @@
+.TextContainer{
+    max-width: 776px;
+    margin-left: 85px;
+    .Wrap_Line{
+        
+        padding-left: 40px;
+        .Title{
+            margin-top: 60px;
+            font-size: 30px;
+            padding-bottom: 28px;
+            span {
+                color: #da2320;
+            }
+        }
+        .VisitText{
+        font-size: 20px;
+        padding-bottom: 57px;
+        }
+        .Text{
+            width: 830px;
+            font-size: 16px;
+            line-height: 1.5;
+            
+        }
+    }
+}

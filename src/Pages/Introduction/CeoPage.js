@@ -3,6 +3,7 @@ import './style/CeoPage.scss'
 
 import IntoBanner from '../Introduction/function/IntroductionBanner';
 import IntoMenuBox from '../../Components/MenuBox/IntroductionBox';
+import IntroText from './function/IntroText';
 
 class CeoPage extends Component {
     render() {
@@ -13,6 +14,7 @@ class CeoPage extends Component {
                 </div>
                 <div className="CeoContents">
                     <IntoMenuBox></IntoMenuBox>
+                    <IntroText></IntroText>
                 </div>
             </div>
         );
