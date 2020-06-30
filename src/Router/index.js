@@ -5,6 +5,7 @@ import Find from './RouterFind/FindRouter';
 import Intro from './RouterInto/IntroRouter';
 import Policy from './RouterInto/PolicyRouter';
 import History from './RouterInto/RouterHistory';
+import Map from './RouterMap/MapRouter';
 
 var routes = [
  {
@@ -48,6 +49,12 @@ var routes = [
     path:"/History",
     component:History,
     menuName:"History"
+   
+},
+{
+    path:"/Map",
+    component:Map,
+    menuName:"Map"
    
 },
 

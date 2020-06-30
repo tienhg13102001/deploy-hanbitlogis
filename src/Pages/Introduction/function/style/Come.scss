@@ -1,0 +1,24 @@
+.ComeContainer{
+    height: auto;
+    .Come_TextBox{
+        padding-top: 65px;
+        margin-left: 120px;
+        .Come_Title{
+            font-size: 30px;
+            padding-bottom: 50px;
+        }
+        .Come_Box{
+            display: flex;
+            padding-bottom: 30px;
+            .Come_One{
+                font-size: 16px;
+                font-weight: 600;
+                padding-right: 40px;
+            }
+            .Come_Two{
+                font-size: 16px;
+                font-weight: 200;
+            }
+        }
+    }
+}
