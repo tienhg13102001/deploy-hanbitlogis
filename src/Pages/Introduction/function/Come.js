@@ -27,7 +27,7 @@ class Come extends Component {
                     </div>
                 </div>
                 <div className="Hanbit_Map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6251853447343!2d127.04003211566126!3d37.51675743473423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4751976494d%3A0x121b7bb610d91f44!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsgrzshLHrj5kg7ZWZ64-Z66GcNTbquLggOA!5e0!3m2!1sko!2skr!4v1593484055211!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    
                 </div>
             </div>
         );
