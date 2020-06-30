@@ -13,7 +13,9 @@ class Guide extends Component {
                         </NavLink>
                     </div>
                     <div className="GuideInfo">
-                        지입정보
+                        <NavLink to="/Info">
+                            지입정보
+                        </NavLink>
                     </div>
                     <div className="GuideCar">
                         당사차량

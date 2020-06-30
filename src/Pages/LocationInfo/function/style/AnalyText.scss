@@ -1,0 +1,22 @@
+.Text_Container{
+    margin-left: 120px;
+    .Analy_TextBox{
+        .Analy_Title{
+            margin-top: 60px;
+            font-size: 30px;
+            padding-bottom: 28px;
+            >span {
+                color: #da2320;
+            }
+        }
+        .Analy_Text{
+            font-size: 20px;
+            padding-bottom: 29px;
+        }
+    }
+    .Text{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #707070;
+    }
+}

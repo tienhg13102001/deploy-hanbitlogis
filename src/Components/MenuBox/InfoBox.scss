@@ -1,0 +1,20 @@
+.InfoBox{
+    width: 200px;
+    height: 300px;
+    .Title{
+        margin-top: 60px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #535353;
+        padding-bottom: 40px;
+    }
+    .Line{
+        font-size: 14px;
+        padding-bottom: 19px;
+        
+    }
+    >a{
+        text-decoration: none;
+        color: #535353;
+    }
+}

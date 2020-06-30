@@ -1,0 +1,22 @@
+.Analy_Container{
+    background-image: url(../../../../_asset/image/locationInfo/informaion-banner-img.png);
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    height: 230px;
+    .TextBox{
+        max-width: 160px;
+        position: relative;
+        top: 83px;
+        left: 200px;
+        .Text{
+            font-size: 14px;
+            padding-bottom: 14px;
+            color: #535353;
+        }
+        .Title{
+            font-size: 35.5px;
+            font-weight: 600;
+        }
+    }
+}

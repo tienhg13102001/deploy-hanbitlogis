@@ -6,6 +6,7 @@ import Intro from './RouterInto/IntroRouter';
 import Policy from './RouterInto/PolicyRouter';
 import History from './RouterInto/RouterHistory';
 import Map from './RouterMap/MapRouter';
+import Info from './RouterInfo/InfoRouter';
 
 var routes = [
  {
@@ -55,6 +56,12 @@ var routes = [
     path:"/Map",
     component:Map,
     menuName:"Map"
+   
+},
+{
+    path:"/Info",
+    component:Info,
+    menuName:"Info"
    
 },
 

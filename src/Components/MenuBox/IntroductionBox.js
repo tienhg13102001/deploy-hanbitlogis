@@ -18,7 +18,9 @@ class IntroductionBox extends Component {
                 <NavLink to="/History">
                 <div className="Line">회사 연혁</div>
                 </NavLink>
+                <NavLink to="/Map">
                 <div className="Line">오시는 길</div>
+                </NavLink>
             </div>
         );
     }
