@@ -7,6 +7,7 @@ import Policy from './RouterInto/PolicyRouter';
 import History from './RouterInto/RouterHistory';
 import Map from './RouterMap/MapRouter';
 import Info from './RouterInfo/InfoRouter';
+import Operation from './RouterInfo/OperationRouter';
 
 var routes = [
  {
@@ -62,6 +63,12 @@ var routes = [
     path:"/Info",
     component:Info,
     menuName:"Info"
+   
+},
+{
+    path:"/Operation",
+    component:Operation,
+    menuName:"Operation"
    
 },
 
