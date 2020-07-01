@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './style/AnalyText.scss'
 import AnalysisResult from './AnalysisResult';
+import AnalysisType from './AnalysisType';
+import AnalysisChart from './AnalysisChart';
+import AnalysisChartTwo from './AnalysisChartTwo';
+import AnalysisChartThree from './AnalysisChartThree';
 
 class AnalyText extends Component {
     render() {
@@ -18,7 +22,7 @@ class AnalyText extends Component {
                     지입차량은 (주)한빛로지스 (이하 ‘회사’) 와 같은 차량 지입 전문 업체가 화물운송을 필요로 하는 고객사 (화주) 에<br />
                     차량과 운전자를 공급하고 그 대가로 계약조건에 따라 매월 일정액의 보수를 지급받는 것을 말합니다.<br />
                     즉, 운송회사 차량을 이용하여 개인이 차량을 구입하여 등록하고 사용에 대한 권리금과 매월 일정한 관리비를 납부하며,<br />
-                    그 운송회사에 소속된 차량처럼 영업을 하는 행dnl입니다.<br />
+                    그 운송회사에 소속된 차량처럼 영업을 하는 행위입니다.<br />
                     <br />
                     이때 회사와 고객사는 물류운송계약 (또는 운송용역계약) 을 체결하게 되고 이 계약을 기본으로 회사로부터 제공된<br />
                     차량과 운전자는 고객사 (화주)에 소속되어 필요한 용도에 따라 운송용역(service) 을 제공하게 됩니다.<br />
@@ -36,6 +40,10 @@ class AnalyText extends Component {
                     위하여 노력하고자 합니다.<br />
                 </div>
                 <AnalysisResult></AnalysisResult>
+                <AnalysisType></AnalysisType>
+                <AnalysisChart></AnalysisChart>
+                <AnalysisChartTwo></AnalysisChartTwo>
+                <AnalysisChartThree></AnalysisChartThree>
             </div>
         );
     }

@@ -1,0 +1,53 @@
+.Type_Container {
+    padding-top: 100px;
+    .Type_TextBox {
+        .Type_Text {
+            font-size: 14px;
+            padding-bottom: 19px;
+        }
+        .Type_Title {
+            font-size: 30px;
+            padding-bottom: 42px;
+            >span {
+                color: #da2320;
+            }
+        }
+    }
+    .Chart {
+        .Chart_TitleBox {
+            .Chart_Title {
+                font-size: 18px;
+                color: #707070;
+                padding-bottom: 21px;
+            }
+        }
+        .Chart_Box{
+            width: 1050px;
+            .TypeBox{
+                height: 63px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #f5f4f4;
+                .Type{
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .Text_List{
+                width: 1050px;
+                height: 63px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .One{
+                    font-size: 16px;
+                    color: #707070;
+                    width: 500px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.Chart_Container{
+    .Chart_TitleBox{
+        padding-top: 60px;
+        .Chart_Title{
+            font-size: 18px;
+            color: #707070 ;
+            padding-bottom: 21px;
+        }
+    }
+    .Chart{
+        width: 1050px;
+        .Chart_Type{
+            display: flex;
+            background-color: #f5f4f4;
+            .Type_One{
+                width: 183px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+            }
+            .Type_Two{
+                width: 850px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+            }
+        }
+        .Chart_TextBox{
+            
+            .Text_List{
+                display: flex;
+                .One_Text{
+                    width: 183px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #707070;
+                }
+                .Two_Text{
+                    width: 850px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    color: #707070;
+                }
+            }
+        }
+
+    }
+}

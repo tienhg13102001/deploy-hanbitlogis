@@ -10,7 +10,7 @@ class InfoBox extends Component {
                 <div className="Title">
                     지입 정보
                 </div>
-                <div className="Line">지입 분석</div>
+                <NavLink to="/Info"><div className="Line">지입 분석</div></NavLink>
                 <div className="Line">차량운영분석</div>
                 <div className="Line">자격증 가이드</div>
             </div>
