@@ -10,10 +10,10 @@ import icon04 from '../../../_asset/image/locationInfo/certificate-icon-4.png';
 
 class TestGuideCertificate extends Component {
     list = [
-        { icon: icon01, text:'운전적성 정밀검사 (신규, 특별수검)', arrow: arrowicon, arrowtext:'적합판정'},
-        { icon: icon02, text:'자격 시험 응시', arrow: arrowicon, arrowtext:'합격'},
-        { icon: icon03, text:'합격자 교육 (1일 8시간)', arrow: arrowicon },
-        { icon: icon04, text:'자격증 발급'}
+        { id:0, icon: icon01, text: '운전적성 정밀검사 (신규, 특별수검)', arrow: arrowicon, arrowtext: '적합판정' },
+        { id:1, icon: icon02, text: '자격 시험 응시', arrow: arrowicon, arrowtext: '합격' },
+        { id:2, icon: icon03, text: '합격자 교육 (1일 8시간)', arrow: arrowicon },
+        { id:3, icon: icon04, text: '자격증 발급' }
     ]
     render() {
         return (
@@ -36,19 +36,23 @@ class TestGuideCertificate extends Component {
                         </div>
                     </div>
                     <div className="Certi_List2">
-                        <div className="Certi_One">
-                            운전면허
+                        <div className="Certi_Wrap">
+                            <div className="Certi_One">
+                                운전면허
                         </div>
-                        <div className="Certi_Two">
-                            1종 보통 면허 이상 소지자로 아래의 조건중 가 또는 나를 충족한 자만 시험응시 가능
                         </div>
-                        <div className="Certi_Three">
-                            1. 자가용운전경력 3년 이상인 경우(운전면허 취득일 기준)   (소형면허(1종, 2종), 2종 원동기 면허, 연습면허,
-                            면허정지 및 취소기간을 제외한 전체기간운전 경력을 인정(2종 보통면허, 1종 보통면허ㆍ대형면허ㆍ특수면허 기간만 인정)
+                        <div className="Certi_Wrap2">
+                            <div className="Certi_Two">
+                                1종 보통 면허 이상 소지자로 아래의 조건중 가 또는 나를 충족한 자만 시험응시 가능
                         </div>
-                        <div className="Certi_Three">
-                            2. 사업용(영업용)자동차 운전경력 1년 이상   (자가용 운전경력(면허취득일 기준) 3년이 되지 않는 응시자로
-                            사업용 화물경력을 제외한 버스 및 택시(사업용 자동차)의 운전경력이 1년이 경과된 자 )
+                            <div className="Certi_Three">
+                                1. 자가용운전경력 3년 이상인 경우(운전면허 취득일 기준)   (소형면허(1종, 2종), 2종 원동기 면허, 연습면허,
+                                면허정지 및 취소기간을 제외한 전체기간운전 경력을 인정(2종 보통면허, 1종 보통면허ㆍ대형면허ㆍ특수면허 기간만 인정)
+                        </div>
+                            <div className="Certi_Three">
+                                2. 사업용(영업용)자동차 운전경력 1년 이상   (자가용 운전경력(면허취득일 기준) 3년이 되지 않는 응시자로
+                                사업용 화물경력을 제외한 버스 및 택시(사업용 자동차)의 운전경력이 1년이 경과된 자 )
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -61,8 +65,10 @@ class TestGuideCertificate extends Component {
                                     <div className="List_Text">{item.text}</div>
                                 </div>
                                 <div className="Certi_ArrowBox">
-                                    <img className="Arrow" src={item.arrow} alt='화살표'></img>
-                                    <div className="Arrow_Text">{item.arrowtext}</div>
+                                    <div className="Certi_Wrap3">
+                                        <img className="Arrow" src={item.arrow} alt='화살표'></img>
+                                        <div className="Arrow_Text">{item.arrowtext}</div>
+                                    </div>
                                 </div>
                             </div>
                         )

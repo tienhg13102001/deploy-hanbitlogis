@@ -16,7 +16,9 @@ class InfoBox extends Component {
                 <NavLink to="/Operation">
                     <div className="Line">차량운영분석</div>
                 </NavLink>
+                <NavLink to="/TestGuide">
                 <div className="Line">자격증 가이드</div>
+                </NavLink>
             </div>
         );
     }
