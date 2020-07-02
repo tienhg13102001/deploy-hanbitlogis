@@ -1,0 +1,70 @@
+.CertificateContainer{
+    max-width: 1050px;
+    .Certi_TitleBox{
+        .Certi_Title{
+            font-size: 30px;
+            padding-bottom: 31px;
+            >span{
+                color: #da2320;
+            }
+        }
+        .Certi_Text{
+            font-size: 18px;
+            color: #494e54;
+        }
+    }
+    .Certi_TextBox{
+        background-color: #f4f4f4;
+        .Certi_List{
+            display: flex;
+            .Certi_One{
+                max-width: 120px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .Certi_Two{
+
+            }
+            .Certi_Three{
+
+            }
+        }
+        .Certi_List2{
+            display: flex;
+            flex-direction: column;
+            .Certi_One{
+                width: 120px;
+            }
+            .Certi_Two{
+                width: 800px;
+            }
+            .Certi_Three{
+
+            }
+        }
+    }
+    .Certi_ListBox{
+        display: flex;
+        .Certi_MapBox{
+            display: flex;
+            .Certi_IconBox{
+                .List_Icon{
+
+                }
+                .List_Text{
+
+                }
+            }
+            .Certi_ArrowBox{
+                .Arrow{
+
+                }
+                .Arrow_Text{
+
+                }
+            }
+        }
+    }
+}
