@@ -1,21 +1,19 @@
 .Chart_Container{
-    
-    
-    .Chart_TitleBox2{
-        .Chart_Title2{
-            font-size: 30px;
-            color: #535353;
-        }
-    }
     .Chart_TextBox2{
         display: flex;
         padding-bottom: 29px;
-        .Chart_Text2{
+        .Chart_Text{
             font-size: 20px;
             color: #da2320;
             padding-left: 10px;
             font-weight: 600;
         }
+        
+    }
+    .Example{
+        font-size: 18px;
+        padding-bottom: 21px;
+        color: #707070;
     }
     .Chart_Box2{
         width: 1050px;

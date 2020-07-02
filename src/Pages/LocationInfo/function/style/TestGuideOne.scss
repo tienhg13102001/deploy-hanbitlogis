@@ -1,0 +1,26 @@
+.TestGuideOneContainer{
+    max-width: 1050px;
+    .Test_TitleBox{
+        padding-top: 60px;
+        .Test_Title{
+            font-size: 30px;
+            font-weight: 600;
+            padding-bottom: 41px;
+            >span{
+                color: #da2320;
+            }
+        }
+        .Test_Text{
+            font-size: 20px;
+            color: #535353;
+            padding-bottom: 29px;
+        }
+        .Test_Example{
+            font-size: 16px;
+            color: #707070;
+            >span{
+                color: #a0a0a0;
+            }
+        }
+    }
+}

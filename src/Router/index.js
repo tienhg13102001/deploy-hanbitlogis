@@ -8,6 +8,7 @@ import History from './RouterInto/RouterHistory';
 import Map from './RouterMap/MapRouter';
 import Info from './RouterInfo/InfoRouter';
 import Operation from './RouterInfo/OperationRouter';
+import TestGuide from './RouterInfo/TestGuideRouter';
 
 var routes = [
  {
@@ -69,6 +70,12 @@ var routes = [
     path:"/Operation",
     component:Operation,
     menuName:"Operation"
+   
+},
+{
+    path:"/TestGuide",
+    component:TestGuide,
+    menuName:"TestGuide"
    
 },
 

@@ -1,0 +1,71 @@
+.TestInfoContainer{
+    max-width: 1050px;
+    .TestInfo_TitleBox{
+        .TestInfo_Title{
+            font-size: 30px;
+            padding-bottom: 20px;
+            >span{
+                color: #da2320;
+            }
+        }
+    }
+    .TestInfo_Banner{
+        max-width: 1050px;
+        padding-bottom: 61px;
+        >img {
+            width: 100%;
+        }
+    }
+    .Test_List{
+        display: flex;
+        .Test_Number{
+            font-size: 36px;
+            color: #da2320;
+            padding: 5px;
+        }
+        .Test_Name{
+            max-width: 250px;
+            width: 100%;
+            font-size: 30px;
+            padding: 5px;
+        }
+        .Text_Content{
+            padding: 5px;
+            .Content_One{
+                max-width: 808px;
+                font-size: 16px;
+                color: #707070;
+                line-height: 1.5;
+                .One_Two{
+                    color: #a0a0a0;
+                }
+            }
+            .Content_Two{
+                color: #da2320;
+            }
+            .Content_Three{
+                color: #a0a0a0;
+                padding-bottom: 14px;
+            }
+            
+        }
+        .Text_ContentTwo{
+            padding: 5px;
+            .Content_One1{
+                max-width: 808px;
+                font-size: 16px;
+                color: #707070;
+                line-height: 1.5;
+                padding-bottom: 19px;
+            }
+            .Content_Two2{
+                color: #da2320;
+                padding-bottom: 14px;
+            }
+            .Content_Three3{
+                color: #a0a0a0;
+                padding-bottom: 14px;
+            }
+        }
+    }
+}
