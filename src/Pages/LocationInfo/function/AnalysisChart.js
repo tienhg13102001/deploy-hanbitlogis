@@ -31,9 +31,9 @@ class AnalysisChart extends Component {
                     <div className="Chart_TextBox">
                         {this.list.map((item, index) => {
                             return(
-                                <div className="Text_List">
-                                    <div className="One_Text">{item.text}</div>
-                                    <div className="Two_Text">{item.text2}</div>
+                                <div className="Text_List" key={index}>
+                                    <div className="One">{item.text}</div>
+                                    <div className="Two">{item.text2}</div>
                                 </div>
                             )
                         })}

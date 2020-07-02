@@ -24,14 +24,28 @@
             max-width: 1050px;
             font-size: 16px;
             font-weight: 600;
-            justify-content: space-around;
+            justify-content: space-between;
             border-top: solid 2px #535353;
             border-bottom: solid 2px #535353;
-            .Type_Text{
+            .Type_Text_One{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 217px;
+                height: 60px;
+            }
+            .Type_Text_Two {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 430px;
+                height: 60px;
+            }
+            .Type_Text_Three {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 400px;
                 height: 60px;
             }
         }

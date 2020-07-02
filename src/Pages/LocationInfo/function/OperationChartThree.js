@@ -22,35 +22,49 @@ class OpreationChartThree extends Component {
                         <img src={icon} alt='아이콘'></img>
                         <div className="Chart_Text">직영 및 위탁시 금액분석</div>
                     </div>
-                    <div className="Chart_Box">
-                        <div className="Chart_Type">
-                            <div className="One_Text">
+                    <div className="Chart_Box2">
+                        <div className="Chart_Type2">
+                            <div className="Type_Text">
                                 항목
                             </div>
-                            <div className="Two_Text">
+                            <div className="Type_Text2">
                                 직영
                             </div>
-                            <div className="Three_Text">
+                            <div className="Type_Text3">
                                 위탁
                             </div>
-                            <div className="Four_Text">
+                            <div className="Type_Text4">
                                 비고
                             </div>
                         </div>
-                        <div className="Chart_ListBox">
+                        <div className="Chart_ListBox2">
                             {this.list.map((item, index) => {
                                 return (
-                                    <div className="Text_List" key={index}>
-                                        <div className="One_Text">{item.text}</div>
-                                        <div className="Two_Text">{item.text2}</div>
-                                        <div className="Three_Text">{item.text3}</div>
+                                    <div className="Text_List2" key={index}>
+                                        <div className="One_Text2">{item.text}</div>
+                                        <div className="Two_Text2">{item.text2}</div>
+                                        <div className="Three_Text2">{item.text3}</div>
                                         <div className="Wrap">
-                                            <div className="Three_Text">{item.text4}</div>
+                                            <div className="Three_Text3">{item.text4}</div>
                                             <div className="Three_Plus">{item.text5}</div>
                                         </div>
                                     </div>
                                 )
                             })}
+                        </div>
+                        <div className="Chart_TimeBox">
+                            <div className="Time">
+                                <span>근무시간</span> 08:30 - 19:00 기준 (회사 여건에 따라 조정가능)
+                            </div>
+                            <div className="Holiday">
+                                <span>휴무</span> 일요일, 국경일 휴무 (회사 여건에 따라 조정가능)
+                            </div>
+                            <div className="Distance">
+                                <span>운행거리</span> 100km 기준 (운행 거리에 따라 견적조건 조정)
+                            </div>
+                            <div className="Exception">
+                                *유류, 도로비 비교표 내용 제외
+                            </div>
                         </div>
                     </div>
                 </div>

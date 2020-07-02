@@ -30,25 +30,24 @@
             }
         }
         .Chart_TextBox{
-            
+            display: flex;
+            flex-direction: column;
             .Text_List{
                 display: flex;
-                .One_Text{
+                .One{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 183px;
                     height: 60px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: #707070;
                 }
-                .Two_Text{
-                    width: 850px;
-                    height: 60px;
+                .Two{
                     display: flex;
-                    align-items: center;
                     justify-content: left;
-                    color: #707070;
-                }
+                    align-items: center;
+                    width: 866px;
+                    height: 60px;
+                }   
             }
         }
 

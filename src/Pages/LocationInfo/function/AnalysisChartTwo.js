@@ -27,8 +27,8 @@ class AnalysisChartTwo extends Component {
                         {this.list.map((item, index) => {
                             return(
                                 <div className="Text_List">
-                                    <div className="One_Text">{item.text}</div>
-                                    <div className="Two_Text">{item.text2}</div>
+                                    <div className="One">{item.text}</div>
+                                    <div className="Two">{item.text2}</div>
                                 </div>
                             )
                         })}

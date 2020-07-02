@@ -28,13 +28,13 @@ class OpreationChart extends Component {
                     </div>
                     <div className="Chart_Box">
                         <div className="Chart_Type">
-                            <div className="Type_Text">
+                            <div className="Type_Text_One">
                                 구분
                             </div>
-                            <div className="Type_Text">
+                            <div className="Type_Text_Two">
                                 기업체 운영
                             </div>
-                            <div className="Type_Text">
+                            <div className="Type_Text_Three">
                                 차량 관리사
                             </div>
                         </div>
