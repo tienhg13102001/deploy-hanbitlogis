@@ -1,0 +1,120 @@
+.Aptitude_Container{
+    max-width: 1050px;
+    width: 100%;
+    .Aptitude_Box{
+        text-align: center;
+        .Aptitude_Icon{
+            max-width: 78px;
+            height: 101px;
+            margin: auto;
+            padding-bottom: 40px;
+            >img{
+                width: 100%;
+            }
+        }
+        .Aptitude_Title{
+            font-size: 30px;
+            color: #535353;
+            padding-bottom: 30px;
+        }
+        .Aptitude_Text{
+            font-size: 16px;
+            color: #a0a0a0;
+            max-width: 802px;
+            width: 100%;
+            margin: auto;
+            padding-bottom: 100px;
+        }
+    }
+    .Aptitude_Ga{
+        .Ga_Box{
+            display: flex;
+            .Ga_Title{
+                font-size: 18px;
+                padding-right: 24px;
+            }
+            .Ga_Text{
+                font-size: 18px;
+            }
+        }
+        .Ga_IconBox{
+            display: flex;
+            justify-content: center;
+            .Ga_Icon{
+                padding: 40px;
+                .Ga_Img{
+                    max-width: 120px;
+                    width: 100%;
+                    padding-bottom: 23px;
+                }
+                .Ga_Icon_Text{
+                    max-width: 132px;
+                    width: 100%;
+                    font-size: 14px;
+                }
+            }
+            .Dot_Line{
+                display: flex;
+                align-self: center;
+            }
+        }
+        .Na_IconBox{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            .Na_Icon{
+                max-width: 210px;
+                width: 100%;
+                padding: 40px;
+                .Na_ImgBox{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                    .Na_Number{
+                        font-size: 20px;
+                        color: #da2320;
+                    }
+                    .Na_Img{
+
+                    }
+                }
+                .Na_Text{
+                    max-width: 200px;
+                    width: 100%;
+                    margin: auto;
+                    font-size: 14px;
+                    padding-bottom: 14px;
+                    color: #535353;
+                }
+                .Na_Dot{
+                    padding-bottom: 20px;
+                }
+                .Na_SubText{
+                    font-size: 14px;
+                    color: #a0a0a0;
+                }
+            }
+        }
+        .Move_Page{
+            display: flex;
+            justify-content: center;
+            
+            a {
+                text-decoration: none;
+            }
+            .Apti_Btn{
+                width: 392px;
+                height: 50px;
+                background-color: #da2320;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               
+            }
+        }
+        
+    }
+    
+    
+}

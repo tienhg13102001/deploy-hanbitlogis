@@ -6,6 +6,7 @@ import InfoBox from '../../Components/MenuBox/InfoBox';
 import TestGuideOne from './function/TestGuideOne';
 import TestGuideTwo from './function/TestGuideTwo';
 import TestGuideCertificate from './function/TestGuideCertificate';
+import TestGuideAptitude from './function/TestGuideAptitude';
 
 class TestGuide extends Component {
     render() {
@@ -23,6 +24,9 @@ class TestGuide extends Component {
                 </div>
                 <div className="Contents">
                     <TestGuideCertificate></TestGuideCertificate>
+                </div>
+                <div className="Contents">
+                    <TestGuideAptitude></TestGuideAptitude>
                 </div>
             </div>
 

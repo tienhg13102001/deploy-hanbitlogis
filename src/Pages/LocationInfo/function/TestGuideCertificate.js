@@ -13,7 +13,7 @@ class TestGuideCertificate extends Component {
         { id:0, icon: icon01, text: '운전적성 정밀검사 (신규, 특별수검)', arrow: arrowicon, arrowtext: '적합판정' },
         { id:1, icon: icon02, text: '자격 시험 응시', arrow: arrowicon, arrowtext: '합격' },
         { id:2, icon: icon03, text: '합격자 교육 (1일 8시간)', arrow: arrowicon },
-        { id:3, icon: icon04, text: '자격증 발급' }
+        { id:3, icon: icon04, text: '자격증 발급', arrow: arrowicon }
     ]
     render() {
         return (
@@ -31,7 +31,7 @@ class TestGuideCertificate extends Component {
                         <div className="Certi_One">
                             연령
                         </div>
-                        <div className="Certi_Two">
+                        <div className="Certi_Three">
                             만 21세 이상(접수일 마감 기준)
                         </div>
                     </div>
