@@ -1,0 +1,46 @@
+.Hboard_Contaier{
+    .Han_TitleBox{
+        .Hanbit_Title{
+            font-size: 30px;
+        }
+    }
+    .Hboard_TopLine{
+        display: flex;
+        max-width: 1050px;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        border-top: 2px solid #535353;
+        border-bottom: 2px solid #535353;
+        .Hboard_Type{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Hboard_Date{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Hboard_Title{
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Hboard_People{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }   
+        .Hboard_View{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

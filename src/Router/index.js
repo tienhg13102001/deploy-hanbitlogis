@@ -15,6 +15,7 @@ import TwoVehicle from './RouterVehicle/VehicleTwoRouter';
 import InVehicleTwo from './RouterVehicle/InVehicleTwoRouter';
 import ThreeVehicle from './RouterVehicle/VehicleThree';
 import FourVehicle from './RouterVehicle/VehicleFour';
+import HanbitBoard from './RouterHanbit/HanbitRouter';
 
 var routes = [
  {
@@ -118,6 +119,12 @@ var routes = [
     path:"/FourVehicle",
     component:FourVehicle,
     menuName:"FourVehicle"
+   
+},
+{
+    path:"/HanbitBoard",
+    component:HanbitBoard,
+    menuName:"HanbitBoard"
    
 },
 

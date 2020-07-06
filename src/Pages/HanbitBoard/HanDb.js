@@ -1,0 +1,23 @@
+export const data = [
+    { number:'21', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'한빛로지스', view:'192' },
+    { number:'20', date:'2022.01.02', title:'한빛로지스 제목이 들어가는 곳입니다.', people:'한빛로지스', view:'54' },
+    { number:'19', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'화물트럭', view:'34' },
+    { number:'18', date:'2022.01.02', title:'게시판 내용이 들어갑니다.', people:'화물트럭', view:'23' },
+    { number:'17', date:'2022.01.02', title:'한빛로지스 제목이 들어가는 곳입니다.', people:'한빛로지스', view:'52' },
+    { number:'16', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'한빛로지스', view:'79' },
+    { number:'15', date:'2022.01.02', title:'게시판 내용이 들어갑니다.', people:'화물트럭', view:'56' },
+    { number:'14', date:'2022.01.02', title:'한빛로지스 제목이 들어가는 곳입니다.', people:'한빛로지스', view:'63' },
+    { number:'13', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'화물트럭', view:'87' },
+    { number:'12', date:'2022.01.02', title:'게시판 내용이 들어갑니다.', people:'화물트럭', view:'76' },
+    { number:'11', date:'2022.01.02', title:'한빛로지스 제목이 들어가는 곳입니다.', people:'한빛로지스', view:'43' },
+    { number:'10', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'화물트럭', view:'52' },
+    { number:'9', date:'2022.01.02', title:'게시판 내용이 들어갑니다.', people:'화물트럭', view:'15' },
+    { number:'8', date:'2022.01.02', title:'한빛로지스 제목이 들어가는 곳입니다.', people:'한빛로지스', view:'87' },
+    { number:'7', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'화물트럭', view:'98' },
+    { number:'6', date:'2022.01.02', title:'게시판 내용이 들어갑니다.', people:'화물트럭', view:'88' },
+    { number:'5', date:'2022.01.02', title:'한빛로지스 제목이 들어가는 곳입니다.', people:'한빛로지스', view:'55' },
+    { number:'4', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'화물트럭', view:'33' },
+    { number:'3', date:'2022.01.02', title:'게시판 내용이 들어갑니다.', people:'화물트럭', view:'22' },
+    { number:'2', date:'2022.01.02', title:'한빛로지스 게시판 중 한빛 게시판입니다.', people:'화물트럭', view:'11' },
+    { number:'1', date:'2022.01.02', title:'한빛로지스 제목이 들어가는 곳입니다.', people:'한빛로지스', view:'1' }
+]
