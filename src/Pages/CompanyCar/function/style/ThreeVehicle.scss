@@ -1,0 +1,39 @@
+.Vehicle_Container{
+    max-width: 1050px;
+    .Vehicle_TitleBox{
+        padding-top: 60px;
+        .Vehicle_Title{
+            font-size: 30px;
+            padding-bottom: 29px;
+        }
+    }
+    .Vehicle_TopLine{
+        display: flex;
+        font-size: 16px;
+        width: 1050px;
+        height: 60px;
+        justify-content: space-between;
+        border-top: solid 2px #a0a0a0;
+        border-bottom: solid 1px #a0a0a0;
+        .Top_Line{
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .Vehicle_Board1{
+        max-width:1050px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        .Vehicle_No{
+            padding-top: 30px;
+            font-size: 18px;
+            color: #a0a0a0;
+        }
+    }
+}

@@ -28,6 +28,8 @@
         width: 100%;
         .Board_List{
             display: flex;
+            max-width: 1050px;
+            width: 100%;
             justify-content: space-between;
             border-bottom: solid 1px #e5e5e5;
             >a{

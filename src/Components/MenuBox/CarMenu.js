@@ -12,9 +12,15 @@ class InfoBox extends Component {
                 <NavLink to="/Vehicle">
                     <div className="Line">당사차량[1톤]</div>
                 </NavLink>
-                <div className="Line">당사차량[2.5톤]</div>
-                <div className="Line">당사차량[4.5톤]</div>
-                <div className="Line">당사차량[5톤]</div>
+                <NavLink to="/TwoVehicle">
+                    <div className="Line">당사차량[2.5톤]</div>
+                </NavLink>
+                <NavLink to="/ThreeVehicle">
+                    <div className="Line">당사차량[4.5톤]</div>
+                </NavLink>
+                <NavLink to="FourVehicle">
+                    <div className="Line">당사차량[5톤]</div>
+                </NavLink>
             </div>
         );
     }

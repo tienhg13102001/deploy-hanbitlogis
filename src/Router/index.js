@@ -11,6 +11,10 @@ import Operation from './RouterInfo/OperationRouter';
 import TestGuide from './RouterInfo/TestGuideRouter';
 import Vehicle from './RouterVehicle/VehicleRouter';
 import InVehicle from './RouterVehicle/InVehicleRouter';
+import TwoVehicle from './RouterVehicle/VehicleTwoRouter';
+import InVehicleTwo from './RouterVehicle/InVehicleTwoRouter';
+import ThreeVehicle from './RouterVehicle/VehicleThree';
+import FourVehicle from './RouterVehicle/VehicleFour';
 
 var routes = [
  {
@@ -90,6 +94,30 @@ var routes = [
     path:"/InVehicle",
     component:InVehicle,
     menuName:"InVehicle"
+   
+},
+{
+    path:"/TwoVehicle",
+    component:TwoVehicle,
+    menuName:"TwoVehicle"
+   
+},
+{
+    path:"/InVehicleTwo",
+    component:InVehicleTwo,
+    menuName:"InVehicleTwo"
+   
+},
+{
+    path:"/ThreeVehicle",
+    component:ThreeVehicle,
+    menuName:"ThreeVehicle"
+   
+},
+{
+    path:"/FourVehicle",
+    component:FourVehicle,
+    menuName:"FourVehicle"
    
 },
 
