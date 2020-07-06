@@ -18,7 +18,9 @@ class Guide extends Component {
                         </NavLink>
                     </div>
                     <div className="GuideCar">
-                        당사차량
+                        <NavLink to="/Vehicle">
+                            당사차량
+                        </NavLink>
                     </div>
                     <div className="GuideBoard">
                         한빛 게시판

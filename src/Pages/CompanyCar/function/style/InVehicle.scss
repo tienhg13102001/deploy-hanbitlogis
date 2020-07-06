@@ -1,0 +1,66 @@
+.In_Container{
+    max-width: 1050px;
+    width: 100%;
+    padding-top: 60px;
+    .In_TitleBox{
+        .In_Title{
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    .In_SubTitle{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        .In_SubText{
+            font-size: 20px;
+            color: #707070;
+        }
+        .Go_Button{
+            display: flex;
+            background-color: #535353;
+            font-size: 16px;
+            color: #ffffff;
+            max-width: 100px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 44px;
+        }
+    }
+    .In_Contents{
+        border-top: solid 2px #535353;
+        border-bottom: solid 2px #535353;
+        .In_Box{
+            display: flex;
+            max-width: 1050px;
+            .In_Menu{
+                width: 150px;
+                font-size: 16px;
+                color: #535353;
+                height: 60px;
+                font-weight: 600;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                border-bottom: 1px solid #a0a0a0;
+                border-right: 1px solid #a0a0a0;
+            }
+            .In_Content{
+                width: 1000px;
+                font-size: 16px;
+                color: #707070;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #a0a0a0;
+                padding-left: 10px;
+            }
+        }
+    }
+    .BottomText{
+        padding-top: 21px;
+        font-size: 14px;
+        padding-bottom: 70px;
+    }
+}

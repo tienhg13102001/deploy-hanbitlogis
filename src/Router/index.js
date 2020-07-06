@@ -9,6 +9,8 @@ import Map from './RouterMap/MapRouter';
 import Info from './RouterInfo/InfoRouter';
 import Operation from './RouterInfo/OperationRouter';
 import TestGuide from './RouterInfo/TestGuideRouter';
+import Vehicle from './RouterVehicle/VehicleRouter';
+import InVehicle from './RouterVehicle/InVehicleRouter';
 
 var routes = [
  {
@@ -76,6 +78,18 @@ var routes = [
     path:"/TestGuide",
     component:TestGuide,
     menuName:"TestGuide"
+   
+},
+{
+    path:"/Vehicle",
+    component:Vehicle,
+    menuName:"Vehicle"
+   
+},
+{
+    path:"/InVehicle",
+    component:InVehicle,
+    menuName:"InVehicle"
    
 },
 
