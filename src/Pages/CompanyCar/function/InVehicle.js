@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import './style/InVehicle.scss'
+import BoardPreview from '../../../Common/BoardPrewView';
+import { NavLink } from 'react-router-dom';
 
 class InVehicle extends Component {
     list = [
@@ -23,6 +25,7 @@ class InVehicle extends Component {
         { menu:'시간', content:'주간' },
 
     ]
+    
     render() {
         return (
             <div className="In_Container">
@@ -36,7 +39,9 @@ class InVehicle extends Component {
                         · bgf리테일cu편의점 상온배송차량
                     </div>
                     <div className="Go_Button">
-                        목록으로
+                        <NavLink to="/Vehicle">
+                            목록으로
+                        </NavLink>
                     </div>
                 </div>
                 <div className="In_Contents">
@@ -52,6 +57,7 @@ class InVehicle extends Component {
                 <div className="BottomText">
                     매매 문의 : 1599 - 9964
                 </div>
+                <BoardPreview></BoardPreview>
             </div>
         );
     }
