@@ -15,6 +15,11 @@
         justify-content: center;
         .ListBox{
             padding: 30px;
+            .Link {
+                text-decoration: none;
+                color: #535353;
+                font-weight: 600;
+            }
         }
         .IconBox{
             padding-bottom: 22px;

@@ -120,7 +120,7 @@
     background: #fdfdfd;
     padding: 7.5em 3.5em 0;
     font-size: 1.15em;
-    overflow: hidden;
+    overflow: hidden !important;
   }
   // .menu-item.active{
   //   font-weight : 500;
@@ -177,33 +177,5 @@
     text-decoration-line:line-through ;
     text-decoration-color: #333333 ;
         
-  }
-  @media screen and (max-width : 575px){
-    .bm-menu-wrap {
-        position: fixed;
-        height: 100%;
-        width : 300px !important;
-      }
-
-      .bm-menu {
-        background: #fdfdfd;
-        padding: 7.5em 2.5em 0;
-        font-size: 1.15em;
-        border-left : initial;
-        
-    }
-    .bm-cross-button {
-      right: 0px !important;
-    }
-    .bm-menu-wrap{
-      width: 250px !important;
-    }
-    .bm-menu{
-      padding-left: 20px;
-    }
-    .bm-item{
-      padding-left: 15px;
-    }
-      
   }
 

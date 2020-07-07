@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom";
 import './style/TestGuideCertificate.scss';
 
 import arrowicon from '../../../_asset/image/locationInfo/arrow-icon.png';
@@ -10,10 +10,10 @@ import icon04 from '../../../_asset/image/locationInfo/certificate-icon-4.png';
 
 class TestGuideCertificate extends Component {
     list = [
-        { id:0, icon: icon01, text: '운전적성 정밀검사 (신규, 특별수검)', arrow: arrowicon, arrowtext: '적합판정' },
-        { id:1, icon: icon02, text: '자격 시험 응시', arrow: arrowicon, arrowtext: '합격' },
-        { id:2, icon: icon03, text: '합격자 교육 (1일 8시간)', arrow: arrowicon },
-        { id:3, icon: icon04, text: '자격증 발급', arrow: arrowicon }
+        { id: 0, icon: icon01, text: '운전적성 정밀검사 (신규, 특별수검)', arrow: arrowicon, arrowtext: '적합판정' },
+        { id: 1, icon: icon02, text: '자격 시험 응시', arrow: arrowicon, arrowtext: '합격' },
+        { id: 2, icon: icon03, text: '합격자 교육 (1일 8시간)', arrow: arrowicon },
+        { id: 3, icon: icon04, text: '자격증 발급', arrow: arrowicon }
     ]
     render() {
         return (
@@ -56,6 +56,7 @@ class TestGuideCertificate extends Component {
                         </div>
                     </div>
                 </div>
+
                 <div className="Certi_ListBox">
                     {this.list.map((item, index) => {
                         return (
