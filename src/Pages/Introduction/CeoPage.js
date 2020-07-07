@@ -6,14 +6,16 @@ import IntoMenuBox from '../../Components/MenuBox/IntroductionBox';
 import IntroText from './function/IntroText';
 
 class CeoPage extends Component {
+    
     render() {
+        console.log(this.props)
         return (
             <div className="IntroContatiner">
                 <div className="TopBanner">
                     <IntoBanner></IntoBanner>
                 </div>
                 <div className="CeoContents">
-                    <IntoMenuBox></IntoMenuBox>
+                    <IntoMenuBox {...this.props}></IntoMenuBox>
                     <IntroText></IntroText>
                 </div>
             </div>
