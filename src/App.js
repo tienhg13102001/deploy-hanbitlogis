@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Pages from './Router/index';
 import Navigation from '../src/Components/Navigation/Navigation';
 import MainSlick from './Pages/Main/MainSlick'
+import BackToTopComponent from './Common/BackToTop/BackToTop';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         })
       }
       <MainSlick></MainSlick>
+      <BackToTopComponent></BackToTopComponent>
       <Footer></Footer>
     </Router>
     );

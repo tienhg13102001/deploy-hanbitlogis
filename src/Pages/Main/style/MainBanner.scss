@@ -7,24 +7,18 @@
                 width: 100%;
             }
         }
-        .MainSwiperImg{
-
+        .TextBox {
+            position: relative;
+            bottom: 350px;
+            left: 600px;
+            .NewText{
+                font-weight: 600;
+                font-size: 42.5px;
+                padding-bottom: 30px;
+            }
+            .Text {
+                font-size: 21.5px;
+            }
         }
     }
-    .TextBox {
-        position: relative;
-        width: 500px;
-        height: 140px;
-        bottom: 365px;
-        left: 780px;
-        .NewText{
-            font-weight: 600;
-            font-size: 42.5px;
-            padding-bottom: 30px;
-        }
-        .Text {
-            font-size: 21.5px;
-        }
-    }
-    
 }

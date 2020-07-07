@@ -4,6 +4,10 @@
     padding-top: 50px;
     .One_Line {
         display: flex;
+        .Link {
+            text-decoration: none;
+            color: #333333;
+        }
     }
     .Two_Line {
         display: flex;

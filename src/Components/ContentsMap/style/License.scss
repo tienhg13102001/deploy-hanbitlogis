@@ -3,6 +3,10 @@
     width: 290px;
     height: 140px;
     margin: 15px 15px 15px 0;
+    .Link{
+        text-decoration: none;
+        color: #333333;
+    }
     .TextBox{
         padding: 32px 0 0 31px;
         .Title{
@@ -14,4 +18,5 @@
             font-size: 15px;
         }
     }
+    
 }

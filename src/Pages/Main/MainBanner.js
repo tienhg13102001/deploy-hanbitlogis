@@ -7,11 +7,11 @@ import swiper01 from '../../_asset/image/main/mine-banner.png'
 
 class MainBanner extends Component {
     list = [
-        { swiperimg: swiper01},
+        { swiperimg: swiper01 },
     ]
     render() {
         const params = {
-            slidesPerView:'1',
+            slidesPerView: '1',
             spaceBetween: 30,
             pagination: {
                 el: 'swiper-pagination',
@@ -33,16 +33,16 @@ class MainBanner extends Component {
                                 </div>
                             )
                         })}
-                    </Swiper>
-                    <div className="TextBox">
-                        <div className="NewText">
-                            한빛로지스 홈페이지가 <br/>
+                        <div className="TextBox">
+                            <div className="NewText">
+                                한빛로지스 홈페이지가 <br />
                             새롭게 바뀌었습니다!
                         </div>
-                        <div className="Text">
-                            앞으로도 더욱 정진하는 한빛로지스가 되겠습니다.
+                            <div className="Text">
+                                앞으로도 더욱 정진하는 한빛로지스가 되겠습니다.
                         </div>
-                    </div>
+                        </div>
+                    </Swiper>
                 </div>
             </div>
         );
