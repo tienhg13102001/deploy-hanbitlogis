@@ -1,0 +1,32 @@
+.QnA_Contaier{
+    max-width: 1250px;
+    
+    .QnA_TopLine{
+        display: flex;
+        width: 1050px;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        border-top: 1px solid #535353;
+        border-bottom: 2px solid #535353;
+        .QnA_Type{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .QnA_Title{
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .QnA_Date{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }   
+
+    }
+}

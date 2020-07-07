@@ -18,6 +18,7 @@ import FourVehicle from './RouterVehicle/VehicleFour';
 import HanbitBoard from './RouterHanbit/HanbitRouter';
 import InHanbitBoard from './RouterHanbit/InHanbitRouter';
 import Notice from './RouterNotice/NoticeRouter';
+import QnA from './RouterQnA/QnARouter';
 
 var routes = [
  {
@@ -139,6 +140,12 @@ var routes = [
     path:"/Notice",
     component:Notice,
     menuName:"Notice"
+   
+},
+{
+    path:"/QnA",
+    component:QnA,
+    menuName:"QnA"
    
 },
 

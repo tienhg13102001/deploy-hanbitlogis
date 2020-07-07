@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { data } from "../NoticeDb";
+import { data } from "../QnADb";
 
 import { Pagination } from "../../../Common/Pagination/Pagination";
-import './style/NoticeBoard.scss'
-import NoticeText from './NoticeText';
+import './style/QnABoard.scss'
+import QnAText from './QnAText';
 
-class NoticeBoard extends Component {
+class QnABoard extends Component {
     state = {
         currentPage: 0,
         cardsPerPage: 7,
@@ -44,16 +44,16 @@ class NoticeBoard extends Component {
     }
     render() {
         return (
-            <div className="Notice_Contaier">
-                <div className="Notice_TopLine">
-                    <div className="Notice_Type">번호</div>
-                    <div className="Notice_Title">제목</div>
-                    <div className="Notice_Date">작성날</div>
+            <div className="QnA_Contaier">
+                <div className="QnA_TopLine">
+                    <div className="QnA_Type">번호</div>
+                    <div className="QnA_Title">제목</div>
+                    <div className="QnA_Date">작성날</div>
                 </div>
                 <div>
                     {this.filterData().map((item, index) => {
                         return (
-                            <NoticeText
+                            <QnAText
                                 key={index}
                                 number={item.number}
                                 date={item.date}
@@ -75,4 +75,4 @@ class NoticeBoard extends Component {
     }
 }
 
-export default NoticeBoard;
+export default QnABoard;

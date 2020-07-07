@@ -33,7 +33,9 @@ class Guide extends Component {
                         </NavLink>
                     </div>
                     <div className="GuideQnA">
+                        <NavLink to="/QnA">
                         QnA
+                        </NavLink>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,29 @@
+.QnA_Board{
+    width: 1050px;
+    border-bottom: solid 1px #535353;
+    justify-content: space-between;
+    display: flex;
+    height: 60px;
+        .QnA_Type{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            }
+        .QnA_Title{
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            }
+        .QnA_Date{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            }
+    
+}
