@@ -1,7 +1,7 @@
-.Hboard_Contaier{
+.Notice_Contaier{
     max-width: 1250px;
     
-    .Hboard_TopLine{
+    .Notice_TopLine{
         display: flex;
         width: 1050px;
         justify-content: space-between;
@@ -9,35 +9,24 @@
         height: 60px;
         border-top: 1px solid #535353;
         border-bottom: 2px solid #535353;
-        .Hboard_Type{
-            width: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .Hboard_Date{
+        .Notice_Type{
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .Hboard_Title{
+        .Notice_Title{
             width: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .Hboard_People{
+        .Notice_Date{
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
         }   
-        .Hboard_View{
-            width: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
     }
 }

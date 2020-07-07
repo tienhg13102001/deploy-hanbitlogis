@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { data } from "./HanDb";
-import BoardText from './function/BoardText';
+import { data } from "../NoticeDb";
 
-import { Pagination } from "../../Common/Pagination/Pagination";
-import './style/Hboard.scss'
+import { Pagination } from "../../../Common/Pagination/Pagination";
+import './style/NoticeBoard.scss'
+import NoticeText from './NoticeText';
 
 class Hboard extends Component {
     state = {
@@ -44,24 +44,20 @@ class Hboard extends Component {
     }
     render() {
         return (
-            <div className="Hboard_Contaier">
-                <div className="Hboard_TopLine">
-                    <div className="Hboard_Type">번호</div>
-                    <div className="Hboard_Date">작성날</div>
-                    <div className="Hboard_Title">제목</div>
-                    <div className="Hboard_People">작성자</div>
-                    <div className="Hboard_View">조회수</div>
+            <div className="Notice_Contaier">
+                <div className="Notice_TopLine">
+                    <div className="Notice_Type">번호</div>
+                    <div className="Notice_Title">제목</div>
+                    <div className="Notice_Date">작성날</div>
                 </div>
                 <div>
                     {this.filterData().map((item, index) => {
                         return (
-                            <BoardText
+                            <NoticeText
                                 key={index}
                                 number={item.number}
                                 date={item.date}
                                 title={item.title}
-                                people={item.people}
-                                view={item.view}
                             />
                         )
                     })}

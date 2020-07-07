@@ -1,42 +1,29 @@
-.Board{
+.Notice_Board{
     width: 1050px;
     border-bottom: solid 1px #535353;
     justify-content: space-between;
     display: flex;
-        .Han_Type{
-            width: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60px;
-            }
-        .Han_Date{
+    height: 60px;
+        .Notice_Type{
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
-        .Han_Title{
+        .Notice_Title{
             width: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
-        .Han_People{
+        .Notice_Date{
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
-        .Han_View{
-            width: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60px;
-        }
     
 }

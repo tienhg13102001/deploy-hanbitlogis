@@ -28,7 +28,9 @@ class Guide extends Component {
                         </NavLink>
                     </div>
                     <div className="GuideNotice">
-                        공지사항
+                        <NavLink to="/Notice">
+                            공지사항
+                        </NavLink>
                     </div>
                     <div className="GuideQnA">
                         QnA
