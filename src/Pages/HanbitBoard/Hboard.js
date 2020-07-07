@@ -45,11 +45,6 @@ class Hboard extends Component {
     render() {
         return (
             <div className="Hboard_Contaier">
-                <div className="Han_TitleBox">
-                    <div className="Hanbit_Title">
-                        한빛 게시판
-                    </div>
-                </div>
                 <div className="Hboard_TopLine">
                     <div className="Hboard_Type">번호</div>
                     <div className="Hboard_Date">작성날</div>
@@ -57,7 +52,7 @@ class Hboard extends Component {
                     <div className="Hboard_People">작성자</div>
                     <div className="Hboard_View">조회수</div>
                 </div>
-                <div className="Hboard_Box">
+                <div>
                     {this.filterData().map((item, index) => {
                         return (
                             <BoardText

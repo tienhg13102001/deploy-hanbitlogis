@@ -23,7 +23,9 @@ class Guide extends Component {
                         </NavLink>
                     </div>
                     <div className="GuideBoard">
-                        한빛 게시판
+                        <NavLink to="/HanbitBoard">
+                            한빛 게시판
+                        </NavLink>
                     </div>
                     <div className="GuideNotice">
                         공지사항

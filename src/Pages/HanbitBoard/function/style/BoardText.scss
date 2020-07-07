@@ -1,41 +1,45 @@
-.BoardTextBox{
+.Board{
     max-width: 1050px;
-    .Hanbit_Text{
-        display: flex;
-        max-width: 1050px;
-        justify-content: center;
-        align-items: center;
-        height: 60px;
-        border-bottom: solid 1px #707070;
+    display: flex;
         .Han_Type{
             width: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-bottom: solid 1px #535353;
+            height: 60px;
             }
         .Han_Date{
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-bottom: solid 1px #535353;
+            height: 60px;
             }
         .Han_Title{
             width: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-bottom: solid 1px #535353;
+            height: 60px;
             }
         .Han_People{
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-bottom: solid 1px #535353;
+            height: 60px;
             }
         .Han_View{
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-bottom: solid 1px #535353;
+            height: 60px;
         }
-    }
+    
 }

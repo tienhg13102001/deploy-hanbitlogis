@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Hboard from '../../Pages/HanbitBoard/Hboard';
+import Hanbit from '../../Pages/HanbitBoard/Hanbit';
 
 class HanbitRouter extends Component {
     render() {
         return (
             <div>
-                <Hboard></Hboard>
+                <Hanbit></Hanbit>
             </div>
         );
     }
