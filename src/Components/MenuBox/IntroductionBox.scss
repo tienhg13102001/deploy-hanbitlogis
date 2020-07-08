@@ -8,16 +8,32 @@
         color: #535353;
         padding-bottom: 40px;
     }
-    .Line{
-        font-size: 14px;
-        padding-bottom: 19px;
-        
-    }
     >a{
         text-decoration: none;
-        color: #535353;
+        color: #a38383;
     }
     >a:active{
         color: #da2320;
+    }
+    .IntroductionBox_navlink_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        padding-bottom: 19px;
+        position: relative;
+        text-decoration: none;
+        &.active{
+            >div{
+                color: red;
+            }
+        }
+        >div{
+            color: black;
+        }
+        >img{
+           position: absolute;
+           right: -10px;
+        }
     }
 }

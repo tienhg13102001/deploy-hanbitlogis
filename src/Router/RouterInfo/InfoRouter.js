@@ -6,7 +6,7 @@ class InfoRouter extends Component {
     render() {
         return (
             <div>
-                <Analysis></Analysis>
+                <Analysis {...this.props}></Analysis>
             </div>
         );
     }

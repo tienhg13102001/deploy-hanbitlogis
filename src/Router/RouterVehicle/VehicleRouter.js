@@ -5,7 +5,7 @@ class Vehicle extends Component {
     render() {
         return (
             <div>
-                <OneCar></OneCar>
+                <OneCar {...this.props}></OneCar>
             </div>
         );
     }

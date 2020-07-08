@@ -11,12 +11,12 @@ import TitleBox from './function/TitleBox';
 class Hanbit extends Component {
     render() {
         return (
-            <div className="HanbitB_Contatiner">
+            <div className="Hanbit_Contatiner">
                 <div className="TopBanner">
                     <BoardBanner></BoardBanner>
                 </div>
-                <div className="CeoContents">
-                    <HanbitBox></HanbitBox>
+                <div className="Hanbit_Contents">
+                    <HanbitBox {...this.props}></HanbitBox>
                     <div>
                         <TitleBox></TitleBox>
                         <BoardText></BoardText>

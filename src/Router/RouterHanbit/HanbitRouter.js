@@ -5,7 +5,7 @@ class HanbitRouter extends Component {
     render() {
         return (
             <div>
-                <Hanbit></Hanbit>
+                <Hanbit {...this.props}></Hanbit>
             </div>
         );
     }

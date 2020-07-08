@@ -14,7 +14,7 @@ class App extends Component {
         <Route component={Navigation} path={"/"}></Route>
       {
         Pages().map(({exact, component, path})=>{
-          return <Route exact={exact} component={component} isMobile = {this.isMobile} path={path}></Route>
+          return <Route key={path} exact={exact} component={component} isMobile = {this.isMobile} path={path}></Route>
         })
       }
       <MainSlick></MainSlick>

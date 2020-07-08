@@ -8,13 +8,26 @@
         color: #535353;
         padding-bottom: 40px;
     }
-    .Line{
+    .HanbitBoard_navlink_container{
+        display: flex;
+        align-items: center;
+        justify-content: left;
         font-size: 14px;
         padding-bottom: 19px;
-        
-    }
-    >a{
+        position: relative;
         text-decoration: none;
-        color: #070707;
+        &.active{
+            >div{
+                color: red;
+            }
+        }
+        >div{
+            color: black;
+        }
+        >img{
+           position: absolute;
+           left: 100px;
+        }
     }
+    
 }

@@ -3,6 +3,8 @@ import './IntroductionBox.scss'
 import { NavLink } from 'react-router-dom';
 import './InfoBox.scss'
 
+import ArrowRight from '../../_asset/image/common/red-next-icon.png';
+
 class InfoBox extends Component {
     render() {
         return (
@@ -10,14 +12,17 @@ class InfoBox extends Component {
                 <div className="Title">
                     지입 정보
                 </div>
-                <NavLink to="/Info">
+                <NavLink className="InfoBox_navlink_container" to={`${this.props.match.path}/analysis`}>
                     <div className="Line">지입 분석</div>
+                    {`${this.props.location.pathname}` === "/Info/analysis"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
-                <NavLink to="/Operation">
-                    <div className="Line">차량운영분석</div>
+                <NavLink className="InfoBox_navlink_container" to={`${this.props.match.path}/operation`}>
+                    <div className="Line">차량운용분석</div>
+                    {`${this.props.location.pathname}` === "/Info/operation"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
-                <NavLink to="/TestGuide">
-                <div className="Line">자격증 가이드</div>
+                <NavLink className="InfoBox_navlink_container" to={`${this.props.match.path}/testguide`}>
+                    <div className="Line">자격증 가이드</div>
+                    {`${this.props.location.pathname}` === "/Info/testguide"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
             </div>
         );

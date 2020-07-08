@@ -1,15 +1,15 @@
 .TestGuide_Container{
-    max-width: 1250px;
+    max-width: 1050px;
     margin: auto;
     .TopBanner{
 
     }
-    .CeoContents{
+    .Analysis_Contents{
         display: flex;
+        flex-direction: column;
+        max-width: 1050px;
     }
     .Contents {
-        max-width: 1050px;
-        margin-left: 200px;
-        padding-top: 50px;
+        
     }
 }

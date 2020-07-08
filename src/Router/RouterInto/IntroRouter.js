@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import CeoPage from '../../Pages/Introduction/CeoPage';
+import Introduction from '../../Pages/Introduction/Intoduction';
 
 class IntroRouter extends Component {
     render() {
         return (
             <div>
-                <CeoPage></CeoPage>
+                <Introduction {...this.props}></Introduction>
             </div>
         );
     }

@@ -2,28 +2,34 @@ import React, { Component } from 'react';
 import './CarMenu.scss'
 import { NavLink } from 'react-router-dom';
 
-class InfoBox extends Component {
+import ArrowRight from '../../_asset/image/common/red-next-icon.png';
+
+class CarMenu extends Component {
     render() {
         return (
             <div className="CarMenuBox">
                 <div className="Title">
                     당사차량
                 </div>
-                <NavLink to="/Vehicle">
+                <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/onevehicle`}>
                     <div className="Line">당사차량[1톤]</div>
+                    {`${this.props.location.pathname}` === "/Vehicle/onevehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
-                <NavLink to="/TwoVehicle">
-                    <div className="Line">당사차량[2.5톤]</div>
+                <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/twovehicle`}>
+                    <div className="Line">당사차랑[2톤]</div>
+                    {`${this.props.location.pathname}` === "/Vehicle/twovehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
-                <NavLink to="/ThreeVehicle">
-                    <div className="Line">당사차량[4.5톤]</div>
+                <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/threevehicle`}>
+                    <div className="Line">당사차랑[4.5톤]</div>
+                    {`${this.props.location.pathname}` === "/Vehicle/threevehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
-                <NavLink to="FourVehicle">
-                    <div className="Line">당사차량[5톤]</div>
+                <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/fourvehicle`}>
+                    <div className="Line">당사차랑[4.5톤]</div>
+                    {`${this.props.location.pathname}` === "/Vehicle/fourvehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
             </div>
         );
     }
 }
 
-export default InfoBox;
+export default CarMenu;

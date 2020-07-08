@@ -8,13 +8,33 @@
         color: #535353;
         padding-bottom: 40px;
     }
-    .Line{
-        font-size: 14px;
-        padding-bottom: 19px;
-        
-    }
     >a{
         text-decoration: none;
-        color: #070707;
+        color: #a38383;
+    }
+    >a:active{
+        color: #da2320;
+    }
+    .Company_Car_navlink_container{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-size: 14px;
+        padding-bottom: 19px;
+        position: relative;
+        text-decoration: none;
+        &.active{
+            >div{
+                color: red;
+            }
+        }
+        >div{
+            color: black;
+        }
+        >img{
+           position: absolute;
+           left: 110px;
+        }
+
     }
 }

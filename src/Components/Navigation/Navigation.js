@@ -29,13 +29,13 @@ class Navigation extends Component {
                         <div onClick={() => this.movePage("/Sign")} className="Sign_Up">회원가입</div>
 
                         <BurMenu className="Menu_Button" right customCrossIcon={<img src={closeicon} alt='closeicon' />} customBurgerIcon={<img className='MenuIcon' src={menuicon} alt=""></img>}>
-                            <NavLink exact={true} id="home" ClassName="menu-item" to="/">한빛로지스</NavLink>
-                            <NavLink id="Company" ClassName="menu-item" to="/Intro">회사소개</NavLink>
-                            <NavLink id="Info" ClassName="menu-item" to="/Info">지입정보</NavLink>
-                            <NavLink id="Car" ClassName="menu-item" to="/Vehicle">당사차량</NavLink>
-                            <NavLink id="Board" ClassName="menu-item" to="/HanbitBoard">한빛게시판</NavLink>
-                            <NavLink id="Notice" ClassName="menu-item" to="/Notice">공지사항</NavLink>
-                            <NavLink id="QnA" ClassName="menu-item" to="/QnA">QnA</NavLink>
+                            <NavLink exact={true} id="home" className="menu-item" to="/">한빛로지스</NavLink>
+                            <NavLink id="Company" className="menu-item" to="/Intro">회사소개</NavLink>
+                            <NavLink id="Info" className="menu-item" to="/Info">지입정보</NavLink>
+                            <NavLink id="Car" className="menu-item" to="/Vehicle">당사차량</NavLink>
+                            <NavLink id="Board" className="menu-item" to="/HanbitBoard">한빛게시판</NavLink>
+                            <NavLink id="Notice" className="menu-item" to="/Notice">공지사항</NavLink>
+                            <NavLink id="QnA" className="menu-item" to="/QnA">QnA</NavLink>
                         </BurMenu>
                     </div>
                 </div>
