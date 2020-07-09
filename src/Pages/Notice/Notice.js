@@ -16,7 +16,7 @@ class Notice extends Component {
                     <NoticeBanner></NoticeBanner>
                 </div>
                 <div className="CeoContents">
-                    <NoticeBox></NoticeBox>
+                    <NoticeBox {...this.props}></NoticeBox>
                     <div>
                         <NoticeTitleBox></NoticeTitleBox>
                         <NoticeText></NoticeText>

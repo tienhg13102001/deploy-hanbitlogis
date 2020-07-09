@@ -5,7 +5,7 @@ class NoticeRouter extends Component {
     render() {
         return (
             <div>
-                <Notice></Notice>
+                <Notice {...this.props}></Notice>
             </div>
         );
     }

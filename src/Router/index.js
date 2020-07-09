@@ -6,7 +6,6 @@ import Intro from './RouterInto/IntroRouter';
 import Info from './RouterInfo/InfoRouter';
 import Vehicle from './RouterVehicle/VehicleRouter';
 import InVehicle from './RouterVehicle/InVehicleRouter';
-import InVehicleTwo from './RouterVehicle/InVehicleTwoRouter';
 import HanbitBoard from './RouterHanbit/HanbitRouter';
 import InHanbitBoard from './RouterHanbit/InHanbitRouter';
 import Notice from './RouterNotice/NoticeRouter';
@@ -61,12 +60,6 @@ var routes = [
     path:"/InVehicle",
     component:InVehicle,
     menuName:"InVehicle"
-   
-},
-{
-    path:"/InVehicleTwo",
-    component:InVehicleTwo,
-    menuName:"InVehicleTwo"
    
 },
 {

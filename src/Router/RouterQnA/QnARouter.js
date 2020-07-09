@@ -5,7 +5,7 @@ class QnARouter extends Component {
     render() {
         return (
             <div>
-                <QnA></QnA>
+                <QnA {...this.props}></QnA>
             </div>
         );
     }

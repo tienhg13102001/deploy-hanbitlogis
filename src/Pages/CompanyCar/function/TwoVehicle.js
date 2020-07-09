@@ -34,9 +34,9 @@ class TwoVehicle extends Component {
                         {data2.slice(0, this.state.visible).map((item, index) => {
                             return (
                                 <div className="Board_List" key={index}>
-                                    <NavLink to="/InVehicleTwo"><div className="List_One">{item.number}</div></NavLink>
-                                    <NavLink to="/InVehicleTwo"><div className="List_Two">{item.content}</div></NavLink>
-                                    <NavLink to="/InVehicleTwo"><div className="List_Three">{item.kind}</div></NavLink>
+                                   <div className="List_One">{item.number}</div>
+                                   <div className="List_Two">{item.content}</div>
+                                   <div className="List_Three">{item.kind}</div>
                                 </div>
                             )
                         })}

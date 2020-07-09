@@ -14,7 +14,7 @@ class QnA extends Component {
                     <QnABanner></QnABanner>
                 </div>
                 <div className="CeoContents">
-                    <QnABox></QnABox>
+                    <QnABox {...this.props}></QnABox>
                     <div>
                         <QnATitleBox></QnATitleBox>
                         <QnAText></QnAText>

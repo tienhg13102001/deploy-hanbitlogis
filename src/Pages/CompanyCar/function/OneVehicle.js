@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './style/OneVehicle.scss'
 import { data } from './BoardDb'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import BoardButton from '../../../Common/BoardButton';
 
 class OneVehicle extends Component {
@@ -36,9 +36,9 @@ class OneVehicle extends Component {
                         {data.slice(0, this.state.visible).map((item, index) => {
                             return (
                                 <div className="Board_List" key={index}>
-                                    <NavLink to="/InVehicle"><div className="List_One">{item.number}</div></NavLink>
-                                    <NavLink to="/InVehicle"><div className="List_Two">{item.content}</div></NavLink>
-                                    <NavLink to="/InVehicle"><div className="List_Three">{item.kind}</div></NavLink>
+                                    <Link to="/InVehicle"><div className="List_One">{item.number}</div></Link>
+                                    <Link to="/InVehicle"><div className="List_Two">{item.content}</div></Link>
+                                    <Link to="/InVehicle"><div className="List_Three">{item.kind}</div></Link>
                                 </div>
                             )
                         })}
