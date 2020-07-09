@@ -22,24 +22,24 @@ class CommunityReviewWriter extends Component {
         const { title, name, description, password } = this.state
         return (
             <div className="Write_HanbitBoard_Container">
-                <h2 lang='en'>후기 글쓰기</h2>
-                <div className="table">
-                    <div className="row">
-                        <div lang='en' className='leftmenu'>제목</div>
+                <div className="Write_HanbitBoard_Title">후기 글쓰기</div>
+                <div className="Write_HanbitBoard_table">
+                    <div className="Write_Title">
+                        <div className='leftmenu'>제목</div>
                         <div><input name="title" value={title} onChange={this.handleChange} placeholder="제목을 입력해주세요."></input></div>
                     </div>
                     <div className="row">
                         <div>
-                            <div lang='en' className='leftmenu'>이름</div>
+                            <div className='leftmenu'>이름</div>
                             <div><input name="name" value={name} onChange={this.handleChange} placeholder="이름을 입력해주세요."></input></div>
                         </div>
                         <div>
-                            <div lang='en' className='leftmenu'>비밀번호</div>
+                            <div className='leftmenu'>비밀번호</div>
                             <div><input type="password" name="password" value={password} onChange={this.handleChange} placeholder="비밀번호를 입력해주세요."></input></div>
                         </div>
                     </div>
                     <div className="row" style={{ border: 0 }}>
-                        <div lang='en' className='leftmenu'>내용</div>
+                        <div className='leftmenu'>내용</div>
                         <div><input name="description" value={description} onChange={this.handleChange} placeholder="내용을 입력해주세요."></input></div>
                     </div>
                 </div>

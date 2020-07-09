@@ -55,19 +55,20 @@ class Hboard extends Component {
                 <div>
                     {this.filterData().map((item, index) => {
                         return (
+                            <NavLink className="Link" to="/HanbitBoard/InBoard">
                             <BoardText
                                 key={index}
                                 number={item.number}
                                 date={item.date}
                                 title={item.title}
                                 people={item.people}
-                            />
+                            /></NavLink>
                         )
                     })}
                     <div className="Btn_Area">
                         
                     <div className="Write_Button">
-                    <NavLink to="/WriteBoard">글쓰기</NavLink>
+                    <NavLink to="/HanbitBoard/WriteBoard">글쓰기</NavLink>
                     </div>
                     
                     </div>

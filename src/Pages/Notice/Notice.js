@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
 import './style/Notice.scss'
-
+import {Route} from 'react-router-dom';
 import NoticeBanner from './function/NoticeBanner';
 import NoticeBox from '../../Components/MenuBox/NoticeBox';
-import NoticeText from './function/NoticeText';
-import NoticeBoard from '../Notice/function/NoticeBoard';
 import NoticeTitleBox from './function/NoticeTitleBox';
 
 class Notice extends Component {
@@ -17,11 +15,7 @@ class Notice extends Component {
                 </div>
                 <div className="CeoContents">
                     <NoticeBox {...this.props}></NoticeBox>
-                    <div>
-                        <NoticeTitleBox></NoticeTitleBox>
-                        <NoticeText></NoticeText>
-                        <NoticeBoard></NoticeBoard>
-                    </div>
+                    <Route exact path={`${this.props.match.path}`} component={NoticeTitleBox}></Route>
                 </div>
             </div>
         );
