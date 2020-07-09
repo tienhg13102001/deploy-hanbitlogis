@@ -10,6 +10,7 @@ import HanbitBoard from './RouterHanbit/HanbitRouter';
 import InHanbitBoard from './RouterHanbit/InHanbitRouter';
 import Notice from './RouterNotice/NoticeRouter';
 import QnA from './RouterQnA/QnARouter';
+import WriteBoard from './RouterHanbit/WriteRouter';
 
 var routes = [
  {
@@ -84,6 +85,12 @@ var routes = [
     path:"/QnA",
     component:QnA,
     menuName:"QnA"
+   
+},
+{
+    path:"/WriteBoard",
+    component:WriteBoard,
+    menuName:"WriteBoard"
    
 },
 

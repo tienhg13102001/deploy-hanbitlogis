@@ -1,0 +1,159 @@
+.Write_HanbitBoard_Container{
+    max-width: 822px;
+    margin: 70px auto 100px auto;
+    h2{
+        font-size : 22px;
+        padding-left: 10px;
+        text-align: left;
+        font-weight : 100;
+    }
+    .privacy-wrap{
+        text-align: left;
+        .title{
+            font-size: 14.5px;
+            text-align: inherit;
+            margin-bottom: 14px;
+            padding-left: 10px;
+        }
+        .privacy-box{
+            font-size: 13px;
+            text-align: inherit;
+            color: #333333;
+            padding: 26px 21px;
+            background: #f0f0f2;
+            margin-bottom: 17px;
+            >div{
+                text-align: inherit;
+            }
+        }
+        .checkbox{
+            text-align: inherit;
+            input[type="checkbox"]{
+                display: none;
+                ~ label{
+                // background: url("../../_asset/image/inputbutton.png");
+                padding-left: 25px;
+                margin-left: 10px;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                background-position-y: -24px;
+                padding-right: 15px;
+                font-size: 13px;
+                }
+                &:checked{
+                    ~ label{
+                        background-position-y:1px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .register-button-container{
+        margin-top : 30px;
+        display: flex;
+        justify-content: center;
+        .register-button{
+            width: 223px;
+            border: 1px solid rgba(51, 51, 51, 0.9);
+            color: #1f2738;
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: 14px;
+                padding: 9px 22px;
+                margin: 0;
+            }
+        }
+    }
+}
+.leftmenu{
+    font-weight : 100;
+}
+
+.CommunityReviewWriter-container .table{
+    border-top: 1px solid #1f2738;
+    border-bottom: 1px solid #1f2738;
+    margin-bottom: 30px;
+    >.row{
+        display: flex;
+        padding: 10px 0;
+        padding-left: 10px;
+        font-size: 14.5px;
+        width: 100%;
+        border-bottom: 1px solid #1f2738;
+        &:nth-child(1) , &:nth-child(3){
+            >div{
+                &:first-child{
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    flex-basis: 100px;
+                }
+                &:last-child{
+                    flex-basis: 100%;
+                }
+                input{
+                    text-align: left;
+                    margin-right: 10px;
+                    padding: 12px 12px;
+                    width: 95%;
+                    font-size: 13px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    border: 1px solid #d2d4d7;
+                }
+            }
+        }
+        &:nth-child(2){
+            // 두번째 row
+            >div{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                &:nth-child(2){
+                    justify-content: flex-end;
+                }
+                >div{
+                    &:nth-child(odd){
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-grow: 0;
+                        flex-shrink: 0;
+                        flex-basis: 100px;
+                    }
+                    &:nth-child(even){
+                        flex-basis: 259px;
+                        input{
+                            text-align: left;
+                            padding: 12px 12px;
+                            margin-right: 10px;
+                            width: 87%;
+                            font-size: 13px;
+                            box-sizing: border-box;
+                            border: 1px solid #d2d4d7;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(3){
+            >div{
+                &:first-child{
+                    display: flex;
+                    align-items: flex-start;
+                }
+                input{
+                    min-height: 248px;
+                }
+            }
+            
+        }
+    }
+}

@@ -5,7 +5,7 @@ class InHanbitRouter extends Component {
     render() {
         return (
             <div>
-                <InHanbitBoard></InHanbitBoard>
+                <InHanbitBoard {...this.props}></InHanbitBoard>
             </div>
         );
     }

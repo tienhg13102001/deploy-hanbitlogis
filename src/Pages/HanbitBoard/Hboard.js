@@ -4,6 +4,7 @@ import BoardText from './function/BoardText';
 
 import { Pagination } from "../../Common/Pagination/Pagination";
 import './style/Hboard.scss'
+import { NavLink } from 'react-router-dom';
 
 class Hboard extends Component {
     state = {
@@ -63,6 +64,13 @@ class Hboard extends Component {
                             />
                         )
                     })}
+                    <div className="Btn_Area">
+                        
+                    <div className="Write_Button">
+                    <NavLink to="/WriteBoard">글쓰기</NavLink>
+                    </div>
+                    
+                    </div>
                 </div>
                 <Pagination
                     currentPage={this.state.currentPage}
