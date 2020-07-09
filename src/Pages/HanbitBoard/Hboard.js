@@ -47,10 +47,9 @@ class Hboard extends Component {
             <div className="Hboard_Contaier">
                 <div className="Hboard_TopLine">
                     <div className="Hboard_Type">번호</div>
-                    <div className="Hboard_Date">작성날</div>
-                    <div className="Hboard_Title">제목</div>
                     <div className="Hboard_People">작성자</div>
-                    <div className="Hboard_View">조회수</div>
+                    <div className="Hboard_Title">제목</div>
+                    <div className="Hboard_Date">작성날</div>
                 </div>
                 <div>
                     {this.filterData().map((item, index) => {
@@ -61,7 +60,6 @@ class Hboard extends Component {
                                 date={item.date}
                                 title={item.title}
                                 people={item.people}
-                                view={item.view}
                             />
                         )
                     })}

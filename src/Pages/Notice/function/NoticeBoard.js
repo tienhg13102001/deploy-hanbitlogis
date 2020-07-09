@@ -47,6 +47,7 @@ class NoticeBoard extends Component {
             <div className="Notice_Contaier">
                 <div className="Notice_TopLine">
                     <div className="Notice_Type">번호</div>
+                    <div className="Notice_People">작성자</div>
                     <div className="Notice_Title">제목</div>
                     <div className="Notice_Date">작성날</div>
                 </div>
@@ -58,6 +59,7 @@ class NoticeBoard extends Component {
                                 number={item.number}
                                 date={item.date}
                                 title={item.title}
+                                people= {item.people}
                             />
                         )
                     })}

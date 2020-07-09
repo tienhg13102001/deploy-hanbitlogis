@@ -22,8 +22,6 @@ class InHanbit extends Component {
                     </div>
                     <div className="In_Menu">
                         <div className="In_Menu_People">작성자</div>
-                        <div className="In_Menu_View">조회수</div>
-                        <div className="In_Menu_Comment">댓글 수</div>
                     </div>
                     <div className="In_Menu_Text">
                         안녕하세요.<br/>

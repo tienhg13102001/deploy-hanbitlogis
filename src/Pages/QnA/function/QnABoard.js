@@ -47,6 +47,7 @@ class QnABoard extends Component {
             <div className="QnA_Contaier">
                 <div className="QnA_TopLine">
                     <div className="QnA_Type">번호</div>
+                    <div className="QnA_People">작성자</div>
                     <div className="QnA_Title">제목</div>
                     <div className="QnA_Date">작성날</div>
                 </div>
@@ -56,6 +57,7 @@ class QnABoard extends Component {
                             <QnAText
                                 key={index}
                                 number={item.number}
+                                people={item.people}
                                 date={item.date}
                                 title={item.title}
                             />
