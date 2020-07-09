@@ -6,7 +6,7 @@ class License extends Component {
     render() {
         return (
             <div className="LicenseContainer">
-                <Link className="Link" to="/TestGuide">
+                <Link className="Link" to="/Info/testguide">
                     <div className="TextBox">
                         <div className="Title">
                             자격증<br />

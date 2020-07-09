@@ -25,8 +25,7 @@ class Navigation extends Component {
                         </div>
                         <Guide />
                     <div className="Member_Box">
-                        <div onClick={() => this.movePage("/Login")} className="Login">로그인</div>
-                        <div onClick={() => this.movePage("/Sign")} className="Sign_Up">회원가입</div>
+                        
 
                         <BurMenu className="Menu_Button" right customCrossIcon={<img src={closeicon} alt='closeicon' />} customBurgerIcon={<img className='MenuIcon' src={menuicon} alt=""></img>}>
                             <NavLink exact={true} id="home" className="menu-item" to="/">한빛로지스</NavLink>

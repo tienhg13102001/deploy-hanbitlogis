@@ -6,7 +6,7 @@ class Location extends Component {
     render() {
         return (
             <div className="Container">
-                <Link className="Link" to="/Map">
+                <Link className="Link" to="/Intro/come">
                 <div className="TextBox">
                     <div className="Title">
                         오시는길
