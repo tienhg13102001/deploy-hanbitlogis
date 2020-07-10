@@ -7,35 +7,35 @@ class Guide extends Component {
         return (
             <div className="GuideContainer">
                 <div className="GuideTop">
-                    <div className="GuideAbout">
-                        <NavLink to="/Intro">
+                    <div className="GuideAbout" onClick={() => this.props.onClick("Intro")}>
+                        <div to="/Intro">
                             회사소개
-                        </NavLink>
+                        </div>
                     </div>
-                    <div className="GuideInfo">
-                        <NavLink to="/Info">
+                    <div className="GuideInfo"  onClick={() => this.props.onClick("Info")}>
+                        <div to="/Info">
                             지입정보
-                        </NavLink>
+                        </div>
                     </div>
-                    <div className="GuideCar">
-                        <NavLink to="/Vehicle">
+                    <div className="GuideCar"  onClick={() => this.props.onClick("Vehicle")}>
+                        <div to="/Vehicle">
                             당사차량
-                        </NavLink>
+                        </div>
                     </div>
-                    <div className="GuideBoard">
-                        <NavLink to="/HanbitBoard">
+                    <div className="GuideBoard"  onClick={() => this.props.onClick("HanbitBoard")}>
+                        <div to="/HanbitBoard">
                             한빛 게시판
-                        </NavLink>
+                        </div>
                     </div>
-                    <div className="GuideNotice">
-                        <NavLink to="/Notice">
+                    <div className="GuideNotice"  onClick={() => this.props.onClick("Notice")}>
+                        <div to="/Notice">
                             공지사항
-                        </NavLink>
+                        </div>
                     </div>
-                    <div className="GuideQnA">
-                        <NavLink to="/QnA">
+                    <div className="GuideQnA"  onClick={() => this.props.onClick("QnA")}>
+                        <div to="/QnA">
                         QnA
-                        </NavLink>
+                        </div>
                     </div>
                 </div>
             </div>

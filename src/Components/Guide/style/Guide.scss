@@ -3,6 +3,9 @@
     .GuideTop {
         display: flex;
         max-width: 600px;
+        >div{
+            padding: 15px 0 !important;
+        }
         .GuideAbout{
             font-weight: 600;
             display: flex;

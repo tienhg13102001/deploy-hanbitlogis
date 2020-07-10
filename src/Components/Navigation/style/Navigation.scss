@@ -1,18 +1,45 @@
 .NaviContainer{
     display: flex;
     justify-content: center;
-    width : 100%;
-    max-width: 1230px;
+ 
     margin: auto;
-    height: 79px;
-    
+    position: relative;
+    .NaviWrap{
+      width : 100%;
+      max-width: 1230px;
+    }
+    .NaviContainer_submenu_container{
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      border-top: 1px solid #535353;
+      bottom: -55px;
+      z-index: 2;
+      .NaviContainer_submenu_wrap{
+        width : 100%;
+        max-width: 1230px;
+        margin: auto;
+        bottom: 0;
+        display: flex;
+        padding: 17px 0;
+        padding-left: 500px;
+        >div{
+          font-size: 15px;
+          padding-right: 15px;
+        }
+        >a {
+          text-decoration: none;
+          color: #535353;
+          padding: 0 30px;
+        }
+      }
+    }
     .TopNavi{
         display: flex;
         justify-content: space-between;
         max-width: 1230px;
         width : 100%;
         align-items: center;
-        height: 79px;
         .Menu_Logo{
           cursor: pointer;
         }
