@@ -1,24 +1,37 @@
 .BannerContainer {
     width: 100%;
-    .MainSwiperBox{
-        height: 529px;
-        .MainSwiperImgBox{
-            img {
+    .BannerBox{
+        height: 400px;
+        .Slick_box{
+            img{
                 width: 100%;
+                height: 400px;
             }
         }
-        .TextBox {
-            position: relative;
-            bottom: 350px;
-            left: 600px;
-            .NewText{
-                font-weight: 600;
-                font-size: 42.5px;
-                padding-bottom: 30px;
-            }
-            .Text {
-                font-size: 21.5px;
-            }
+    }
+    .Banner_TextBox{
+        position: relative;
+        z-index: 1;
+        top: -300px;
+        right: -800px;
+        .Banner_Title{
+            font-weight: 600;
+            max-width: 440px;
+            width: 100%;
+            font-size: 42.5px;
+            line-height: 1.34;
+            color: #333333;
+            text-align: left;
+            margin-bottom: 30px;
         }
+        .Banner_Subtitle{
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Banner_TextBox{
+        display: none;
     }
 }

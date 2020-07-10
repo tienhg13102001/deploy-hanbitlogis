@@ -99,8 +99,6 @@ class Navigation extends Component {
                         </div>
                         <Guide onClick={this.handleClickMenu} />
                         <div className="Member_Box">
-
-
                             <BurMenu className="Menu_Button" right customCrossIcon={<img src={closeicon} alt='closeicon' />} customBurgerIcon={<img className='MenuIcon' src={menuicon} alt=""></img>}>
                                 <NavLink exact={true} id="home" className="menu-item" to="/">한빛로지스</NavLink>
                                 <NavLink id="Company" className="menu-item" to="/Intro">회사소개</NavLink>

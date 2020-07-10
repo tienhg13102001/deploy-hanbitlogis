@@ -37,7 +37,7 @@
     .TopNavi{
         display: flex;
         justify-content: space-between;
-        max-width: 1230px;
+        max-width: 1250px;
         width : 100%;
         align-items: center;
         .Menu_Logo{
@@ -206,3 +206,8 @@
         
   }
 
+@media screen and (max-width: 768px) {
+  .NaviContainer{
+    
+  }
+}

@@ -1,48 +1,48 @@
 import React, { Component } from 'react';
 import './style/MainBanner.scss';
-import Swiper from 'react-id-swiper';
+
 
 import swiper01 from '../../_asset/image/main/mine-banner.png'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 class MainBanner extends Component {
     list = [
         { swiperimg: swiper01 },
+        { swiperimg: swiper01 },
+        { swiperimg: swiper01 },
     ]
     render() {
-        const params = {
-            slidesPerView: '1',
-            spaceBetween: 30,
-            pagination: {
-                el: 'swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            },
-        }
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
         return (
             <div className="BannerContainer">
-                <div className='MainSwiperBox'>
-                    <Swiper {...params}>
+                <div className='BannerBox'>
+                    <Slider {...settings}>
                         {this.list.map((item, index) => {
                             return (
-                                <div key={index} className='MainSwiperImgBox'>
-                                    <img className='MainSwiperImg' src={item.swiperimg} alt='이미지 슬라이드'></img>
+                                <div className="Slick_box" key={index}>
+                                    <img src={item.swiperimg} alt='slick'></img>
                                 </div>
                             )
                         })}
-                        <div className="TextBox">
-                            <div className="NewText">
-                                한빛로지스 홈페이지가 <br />
+                    </Slider>
+                    <div className="Banner_TextBox">
+                        <div className="Banner_Title">
+                            한빛로지스 홈페이지가<br />
                             새롭게 바뀌었습니다!
                         </div>
-                            <div className="Text">
-                                앞으로도 더욱 정진하는 한빛로지스가 되겠습니다.
+                        <div className="Banner_Subtitle">
+                            앞으로도 더욱 정진하는 한빛로지스가 되겠습니다.
                         </div>
-                        </div>
-                    </Swiper>
+                    </div>
                 </div>
             </div>
         );
