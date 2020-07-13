@@ -1,4 +1,6 @@
 .Type_Container {
+    max-width: 1050px;
+    width: 100%;
     padding-top: 100px;
     .Type_TextBox {
         .Type_Text {
@@ -22,7 +24,8 @@
             }
         }
         .Chart_Box{
-            width: 1050px;
+            max-width: 1050px;
+            width: 100%;
             .TypeBox{
                 height: 63px;
                 display: flex;
@@ -35,7 +38,9 @@
                 }
             }
             .Text_List{
-                width: 1050px;
+                border-bottom: solid 1px #e5e5e5;
+                max-width: 1050px;
+                width: 100%;
                 height: 63px;
                 display: flex;
                 align-items: center;
@@ -46,6 +51,42 @@
                     width: 500px;
                     display: flex;
                     justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Type_Container{
+        padding-top: 50px;
+        .Type_TextBox{
+            .Type_Text{
+                font-size: 11px;
+            }
+            .Type_Title{
+                font-size: 20px;
+            }
+        }
+        .Chart {
+            .Chart_TitleBox {
+                .Chart_Title {
+                    font-size: 14px;
+                }
+            }
+            .Chart_Box{
+                
+                .TypeBox{
+                    
+                    .Type{
+                        font-size: 14px;
+                    }
+                }
+                .Text_List{
+                    
+                    .One{
+                        font-size: 12px;
+                    }
                 }
             }
         }

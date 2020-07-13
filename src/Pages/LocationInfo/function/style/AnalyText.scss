@@ -1,4 +1,6 @@
 .Text_Container{
+    max-width: 1050px;
+    width: 100%;
     margin-left: 20px;
     .Analy_TextBox{
         .Analy_Title{
@@ -15,8 +17,29 @@
         }
     }
     .Text{
+        max-width: 1050px;
+        width: 100%;
         font-size: 16px;
         line-height: 1.5;
         color: #707070;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Text_Container{
+        margin-left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        .Analy_TextBox{
+            .Analy_Title{
+                font-size: 20px;
+            }
+            .Analy_Text{
+                font-size: 15px;
+            }
+        }
+        .Text{
+            font-size: 13px;
+        }
     }
 }

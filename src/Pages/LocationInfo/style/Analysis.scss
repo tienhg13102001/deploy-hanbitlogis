@@ -13,3 +13,9 @@
         margin: auto;
     }
 }
+
+@media screen and (max-width:768px) {
+    .CeoContents{
+        flex-direction: column;
+    }
+}

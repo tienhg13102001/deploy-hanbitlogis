@@ -30,3 +30,22 @@
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    .InfoBox{
+        display: flex;
+        max-width: 700px;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        .Title{
+            margin-top: 10px;
+        }
+        .InfoBox_navlink_container {
+            padding: 10px;
+            >img{
+                display: none;
+            }
+        }
+    }
+}
