@@ -27,3 +27,22 @@
     }
     
 }
+
+@media screen and (max-width:768px) {
+    .FooterContainer{
+        .Box{
+            .Info{
+                font-size: 12px;
+            }
+        }
+        .TermsBox{
+            font-size: 10px;
+            .One{
+                display: none;
+            }
+            .Two{
+                display: none;
+            }
+        }
+    }
+}

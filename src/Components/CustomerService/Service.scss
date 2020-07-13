@@ -1,6 +1,7 @@
 .CustomContainer{
     background-image: url(../../_asset/image/main/service.png);
-    width: 610px;
+    max-width: 610px;
+    width: 100%;
     height: 207px;
     margin: 0 15px 0 0;
     .TextBox{
@@ -20,5 +21,11 @@
             font-size: 15px;
             font-weight: 200;
         }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .CustomContainer{
+        margin: 0 0 15px 0;
     }
 }

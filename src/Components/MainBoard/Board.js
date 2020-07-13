@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Board.scss'
 
-import icon from '../../_asset/image/common/add-icon.png'
+import icon from '../../_asset/image/common/add-icon.png';
 
 class Board extends Component {
     list = [
@@ -11,7 +11,6 @@ class Board extends Component {
         { id: 3, text: '당사는 화물 운송 서비스를 제공하고 있는 국내 최고의 물류 전문 회사.....', date: '2022.04.11' },
     ]
     render() {
-
         return (
             <div className="Notice">
                 <div className="TitleBox">
@@ -29,7 +28,6 @@ class Board extends Component {
                             </div>
                         )
                     })}
-
                 </div>
             </div>
         );

@@ -1,6 +1,7 @@
 .RecruitContainer{
     background-image: url(../../../_asset/image/main/banner-04.png);
-    width: 290px;
+    max-width: 290px;
+    width: 100%;
     height: 140px;
     margin: 15px 0px 15px 15px;
     .TextBox{
@@ -13,5 +14,11 @@
         .Text{
             font-size: 15px;
         }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .RecruitContainer {
+        margin: 0;
     }
 }

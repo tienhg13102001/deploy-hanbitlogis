@@ -29,3 +29,22 @@
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    .MainInfoContainer{
+        height: 500px;
+        .MapBox{
+            flex-wrap: wrap;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 520px) {
+    .MainInfoContainer{
+        height: 1000px;
+        .MapBox{
+            flex-wrap: wrap;
+        }
+    }
+}

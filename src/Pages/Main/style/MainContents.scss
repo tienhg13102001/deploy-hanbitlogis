@@ -14,3 +14,18 @@
         padding-bottom: 50px;
     }
 }
+
+@media screen and (max-width:768px) {
+    .Contents{
+        .One_Line{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .Two_Line{
+            display: none;
+            
+        }
+    }
+}

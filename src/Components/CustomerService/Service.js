@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Service.scss'
+import custom from '../../_asset/image/main/service.png';
 
 class Service extends Component {
     render() {
@@ -13,8 +14,8 @@ class Service extends Component {
                         1599-9964
                     </div>
                     <div className="TellBox">
-                        TEL. 010. 7307. 1224 <br/>
-                        FAX. 02. 517. 1493
+                        TEL. 010. 7307. 1224 <br />
+                            FAX. 02. 517. 1493
                     </div>
                 </div>
             </div>
