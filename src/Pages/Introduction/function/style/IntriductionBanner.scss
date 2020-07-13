@@ -20,3 +20,12 @@
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    .IntroBanner{
+        .TextBox{
+            top: 100px;
+            left: 100px;
+        }
+    }
+}

@@ -1,4 +1,6 @@
 .HisContainer{
+    max-width: 1050px;
+    width: 100%;
     height: auto;
     margin-left: 100px;
     .HisTextBox{
@@ -18,13 +20,15 @@
     .His_List{
         border-top: 2px solid #535353;
         border-bottom: 2px solid #535353;
-        width: 1050px;
+        max-width: 1050px;
+        width: 100%;
         .List_Box{
             max-width: 1050px;
             display: flex;
             height: 100px;
             display: flex;
             align-items: center;
+            border-bottom: 1px solid #e5e5e5;
             .Box_Year{
                 width: 80px;
                 font-size: 18px;
@@ -43,6 +47,44 @@
                 width: 310px;
             }
             
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .HisContainer{
+        margin-left: 20px;
+        .HisTextBox{
+            .His_Title{
+                font-size: 20px;
+            }
+            .His_Text{
+                font-size: 15px;
+            }
+        }
+        .His_List{
+            .List_Box{
+                .List_Box{
+                    
+                }
+                .Box_Year{
+                    max-width: 200px;
+                    font-size: 13px;
+                    padding-right: 10px;
+                }
+                .Box_Month{
+                    font-size: 12px;
+                    
+                }
+                .Box_Text{
+                    font-size: 12px;
+                    
+                }
+                .Box_Text2 {
+                    font-size: 12px;
+                    
+                }
+            }
         }
     }
 }

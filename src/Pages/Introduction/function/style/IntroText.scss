@@ -1,5 +1,6 @@
 .TextContainer{
     max-width: 776px;
+    width: 100%;
     margin-left: 85px;
     .Wrap_Line{
         
@@ -21,6 +22,27 @@
             font-size: 16px;
             line-height: 1.5;
             padding-bottom: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .TextContainer{
+        margin-left: 0;
+        .Wrap_Line{
+            padding: 0 20px 0 20px;
+            .Title{
+                font-size: 20px;
+            }
+            .VisitText{
+                font-size: 23px;
+                }
+            .Text{
+                max-width: 830px;
+                width: 100%;
+                font-size: 13px;
+                
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 .ComeContainer{
+    max-width: 1050px;
+    margin-left: 100px;
     height: auto;
-    margin-left: 120px;
     .Come_TextBox{
         padding-top: 65px;
         
@@ -23,8 +24,36 @@
         }
     }
     .Hanbit_Map{
-        width: 1040px;
+        width: 1050px;
         height: 500px;
         margin-bottom: 100px;
     }
+}
+
+@media screen and (max-width:768px) {
+    .ComeContainer{
+        margin-left: 0px;
+        .Come_TextBox{
+            padding-left: 20px;
+            .Come_Title{
+                font-size: 20px;
+                padding-bottom: 25px;
+            }
+            .Come_Box{
+                display: flex;
+                padding-bottom: 15px;
+                .Come_One{
+                    font-size: 13px;
+                }
+                .Come_Two{
+                    font-size: 13px;
+                }
+            }
+        }
+        .Hanbit_Map{
+            max-width: 500px;
+            width: 100%;
+         }
+    }
+    
 }

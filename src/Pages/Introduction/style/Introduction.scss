@@ -9,3 +9,11 @@
         display: flex;
     }
 }
+
+@media screen and (max-width:768px) {
+    .IntroContatiner{
+        .Intro_Contents{
+            flex-direction: column;
+        }
+    }
+}
