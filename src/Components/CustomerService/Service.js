@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Service.scss'
-import custom from '../../_asset/image/main/service.png';
 
 class Service extends Component {
     render() {

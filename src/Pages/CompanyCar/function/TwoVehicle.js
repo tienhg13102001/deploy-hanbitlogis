@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './style/OneVehicle.scss'
 import { data2 } from './BoardDb'
-import { NavLink } from 'react-router-dom';
 import BoardButton from '../../../Common/BoardButton';
 
 class TwoVehicle extends Component {

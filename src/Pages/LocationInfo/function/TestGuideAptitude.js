@@ -11,7 +11,7 @@ import img01 from '../../../_asset/image/locationInfo/examination-icon-4.png';
 import img02 from '../../../_asset/image/locationInfo/examination-icon-5.png';
 import img03 from '../../../_asset/image/locationInfo/examination-icon-6.png';
 import img04 from '../../../_asset/image/locationInfo/examination-icon-7.png';
-import { NavLink } from 'react-router-dom';
+
 class TestGuideAptitude extends Component {
     list = [
         { number: '01', img: img01, text: '최초 운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 있는 경우 (무사고 운전자)', dot: dot2, sub: '재직 증명서 1부, 전체기간운전경력증명서 (경찰서장 및 운전면허시험장장 발행) 1부 방문우편접수 기간에 제출' },

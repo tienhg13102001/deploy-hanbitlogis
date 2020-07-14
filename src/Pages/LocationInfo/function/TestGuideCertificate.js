@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import './style/TestGuideCertificate.scss';
 
 import arrowicon from '../../../_asset/image/locationInfo/arrow-icon.png';

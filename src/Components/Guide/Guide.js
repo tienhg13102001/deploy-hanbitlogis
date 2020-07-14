@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './style/Guide.scss'
-import { NavLink } from "react-router-dom";
 
 class Guide extends Component {
     render() {
