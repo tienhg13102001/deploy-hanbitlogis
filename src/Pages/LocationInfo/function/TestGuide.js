@@ -12,12 +12,10 @@ class TestGuide extends Component {
         return (
             <div className="TestGuide_Container">
                 <div className="Analysis_Contents">
-                    <div className="Contents">
                     <TestGuideOne></TestGuideOne>
                     <TestGuideTwo></TestGuideTwo>
                     <TestGuideCertificate></TestGuideCertificate>
-                    <TestGuideAptitude></TestGuideAptitude>
-                    </div>
+                    <TestGuideAptitude></TestGuideAptitude>    
                 </div>
             </div>
 

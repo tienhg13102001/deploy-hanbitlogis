@@ -12,14 +12,15 @@
     }
     .Example{
         font-size: 18px;
+        padding-top: 30px;
         padding-bottom: 21px;
         color: #707070;
     }
     .Chart_Box2{
-        width: 1050px;
+        border-bottom: solid 2px #535353;
         .Chart_Type2{
             display: flex;
-            max-width: 1050px;
+            
             font-size: 16px;
             font-weight: 600;
             justify-content: space-around;
@@ -29,75 +30,86 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 190px;
+                max-width: 190px;
+                width: 100%;
                 height: 60px;
             }
             .Type_Text2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 215px;
+                max-width: 215px;
+                width: 100%;
                 height: 60px;
             }
             .Type_Text3 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 234px;
+                max-width: 234px;
+                width: 100%;
                 height: 60px;
             }
             .Type_Text4{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 390px;
+                max-width: 390px;
+                width: 100%;
                 height: 60px;
             }
         }
         .Chart_ListBox2{
-            max-width: 1050px;
             .Text_List2{
                 display: flex;
-                justify-content: space-between;
+                
+                border-bottom: solid 1px #e5e5e5;
                 .One_Text2{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 190px;
+                    max-width: 190px;
+                    width: 100%;
                     height: 60px;
                 }
                 .Two_Text2{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 215px;
+                    max-width: 215px;
+                    width: 100%;
                     height: 60px;
                 }
                 .Three_Text2{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 215px;
+                    max-width: 234px;
+                    width: 100%;
                     height: 60px;
                 }
                 .Three_Text3{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 300px;
+                    max-width: 390px;
+                    width: 100%;
                     height: 60px;
                     margin: auto;
                 }
                 .Three_Plus{
                     display: flex;
-                    justify-content: center;
+                    justify-content: left;
                     align-items: center;
-                    width: 390px;
+                    max-width: 390px;
+                    width: 100%;
+                    height: 30px;
                 }
             }
         }
         .Chart_TimeBox{
             padding-top: 23px;
+            padding-bottom: 23px;
             max-width: 420px;
             margin: auto;
             line-height: 1.88;
@@ -121,6 +133,87 @@
             }
             .Exception{
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Chart_Container{
+        .Chart_TextBox2{
+            
+            .Chart_Text{
+                
+            }
+            
+        }
+        .Example{
+            padding-left: 10px;
+            padding-top: 30px;
+            font-size: 12px;
+        }
+        .Chart_Box2{
+            
+            .Chart_Type2{
+                font-size: 14px;
+                
+                
+                .Type_Text{
+                    
+                }
+                .Type_Text2 {
+                    
+                }
+                .Type_Text3 {
+                    
+                }
+                .Type_Text4{
+                    display: none;
+                }
+            }
+            .Chart_ListBox2{
+                .Text_List2{
+                    font-size: 10px;
+                    .One_Text2{
+                        
+                    }
+                    .Two_Text2{
+                        
+                    }
+                    .Three_Text2{
+                        
+                    }
+                    .Three_Text3{
+                        display: none;
+                    }
+                    .Three_Plus{
+                        display: none;
+                    }
+                }
+            }
+            .Chart_TimeBox{
+               text-align: center;
+                .Time{
+                    font-size: 11px;
+                    >span {
+                        
+                    }
+                }
+                .Holiday{
+                    font-size: 11px;
+                    >span {
+                        
+                    }
+                }
+                .Distance{
+                    font-size: 11px;
+                    >span {
+                        
+                    }
+                }
+                .Exception{
+                    font-size: 9px;
+                }
             }
         }
     }

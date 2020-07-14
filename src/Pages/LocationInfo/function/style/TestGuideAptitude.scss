@@ -1,6 +1,5 @@
 .Aptitude_Container{
-    max-width: 1050px;
-    width: 100%;
+    
     .Aptitude_Box{
         text-align: center;
         .Aptitude_Icon{
@@ -110,11 +109,91 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-               
             }
         }
-        
     }
+}
+
+@media screen and (max-width:768px) {
+    .Aptitude_Container{
     
-    
+        .Aptitude_Box{
+            
+            .Aptitude_Icon{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                >img{
+                    width: 80%;
+                }
+            }
+            .Aptitude_Title{
+                font-size: 18px;
+            }
+            .Aptitude_Text{
+                font-size: 14px;
+                padding-bottom: 50px;
+            }
+        }
+        .Aptitude_Ga{
+            .Ga_Box{
+              
+                .Ga_Title{
+                    font-size: 14px;
+                }
+                .Ga_Text{
+                    font-size: 13px;
+                }
+            }
+            .Ga_IconBox{
+               
+                .Ga_Icon{
+                    padding: 20px;
+                    text-align: center;
+                    .Ga_Img{
+                        max-width: 100px;
+                        
+                    }
+                    .Ga_Icon_Text{
+                        font-size: 12px;
+                    }
+                }
+                .Dot_Line{
+                    
+                }
+            }
+            .Na_IconBox{
+                
+                .Na_Icon{
+                    padding: 20px;
+                    .Na_ImgBox{
+                        
+                        .Na_Number{
+                            
+                        }
+                        .Na_Img{
+                           
+                        }
+                    }
+                    .Na_Text{
+                        font-size: 12px;
+                    }
+                    .Na_Dot{
+                        
+                    }
+                    .Na_SubText{
+                        font-size: 11px;
+                    }
+                }
+            }
+            .Move_Page{
+                
+                a {
+                    
+                }
+                .Apti_Btn{
+                   
+                }
+            }
+        }
+    }
 }

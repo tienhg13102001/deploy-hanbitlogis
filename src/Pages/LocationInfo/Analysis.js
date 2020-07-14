@@ -17,7 +17,7 @@ class Analysis extends Component {
                 <div className="TopBanner">
                     <AnalysisBanner></AnalysisBanner>
                 </div>
-                <div className="CeoContents">
+                <div className="Analy_Contents">
                     <InfoBox {...this.props}></InfoBox>
                     <Route exact path={`${this.props.match.path}`} component={AnalyText}></Route>
                     <Route path={`${this.props.match.path}/analysis`} component={AnalyText}></Route>

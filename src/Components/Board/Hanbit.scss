@@ -27,6 +27,9 @@
 
 @media screen and (max-width:768px) {
     .Hanbit {
-        margin: 0 70px 0 70px
+        margin: 0 30px 0 30px;
+        .TitleBox{
+            padding-top: 0;
+        }
     }
 }

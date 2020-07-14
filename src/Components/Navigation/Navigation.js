@@ -37,8 +37,8 @@ class Navigation extends Component {
             subMenu = [
                 { name: "회사소개", key: "/intro/ceo" },
                 { name: "경영 방침", key: "/intro/policy" },
-                { name: "회사 연혁", key: "intro/history" },
-                { name: "오시는길", key: "intro/come" }
+                { name: "회사 연혁", key: "/intro/history" },
+                { name: "오시는길", key: "/intro/come" }
             ]
         } else if (clickedMenu === "Info") {
             subMenu = [

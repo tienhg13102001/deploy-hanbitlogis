@@ -1,5 +1,5 @@
 .TestGuideOneContainer{
-    max-width: 1050px;
+    
     .Test_TitleBox{
         
         .Test_Title{
@@ -21,6 +21,32 @@
             padding-bottom: 18px;
             >span{
                 color: #a0a0a0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .TestGuideOneContainer{
+        
+        .Test_TitleBox{
+            padding-left: 20px;
+            .Test_Title{
+                padding-top: 30px;
+                font-size: 16px;
+                padding-bottom: 20px;
+                >span{
+                    
+                }
+            }
+            .Test_Text{
+                font-size: 13px;
+            }
+            .Test_Example{
+                font-size: 11px;
+                >span{
+                    
+                }
             }
         }
     }

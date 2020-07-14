@@ -1,5 +1,5 @@
 .CertificateContainer{
-    max-width: 1050px;
+    
     .Certi_TitleBox{
         .Certi_Title{
             font-size: 30px;
@@ -58,11 +58,13 @@
                 display: flex;
                 flex-direction: column;
                 .Certi_Two{
-                    width: 800px;
+                    max-width: 800px;
+                    width: 100%;
                     padding-bottom: 20px;
                 }
                 .Certi_Three{
-                    width: 855px;
+                    max-width: 855px;
+                    width: 100%;
                     padding-bottom: 17px;
                     color: #a0a0a0;
                 }
@@ -105,6 +107,86 @@
                     .Arrow_Text{
                         font-size: 16px;
                         color: #da2320;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .CertificateContainer{
+    
+        .Certi_TitleBox{
+            .Certi_Title{
+                padding-top: 15px;
+                padding-left: 15px;
+                font-size: 16px;
+                padding-bottom: 15px;
+            }
+            .Certi_Text{
+                padding-left: 15px;
+                font-size: 13px;
+            }
+        }
+        .Certi_TextBox{
+           padding: 20px 20px 0 0;
+            .Certi_List{
+                
+                .Certi_One{
+                    font-size: 12px;
+                }
+                .Certi_Two{
+                    
+                }
+                .Certi_Three{
+                    font-size: 12px;
+                }
+            }
+            .Certi_List2{
+                
+                .Certi_Wrap {
+                    
+                    .Certi_One{
+                        font-size: 12px;
+                        width: 100px;
+                        justify-content: center;
+                    }
+                    
+                }
+                .Certi_Wrap2 {
+                    
+                    .Certi_Two{
+                        font-size: 12px;
+                    }
+                    .Certi_Three{
+                        font-size: 11px;
+                    }
+                }
+                
+            }
+        }
+        .Certi_ListBox{
+            display: none;
+            .Certi_MapBox{
+                
+                .Certi_IconBox{
+                    
+                    .List_Icon{
+                        
+                    }
+                    .List_Text{
+                        
+                    }
+                }
+                .Certi_ArrowBox{
+                    
+                    .Certi_Wrap3{
+                        
+                        .Arrow{                      
+                        }
+                        .Arrow_Text{ 
+                        }
                     }
                 }
             }

@@ -17,10 +17,9 @@
 
 @media screen and (max-width:768px) {
     .Contents{
+        padding-top: 0;
         .One_Line{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: none;
             
         }
         .Two_Line{

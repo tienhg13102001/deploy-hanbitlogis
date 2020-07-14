@@ -2,6 +2,7 @@
     .Chart_TitleBox{
         
         .Chart_Title{
+            padding-top: 20px;
             font-size: 18px;
             color: #707070 ;
             padding-bottom: 21px;
@@ -14,7 +15,7 @@
             display: flex;
             background-color: #f5f4f4;
             .Type_One{
-                width: 183px;
+                width: 200px;
                 height: 60px;
                 display: flex;
                 align-items: center;
@@ -36,6 +37,7 @@
             .Text_List{
                 display: flex;
                 border-bottom: solid 1px #e5e5e5;
+                color: #707070 ;
                 .One{
                     display: flex;
                     justify-content: center;
@@ -69,10 +71,10 @@
             .Chart_Type{
                 
                 .Type_One{
-                    font-size: 14px;
+                    font-size: 12px;
                 }
                 .Type_Two{
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
             .Chart_TextBox{
@@ -80,10 +82,10 @@
                 .Text_List{
                    
                     .One{
-                        font-size: 12px;
+                        font-size: 11px;
                     }
                     .Two{
-                        font-size: 12px;
+                        font-size: 11px;
                     }   
                 }
             }

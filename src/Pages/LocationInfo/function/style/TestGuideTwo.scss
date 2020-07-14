@@ -1,5 +1,5 @@
 .TestInfoContainer{
-    max-width: 1050px;
+    
     .TestInfo_TitleBox{
         .TestInfo_Title{
             font-size: 30px;
@@ -10,7 +10,7 @@
         }
     }
     .TestInfo_Banner{
-        max-width: 1050px;
+       
         padding-bottom: 61px;
         >img {
             width: 100%;
@@ -65,6 +65,68 @@
             .Content_Three3{
                 color: #a0a0a0;
                 padding-bottom: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .TestInfoContainer{
+    
+        .TestInfo_TitleBox{
+            padding-left: 15px;
+            .TestInfo_Title{
+                font-size: 16px;
+                >span{
+                    
+                }
+            }
+        }
+        .TestInfo_Banner{
+            padding: 10px;
+            >img {
+                
+            }
+        }
+        .Test_List{
+            flex-direction: column;
+            padding-left: 10px;
+            .Test_Number{
+                font-size: 20px;
+            }
+            .Test_Name{
+                font-size: 17px;
+                br{
+                    display: none;
+                }
+            }
+            .Text_Content{
+                
+                .Content_One{
+                    font-size: 12px;
+                    .One_Two{
+                        
+                    }
+                }
+                .Content_Two{
+                    
+                }
+                .Content_Three{
+                    
+                }
+                
+            }
+            .Text_ContentTwo{
+                
+                .Content_One1{
+                    font-size: 12px;
+                }
+                .Content_Two2{
+                    font-size: 12px;
+                }
+                .Content_Three3{
+                    
+                }
             }
         }
     }
