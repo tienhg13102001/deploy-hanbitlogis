@@ -8,8 +8,18 @@
     .Hanbit_Contents{
         display: flex;
     }
-    .Result{
-        max-width: 1050px;
-        margin: auto;
+    
+}
+
+@media screen and (max-width:768px) {
+    .Hanbit_Contatiner{
+        
+        .TopBanner{
+    
+        }
+        .Hanbit_Contents{
+            flex-direction: column;
+        }
+        
     }
 }

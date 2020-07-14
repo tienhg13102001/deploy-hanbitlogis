@@ -69,3 +69,44 @@
         padding-bottom: 70px;
     }
 }
+
+@media screen and (max-width:768px) {
+    .In_Container{
+        margin-left: 0;
+        .In_TitleBox{
+            .In_Title{
+                font-size: 18px;
+                padding-left: 15px;
+            }
+        }
+        .In_SubTitle{
+            padding-left: 10px;
+            padding-bottom: 15px;
+            .In_SubText{
+                font-size: 12px;
+            }
+            .Go_Button{
+                
+                >a{
+                    
+                }
+            }
+        }
+        .In_Contents{
+            
+            .In_Box{
+                
+                .In_Menu{
+                    font-size: 13px;
+                    justify-content: center;
+                }
+                .In_Content{
+                    font-size: 12px;
+                }
+            }
+        }
+        .BottomText{
+            font-size: 11px;
+        }
+    }
+}

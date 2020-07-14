@@ -1,5 +1,6 @@
 .Vehicle_Container{
     max-width: 1050px;
+    width: 100%;
     .Vehicle_TitleBox{
         padding-top: 60px;
         .Vehicle_Title{
@@ -10,52 +11,93 @@
     .Vehicle_TopLine{
         display: flex;
         font-size: 16px;
-        width: 1050px;
+        max-width: 1050px;
+        width: 100%;
         height: 60px;
         justify-content: space-between;
         border-top: solid 2px #535353;
         border-bottom: solid 2px #535353;
         .Top_Line{
-            width: 200px;
+            max-width: 200px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
     .Vehicle_Board{
-        justify-content: space-between;
+        justify-content: space-around;
         max-width:1050px;
         width: 100%;
         .Board_List{
             display: flex;
             max-width: 1050px;
             width: 100%;
-            justify-content: space-between;
+            justify-content: space-around;
             border-bottom: solid 1px #e5e5e5;
             >a{
                 text-decoration: none;
                 color:#535353;
             }
             .List_One{
-                width: 200px;
+                max-width: 200px;
+                width: 100%;
                 height: 60px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .List_Two{
-                width: 300px;
+                max-width: 300px;
+                width: 100%;
                 height: 60px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .List_Three{
-                width: 200px;
+                max-width: 200px;
+                width: 100%;
                 height: 60px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Vehicle_Container{
+        
+        .Vehicle_TitleBox{
+            
+            .Vehicle_Title{
+                padding-left: 15px;
+            }
+        }
+        .Vehicle_TopLine{
+            
+            .Top_Line{
+                
+            }
+        }
+        .Vehicle_Board{
+            
+            .Board_List{
+                
+                >a{
+                    
+                }
+                .List_One{
+                    
+                }
+                .List_Two{
+                    
+                }
+                .List_Three{
+                    
+                }
             }
         }
     }

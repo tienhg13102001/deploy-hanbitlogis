@@ -13,3 +13,18 @@
         margin: auto;
     }
 }
+
+@media screen and (max-width:768px) {
+    .Vehicle_Contatiner{
+        
+        .TopBanner{
+    
+        }
+        .Vehicle_Contents{
+            flex-direction: column;
+        }
+        .Result{
+            
+        }
+    }
+}

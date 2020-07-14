@@ -56,3 +56,40 @@
     }
   
 }
+
+@media screen and (max-width:768px) {
+    .BoardPreviewContainer{
+        .BoardPreviewBox{
+            
+        }
+        .BoardPreviewContents{
+            font-size: 12px;
+        }
+        .BoardPreviewBtn{
+            
+        }
+        .BoardPreviewNext{
+            
+        }
+        .BoardPreviewTitle{
+            
+        }
+        //////////////
+        .BoardNextBox{
+            
+        }
+        .BoardNextContents{
+            
+        }
+        .BoardNextBtn{
+            
+        }
+        .BoardNextNext{
+            font-size: 12px;
+        }
+        .BoardNextTitle{
+            
+        }
+      
+    }
+}

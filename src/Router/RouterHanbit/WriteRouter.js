@@ -12,9 +12,9 @@ class WriteRouter extends Component {
                 <div className="TopBanner">
                     <BoardBanner></BoardBanner>
                 </div>
-                <div className="Hanbit_Contents">
+                <div>
                     <HanbitBox {...this.props}></HanbitBox>
-                    <div>
+                    <div className="Hanbit_Board_Area">
                         <WriteHanbit></WriteHanbit>
                     </div>
                 </div>
