@@ -13,7 +13,7 @@ class Notice extends Component {
                 <div className="TopBanner">
                     <NoticeBanner></NoticeBanner>
                 </div>
-                <div className="CeoContents">
+                <div className="Notice_Contents">
                     <NoticeBox {...this.props}></NoticeBox>
                     <Route exact path={`${this.props.match.path}`} component={NoticeTitleBox}></Route>
                 </div>

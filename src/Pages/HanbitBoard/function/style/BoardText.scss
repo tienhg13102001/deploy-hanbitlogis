@@ -1,32 +1,34 @@
 .Board{
-    max-width: 1050px;
-    width: 100%;
     border-bottom: solid 1px #e5e5e5;
     justify-content: space-around;
     display: flex;
         .Han_Type{
-            width: 50px;
+            max-width: 50px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
         .Han_Date{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
         .Han_Title{
-            width: 400px;
+            max-width: 400px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
         .Han_People{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,4 +39,23 @@
 .Link {
     text-decoration: none;
     color: #535353;
+}
+
+@media screen and (max-width:768px) {
+    .Board{
+        
+            .Han_Type{
+                font-size: 11px;
+                }
+            .Han_Date{
+                font-size: 11px;
+                }
+            .Han_Title{
+                font-size: 11px;
+                }
+            .Han_People{
+                font-size: 11px;
+                
+        } 
+    }
 }

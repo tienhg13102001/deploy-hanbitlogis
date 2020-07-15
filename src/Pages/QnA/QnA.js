@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import QnABanner from '../QnA/function/QnABanner'
 import QnABox from '../../Components/MenuBox/QnABox'
 import './style/QnA.scss'
-import QnAText from './function/QnAText'
+
 import QnATitleBox from './function/QnATitleBox';
 import QnABoard from './function/QnABoard';
 
@@ -13,11 +13,10 @@ class QnA extends Component {
                 <div className="TopBanner">
                     <QnABanner></QnABanner>
                 </div>
-                <div className="CeoContents">
+                <div className="QnA_Contents">
                     <QnABox {...this.props}></QnABox>
-                    <div>
+                    <div className="QnA_Contents_Area">
                         <QnATitleBox></QnATitleBox>
-                        <QnAText></QnAText>
                         <QnABoard></QnABoard>
                     </div>
                 </div>

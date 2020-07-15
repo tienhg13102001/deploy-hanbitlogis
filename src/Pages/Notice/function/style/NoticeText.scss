@@ -1,36 +1,60 @@
 .Notice_Board{
-    width: 1050px;
+    max-width: 1050px;
+    width: 100%;
     border-bottom: solid 1px #e5e5e5;
     justify-content: space-between;
     display: flex;
     height: 60px;
         .Notice_Type{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
         .Notice_People{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
         }
         .Notice_Title{
-            width: 400px;
+            max-width: 400px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
         .Notice_Date{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
     
+}
+
+@media screen and (max-width:768px) {
+    .Notice_Board{
+            font-size: 11px;
+            .Notice_Type{
+                
+                }
+            .Notice_People{
+                
+            }
+            .Notice_Title{
+                
+                }
+            .Notice_Date{
+                
+                }
+        
+    }
 }

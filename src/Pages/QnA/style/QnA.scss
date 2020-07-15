@@ -5,7 +5,26 @@
     .TopBanner{
 
     }
-    .CeoContents{
+    .QnA_Contents{
         display: flex;
+        .QnA_Contents_Area{
+            max-width: 1050px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .QnA_Contatiner{
+        
+        .TopBanner{
+    
+        }
+        .QnA_Contents{
+            flex-direction: column;
+            .QnA_Contents_Area{
+                
+            }
+        }
     }
 }

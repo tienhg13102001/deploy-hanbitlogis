@@ -1,36 +1,60 @@
 .QnA_Board{
-    width: 1050px;
+    max-width: 1050px;
+    width: 100%;
     border-bottom: solid 1px #e5e5e5;
     justify-content: space-between;
     display: flex;
     height: 60px;
         .QnA_Type{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
         .QnA_People{
-            width: 100px;
+            max-width: 100px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
         }
         .QnA_Title{
-            width: 500px;
+            max-width: 500px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
         .QnA_Date{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 60px;
             }
     
+}
+
+@media screen and (max-width:768px) {
+    .QnA_Board{
+        font-size: 11px;
+        .QnA_Type{
+                
+            }
+        .QnA_People{
+                
+        }
+        .QnA_Title{
+            
+        }
+        .QnA_Date{
+                
+        }
+    }
+        
 }

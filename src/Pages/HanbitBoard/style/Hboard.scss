@@ -65,7 +65,7 @@
     .Hboard_Contaier{
         
         .Hboard_TopLine{
-            
+            font-size: 14px;
             .Hboard_Type{
                 
             }
@@ -81,6 +81,10 @@
         }
         .Btn_Area{
             .Write_Button {
+                font-size: 14px;
+                max-width: 70px;
+                width: 100%;
+                margin-right: 10px;
                 >a {
                 }
             }

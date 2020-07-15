@@ -1,38 +1,65 @@
 .Notice_Contaier{
-    max-width: 1250px;
-    
+    max-width: 1050px;
+    width: 100%;
     .Notice_TopLine{
         display: flex;
-        width: 1050px;
+        max-width: 1050px;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         height: 60px;
         border-top: 2px solid #535353;
         border-bottom: 2px solid #535353;
         .Notice_Type{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .Notice_People{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .Notice_Title{
-            width: 400px;
+            max-width: 400px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .Notice_Date{
-            width: 150px;
+            max-width: 150px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }   
 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Notice_Contaier{
+        
+        .Notice_TopLine{
+            font-size: 14px;
+            .Notice_Type{
+                
+            }
+            .Notice_People{
+                
+            }
+            .Notice_Title{
+                
+            }
+            .Notice_Date{
+                
+            }   
+    
+        }
     }
 }

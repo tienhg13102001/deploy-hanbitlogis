@@ -31,3 +31,33 @@
     }
     
 }
+
+@media screen and (max-width:768px) {
+    .NoticeBox{
+        display: flex;
+        max-width: 700px;
+        width: 100%;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        .Title{
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+        .Notice_navlink_container{
+            padding-bottom: initial;
+            &.active{
+                >div{
+                  
+                }
+            }
+            >div{
+              
+            }
+            >img{
+               display: none;
+            }
+        }
+        
+    }
+}
