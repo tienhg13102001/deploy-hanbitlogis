@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import QnABanner from '../QnA/function/QnABanner'
 import QnABox from '../../Components/MenuBox/QnABox'
 import './style/QnA.scss'
+import { Route } from "react-router-dom";
 
 import QnATitleBox from './function/QnATitleBox';
-import QnABoard from './function/QnABoard';
+import InQnA from './function/InQnA';
 
 class QnA extends Component {
     render() {
@@ -15,10 +16,8 @@ class QnA extends Component {
                 </div>
                 <div className="QnA_Contents">
                     <QnABox {...this.props}></QnABox>
-                    <div className="QnA_Contents_Area">
-                        <QnATitleBox></QnATitleBox>
-                        <QnABoard></QnABoard>
-                    </div>
+                    <Route exact path={`${this.props.match.path}`} component={QnATitleBox}></Route>
+                    <Route path={`${this.props.match.path}/InQnA`} component={InQnA}></Route>
                 </div>
             </div>
         );

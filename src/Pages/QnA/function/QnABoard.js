@@ -4,6 +4,7 @@ import { data } from "../QnADb";
 import { Pagination } from "../../../Common/Pagination/Pagination";
 import './style/QnABoard.scss'
 import QnAText from './QnAText';
+import { NavLink } from 'react-router-dom';
 
 class QnABoard extends Component {
     state = {
@@ -54,13 +55,15 @@ class QnABoard extends Component {
                 <div>
                     {this.filterData().map((item, index) => {
                         return (
-                            <QnAText
-                                key={index}
-                                number={item.number}
-                                people={item.people}
-                                date={item.date}
-                                title={item.title}
-                            />
+                            <NavLink className="Q_Link" to="/InQnA">
+                                <QnAText
+                                    key={index}
+                                    number={item.number}
+                                    people={item.people}
+                                    date={item.date}
+                                    title={item.title}
+                                />
+                            </NavLink>
                         )
                     })}
                 </div>

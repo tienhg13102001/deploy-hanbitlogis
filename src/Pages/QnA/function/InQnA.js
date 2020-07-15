@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import './style/InNotice.scss';
-import BoardPreview from '../../Common/BoardPrewView';
+import './style/InQnA.scss'
+import BoardPreview from '../../../Common/BoardPrewView';
 
 
-class InNotice extends Component {
+class InQnA extends Component {
     render() {
         return (
-            <div className="InNotice_Container">
-                <div className="InNotice_TitleBox">
-                    <div className="InNotice_Title">
-                        공지사항
+            <div className="InQnA_Container">
+                <div className="InQnA_TitleBox">
+                    <div className="InQnA_Title">
+                        QnA
                     </div>
-                    <div className="InNotice_Btn">
+                    <div className="InQnA_Btn">
                         목록으로
                     </div>
                 </div>
-                <div className="InNotice_Board">
+                <div className="InQnA_Board">
                     <div className="In_TitleBox">
                         <div className="In_Title">
                             글 제목이 들어갑니다.
                         </div>
+                    </div>
+                    <div className="In_Menu">
+                        <div className="In_Menu_People">작성자</div>
                     </div>
                     <div className="In_Menu_Text">
                         안녕하세요.<br/>
@@ -39,4 +42,4 @@ class InNotice extends Component {
     }
 }
 
-export default InNotice;
+export default InQnA;

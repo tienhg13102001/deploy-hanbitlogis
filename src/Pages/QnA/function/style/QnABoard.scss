@@ -37,13 +37,16 @@
             justify-content: center;
             align-items: center;
         }   
-
+        
+    }
+    .Q_Link{
+        text-decoration: none;
+        color: #535353;
     }
 }
 
 @media screen and (max-width:768px) {
     .QnA_Contaier{
-    
         .QnA_TopLine{
             font-size: 14px;
             .QnA_Type{
@@ -60,5 +63,8 @@
             }   
     
         }
+        
+        
     }
+    
 }

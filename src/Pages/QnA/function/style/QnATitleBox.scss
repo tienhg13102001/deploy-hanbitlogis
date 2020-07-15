@@ -1,12 +1,21 @@
-.Title_One{
-    font-size: 30px;
-    margin-top: 60px;
+.QnA_Contents_Area{
+    max-width: 1050px;
+    width: 100%;
+    .Title_One{
+        font-size: 30px;
+        margin-top: 60px;
+        padding-bottom: 30px;
+    }
 }
 
+
+
 @media screen and (max-width:768px) {
-    .Title_One{
-        font-size: 24px;
-        padding-left: 15px;
-        padding-bottom: 15px;
+    .QnA_Contents_Area{
+        .Title_One{
+            font-size: 24px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+        }
     }
 }
