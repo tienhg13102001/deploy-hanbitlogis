@@ -98,8 +98,8 @@
                 justify-content: center;
                 align-items: center;
                 width: 100px;
+                
                 .Certi_Wrap3{
-                    
                     .Arrow{
                     
                         
@@ -109,6 +109,9 @@
                         color: #da2320;
                     }
                 }
+            }
+            &:nth-child() {
+                display: none;
             }
         }
     }

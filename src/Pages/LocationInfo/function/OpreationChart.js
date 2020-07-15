@@ -24,7 +24,7 @@ class OpreationChart extends Component {
                     </div>
                     <div className="Chart_TextBox">
                         <img src={icon} alt='아이콘'></img>
-                        <div className="Chart_Text">차량 및 인력 관리 분석</div>
+                        <div className="Chart_Text_Area">차량 및 인력 관리 분석</div>
                     </div>
                     <div className="Chart_Box">
                         <div className="Chart_Type">
