@@ -4,6 +4,7 @@ import { data } from "../NoticeDb";
 import { Pagination } from "../../../Common/Pagination/Pagination";
 import './style/NoticeBoard.scss'
 import NoticeText from './NoticeText';
+import { NavLink } from 'react-router-dom';
 
 class NoticeBoard extends Component {
     state = {
@@ -54,6 +55,7 @@ class NoticeBoard extends Component {
                 <div>
                     {this.filterData().map((item, index) => {
                         return (
+                            <NavLink className="N_Link" to="/Notice/InNotice">
                             <NoticeText
                                 key={index}
                                 number={item.number}
@@ -61,6 +63,7 @@ class NoticeBoard extends Component {
                                 title={item.title}
                                 people= {item.people}
                             />
+                            </NavLink>
                         )
                     })}
                 </div>

@@ -13,7 +13,7 @@
         position: relative;
         z-index: 1;
         top: -300px;
-        right: -800px;
+        right: -500px;
         .Banner_Title{
             font-weight: 600;
             max-width: 440px;
@@ -31,7 +31,27 @@
 }
 
 @media screen and (max-width:768px) {
-    .Banner_TextBox{
-        display: none;
+    .BannerContainer {
+        
+        .BannerBox{
+            
+            .Slick_box{
+                img{
+                    
+                }
+            }
+        }
+        .Banner_TextBox{
+            top: -250px;
+            left: 50px;
+            .Banner_Title{
+                font-size: 25px;
+                margin: 0;
+                
+            }
+            .Banner_Subtitle{
+                display: none;
+            }
+        }
     }
 }

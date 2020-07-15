@@ -11,6 +11,7 @@ import InHanbitBoard from './RouterHanbit/InHanbitRouter';
 import Notice from './RouterNotice/NoticeRouter';
 import QnA from './RouterQnA/QnARouter';
 import WriteBoard from './RouterHanbit/WriteRouter';
+import InNotice from './RouterNotice/InNoticeRouter';
 
 var routes = [
  {
@@ -91,6 +92,12 @@ var routes = [
     path:"/WriteBoard",
     component:WriteBoard,
     menuName:"WriteBoard"
+   
+},
+{
+    path:"/InNotice",
+    component:InNotice,
+    menuName:"InNotice"
    
 },
 

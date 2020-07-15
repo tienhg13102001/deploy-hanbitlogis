@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './style/NoticeTitleBox.scss'
 import NoticeBoard from './NoticeBoard';
 
+
 class NoticeTitleBox extends Component {
     render() {
         return (
@@ -11,7 +12,7 @@ class NoticeTitleBox extends Component {
                     공지사항
             </div>
                 <div>
-                    <NoticeBoard></NoticeBoard>
+                    <NoticeBoard />
                 </div>
             </div>
         );

@@ -42,19 +42,22 @@
 
 @media screen and (max-width:768px) {
     .Notice_Board{
-            font-size: 11px;
-            .Notice_Type{
-                
-                }
-            .Notice_People{
-                
+    font-size: 11px;
+        .Notice_Type{
+            max-width: 150px;
+            width: 100%;
             }
-            .Notice_Title{
-                
-                }
-            .Notice_Date{
-                
-                }
-        
+        .Notice_People{
+            max-width: 150px;
+            width: 100%;
+        }
+        .Notice_Title{
+            max-width: 400px;
+            width: 100%;
+            }
+        .Notice_Date{
+            max-width: 150px;
+            width: 100%;
+        }
     }
 }

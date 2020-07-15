@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import './style/InHanbit.scss'
+import BoardPreview from '../../../Common/BoardPrewView';
 
 
 class InHanbit extends Component {
@@ -35,6 +36,7 @@ class InHanbit extends Component {
                         감사합니다.
                     </div>
                 </div>
+                <BoardPreview />
             </div>
         );
     }

@@ -1,0 +1,86 @@
+.InNotice_Container{
+    max-width: 1050px;
+    width: 100%;
+    .InNotice_TitleBox{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #535353;
+        .InNotice_Title{
+            font-size: 30px;
+            
+        }
+        .InNotice_Btn{
+            max-width: 142px;
+            width: 100%;
+            color: #ffffff;
+            background-color: #535353;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+    }
+    .InNotice_Board{
+        .In_TitleBox{
+            .In_Title{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                font-size: 18px;
+                color: #707070;
+                height: 60px;
+                border-bottom: 1px solid #e5e5e5;
+            }
+        }
+        .In_Menu{
+        }
+        .In_Menu_Text{
+            font-size: 16px;
+            padding-top: 30px;
+            color: #707070;
+            height: 350px;
+            border-bottom: 2px solid #535353;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .InNotice_Container{
+        
+        .InNotice_TitleBox{
+            
+            .InNotice_Title{
+                font-size: 24px;
+                padding-left: 15px;
+                
+            }
+            .InNotice_Btn{
+                max-width: 100px;
+                width: 100%;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+        }
+        .InNotice_Board{
+            
+            .In_TitleBox{
+                
+                .In_Title{
+                    padding-left: 15px;
+                }
+            }
+            .In_Menu{
+                .In_Menu_People{
+                    padding-left: 15px;
+                }
+            }
+            .In_Menu_Text{
+                padding-top: 30px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
