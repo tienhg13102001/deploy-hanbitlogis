@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './style/InQnABoard.scss'
 import QnABox from '../../../Components/MenuBox/QnABox';
 import InQnA from './InQnA';
 import QnABanner from './QnABanner';
@@ -11,7 +11,7 @@ class InQnABoard extends Component {
                 <div className="TopBanner">
                     <QnABanner></QnABanner>
                 </div>
-                <div className="CeoContents">
+                <div className="InQnA_Contents">
                     <QnABox {...this.props}></QnABox>
                     <InQnA></InQnA>
                 </div>

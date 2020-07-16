@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './IntroductionBox.scss'
 import { NavLink } from 'react-router-dom';
 import ArrowRight from '../../_asset/image/common/red-next-icon.png';
+
 class IntroductionBox extends Component {
     render() {
-        console.log(this.props.location.pathname)
         return (
             <div className="IntroBox">
                 <div className="Title">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style/InNotice.scss';
 import BoardPreview from '../../Common/BoardPrewView';
+import { NavLink } from 'react-router-dom';
 
 
 class InNotice extends Component {
@@ -12,7 +13,9 @@ class InNotice extends Component {
                         공지사항
                     </div>
                     <div className="InNotice_Btn">
+                        <NavLink className="InNotice_Link" to="/Notice">
                         목록으로
+                        </NavLink>
                     </div>
                 </div>
                 <div className="InNotice_Board">

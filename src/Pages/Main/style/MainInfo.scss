@@ -42,9 +42,14 @@
 
 @media screen and (max-width: 520px) {
     .MainInfoContainer{
-        height: 1000px;
+        height: 800px;
         .MapBox{
             flex-wrap: wrap;
+            
         }
+        
+    }
+    &:nth-child(6) {
+        display: none;
     }
 }

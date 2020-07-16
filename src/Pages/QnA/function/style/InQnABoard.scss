@@ -1,0 +1,19 @@
+.InHanbit_Contatiner{
+    .TopBanner{
+
+    }
+    .InQnA_Contents{
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .InHanbit_Contatiner{
+        .TopBanner{
+    
+        }
+        .InQnA_Contents{
+            flex-direction: column;
+        }
+    }
+}

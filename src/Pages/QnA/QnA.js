@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 
 import QnATitleBox from './function/QnATitleBox';
 import InQnA from './function/InQnA';
+import WriteQnA from '../QnA/function/QnAWrite';
 
 class QnA extends Component {
     render() {
@@ -18,6 +19,7 @@ class QnA extends Component {
                     <QnABox {...this.props}></QnABox>
                     <Route exact path={`${this.props.match.path}`} component={QnATitleBox}></Route>
                     <Route path={`${this.props.match.path}/InQnA`} component={InQnA}></Route>
+                    <Route path={`${this.props.match.path}/WriteQnA`} component={WriteQnA}></Route>
                 </div>
             </div>
         );

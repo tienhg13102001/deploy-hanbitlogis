@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Board.scss'
 
 import icon from '../../_asset/image/common/add-icon.png'
+import { NavLink } from 'react-router-dom';
 
 class Board extends Component {
     list = [
@@ -18,7 +19,9 @@ class Board extends Component {
                     <div className="Title">
                         공지사항
                     </div>
-                    <img className="Icon" src={icon} alt='plus icon'></img>
+                    <NavLink to="/Notice">
+                        <img className="Icon" src={icon} alt='plus icon'></img>
+                    </NavLink>
                 </div>
                 <div className="TextBox">
                     {this.list.map((item, index) => {

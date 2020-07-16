@@ -43,6 +43,23 @@
         text-decoration: none;
         color: #535353;
     }
+    .Btn_Area{
+        .Write_Button {
+            display: flex;
+            background-color: #535353;
+            font-size: 16px;
+            color: #ffffff;
+            max-width: 100px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 44px;
+            >a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -63,8 +80,20 @@
             }   
     
         }
-        
+        .Btn_Area{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 20px;
+
+            .Write_Button {
+                font-size: 14px;
+                max-width: 70px;
+                width: 100%;
+                margin-right: 10px;
+            }
+        }
         
     }
     
 }
+

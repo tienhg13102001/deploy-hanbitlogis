@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Hanbit.scss'
 
 import icon from '../../_asset/image/common/add-icon.png'
+import { NavLink } from 'react-router-dom';
 
 class Hanbit extends Component {
     list = [
@@ -18,7 +19,9 @@ class Hanbit extends Component {
                     <div className="Title">
                         한빛게시판
                     </div>
-                    <img className="Icon" src={icon} alt='plus icon'></img>
+                    <NavLink to="/HanbitBoard">
+                        <img className="Icon" src={icon} alt='plus icon'></img>
+                    </NavLink>
                 </div>
                 <div className="TextBox">
                     {this.list.map((item, index) => {

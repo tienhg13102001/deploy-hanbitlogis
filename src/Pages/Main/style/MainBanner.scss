@@ -34,23 +34,27 @@
     .BannerContainer {
         
         .BannerBox{
-            
-            .Slick_box{
-                img{
-                    
+            .slick-slider{
+                .slick-next{
+                    right: 15px;
+                    .slick-arrow {
+                        display: none;
+                    }
+                    }
                 }
             }
-        }
         .Banner_TextBox{
-            top: -250px;
-            left: 50px;
+            width: 250px;
+            top: -235px;
+            left: 20px;
+            margin: 0;
             .Banner_Title{
-                font-size: 25px;
+                font-size: 23px;
                 margin: 0;
                 
             }
             .Banner_Subtitle{
-                display: none;
+               display: none;
             }
         }
     }

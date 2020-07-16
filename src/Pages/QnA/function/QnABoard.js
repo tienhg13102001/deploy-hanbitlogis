@@ -67,6 +67,11 @@ class QnABoard extends Component {
                         )
                     })}
                 </div>
+                <div className="Btn_Area">
+                    <div className="Write_Button">
+                        <NavLink to="/QnA/WriteQnA">글쓰기</NavLink>
+                    </div>
+                </div>
                 <Pagination
                     currentPage={this.state.currentPage}
                     cardsPerPage={this.state.cardsPerPage}
@@ -75,6 +80,7 @@ class QnABoard extends Component {
                     onPreviousPageClicked={this.onPreviousPageClicked}
                     onNextPageClicked={this.onNextPageClicked}
                 />
+                
             </div>
         );
     }

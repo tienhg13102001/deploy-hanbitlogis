@@ -13,6 +13,7 @@ import QnA from './RouterQnA/QnARouter';
 import WriteBoard from './RouterHanbit/WriteRouter';
 import InNotice from './RouterNotice/InNoticeRouter';
 import InQnABoard from './RouterQnA/InQnARouter';
+import WriteQnA from './RouterQnA/QnAWriteRouter'
 
 var routes = [
  {
@@ -105,6 +106,12 @@ var routes = [
     path:"/InQnA",
     component:InQnABoard,
     menuName:"InQnA"
+   
+},
+{
+    path:"/WriteQnA",
+    component:WriteQnA,
+    menuName:"WriteQnA"
    
 },
 

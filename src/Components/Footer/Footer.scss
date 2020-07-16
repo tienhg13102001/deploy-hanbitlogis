@@ -31,8 +31,13 @@
 @media screen and (max-width:768px) {
     .FooterContainer{
         .Box{
+            .LogoBox{
+                padding-left: 15px;
+                padding-right: 10px;
+            }
             .Info{
                 font-size: 11px;
+                padding-right: 15px;
             }
         }
         .TermsBox{

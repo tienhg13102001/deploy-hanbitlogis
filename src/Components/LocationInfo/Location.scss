@@ -27,5 +27,20 @@
 @media screen and (max-width:768px) {
     .Container{
         margin: 0;
+        .TextBox{
+            
+            .Title{
+                
+            }
+            .Location{
+                font-size: 30px;
+                padding-bottom: 30px;
+                
+            }
+            .Adress{
+                font-size: 12px;
+                
+            }
+        }
     }
 }

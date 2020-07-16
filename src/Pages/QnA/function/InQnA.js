@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style/InQnA.scss'
 import BoardPreview from '../../../Common/BoardPrewView';
+import { NavLink } from 'react-router-dom';
 
 
 class InQnA extends Component {
@@ -12,7 +13,9 @@ class InQnA extends Component {
                         QnA
                     </div>
                     <div className="InQnA_Btn">
-                        목록으로
+                        <NavLink className="QnA_Link" to="/QnA">
+                            목록으로
+                        </NavLink>
                     </div>
                 </div>
                 <div className="InQnA_Board">
