@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './style/WriteHanbit.scss';
+import axios from 'axios';
 class CommunityReviewWriter extends Component {
     state = {
         title: "",
         name: "",
         password: "",
-        description: "",
+        content: "",
         checked: false
     }
     handleChange = (e) => {
@@ -18,8 +19,37 @@ class CommunityReviewWriter extends Component {
             checked: e.target.checked
         })
     }
+    registerButton = () => {
+        const { title, name, password, content } = this.state
+        if(title.length === 0 || name.length === 0 || password.length === 0 || content.length === 0 ) {
+            return alert("입력값을 다시 한 번 확인해주세요.")
+        }
+        if(!this.state.checked) {
+            return alert("개인 정보 수집 및 이용에 동의해주세요.")
+        }
+        
+        const rID = 'hanbit_notice'
+        const formData = new FormData()
+        formData.append("_data", JSON.stringify({rID}))
+        formData.append('title', this.state.title)
+        formData.append('content', this.state.content)
+        formData.append('createdAt', new Date().toISOString())
+        formData.append('name', this.state.name)
+        formData.append('password', this.state.password)
+        axios.post('61.73.79.136:9229/api/resources/add', formData)
+            .then(response => {
+                console.log(response)
+                if (response && response.data && response.data._COM && response.data._COM.code === 1000 ) {
+                    this.props.history.goback();
+                }
+                else {
+                    alert("새로고침 후 다시 시도해주세요")
+                }
+            })
+            .catch(e => alert("새로고침 후 다시 시도해주세요"))
+    }
     render() {
-        const { title, name, description, password } = this.state
+        const { title, name, content, password } = this.state
         return (
             <div className="Write_HanbitBoard_Container">
                 <div className="Write_HanbitBoard_Title">게시판 글쓰기</div>
@@ -40,7 +70,7 @@ class CommunityReviewWriter extends Component {
                     </div>
                     <div className="row" style={{ border: 0 }}>
                         <div className='leftmenu'>내용</div>
-                        <div><input className="Text_input" name="description" value={description} onChange={this.handleChange} placeholder="내용을 입력해주세요."></input></div>
+                        <div><input className="Text_input" name="content" value={content} onChange={this.handleChange} placeholder="내용을 입력해주세요."></input></div>
                     </div>
                 </div>
                 <div className="privacy-wrap">

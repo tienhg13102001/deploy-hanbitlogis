@@ -5,13 +5,14 @@ import BoardText from './function/BoardText';
 import { Pagination } from "../../Common/Pagination/Pagination";
 import './style/Hboard.scss'
 import { NavLink } from 'react-router-dom';
-
+import axios from 'axios'
 class Hboard extends Component {
     state = {
         currentPage: 0,
         cardsPerPage: 7,
         currentPageM: 0,
         cardsPerPageM: 6,
+        list : []
 
         // cardsperpage -> 보여주고 싶은 박스 개수
     };
@@ -43,7 +44,39 @@ class Hboard extends Component {
 
         return getData.slice(startIndex, endIndex)
     }
+
+    componentDidMount = () => {
+        this.getAllList()
+    }
+    getAllList = async () => {
+        const rID = 'hanbit_notice'
+        await axios.get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
+
+        .then(response => {
+            console.log(response.data.data.rows)
+            if (response && response.data && response.data.data && response.data.data.rows) {
+                this.setState({
+                    ...this.state,
+                    list : response.data.data.rows
+                })
+            }
+            else {
+                console.error('error')
+            }
+        })
+        .catch( e => console.log(e))
+    }
+
+    renderList = () => {
+        const list = this.state.list
+        let startIndex = this.state.currentPage * this.state.cardsPerPage;
+        let endIndex = (this.state.cardsPerPage + 1) * this.state.cardsPerPage;
+
+        return list.slice(startIndex, endIndex)
+    }
+
     render() {
+        console.log(this.state.list)
         return (
             <div className="Hboard_Contaier">
                 <div className="Hboard_TopLine">
@@ -53,15 +86,15 @@ class Hboard extends Component {
                     <div className="Hboard_Date">작성날</div>
                 </div>
                 <div>
-                    {this.filterData().map((item, index) => {
+                    {this.state.list.map((item, index) => {
                         return (
                             <NavLink className="Link" to="/HanbitBoard/InBoard">
                             <BoardText
                                 key={index}
                                 number={item.number}
-                                date={item.date}
-                                title={item.title}
-                                people={item.people}
+                                date={item.lastUpdateDate}
+                                title={item.resources[0].data[0]}
+                                people={item.name}
                             /></NavLink>
                         )
                     })}
