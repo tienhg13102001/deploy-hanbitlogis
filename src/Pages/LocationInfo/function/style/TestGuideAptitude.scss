@@ -20,8 +20,6 @@
         .Aptitude_Text{
             font-size: 16px;
             color: #a0a0a0;
-            max-width: 802px;
-            width: 100%;
             margin: auto;
             padding-bottom: 100px;
         }
@@ -131,13 +129,14 @@
                 font-size: 18px;
             }
             .Aptitude_Text{
+                padding: 0 15px 0 15px;
                 font-size: 14px;
                 padding-bottom: 50px;
             }
         }
         .Aptitude_Ga{
             .Ga_Box{
-              
+                padding: 0 15px 0 15px;
                 .Ga_Title{
                     font-size: 14px;
                 }
