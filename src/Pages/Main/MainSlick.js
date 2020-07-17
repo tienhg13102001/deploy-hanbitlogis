@@ -22,14 +22,12 @@ class MainSlick extends Component {
           };
         return (
             <div className="SlickContainer">
-                <Slider {...settings}>
+                <Slider  {...settings}>
                     <img src={banner01} className="Banner" alt="강릉센터"></img>
                     <img src={banner02} className="Banner" alt="강릉센터"></img>
                     <img src={banner03} className="Banner" alt="강릉센터"></img>
                     <img src={banner01} className="Banner" alt="강릉센터"></img>
                     <img src={banner02} className="Banner" alt="강릉센터"></img>
-                    <img src={banner03} className="Banner" alt="강릉센터"></img>
-                    <img src={banner01} className="Banner" alt="강릉센터"></img>
                     <img src={banner03} className="Banner" alt="강릉센터"></img>
                     <img src={banner01} className="Banner" alt="강릉센터"></img>
                 </Slider>

@@ -1,5 +1,8 @@
 .GuideContainer{
-    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
     .GuideTop {
         display: flex;
         max-width: 600px;
@@ -9,7 +12,7 @@
         .GuideAbout{
             font-weight: 600;
             display: flex;
-            width: 100%;
+            width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;
@@ -23,7 +26,7 @@
         .GuideInfo{
             font-weight: 600;
             display: flex;
-            width: 100%;
+            width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;
@@ -36,7 +39,7 @@
         .GuideCar{
             font-weight: 600;
             display: flex;
-            width: 100%;
+            width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;
@@ -49,7 +52,7 @@
         .GuideBoard{
             font-weight: 600;
             display: flex;
-            width: 100%;
+            width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;
@@ -62,7 +65,7 @@
         .GuideNotice{
             font-weight: 600;
             display: flex;
-            width: 100%;
+            width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;
@@ -75,7 +78,7 @@
         .GuideQnA{
             font-weight: 600;
             display: flex;
-            width: 100%;
+            width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;

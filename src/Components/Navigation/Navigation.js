@@ -14,7 +14,7 @@ import Guide from '../Guide/Guide';
 class Navigation extends Component {
     state = {
         isClickedMenu: false,
-        clickedMenu : ""
+        clickedMenu: ""
     }
     movePage = (pageName) => {
         this.props.history.push({
@@ -22,13 +22,13 @@ class Navigation extends Component {
         })
     }
     handleClickMenu = (clickedMenu) => {
-        const { clickedMenu : clickedMeneName ,isClickedMenu } = this.state
-        if(clickedMeneName === clickedMenu && isClickedMenu ){
-            this.setState({ isClickedMenu : false })
+        const { clickedMenu: clickedMeneName, isClickedMenu } = this.state
+        if (clickedMeneName === clickedMenu && isClickedMenu) {
+            this.setState({ isClickedMenu: false })
         } else {
-            this.setState({ clickedMenu ,isClickedMenu : true })
+            this.setState({ clickedMenu, isClickedMenu: true })
         }
-        
+
     }
     renderSubMenu = (clickedMenu) => {
         let subMenu;
@@ -71,7 +71,7 @@ class Navigation extends Component {
             ]
         }
         return (
-                isClickedMenu &&   <div className="NaviContainer_submenu_container">
+            isClickedMenu && <div className="NaviContainer_submenu_container">
                 <div className="NaviContainer_submenu_wrap">
                     {
                         subMenu && subMenu.map(item => {
@@ -94,10 +94,12 @@ class Navigation extends Component {
 
                 <div className="NaviWrap">
                     <div className="TopNavi">
-                        <div onClick={() => this.movePage("/")} className="Menu_Logo">
-                            <img src={logo} alt='Logo'></img>
+                        <div className="TopNaviWrap">
+                            <div onClick={() => this.movePage("/")} className="Menu_Logo">
+                                <img src={logo} alt='Logo'></img>
+                            </div>
+                            <Guide onClick={this.handleClickMenu} />
                         </div>
-                        <Guide onClick={this.handleClickMenu} />
                         <div className="Member_Box">
                             <BurMenu className="Menu_Button" right customCrossIcon={<img src={closeicon} alt='closeicon' />} customBurgerIcon={<img className='MenuIcon' src={menuicon} alt=""></img>}>
                                 <NavLink exact={true} id="home" className="menu-item" to="/">한빛로지스</NavLink>

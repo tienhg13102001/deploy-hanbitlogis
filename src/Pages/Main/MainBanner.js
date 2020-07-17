@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 class MainBanner extends Component {
+    
     list = [
         { swiperimg: swiper01 },
         { swiperimg: swiper01 },
@@ -25,7 +26,7 @@ class MainBanner extends Component {
         return (
             <div className="BannerContainer">
                 <div className='BannerBox'>
-                    <Slider {...settings}>
+                <Slider ref={c => (this.slider = c)} {...settings}>
                         {this.list.map((item, index) => {
                             return (
                                 <div className="Slick_box" key={index}>
