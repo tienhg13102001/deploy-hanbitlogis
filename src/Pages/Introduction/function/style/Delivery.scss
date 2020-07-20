@@ -1,7 +1,13 @@
 .DeliContainer{
     max-width: 1050px;
     margin-left: 85px;
+
+    
+
+
     .Wrap_Line{
+
+    
         
         .Title{
             margin-top: 60px;
@@ -87,7 +93,7 @@
                         color: #da2320;
                     }
                     .Check_Text{
-                        font-size: 24px;
+                        font-size: 17px;
                         padding-bottom: 60px;
                     }
                 }
@@ -95,14 +101,18 @@
         }
         .Management{
             display: flex;
+            margin-bottom : 30px;
             .Table_Box{
                 display: flex;
                 flex-wrap: wrap;
                 
             }
             .Table_Text{
-                border: solid 2px #535353;
-                border-radius: 50%;
+                -webkit-box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.19);
+                -moz-box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.19);
+                box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.19);
+                border-radius: 30px;
+                padding : 0px 15px;
                 width: 290px;
                 height: 290px;
                 text-align: center;
@@ -110,7 +120,7 @@
                 align-items: center;
                 justify-content: center;
                 margin: 20px;
-                font-size: 24px;
+                font-size: 19px;
                 font-weight: 600;
                 &:nth-child(1) {
                     color : #da2320;
@@ -128,7 +138,7 @@
         }
         .Check_Title{
             padding-top: 19px;
-            font-size: 24px;
+            font-size: 20px;
             padding-bottom: 19px;
             text-align: center;
         }
