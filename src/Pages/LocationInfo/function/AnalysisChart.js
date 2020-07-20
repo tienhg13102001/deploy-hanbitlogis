@@ -15,7 +15,7 @@ class AnalysisChart extends Component {
         return (
             <div className="Chart_Container">
                 <div className="Chart_TitleBox">
-                    <div className="Chart_Title">
+                    <div className="Chart_Title_title">
                         · 차량 형태에 따른 분류
                     </div>
                 </div>

@@ -32,6 +32,7 @@
                 padding-right: 24px;
             }
             .Ga_Text{
+                color: #535353;
                 font-size: 18px;
             }
         }
@@ -60,6 +61,44 @@
             display: flex;
             justify-content: center;
             text-align: center;
+            .Na_Icon{
+                max-width: 210px;
+                width: 100%;
+                padding: 40px;
+                .Na_ImgBox{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                    .Na_Number{
+                        font-size: 20px;
+                        color: #da2320;
+                    }
+                    .Na_Img{
+
+                    }
+                }
+                .Na_Text{
+                    max-width: 200px;
+                    width: 100%;
+                    margin: auto;
+                    font-size: 14px;
+                    padding-bottom: 14px;
+                    color: #535353;
+                }
+                .Na_Dot{
+                    padding-bottom: 20px;
+                }
+                .Na_SubText{
+                    font-size: 14px;
+                    color: #a0a0a0;
+                }
+            }
+        }
+        .Na_IconBox_two{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 120px;
             .Na_Icon{
                 max-width: 210px;
                 width: 100%;

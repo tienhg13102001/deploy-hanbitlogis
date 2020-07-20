@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/AnalysisChart.scss'
+import './style/AnalysisChartTwo.scss'
 
 class AnalysisChartTwo extends Component {
     list = [
@@ -10,7 +10,7 @@ class AnalysisChartTwo extends Component {
         return (
             <div className="Chart_Container">
                 <div className="Chart_TitleBox">
-                    <div className="Chart_Title">
+                    <div className="Chart_Title_Text">
                         · 차량 용도에 따른 분류
                     </div>
                 </div>

@@ -12,7 +12,7 @@ class TestGuideCertificate extends Component {
         { id: 0, icon: icon01, text: '운전적성 정밀검사 (신규, 특별수검)', arrow: arrowicon, arrowtext: '적합판정' },
         { id: 1, icon: icon02, text: '자격 시험 응시', arrow: arrowicon, arrowtext: '합격' },
         { id: 2, icon: icon03, text: '합격자 교육 (1일 8시간)', arrow: arrowicon },
-        { id: 3, icon: icon04, text: '자격증 발급', arrow:arrowicon }
+        { id: 3, icon: icon04, text: '자격증 발급', arrow: arrowicon, }
     ]
     render() {
         return (
@@ -58,20 +58,37 @@ class TestGuideCertificate extends Component {
 
                 <div className="Certi_ListBox">
                     {this.list.map((item, index) => {
-                        return (
-                            <div className="Certi_MapBox" key={index}>
-                                <div className="Certi_IconBox">
-                                    <img className="List_Icon" src={item.icon} alt='아이콘'></img>
-                                    <div className="List_Text">{item.text}</div>
-                                </div>
-                                <div className="Certi_ArrowBox">
-                                    <div className="Certi_Wrap3">
-                                        <img className="Arrow" src={item.arrow} alt='화살표 아이콘'></img>
-                                        <div className="Arrow_Text">{item.arrowtext}</div>
+                        if (index === this.list.length - 1) {
+                            return (
+                                <div className="Certi_MapBox" key={index}>
+                                    <div className="Certi_map_area">
+                                        <img className="Certi_map_img" src={item.icon} alt='자격 이미지'></img>
+                                        <div className="Certi_map_arrow_box">
+                                            <div className="Certi_map_arrow_text">{item.arrowtext}</div>
+                                        </div>
+                                    </div>
+                                    <div className="Certi_map_text_box">
+                                        <div className="Certi_map_text">{item.text}</div>
                                     </div>
                                 </div>
-                            </div>
-                        )
+                            )
+                        }
+                        else {
+                            return (
+                                <div className="Certi_MapBox" key={index}>
+                                    <div className="Certi_map_area">
+                                        <img className="Certi_map_img" src={item.icon} alt='자격 이미지'></img>
+                                        <div className="Certi_map_arrow_box">
+                                            <img className="Certi_map_icon" src={item.arrow} alt='자격 화살표'></img>
+                                            <div className="Certi_map_arrow_text">{item.arrowtext}</div>
+                                        </div>
+                                    </div>
+                                    <div className="Certi_map_text_box">
+                                        <div className="Certi_map_text">{item.text}</div>
+                                    </div>
+                                </div>
+                            )
+                        }
                     })}
                 </div>
             </div>

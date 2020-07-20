@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/AnalysisChart.scss'
+import './style/AnalysisChartThree.scss'
 
 class AnalysisChart extends Component {
     list = [
@@ -9,9 +9,9 @@ class AnalysisChart extends Component {
     ]
     render() {
         return (
-            <div className="Chart_Container">
+            <div className="Three_container">
                 <div className="Chart_TitleBox">
-                    <div className="Chart_Title">
+                    <div className="Chart_Title_text">
                         · 운영 주체에 따른 분류
                     </div>
                 </div>
@@ -28,8 +28,8 @@ class AnalysisChart extends Component {
                         {this.list.map((item, index) => {
                             return(
                                 <div className="Text_List" key={index}>
-                                    <div className="One">{item.text}</div>
-                                    <div className="Two">{item.text2}</div>
+                                    <div className="One_text">{item.text}</div>
+                                    <div className="Two_text">{item.text2}</div>
                                 </div>
                             )
                         })}

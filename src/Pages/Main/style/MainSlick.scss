@@ -1,16 +1,16 @@
 .SlickContainer{
     max-width: 1250px;
     margin: auto;
-    width: 100%;
-    
+    height: 50px;
+    padding: 25px 0 25px 0;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
-    .Flex_Wrap{
+    
+    .Slick_Img{
+        max-width: 150px;
+        width: 100%;
         
-    }
-    .Banner {
-        width: 150px;
     }
 }
 

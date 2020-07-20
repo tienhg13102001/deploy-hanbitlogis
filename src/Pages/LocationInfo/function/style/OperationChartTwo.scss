@@ -1,25 +1,20 @@
-.Chart_Container{
+.analysis_Chart_two{
     
-    .analysis_chart_box_one{
-        .Chart_Title_title{
-            margin-top: 60px;
-            font-size: 29px;
-            color: #535353;
-            padding-bottom: 42px;
-        }
-    }
-    .Chart_analysis_textbox{
-        display: flex;
-        padding-bottom: 29px;
-        .Chart_Text_Area{
-            font-size: 20px;
-            color: #da2320;
-            padding-left: 10px;
-            font-weight: 600;
+    .analysis_chart_box_two {
+        padding-top: 61px;
+        .Chart_Title_title_two{
+            display: flex;
+            padding-bottom: 29px;
+            .Chart_Text_Area{
+                font-size: 20px;
+                color: #da2320;
+                padding-left: 10px;
+                font-weight: 600;
+            }
         }
     }
     .Chart_Box{
-
+        border-bottom: 1px solid #535353;
         .Chart_Type{
             display: flex;
             font-size: 16px;
@@ -52,13 +47,13 @@
                 height: 60px;
             }
         }
-        .Chart_ListBox{
+        .Chart_two_list{
             
-            .Text_List{
+            .Text_two_box{
                 display: flex;
                 justify-content: space-around;
                 border-bottom: solid 1px #e5e5e5;
-                .analysis_chart_text_one{
+                .analysis_Chart_text_one{
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -67,7 +62,7 @@
                     height: 60px;
                     color: #707070;
                 }
-                .analysis_chart_text_two{
+                .analysis_Chart_text_two{
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -76,7 +71,7 @@
                     height: 60px;
                     color: #707070;
                 }
-                .analysis_chart_text_three{
+                .analysis_Chart_text_three{
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -93,16 +88,9 @@
 
     @media screen and (max-width:768px) {
         .Chart_Container{
-            .analysis_chart_box_one{
-                
-                .Chart_Title_title{
-                    padding-left: 10px;
-                    padding-top: 10px;
-                    font-size: 16px;
-                    font-weight: 600;                    
-                }
+            .analysis_chart_box_two{
             }
-            .Chart_analysis_textbox{
+            .Chart_Title_title_two{
                 padding-left: 10px;
                 padding-top: 10px;
                 padding-bottom: 10px;

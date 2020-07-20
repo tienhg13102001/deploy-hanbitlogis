@@ -1,7 +1,8 @@
-.Chart_Container{
+.Three_container{
+    margin-bottom: 60px;
     .Chart_TitleBox{
         
-        .Chart_Title_title{
+        .Chart_Title_text{
             padding-top: 20px;
             font-size: 18px;
             color: #707070 ;
@@ -9,10 +10,10 @@
         }
     }
     .Chart{
-        max-width: 1050px;
-        width: 100%;
         border-top: solid 1px #535353;
         border-bottom: solid 1px #535353;
+        max-width: 1050px;
+        width: 100%;
         .Chart_Type{
             display: flex;
             background-color: #f5f4f4;
@@ -40,14 +41,14 @@
                 display: flex;
                 border-bottom: solid 1px #e5e5e5;
                 color: #707070 ;
-                .One{
+                .One_text{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     width: 200px;
                     height: 60px;
                 }
-                .Two{
+                .Two_text{
                     display: flex;
                     justify-content: left;
                     align-items: center;
@@ -61,7 +62,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .Chart_Container{
+    .Three_container{
         .Chart_TitleBox{
             
             .Chart_Title{
@@ -83,10 +84,10 @@
                 
                 .Text_List{
                    
-                    .One{
+                    .One_text{
                         font-size: 11px;
                     }
-                    .Two{
+                    .Two_text{
                         font-size: 11px;
                     }   
                 }

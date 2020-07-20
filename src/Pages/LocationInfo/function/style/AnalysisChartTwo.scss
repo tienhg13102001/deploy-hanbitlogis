@@ -1,7 +1,7 @@
 .Chart_Container{
     .Chart_TitleBox{
         
-        .Chart_Title_title{
+        .Chart_Title_Text{
             padding-top: 20px;
             font-size: 18px;
             color: #707070 ;
@@ -11,8 +11,6 @@
     .Chart{
         max-width: 1050px;
         width: 100%;
-        border-top: solid 1px #535353;
-        border-bottom: solid 1px #535353;
         .Chart_Type{
             display: flex;
             background-color: #f5f4f4;

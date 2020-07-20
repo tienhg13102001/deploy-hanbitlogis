@@ -24,9 +24,12 @@
             }
         }
         .Chart_Box{
+            border-top: solid 2px #535353;
+            border-bottom: solid 2px #535353;
             max-width: 1050px;
             width: 100%;
             .TypeBox{
+                
                 height: 63px;
                 display: flex;
                 align-items: center;

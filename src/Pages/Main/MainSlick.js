@@ -13,7 +13,7 @@ class MainSlick extends Component {
         const settings = {
             dots: false,
             infinite: true,
-            slidesToShow: 4,
+            slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
             speed: 5000,
@@ -23,13 +23,28 @@ class MainSlick extends Component {
         return (
             <div className="SlickContainer">
                 <Slider  {...settings}>
+                    <div className="Slick_Img">
                     <img src={banner01} className="Banner" alt="강릉센터"></img>
+                    </div>
+                    <div>
                     <img src={banner02} className="Banner" alt="강릉센터"></img>
+                    </div>
+                    <div>
                     <img src={banner03} className="Banner" alt="강릉센터"></img>
+                    </div>
+                    <div>
                     <img src={banner01} className="Banner" alt="강릉센터"></img>
+                    </div>
+                    <div>
                     <img src={banner02} className="Banner" alt="강릉센터"></img>
+                    </div>
+                    <div>
                     <img src={banner03} className="Banner" alt="강릉센터"></img>
+                    </div>
+                    <div>
                     <img src={banner01} className="Banner" alt="강릉센터"></img>
+                    </div>
+                    
                 </Slider>
             </div>
         );

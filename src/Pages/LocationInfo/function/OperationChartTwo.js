@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/OperationChart.scss'
+import './style/OperationChartTwo.scss'
 import icon from '../../../_asset/image/locationInfo/information-icon-2.png';
 
 class OpreationChartTwo extends Component {
@@ -17,11 +17,11 @@ class OpreationChartTwo extends Component {
     ]
     render() {
         return (
-            <div className="Chart_Container">
-                <div className="Chart_TitleBox">
-                    <div className="Chart_TextBox">
+            <div className="analysis_Chart_two">
+                <div className="analysis_chart_box_two">
+                    <div className="Chart_Title_title_two">
                         <img src={icon} alt='아이콘'></img>
-                        <div className="Chart_Text">경제성 분석</div>
+                        <div className="Chart_Text_Area">경제성 분석</div>
                     </div>
                     <div className="Chart_Box">
                         <div className="Chart_Type">
@@ -35,13 +35,13 @@ class OpreationChartTwo extends Component {
                                 차량 관리사
                             </div>
                         </div>
-                        <div className="Chart_ListBox">
+                        <div className="Chart_two_list">
                             {this.list.map((item, index) => {
                                 return (
-                                    <div className="Text_List" key={index}>
-                                        <div className="One_Text">{item.text}</div>
-                                        <div className="Two_Text">{item.text2}</div>
-                                        <div className="Three_Text">{item.text3}</div>
+                                    <div className="Text_two_box" key={index}>
+                                        <div className="analysis_Chart_text_one">{item.text}</div>
+                                        <div className="analysis_Chart_text_two">{item.text2}</div>
+                                        <div className="analysis_Chart_text_three">{item.text3}</div>
                                     </div>
                                 )
                             })}

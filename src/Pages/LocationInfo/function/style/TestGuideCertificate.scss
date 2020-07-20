@@ -74,47 +74,47 @@
     }
     .Certi_ListBox{
         display: flex;
-        justify-content: center;
-        padding-top: 40px;
+        padding-left: 88px;
         .Certi_MapBox{
-            display: flex;
-            text-align: center;
-            .Certi_IconBox{
-                max-width: 160px;
-                width: 100%;
-                padding: 10px;
-                .List_Icon{
-                    padding-bottom: 30px;
-                }
-                .List_Text{
-                    font-size: 18px;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                }
-            }
-            .Certi_ArrowBox{
+            padding-top: 40px;
+            max-width: 1050px;
+            width: 100%;
+            .Certi_map_area{
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100px;
-                
-                .Certi_Wrap3{
-                    .Arrow{
+                .Certi_map_img{
                     
+                }
+                .Certi_map_arrow_box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 120px;
+                    width: 100%;
+                    
+                    .Certi_map_icon{
                         
                     }
-                    .Arrow_Text{
+                    .Certi_map_arrow_text{
+                        padding-top: 18px;
                         font-size: 16px;
                         color: #da2320;
                     }
                 }
             }
-            &:nth-child() {
-                display: none;
+            .Certi_map_text_box{
+                padding-top: 31px;
+                .Certi_map_text{
+                    font-size: 18px;
+                    width: 170px;
+                    color: #535353;
+                    display: flex;
+                    
+                }
             }
         }
     }
+    
 }
 
 @media screen and (max-width:768px) {
@@ -167,31 +167,6 @@
                     }
                 }
                 
-            }
-        }
-        .Certi_ListBox{
-            display: none;
-            .Certi_MapBox{
-                
-                .Certi_IconBox{
-                    
-                    .List_Icon{
-                        
-                    }
-                    .List_Text{
-                        
-                    }
-                }
-                .Certi_ArrowBox{
-                    
-                    .Certi_Wrap3{
-                        
-                        .Arrow{                      
-                        }
-                        .Arrow_Text{ 
-                        }
-                    }
-                }
             }
         }
     }

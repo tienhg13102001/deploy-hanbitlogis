@@ -18,11 +18,11 @@ class OpreationChart extends Component {
     render() {
         return (
             <div className="Chart_Container">
-                <div className="Chart_TitleBox">
-                    <div className="Chart_Title">
+                <div className="analysis_chart_box_one">
+                    <div className="Chart_Title_title">
                         차량운영분석
                     </div>
-                    <div className="Chart_TextBox">
+                    <div className="Chart_analysis_textbox">
                         <img src={icon} alt='아이콘'></img>
                         <div className="Chart_Text_Area">차량 및 인력 관리 분석</div>
                     </div>
@@ -42,9 +42,9 @@ class OpreationChart extends Component {
                             {this.list.map((item, index) => {
                                 return (
                                     <div className="Text_List" key={index}>
-                                        <div className="One_Text">{item.text}</div>
-                                        <div className="Two_Text">{item.text2}</div>
-                                        <div className="Three_Text">{item.text3}</div>
+                                        <div className="analysis_chart_text_one">{item.text}</div>
+                                        <div className="analysis_chart_text_two">{item.text2}</div>
+                                        <div className="analysis_chart_text_three">{item.text3}</div>
                                     </div>
                                 )
                             })}

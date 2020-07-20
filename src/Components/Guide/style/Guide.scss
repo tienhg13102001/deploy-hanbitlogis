@@ -10,81 +10,84 @@
             padding: 15px 0 !important;
         }
         .GuideAbout{
-            font-weight: 600;
+            
             display: flex;
             width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;
+            font-weight: 300;
             >a{
                 text-decoration: none;
-                font-weight: 600;
-                color:#070707;
+                
+            }
+            :active {
+                color:#da2320;
             }
             
         }
         .GuideInfo{
-            font-weight: 600;
             display: flex;
             width: 150px;
             padding: 5px;
             cursor: pointer;
+            font-weight: 300;
             justify-content:center;
             >a{
                 text-decoration: none;
-                font-weight: 600;
+
                 color:#070707;
             }
         }
         .GuideCar{
-            font-weight: 600;
             display: flex;
             width: 150px;
             padding: 5px;
             cursor: pointer;
+            font-weight: 300;
             justify-content:center;
             >a{
                 text-decoration: none;
-                font-weight: 600;
+
                 color:#070707;
             }
         }
         .GuideBoard{
-            font-weight: 600;
             display: flex;
             width: 150px;
             padding: 5px;
             cursor: pointer;
+            font-weight: 300;
             justify-content:center;
             >a{
                 text-decoration: none;
-                font-weight: 600;
+
                 color:#070707;
             }
         }
         .GuideNotice{
-            font-weight: 600;
             display: flex;
             width: 150px;
             padding: 5px;
             cursor: pointer;
+            font-weight: 300;
             justify-content:center;
             >a{
                 text-decoration: none;
-                font-weight: 600;
+
                 color:#070707;
             }
         }
         .GuideQnA{
-            font-weight: 600;
             display: flex;
             width: 150px;
             padding: 5px;
             cursor: pointer;
             justify-content:center;
+            font-weight: 300;
             >a{
                 text-decoration: none;
-                font-weight: 600;
+
                 color:#070707;
             }
         }

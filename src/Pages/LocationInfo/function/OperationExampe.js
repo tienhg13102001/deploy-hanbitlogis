@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/OpreationChartThree.scss'
+import './style/OperationExample.scss'
 
 
 class OperationExample extends Component {
@@ -18,7 +18,7 @@ class OperationExample extends Component {
         return (
             <div className="Chart_Container">
                 <div className="Chart_TitleBox">
-                    <div className="Example">
+                    <div className="Example_2t">
                             · 2.5t 일반탑 기준 (견본)
                         </div>
                     <div className="Chart_Box2">

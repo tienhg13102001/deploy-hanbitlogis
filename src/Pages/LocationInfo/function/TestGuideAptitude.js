@@ -14,12 +14,12 @@ import img04 from '../../../_asset/image/locationInfo/examination-icon-7.png';
 
 class TestGuideAptitude extends Component {
     list = [
-        { number: '01', img: img01, text: '최초 운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 있는 경우 (무사고 운전자)', dot: dot2, sub: '재직 증명서 1부, 전체기간운전경력증명서 (경찰서장 및 운전면허시험장장 발행) 1부 방문우편접수 기간에 제출' },
-        { number: '02', img: img02, text: '운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 없는 경우 (무경력자)', dot: dot2, sub: '운전적성정밀(신규)검사 수검한 후 시험 응시' }
+        { number: '1.', img: img01, text: '최초 운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 있는 경우 (무사고 운전자)', dot: dot2, sub: '재직 증명서 1부, 전체기간운전경력증명서 (경찰서장 및 운전면허시험장장 발행) 1부 방문우편접수 기간에 제출' },
+        { number: '2.', img: img02, text: '운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 없는 경우 (무경력자)', dot: dot2, sub: '운전적성정밀(신규)검사 수검한 후 시험 응시' }
     ]
     list2 = [
-        { number: '03', img: img03, text: '운전적성정밀 검사 수검 후 3년 이내에 취업한 경력은 있으나, 재직기간중 사고를 유발한 경력 ', dot: dot2, sub: '대물사고, 대인(경상)사고 : 운전적성정밀 (신규)검사 수검한 후 시험 응시 대인(중상)사고 : 운전적성정밀 (신규, 특별)검사 수검한 후 시험 응시' },
-        { number: '04', img: img04, text: '과거 1년간 운전면허행정처분기준에 의하여 산출된 누산점수가 81점 이상인 경우 ', dot: dot2, sub: '운전적성정밀(신규, 특별)검사 수검한 후 시험 응시' }
+        { number: '3.', img: img03, text: '운전적성정밀 검사 수검 후 3년 이내에 취업한 경력은 있으나, 재직기간중 사고를 유발한 경력 ', dot: dot2, sub: '대물사고, 대인(경상)사고 : 운전적성정밀 (신규)검사 수검한 후 시험 응시 대인(중상)사고 : 운전적성정밀 (신규, 특별)검사 수검한 후 시험 응시' },
+        { number: '4.', img: img04, text: '과거 1년간 운전면허행정처분기준에 의하여 산출된 누산점수가 81점 이상인 경우 ', dot: dot2, sub: '운전적성정밀(신규, 특별)검사 수검한 후 시험 응시' }
     ]
     render() {
         return (
@@ -89,7 +89,7 @@ class TestGuideAptitude extends Component {
                             )
                         })}
                     </div>
-                    <div className="Na_IconBox">
+                    <div className="Na_IconBox_two">
                         {this.list2.map((item, index) => {
                             return (
                                 <div className="Na_Icon" key={index}>
