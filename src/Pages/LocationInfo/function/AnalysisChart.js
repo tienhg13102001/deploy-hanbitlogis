@@ -28,7 +28,7 @@ class AnalysisChart extends Component {
                             설명
                         </div>
                     </div>
-                    <div className="Chart_TextBox">
+                    <div className="Chart_map_text_box">
                         {this.list.map((item, index) => {
                             return(
                                 <div className="Text_List" key={index}>

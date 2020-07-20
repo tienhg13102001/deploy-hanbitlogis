@@ -6,7 +6,7 @@
     position: relative;
     .NaviWrap{
       width : 100%;
-      max-width: 1230px;
+      max-width: 1250px;
     }
     .NaviContainer_submenu_container{
       position: absolute;
@@ -18,12 +18,13 @@
       z-index: 2;
       .NaviContainer_submenu_wrap{
         width : 100%;
-        max-width: 1230px;
+        max-width: 1250px;
         margin: auto;
         bottom: 0;
         display: flex;
         padding: 17px 0;
         padding-left: 500px;
+        
         >div{
           font-size: 15px;
           padding-right: 15px;
@@ -32,6 +33,11 @@
           text-decoration: none;
           color: #535353;
           padding: 0 30px;
+        }
+        .Submenu_link{
+          &.active {
+            color: #da2320;
+          }
         }
       }
     }
@@ -42,8 +48,10 @@
         height: 73px;
         width : 100%;
         align-items: center;
+        
         .TopNaviWrap{
           display: flex;
+          
           .Menu_Logo{
             max-width: 129px;
             width: 100%;
@@ -58,22 +66,6 @@
             justify-content: center;
             align-items: center;
             font-weight: 300;
-            .Login{
-              font-size: 14px;
-              padding-right: 30px;
-              width: 50px;
-              &:hover {
-                cursor: pointer;
-              }
-            }
-            .Sign_Up{
-              font-size: 14px;
-              padding-right: 30px;
-              width: 60px;
-              &:hover {
-                cursor: pointer;
-              }
-            }
         }
 
     }

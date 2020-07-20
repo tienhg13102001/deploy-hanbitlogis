@@ -21,8 +21,11 @@ class MainBanner extends Component {
             infinite: true,
             speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: true
+
         };
+        
         return (
             <div className="BannerContainer">
                 <div className='BannerBox'>
@@ -31,6 +34,8 @@ class MainBanner extends Component {
                             return (
                                 <div className="Slick_box" key={index}>
                                     <img src={item.swiperimg} alt='slick'></img>
+                                    <div className="slick-prev"></div>
+                                    <div className="slick-next"></div>
                                 </div>
                             )
                         })}

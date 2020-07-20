@@ -23,7 +23,7 @@ class AnalysisChartTwo extends Component {
                             설명
                         </div>
                     </div>
-                    <div className="Chart_TextBox">
+                    <div className="Chart_map_box_purpose">
                         {this.list.map((item, index) => {
                             return(
                                 <div className="Text_List">

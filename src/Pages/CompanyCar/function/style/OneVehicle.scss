@@ -17,8 +17,22 @@
         justify-content: space-between;
         border-top: solid 2px #535353;
         border-bottom: solid 2px #535353;
-        .Top_Line{
-            max-width: 200px;
+        .Top_Line_one{
+            max-width: 280px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Top_Line_two{
+            max-width: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Top_Line_three{
+            max-width: 300px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -80,29 +94,6 @@
                 padding-left: 15px;
             }
         }
-        .Vehicle_TopLine{
-            
-            .Top_Line{
-                
-            }
-        }
-        .Vehicle_Board{
-            
-            .Board_List{
-                
-                >a{
-                    
-                }
-                .List_One{
-                    
-                }
-                .List_Two{
-                    
-                }
-                .List_Three{
-                    
-                }
-            }
-        }
+        
     }
 }

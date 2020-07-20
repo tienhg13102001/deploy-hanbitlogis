@@ -10,7 +10,6 @@ import Come from './function/Come.js'
 class Introduction extends Component {
     
     render() {
-        console.log(`${this.props.match.path}/ceo`, "======")
         return (
             <div className="IntroContatiner">
                 <div className="TopBanner">

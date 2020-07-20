@@ -6,23 +6,32 @@
     .Box{
         display: flex;
         padding-top: 40px;
-        justify-content: space-around;
-        .LogoBox{
+        justify-content: space-between;
+        .Footer_wrap{
+            display: flex;
+            .LogoBox{
+                padding-right: 38px;
+            }
+            .Info{
+                font-size: 14px;
+                font-weight: 200;
+                line-height: 1.71;
+                color: #707070;
+            }
         }
-        .Info{
-            font-size: 14px;
-            font-weight: 200;
-        }
+        
     .TermsBox{
         display: flex;
         font-size: 14px;
         .One{
             font-weight: 200;
             padding: 0 5px 0 5px;
+            color: #707070;
         }
         .Two{
             font-weight: 200;
             padding: 0 5px 0 5px;
+            color: #707070;
         }
         }
     }
@@ -32,13 +41,19 @@
 @media screen and (max-width:768px) {
     .FooterContainer{
         .Box{
-            .LogoBox{
-                padding-left: 15px;
-                padding-right: 10px;
-            }
-            .Info{
-                font-size: 11px;
-                padding-right: 15px;
+            .Footer_wrap{
+                display: flex;
+                .LogoBox{
+                    padding-left: 15px;
+                    padding-right: 10px;
+                }
+                .Info{
+                    font-size: 11px;
+                    padding-right: 15px;
+                    >br {
+                        display: none;
+                    }
+                }
             }
         }
         .TermsBox{

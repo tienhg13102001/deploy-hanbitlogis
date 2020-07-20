@@ -28,9 +28,9 @@ class OneVehicle extends Component {
                         당사차량 [1톤]
                     </div>
                     <div className="Vehicle_TopLine">
-                        <div className="Top_Line">번호</div>
-                        <div className="Top_Line">내용</div>
-                        <div className="Top_Line">종류</div>
+                        <div className="Top_Line_one">번호</div>
+                        <div className="Top_Line_two">내용</div>
+                        <div className="Top_Line_three">종류</div>
                     </div>
                     <div className="Vehicle_Board">
                         {data.slice(0, this.state.visible).map((item, index) => {
