@@ -2,6 +2,7 @@
     
     .TestInfo_TitleBox{
         .TestInfo_Title{
+            font-weight: 600;
             font-size: 30px;
             padding-bottom: 20px;
             >span{
@@ -16,55 +17,53 @@
             width: 100%;
         }
     }
-    .Test_List{
-        display: flex;
-        .Test_Number{
-            font-size: 36px;
-            color: #da2320;
-            padding: 5px;
-        }
-        .Test_Name{
-            max-width: 250px;
-            width: 100%;
-            font-size: 30px;
-            padding: 5px;
+    .Test_list_divider_box{
+        max-width: 1050px;
+        width: 100%;
+        .Test_list_box{
+            display: flex;
+            .Test_list_number{
+                font-size: 30px;
+                font-weight: 900;
+                color: #da2320;
+            }
+            .Test_lsit_Name{
+                padding-left: 10px;
+                font-size: 26px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                color: #535353;
+            }
         }
         .Text_Content{
-            padding: 5px;
+            display: flex;
+            flex-direction: column;
             .Content_One{
-                max-width: 808px;
                 font-size: 16px;
+                font-weight: 500;
+                padding-left: 35px;
+               
+                max-width: 970px;
+                width: 100%;
                 color: #707070;
-                line-height: 1.5;
-                .One_Two{
-                    color: #a0a0a0;
-                }
+                
             }
             .Content_Two{
+                font-size: 16px;
                 color: #da2320;
+                font-weight: 500;
+               
+                padding-left: 35px;
+                
             }
             .Content_Three{
-                color: #a0a0a0;
-                padding-bottom: 14px;
-            }
-            
-        }
-        .Text_ContentTwo{
-            padding: 5px;
-            .Content_One1{
-                max-width: 808px;
                 font-size: 16px;
-                color: #707070;
-                line-height: 1.5;
-                padding-bottom: 19px;
-            }
-            .Content_Two2{
-                color: #da2320;
-                padding-bottom: 14px;
-            }
-            .Content_Three3{
+                font-weight: 500;
                 color: #a0a0a0;
-                padding-bottom: 14px;
+               
+                padding-left: 35px;
+                
             }
         }
     }

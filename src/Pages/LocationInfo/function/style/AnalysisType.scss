@@ -6,8 +6,10 @@
         .Type_Text {
             font-size: 14px;
             padding-bottom: 19px;
+            font-weight: 600;
         }
         .Type_Title {
+            font-weight: 600;
             font-size: 30px;
             padding-bottom: 42px;
             >span {
@@ -18,14 +20,15 @@
     .Chart {
         .Chart_TitleBox {
             .Chart_Title {
+                font-weight: 500;
                 font-size: 18px;
                 color: #707070;
                 padding-bottom: 21px;
             }
         }
         .Chart_Box{
-            border-top: solid 2px #535353;
-            border-bottom: solid 2px #535353;
+            border-top: solid 1px #535353;
+            border-bottom: solid 1px #535353;
             max-width: 1050px;
             width: 100%;
             .TypeBox{

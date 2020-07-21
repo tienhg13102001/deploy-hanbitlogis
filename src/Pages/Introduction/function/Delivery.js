@@ -108,7 +108,7 @@ class Delivery extends Component {
                                 return (
                                     <div className="Check_Box" key={index}>
                                         <img className="Check_Icon" src={item.icon} alt='아이콘'></img>
-                                        <div className="Check_Text">{item.text}</div>
+                                        <div className="Check_Text_map">{item.text}</div>
                                     </div>
                                 )
                             })}

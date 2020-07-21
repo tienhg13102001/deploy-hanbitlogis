@@ -30,7 +30,7 @@ class TestGuideCertificate extends Component {
                         <div className="Certi_One">
                             연령
                         </div>
-                        <div className="Certi_Three">
+                        <div className="Certi_Three_">
                             만 21세 이상(접수일 마감 기준)
                         </div>
                     </div>
@@ -61,14 +61,20 @@ class TestGuideCertificate extends Component {
                         if (index === this.list.length - 1) {
                             return (
                                 <div className="Certi_MapBox" key={index}>
-                                    <div className="Certi_map_area">
-                                        <img className="Certi_map_img" src={item.icon} alt='자격 이미지'></img>
-                                        <div className="Certi_map_arrow_box">
+                                    <div className="Certi_iconbox">
+                                        <div className="Certi_map_area">
+                                            <img className="Certi_map_img" src={item.icon} alt='자격 이미지'></img>
+                                            <div className="Certi_map_text_box">
+                                                <div className="Certi_map_text">{item.text}</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="Certi_map_arrow_box">
+                                        <div className="Certi_arrow_wrap">
+
                                             <div className="Certi_map_arrow_text">{item.arrowtext}</div>
                                         </div>
-                                    </div>
-                                    <div className="Certi_map_text_box">
-                                        <div className="Certi_map_text">{item.text}</div>
                                     </div>
                                 </div>
                             )
@@ -78,13 +84,17 @@ class TestGuideCertificate extends Component {
                                 <div className="Certi_MapBox" key={index}>
                                     <div className="Certi_map_area">
                                         <img className="Certi_map_img" src={item.icon} alt='자격 이미지'></img>
-                                        <div className="Certi_map_arrow_box">
-                                            <img className="Certi_map_icon" src={item.arrow} alt='자격 화살표'></img>
-                                            <div className="Certi_map_arrow_text">{item.arrowtext}</div>
+                                        <div className="Certi_map_text_box">
+                                            <div className="Certi_map_text">{item.text}</div>
                                         </div>
                                     </div>
-                                    <div className="Certi_map_text_box">
-                                        <div className="Certi_map_text">{item.text}</div>
+                                    <div className="Certi_map_arrow_box">
+                                        <div className="Certi_arrow_wrap">
+                                            <div className="Certi_map_arrow">
+                                                <img className="Map_arrow" src={item.arrow} alt='화살표 아이콘'></img>
+                                            </div>
+                                            <div className="Certi_map_arrow_text">{item.arrowtext}</div>
+                                        </div>
                                     </div>
                                 </div>
                             )

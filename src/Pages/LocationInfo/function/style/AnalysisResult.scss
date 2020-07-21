@@ -6,6 +6,7 @@
             padding-bottom: 19px;
         }
         .Result_Title{
+            font-weight: 600;
             font-size: 30px;
             padding-bottom: 40px;
             >span{
@@ -47,16 +48,17 @@
                 display: flex;
                 flex-direction: column;
                 .Text_Number{
+                    font-weight: 600;
                     font-size: 20px;
                     padding-bottom: 30px;
                 }
                 .Text_List{
-                    
                     .One_List {
                         font-size: 16px;
                         line-height: 1.5;
                         padding-bottom: 17px;
                         color: #707070;
+                        font-weight: 500;
                     }
                 }
             }

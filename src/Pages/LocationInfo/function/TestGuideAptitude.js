@@ -11,11 +11,12 @@ import img01 from '../../../_asset/image/locationInfo/examination-icon-4.png';
 import img02 from '../../../_asset/image/locationInfo/examination-icon-5.png';
 import img03 from '../../../_asset/image/locationInfo/examination-icon-6.png';
 import img04 from '../../../_asset/image/locationInfo/examination-icon-7.png';
+import { Divider } from 'antd';
 
 class TestGuideAptitude extends Component {
     list = [
         { number: '1.', img: img01, text: '최초 운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 있는 경우 (무사고 운전자)', dot: dot2, sub: '재직 증명서 1부, 전체기간운전경력증명서 (경찰서장 및 운전면허시험장장 발행) 1부 방문우편접수 기간에 제출' },
-        { number: '2.', img: img02, text: '운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 없는 경우 (무경력자)', dot: dot2, sub: '운전적성정밀(신규)검사 수검한 후 시험 응시' }
+        { number: '2.', img: img02, text: '운전적성정밀 검사 수검 후 3년 이내에 취업한 경력이 없는 경우 (무경력자)', dot: dot2, sub: '운전적성정밀(신규)검사 수검한 후 시험 응시' },
     ]
     list2 = [
         { number: '3.', img: img03, text: '운전적성정밀 검사 수검 후 3년 이내에 취업한 경력은 있으나, 재직기간중 사고를 유발한 경력 ', dot: dot2, sub: '대물사고, 대인(경상)사고 : 운전적성정밀 (신규)검사 수검한 후 시험 응시 대인(중상)사고 : 운전적성정밀 (신규, 특별)검사 수검한 후 시험 응시' },
@@ -23,10 +24,14 @@ class TestGuideAptitude extends Component {
     ]
     render() {
         return (
+
             <div className="Aptitude_Container">
+                <Divider />
                 <div className="Aptitude_Box">
                     <div className="Aptitude_Icon">
-                        <img src={icon} alt='적성 검사 아이콘'></img>
+                        <div className="Icon_aptitude">
+                            <img src={icon} alt='적성 검사 아이콘'></img>
+                        </div>
                     </div>
                     <div className="Aptitude_Title">
                         ※ 운전적성정밀검사란
@@ -37,6 +42,7 @@ class TestGuideAptitude extends Component {
                         교통안전공단 13개 운전적성정밀검사장에서 실시하는 검사입니다.
                     </div>
                 </div>
+                <Divider />
                 <div className="Aptitude_Ga">
                     <div className="Ga_Box">
                         <div className="Ga_Title">
@@ -79,31 +85,34 @@ class TestGuideAptitude extends Component {
                             return (
                                 <div className="Na_Icon" key={index}>
                                     <div className="Na_ImgBox">
-                                        <div className="Na_Number">{item.number}</div>
                                         <img className="Na_Img" src={item.img} alt='아이콘'></img>
                                     </div>
-                                    <div className="Na_Text">{item.text}</div>
-                                    <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
-                                    <div className="Na_SubText">{item.sub}</div>
+                                    <div className="Na_Text_wrap">
+                                        <div className="Na_Text">{item.text}</div>
+                                        <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
+                                        <div className="Na_SubText">{item.sub}</div>
+                                    </div>
                                 </div>
                             )
                         })}
                     </div>
-                    <div className="Na_IconBox_two">
+                    <div className="Na_IconBox">
                         {this.list2.map((item, index) => {
                             return (
                                 <div className="Na_Icon" key={index}>
                                     <div className="Na_ImgBox">
-                                        <div className="Na_Number">{item.number}</div>
                                         <img className="Na_Img" src={item.img} alt='아이콘'></img>
                                     </div>
-                                    <div className="Na_Text">{item.text}</div>
-                                    <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
-                                    <div className="Na_SubText">{item.sub}</div>
+                                    <div className="Na_Text_wrap">
+                                        <div className="Na_Text">{item.text}</div>
+                                        <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
+                                        <div className="Na_SubText">{item.sub}</div>
+                                    </div>
                                 </div>
                             )
                         })}
                     </div>
+                    <Divider />
                     <div className="Move_Page">
                         <a href='http://www.ts2020.kr/' target="blank"><div className="Apti_Btn">교통안전공단 홈페이지 바로 가기</div></a>
                     </div>

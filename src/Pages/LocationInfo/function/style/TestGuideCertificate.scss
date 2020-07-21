@@ -3,6 +3,7 @@
     .Certi_TitleBox{
         .Certi_Title{
             font-size: 30px;
+            font-weight: 600;
             padding-bottom: 31px;
             >span{
                 color: #da2320;
@@ -10,7 +11,7 @@
         }
         .Certi_Text{
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 500;
             color: #494e54;
             padding-bottom: 18px;
         }
@@ -22,12 +23,12 @@
             display: flex;
             padding-bottom: 14px;
             .Certi_One{
-                max-width: 120px;
+                max-width: 130px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-weight: 600;
+                font-weight: 900;
             }
             .Certi_Two{
                 max-width: 120px;
@@ -49,7 +50,7 @@
                     max-width: 120px;
                     width: 100%;
                     display: flex;
-                    font-weight: 600;
+                    font-weight: 900;
                     
                 }
                 
@@ -61,58 +62,61 @@
                     max-width: 800px;
                     width: 100%;
                     padding-bottom: 20px;
+                    font-weight: 500;
                 }
                 .Certi_Three{
                     max-width: 855px;
                     width: 100%;
                     padding-bottom: 17px;
                     color: #a0a0a0;
+                    font-weight: 300;
                 }
             }
             
         }
     }
     .Certi_ListBox{
+        padding-top: 40px;
         display: flex;
-        padding-left: 88px;
+        justify-content: space-around;
         .Certi_MapBox{
-            padding-top: 40px;
-            max-width: 1050px;
-            width: 100%;
+            display: flex;
             .Certi_map_area{
-                display: flex;
+                max-width: 135px;
                 .Certi_map_img{
-                    
+                    padding-bottom: 31px;
                 }
-                .Certi_map_arrow_box{
+                .Certi_map_text_box{
+                    text-align: center;
+                    .Certi_map_text{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .Certi_map_arrow_box{
+                margin-left: 60px;
+                display: flex;
+                align-items: center;
+                .Certi_arrow_wrap{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     justify-content: center;
-                    max-width: 120px;
-                    width: 100%;
-                    
-                    .Certi_map_icon{
+                    align-items: center;
+                    .Certi_map_arrow{
                         
+                        .Map_arrow{
+                            padding-bottom: 13px;
+                        }
                     }
                     .Certi_map_arrow_text{
-                        padding-top: 18px;
                         font-size: 16px;
                         color: #da2320;
                     }
                 }
             }
-            .Certi_map_text_box{
-                padding-top: 31px;
-                .Certi_map_text{
-                    font-size: 18px;
-                    width: 170px;
-                    color: #535353;
-                    display: flex;
-                    
-                }
-            }
         }
+        
     }
     
 }
@@ -171,32 +175,6 @@
         }
         .Certi_ListBox{
             display: none;
-            .Certi_MapBox{
-                
-                .Certi_map_area{
-                    
-                    .Certi_map_img{
-                        
-                    }
-                    .Certi_map_arrow_box{
-                        
-                        
-                        .Certi_map_icon{
-                            
-                        }
-                        .Certi_map_arrow_text{
-                            
-                        }
-                    }
-                }
-                .Certi_map_text_box{
-                   
-                    .Certi_map_text{
-                        
-                        
-                    }
-                }
-            }
         }
     }
 }

@@ -62,7 +62,6 @@
         .Chart_ListBox2{
             .Text_List2{
                 display: flex;
-                
                 border-bottom: solid 1px #e5e5e5;
                 .One_Text2{
                     display: flex;
@@ -95,7 +94,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    max-width: 390px;
+                    max-width: 400px;
                     width: 100%;
                     height: 60px;
                     margin: auto;
@@ -115,30 +114,44 @@
         .Chart_TimeBox{
             padding-top: 23px;
             padding-bottom: 23px;
-            max-width: 420px;
-            margin: auto;
             line-height: 1.88;
             color: #707070;
-            .Time{
-                font-size: 16px;
-                >span {
-                    font-weight: 600;
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            justify-content: space-around;
+            .TimeBox_wrap{
+                display: flex;
+                flex-direction: column;
+                max-width: 400px;
+                width: 100%;
+                .Time{
+                    font-size: 16px;
+                    >span {
+                        font-weight: 600;
+                    }
+                }
+                .Holiday{
+                    font-size: 16px;
+                    >span {
+                        font-weight: 600;
+                    }
                 }
             }
-            .Holiday{
-                font-size: 16px;
-                >span {
-                    font-weight: 600;
+            .TimeBox_wrap_two{
+                display: flex;
+                flex-direction: column;
+                max-width: 400px;
+                width: 100%;
+                .Distance{
+                    font-size: 16px;
+                    >span {
+                        font-weight: 600;
+                    }
                 }
-            }
-            .Distance{
-                font-size: 16px;
-                >span {
-                    font-weight: 600;
+                .Exception{
+                    font-size: 16px;
                 }
-            }
-            .Exception{
-                font-size: 16px;
             }
         }
     }
@@ -198,27 +211,34 @@
                 }
             }
             .Chart_TimeBox{
-               text-align: center;
-                .Time{
-                    font-size: 11px;
-                    >span {
-                        
+                
+                .TimeBox_wrap{
+                    padding: 0 15px 0 15px;
+                    .Time{
+                        font-size: 11px;
+                        text-align: left;
+                        >span {
+                            font-size: 12px;
+                        }
+                    }
+                    .Holiday{
+                        font-size: 11px;
+                        >span {
+                            font-size: 12px;
+                        }
                     }
                 }
-                .Holiday{
-                    font-size: 11px;
-                    >span {
-                        
+                .TimeBox_wrap_two{
+                    
+                    .Distance{
+                        font-size: 11px;
+                        >span {
+                            font-size: 12px;
+                        }
                     }
-                }
-                .Distance{
-                    font-size: 11px;
-                    >span {
-                        
+                    .Exception{
+                        font-size: 11px;
                     }
-                }
-                .Exception{
-                    font-size: 9px;
                 }
             }
         }

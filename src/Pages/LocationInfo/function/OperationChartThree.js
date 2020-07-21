@@ -25,7 +25,7 @@ class OpreationChartThree extends Component {
                             </div>
                     </div>
                     <div className="Example">
-                            · 1t 일반탑 기준 (견본)
+                        · 1t 일반탑 기준 (견본)
                         </div>
                     <div className="Chart_Box2">
                         <div className="Chart_Type2">
@@ -58,17 +58,21 @@ class OpreationChartThree extends Component {
                             })}
                         </div>
                         <div className="Chart_TimeBox">
-                            <div className="Time">
-                                <span>근무시간</span> 08:30 - 19:00 기준 (회사 여건에 따라 조정가능)
+                            <div className="TimeBox_wrap">
+                                <div className="Time">
+                                    <span>근무시간</span> 08:30 - 19:00 기준 (회사 여건에 따라 조정가능)
+                                </div>
+                                <div className="Holiday">
+                                    <span>휴무</span> 일요일, 국경일 휴무 (회사 여건에 따라 조정가능)
+                                </div>
                             </div>
-                            <div className="Holiday">
-                                <span>휴무</span> 일요일, 국경일 휴무 (회사 여건에 따라 조정가능)
+                            <div className="TimeBox_wrap_two">
+                                <div className="Distance">
+                                    <span>운행거리</span> 100km 기준 (운행 거리에 따라 견적조건 조정)
                             </div>
-                            <div className="Distance">
-                                <span>운행거리</span> 100km 기준 (운행 거리에 따라 견적조건 조정)
+                                <div className="Exception">
+                                    *유류, 도로비 비교표 내용 제외
                             </div>
-                            <div className="Exception">
-                                *유류, 도로비 비교표 내용 제외
                             </div>
                         </div>
                     </div>

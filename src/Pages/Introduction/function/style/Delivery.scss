@@ -1,19 +1,13 @@
 .DeliContainer{
     max-width: 1050px;
     margin-left: 85px;
-
-    
-
-
     .Wrap_Line{
-
-    
-        
         .Title{
             margin-top: 60px;
             font-size: 30px;
             padding-bottom: 28px;
             span {
+                font-weight: 600;
                 color: #da2320;
             }
         }
@@ -30,6 +24,7 @@
            .Operation{
                 font-size: 30px;
                 padding-bottom: 50px;
+                font-weight: 600;
            }
         }
         .Table{
@@ -70,6 +65,7 @@
                 font-size: 30px;
                 padding-top: 60px;
                 padding-bottom: 50px;
+                font-weight: 600;
                 .Check_Text{
                     text-align: center;
                     color: #da2320;
@@ -92,7 +88,7 @@
                         font-size: 24px;
                         color: #da2320;
                     }
-                    .Check_Text{
+                    .Check_Text_map{
                         font-size: 17px;
                         padding-bottom: 60px;
                     }

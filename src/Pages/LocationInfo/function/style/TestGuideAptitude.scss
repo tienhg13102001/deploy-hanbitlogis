@@ -4,12 +4,9 @@
         text-align: center;
         padding-top: 60px;
         .Aptitude_Icon{
-            max-width: 78px;
-            height: 101px;
-            margin: auto;
-            padding-bottom: 40px;
-            >img{
-                width: 100%;
+            
+            .Icon_aptitude{
+                padding-bottom: 30px;
             }
         }
         .Aptitude_Title{
@@ -18,10 +15,12 @@
             padding-bottom: 30px;
         }
         .Aptitude_Text{
+            max-width: 700px;
+            width: 100%;
             font-size: 16px;
             color: #a0a0a0;
             margin: auto;
-            padding-bottom: 100px;
+            padding-bottom: 60px;
         }
     }
     .Aptitude_Ga{
@@ -40,102 +39,80 @@
             display: flex;
             justify-content: center;
             .Ga_Icon{
-                padding: 40px;
+                border: solid 1px #ebebeb;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px 0 20px 0;
+                display: flex;
+                flex: 1;
                 .Ga_Img{
                     max-width: 120px;
                     width: 100%;
-                    padding-bottom: 23px;
+                    
                 }
                 .Ga_Icon_Text{
-                    max-width: 132px;
-                    width: 100%;
-                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 15px;
+                    font-size: 15px;
+                    font-weight: 600;
                 }
             }
             .Dot_Line{
                 display: flex;
                 align-self: center;
+                padding: 20px;
             }
         }
         .Na_IconBox{
             display: flex;
             justify-content: center;
             text-align: center;
+            padding-bottom: 30px;
             .Na_Icon{
-                max-width: 210px;
+                max-width: 450px;
                 width: 100%;
-                padding: 40px;
+                border: solid 1px #ebebeb;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px 0px 20px 0;
+                display: flex;
+                flex: 1;
                 .Na_ImgBox{
                     display: flex;
                     justify-content: center;
                     padding-bottom: 20px;
-                    .Na_Number{
-                        font-size: 20px;
-                        color: #da2320;
-                    }
                     .Na_Img{
 
                     }
                 }
-                .Na_Text{
-                    max-width: 200px;
-                    width: 100%;
-                    margin: auto;
-                    font-size: 14px;
-                    padding-bottom: 14px;
-                    color: #535353;
-                }
-                .Na_Dot{
-                    padding-bottom: 20px;
-                }
-                .Na_SubText{
-                    font-size: 14px;
-                    color: #a0a0a0;
-                }
-            }
-        }
-        .Na_IconBox_two{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            margin-bottom: 120px;
-            .Na_Icon{
-                max-width: 210px;
-                width: 100%;
-                padding: 40px;
-                .Na_ImgBox{
-                    display: flex;
-                    justify-content: center;
-                    padding-bottom: 20px;
-                    .Na_Number{
-                        font-size: 20px;
-                        color: #da2320;
+                .Na_Text_wrap{
+                    padding-left: 10px;
+                    .Na_Text{
+                        font-size: 14px;
+                        font-weight: 600;
+                        padding-bottom: 14px;
+                        color: #535353;
+                        text-align: left;
                     }
-                    .Na_Img{
-
+                    .Na_Dot{
+                        padding-bottom: 14px;
+                    }
+                    .Na_SubText{
+                        font-size: 14px;
+                        color: #a0a0a0;
+                        text-align: left;
                     }
                 }
-                .Na_Text{
-                    max-width: 200px;
-                    width: 100%;
-                    margin: auto;
-                    font-size: 14px;
-                    padding-bottom: 14px;
-                    color: #535353;
-                }
-                .Na_Dot{
-                    padding-bottom: 20px;
-                }
-                .Na_SubText{
-                    font-size: 14px;
-                    color: #a0a0a0;
-                }
+                
             }
         }
+        
         .Move_Page{
             display: flex;
             justify-content: center;
-            padding-bottom: 100px;
+            padding: 30px 0 100px 0;
             a {
                 text-decoration: none;
             }
@@ -205,56 +182,22 @@
                 .Na_Icon{
                     padding: 20px;
                     .Na_ImgBox{
-                        
-                        .Na_Number{
-                            
-                        }
                         .Na_Img{
                            max-width: 100px;
                         }
                     }
-                    .Na_Text{
-                        font-size: 12px;
-                    }
-                    .Na_Dot{
-                        
-                    }
-                    .Na_SubText{
-                        font-size: 11px;
-                    }
-                }
-            }
-            .Na_IconBox_two{
-                
-                .Na_Icon{
-                    padding: 20px;
-                    .Na_ImgBox{
-                        
-                        .Na_Number{
+                    .Na_Text_wrap{
+                        .Na_Text{
+                            font-size: 12px;
+                        }
+                        .Na_Dot{
                             
                         }
-                        .Na_Img{
-    
+                        .Na_SubText{
+                            font-size: 11px;
                         }
                     }
-                    .Na_Text{
-                        
-                    }
-                    .Na_Dot{
-                        
-                    }
-                    .Na_SubText{
-                        
-                    }
-                }
-            }
-            .Move_Page{
-                
-                a {
                     
-                }
-                .Apti_Btn{
-                   
                 }
             }
         }
