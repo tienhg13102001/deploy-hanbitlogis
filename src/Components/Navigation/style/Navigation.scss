@@ -14,7 +14,7 @@
       width: 100%;
       border-top: 1px solid #e5e5e5;
       bottom: -54px;
-      
+      opacity: 0.9;
       z-index: 2;
       .NaviContainer_submenu_wrap{
         width : 100%;
@@ -85,8 +85,10 @@
       outline: none;
       width: 30px;
       height: 30px;
+      display: none;
       button{
           outline: none;
+          
       }
     }
   .menu-item{
@@ -214,8 +216,10 @@
       width: 70% !important;
     }
     .bm-burger-button {
-      //메뉴 안보이게하기
-      padding-right: 15px;
+      display: initial;
+      >img{
+        padding-right: 15px;
+      }
    }
    .bm-menu {
     padding: 2.5em 1.5em 0;

@@ -3,81 +3,10 @@ import './style/Delivery.scss'
 import icon01 from '../../../_asset/image/Introduction/point-icon-1.png';
 import icon02 from '../../../_asset/image/Introduction/point-icon-2.png';
 import icon03 from '../../../_asset/image/Introduction/point-icon-3.png';
-import icon from '../../../_asset/image/Introduction/point-icon-4.png';
-import { Steps, Divider, Space, Card, Table, Tag } from 'antd';
 
-const columns = [
-    {
-      title: 'Name',
-      dataIndex: 'name',
-      key: 'name',
-      render: text => <a>{text}</a>,
-    },
-    {
-      title: 'Age',
-      dataIndex: 'age',
-      key: 'age',
-    },
-    {
-      title: 'Address',
-      dataIndex: 'address',
-      key: 'address',
-    },
-    {
-      title: 'Tags',
-      key: 'tags',
-      dataIndex: 'tags',
-      render: tags => (
-        <>
-          {tags.map(tag => {
-            let color = tag.length > 5 ? 'geekblue' : 'green';
-            if (tag === 'loser') {
-              color = 'volcano';
-            }
-            return (
-              <Tag color={color} key={tag}>
-                {tag.toUpperCase()}
-              </Tag>
-            );
-          })}
-        </>
-      ),
-    },
-    {
-      title: 'Action',
-      key: 'action',
-      render: (text, record) => (
-        <Space size="middle">
-          <a>Invite {record.name}</a>
-          <a>Delete</a>
-        </Space>
-      ),
-    },
-  ];
-  
-  const data = [
-    {
-      key: '1',
-      name: 'John Brown',
-      age: 32,
-      address: 'New York No. 1 Lake Park',
-      tags: ['nice', 'developer'],
-    },
-    {
-      key: '2',
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 1 Lake Park',
-      tags: ['loser'],
-    },
-    {
-      key: '3',
-      name: 'Joe Black',
-      age: 32,
-      address: 'Sidney No. 1 Lake Park',
-      tags: ['cool', 'teacher'],
-    },
-  ];
+import { Steps, Divider } from 'antd';
+
+
 
 const { Step } = Steps;
 
@@ -119,7 +48,7 @@ class Delivery extends Component {
         { text: '차량의 사양에 대한 만족도 확인' }
     ]
     render() {
-        const { current } = this.state;
+        // const { current } = this.state;
 
         return (
             <div className="DeliContainer">
