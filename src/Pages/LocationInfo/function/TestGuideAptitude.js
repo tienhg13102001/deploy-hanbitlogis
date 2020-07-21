@@ -93,8 +93,10 @@ class TestGuideAptitude extends Component {
                                         <div className="Na_SubText">{item.sub}</div>
                                     </div>
                                 </div>
+                                
                             )
                         })}
+                        
                     </div>
                     <div className="Na_IconBox">
                         {this.list2.map((item, index) => {

@@ -26,6 +26,7 @@
     .Aptitude_Ga{
         .Ga_Box{
             display: flex;
+            padding: 50px 0 40px 0;
             .Ga_Title{
                 font-size: 18px;
                 padding-right: 24px;
@@ -65,31 +66,38 @@
                 padding: 20px;
             }
         }
+        .Na_Icon_area{
+            
+        }
         .Na_IconBox{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             text-align: center;
-            padding-bottom: 30px;
+            margin-bottom: 30px;
             .Na_Icon{
-                max-width: 450px;
+                max-width: 485px;
                 width: 100%;
                 border: solid 1px #ebebeb;
                 border-radius: 10px;
                 padding: 20px;
-                margin: 20px 0px 20px 0;
                 display: flex;
                 flex: 1;
+                justify-content: space-around;
                 .Na_ImgBox{
                     display: flex;
                     justify-content: center;
                     padding-bottom: 20px;
                     .Na_Img{
-
+                        
+                        max-width: 120px;
+                        width: 100%;
                     }
                 }
                 .Na_Text_wrap{
                     padding-left: 10px;
                     .Na_Text{
+                        max-width: 300px;
+                        width: 100%;
                         font-size: 14px;
                         font-weight: 600;
                         padding-bottom: 14px;
@@ -100,7 +108,9 @@
                         padding-bottom: 14px;
                     }
                     .Na_SubText{
-                        font-size: 14px;
+                        max-width: 300px;
+                        width: 100%;
+                        font-size: 12px;
                         color: #a0a0a0;
                         text-align: left;
                     }
