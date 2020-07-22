@@ -7,8 +7,8 @@ class BoardBanner extends Component {
         return (
             <div className="Board_Container">
                 <div className="TextBox">
-                    <div className="Text">Hanbit Bulletin Board</div>
-                    <div className="Title">한빛 게시판</div>
+                    <div className="Text">Notice</div>
+                    <div className="Title">공지사항</div>
                 </div>
             </div>
         );

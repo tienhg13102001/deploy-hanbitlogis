@@ -57,17 +57,7 @@ class Navigation extends Component {
         }
         else if (clickedMenu === "HanbitBoard") {
             subMenu = [
-                { name: "한빛게시판", key: "/HanbitBoard" }
-            ]
-        }
-        else if (clickedMenu === "Notice") {
-            subMenu = [
-                { name: "공지사항", key: "/Notice" }
-            ]
-        }
-        else if (clickedMenu === "QnA") {
-            subMenu = [
-                { name: "QnA", key: "/QnA" },
+                { name: "공지사항", key: "/HanbitBoard" }
             ]
         }
         return (

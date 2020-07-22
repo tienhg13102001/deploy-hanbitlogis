@@ -8,12 +8,10 @@ import Vehicle from './RouterVehicle/VehicleRouter';
 import InVehicle from './RouterVehicle/InVehicleRouter';
 import HanbitBoard from './RouterHanbit/HanbitRouter';
 import InHanbitBoard from './RouterHanbit/InHanbitRouter';
-import Notice from './RouterNotice/NoticeRouter';
-import QnA from './RouterQnA/QnARouter';
-import WriteBoard from './RouterHanbit/WriteRouter';
-import InNotice from './RouterNotice/InNoticeRouter';
-import InQnABoard from './RouterQnA/InQnARouter';
-import WriteQnA from './RouterQnA/QnAWriteRouter'
+
+
+
+
 
 var routes = [
  {
@@ -77,43 +75,7 @@ var routes = [
     component:InHanbitBoard,
     menuName:"InHanbitBoard"
    
-},
-{
-    path:"/Notice",
-    component:Notice,
-    menuName:"Notice"
-   
-},
-{
-    path:"/QnA",
-    component:QnA,
-    menuName:"QnA"
-   
-},
-{
-    path:"/WriteBoard",
-    component:WriteBoard,
-    menuName:"WriteBoard"
-   
-},
-{
-    path:"/InNotice",
-    component:InNotice,
-    menuName:"InNotice"
-   
-},
-{
-    path:"/InQnA",
-    component:InQnABoard,
-    menuName:"InQnA"
-   
-},
-{
-    path:"/WriteQnA",
-    component:WriteQnA,
-    menuName:"WriteQnA"
-   
-},
+}
 
  
 ];

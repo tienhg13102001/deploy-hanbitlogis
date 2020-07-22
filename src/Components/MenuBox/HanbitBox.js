@@ -8,11 +8,11 @@ class HanbitBox extends Component {
         return (
             <div className="HanbitBox">
                 <div className="Title">
-                    한빛게시판
+                    공지사항
                 </div>
                 <NavLink className="HanbitBoard_navlink_container" to="/HanbitBoard">
                     <div className="Line">
-                        한빛게시판
+                        공지사항
                     </div>
                     {`${this.props.location.pathname}` === "/HanbitBoard"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>

@@ -7,7 +7,7 @@ class TItleBox extends Component {
         return (
             <div  className="Hanbit_Contents_Area">
                 <div className="Title_One">
-                    한빛 게시판
+                    공지사항
             </div>
                 <div>
                     <Hboard></Hboard>

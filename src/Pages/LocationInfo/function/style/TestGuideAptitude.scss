@@ -117,6 +117,13 @@
                 }
                 
             }
+            .Na_DotBox{
+                display: flex;
+                align-items: center;
+                .Dot_Line{
+
+                }
+            }
         }
         
         .Move_Page{
@@ -209,7 +216,11 @@
                     }
                     
                 }
+                .Na_DotBox{
+                    display: none;
+                }
             }
+            
         }
     }
 }

@@ -82,37 +82,83 @@ class TestGuideAptitude extends Component {
                     </div>
                     <div className="Na_IconBox">
                         {this.list.map((item, index) => {
-                            return (
-                                <div className="Na_Icon" key={index}>
-                                    <div className="Na_ImgBox">
-                                        <img className="Na_Img" src={item.img} alt='아이콘'></img>
-                                    </div>
-                                    <div className="Na_Text_wrap">
-                                        <div className="Na_Text">{item.text}</div>
-                                        <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
-                                        <div className="Na_SubText">{item.sub}</div>
-                                    </div>
-                                </div>
-                                
-                            )
+                            if (index === this.list.length - 2) {
+                                return (
+                                    <>
+                                        <div className="Na_Icon" key={index}>
+                                            <div className="Na_ImgBox">
+                                                <img className="Na_Img" src={item.img} alt='아이콘'></img>
+                                            </div>
+                                            <div className="Na_Text_wrap">
+                                                <div className="Na_Text">{item.text}</div>
+                                                <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
+                                                <div className="Na_SubText">{item.sub}</div>
+                                            </div>
+                                        </div>
+                                        <div className="Na_DotBox">
+                                            <div className="Dot_Line">
+                                                <img src={dot} alt="Dot_Line"></img>
+                                            </div>
+                                        </div>
+                                    </>
+                                )
+                            }
+                            else {
+                                return (
+                                        <div className="Na_Icon" key={index}>
+                                            <div className="Na_ImgBox">
+                                                <img className="Na_Img" src={item.img} alt='아이콘'></img>
+                                            </div>
+                                            <div className="Na_Text_wrap">
+                                                <div className="Na_Text">{item.text}</div>
+                                                <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
+                                                <div className="Na_SubText">{item.sub}</div>
+                                            </div>
+                                        </div>
+                                )
+                            }
                         })}
-                        
+
                     </div>
                     <div className="Na_IconBox">
                         {this.list2.map((item, index) => {
-                            return (
-                                <div className="Na_Icon" key={index}>
-                                    <div className="Na_ImgBox">
-                                        <img className="Na_Img" src={item.img} alt='아이콘'></img>
-                                    </div>
-                                    <div className="Na_Text_wrap">
-                                        <div className="Na_Text">{item.text}</div>
-                                        <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
-                                        <div className="Na_SubText">{item.sub}</div>
-                                    </div>
-                                </div>
-                            )
+                            if (index === this.list.length - 2) {
+                                return (
+                                    <>
+                                        <div className="Na_Icon" key={index}>
+                                            <div className="Na_ImgBox">
+                                                <img className="Na_Img" src={item.img} alt='아이콘'></img>
+                                            </div>
+                                            <div className="Na_Text_wrap">
+                                                <div className="Na_Text">{item.text}</div>
+                                                <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
+                                                <div className="Na_SubText">{item.sub}</div>
+                                            </div>
+                                        </div>
+                                        <div className="Na_DotBox">
+                                            <div className="Dot_Line">
+                                                <img src={dot} alt="Dot_Line"></img>
+                                            </div>
+                                        </div>
+                                    </>
+                                )
+                            }
+                            else {
+                                return (
+                                        <div className="Na_Icon" key={index}>
+                                            <div className="Na_ImgBox">
+                                                <img className="Na_Img" src={item.img} alt='아이콘'></img>
+                                            </div>
+                                            <div className="Na_Text_wrap">
+                                                <div className="Na_Text">{item.text}</div>
+                                                <img className="Na_Dot" src={item.dot} alt='Dot_Line2'></img>
+                                                <div className="Na_SubText">{item.sub}</div>
+                                            </div>
+                                        </div>
+                                )
+                            }
                         })}
+
                     </div>
                     <Divider />
                     <div className="Move_Page">

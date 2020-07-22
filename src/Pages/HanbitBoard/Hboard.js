@@ -98,13 +98,6 @@ class Hboard extends Component {
                             /></NavLink>
                         )
                     })}
-                    <div className="Btn_Area">
-                        
-                    <div className="Write_Button">
-                    <NavLink to="/HanbitBoard/WriteBoard">글쓰기</NavLink>
-                    </div>
-                    
-                    </div>
                 </div>
                 <Pagination
                     currentPage={this.state.currentPage}
