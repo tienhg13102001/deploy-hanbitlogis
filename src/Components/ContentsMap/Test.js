@@ -6,7 +6,7 @@ class Test extends Component {
         return (
             <div className="TestContainer">
                 <div className="TextBox">
-                    <div className="Title">
+                    <div className="Title_test">
                         바로<br/>
                         테스트
                     </div>

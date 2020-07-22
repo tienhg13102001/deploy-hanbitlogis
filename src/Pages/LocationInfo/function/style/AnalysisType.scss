@@ -32,14 +32,13 @@
             max-width: 1050px;
             width: 100%;
             .TypeBox{
-                
                 height: 63px;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
                 background-color: #f5f4f4;
                 .Type{
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: 600;
                 }
             }
@@ -52,7 +51,7 @@
                 align-items: center;
                 justify-content: space-around;
                 .One{
-                    font-size: 16px;
+                    font-size: 14px;
                     color: #707070;
                     width: 500px;
                     display: flex;

@@ -6,7 +6,7 @@ class Union extends Component {
         return (
             <div className="UnionContainer">
                 <div className="TextBox">
-                    <div className="Title">
+                    <div className="Title_union">
                         화물연합<br/>
                         운송
                     </div>

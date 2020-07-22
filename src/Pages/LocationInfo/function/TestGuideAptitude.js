@@ -95,7 +95,7 @@ class TestGuideAptitude extends Component {
                                                 <div className="Na_SubText">{item.sub}</div>
                                             </div>
                                         </div>
-                                        <div className="Na_DotBox">
+                                        <div className="Na_Dot_box">
                                             <div className="Dot_Line">
                                                 <img src={dot} alt="Dot_Line"></img>
                                             </div>
@@ -135,7 +135,7 @@ class TestGuideAptitude extends Component {
                                                 <div className="Na_SubText">{item.sub}</div>
                                             </div>
                                         </div>
-                                        <div className="Na_DotBox">
+                                        <div className="Na_Dot_box">
                                             <div className="Dot_Line">
                                                 <img src={dot} alt="Dot_Line"></img>
                                             </div>
@@ -160,7 +160,6 @@ class TestGuideAptitude extends Component {
                         })}
 
                     </div>
-                    <Divider />
                     <div className="Move_Page">
                         <a href='http://www.ts2020.kr/' target="blank"><div className="Apti_Btn">교통안전공단 홈페이지 바로 가기</div></a>
                     </div>

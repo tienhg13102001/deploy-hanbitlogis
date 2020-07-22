@@ -17,8 +17,7 @@ class MainInfo extends Component {
         { id: 2, icon: icon03, text: '지입 정보', url:'/Info' },
         { id: 3, icon: icon04, text: '차량 운영 분석', url:'/Info/operation'  },
         { id: 4, icon: icon05, text: '1톤 차량', url:'/Vehicle' },
-        { id: 5, icon: icon06, text: '2.5톤 차량', url:'/Vehicle/twovehicle' },
-        { id: 6, icon: icon07, text: '질문 답변', url:'/QnA' },
+        { id: 5, icon: icon06, text: '2.5톤 차량', url:'/Vehicle/twovehicle' }
     ]
     render() {
         return (

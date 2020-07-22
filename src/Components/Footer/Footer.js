@@ -16,10 +16,6 @@ class Footer extends Component {
                             copyright (c) hanbitlogis. all rights reserved
                         </div>
                     </div>
-                    <div className="TermsBox">
-                        <div className="One">이용약관</div>
-                        <div className="Two">개인정보처리방침</div>
-                    </div>
                 </div>
             </div>
         );

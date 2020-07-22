@@ -6,6 +6,9 @@ import WriteHanbit from '../../Pages/HanbitBoard/WriteHanbit';
 
 
 class WriteRouter extends Component {
+    componentWillMount = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      }
     render() {
         return (
             <div className="Hanbit_Contatiner">

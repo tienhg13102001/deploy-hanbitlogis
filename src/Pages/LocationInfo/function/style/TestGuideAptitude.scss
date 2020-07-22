@@ -47,7 +47,7 @@
                 display: flex;
                 flex: 1;
                 .Ga_Img{
-                    max-width: 120px;
+                    max-width: 76px;
                     width: 100%;
                     
                 }
@@ -86,10 +86,10 @@
                 .Na_ImgBox{
                     display: flex;
                     justify-content: center;
-                    padding-bottom: 20px;
+                    align-items: center;
                     .Na_Img{
-                        
-                        max-width: 120px;
+                        max-width: 76px;
+                        max-height: 76px;
                         width: 100%;
                     }
                 }
@@ -117,11 +117,12 @@
                 }
                 
             }
-            .Na_DotBox{
+            .Na_Dot_box{
                 display: flex;
                 align-items: center;
+                
                 .Dot_Line{
-
+                    padding: 20px;
                 }
             }
         }
@@ -183,7 +184,7 @@
                     padding: 20px;
                     text-align: center;
                     .Ga_Img{
-                        max-width: 100px;
+                        
                         
                     }
                     .Ga_Icon_Text{
@@ -200,7 +201,8 @@
                     padding: 20px;
                     .Na_ImgBox{
                         .Na_Img{
-                           max-width: 100px;
+                            width: 76px;
+                            height: 76px;
                         }
                     }
                     .Na_Text_wrap{

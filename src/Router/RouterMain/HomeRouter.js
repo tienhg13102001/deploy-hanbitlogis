@@ -5,6 +5,9 @@ import MainContents from '../../Pages/Main/MainContents';
 import MainBoard from '../../Pages/Main/MainBoard';
 
 class HomeRouter extends Component {
+    componentWillMount = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      }
     render() {
         return (
             <div>

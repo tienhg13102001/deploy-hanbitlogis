@@ -4,6 +4,9 @@ import OneCarBanner from '../../Pages/CompanyCar/function/OneCarBanner'
 import InVehicle from '../../Pages/CompanyCar/function/InVehicle'
 
 class InVehicleRouter extends Component {
+    componentWillMount = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      }
     render() {
         return (
             <div className="Vehicle_Contatiner">

@@ -7,7 +7,7 @@ class Recruitment extends Component {
         return (
             <div className="RecruitContainer">
                 <div className="TextBox">
-                    <div className="Title">
+                    <div className="Title_recruit">
                         채용<br/>
                         문의
                     </div>

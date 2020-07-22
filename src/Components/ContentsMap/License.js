@@ -8,7 +8,7 @@ class License extends Component {
             <div className="LicenseContainer">
                 <Link className="Link" to="/Info/testguide">
                     <div className="TextBox">
-                        <div className="Title">
+                        <div className="Title_license">
                             자격증<br />
                             가이드
                     </div>
