@@ -3,9 +3,10 @@ import './CarMenu.scss'
 import { NavLink } from 'react-router-dom';
 
 import ArrowRight from '../../_asset/image/common/red-next-icon.png';
+import CarDropDown from '../../Common/DropDown/CarDropDown';
 
 class CarMenu extends Component {
-    render() {
+    renderPc() {
         return (
             <div className="CarMenuBox">
                 <div className="Title">
@@ -30,6 +31,22 @@ class CarMenu extends Component {
             </div>
         );
     }
+    renderMobile = () => {
+        return (
+            <div className="CarMenuBox">
+                <CarDropDown></CarDropDown>
+            </div>
+
+        );
+    }
+    render() {
+        const { isMobile } = this.props
+        return (
+          <>
+            {isMobile ? this.renderMobile() : this.renderPc()}
+          </>
+        );
+      }
 }
 
 export default CarMenu;

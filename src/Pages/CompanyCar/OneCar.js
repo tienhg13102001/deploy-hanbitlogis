@@ -15,7 +15,7 @@ class OneCar extends Component {
                     <OneCarBanner></OneCarBanner>
                 </div>
                 <div className="Vehicle_Contents">
-                    <CarMenuBox {...this.props}></CarMenuBox>
+                    <CarMenuBox isMobile={this.props} {...this.props}></CarMenuBox>
                     <Route exact path={`${this.props.match.path}`} component={OneVehicle}></Route>
                     <Route path={`${this.props.match.path}/onevehicle`} component={OneVehicle}></Route>
                     <Route path={`${this.props.match.path}/twovehicle`} component={TwoVehicle}></Route>

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './IntroductionBox.scss'
 import { NavLink } from 'react-router-dom';
 import './InfoBox.scss'
-
+import InfoDropDown from '../../Common/DropDown/InfoDropDown';
 import ArrowRight from '../../_asset/image/common/red-next-icon.png';
 
 class InfoBox extends Component {
-    render() {
+    renderPc() {
         return (
             <div className="InfoBox">
                 <div className="Title">
@@ -27,6 +27,22 @@ class InfoBox extends Component {
             </div>
         );
     }
+    renderMobile = () => {
+        return (
+            <div className="IntroBox">
+                <InfoDropDown></InfoDropDown>
+            </div>
+
+        );
+    }
+    render() {
+        const { isMobile } = this.props
+        return (
+          <>
+            {isMobile ? this.renderMobile() : this.renderPc()}
+          </>
+        );
+      }
 }
 
 export default InfoBox;

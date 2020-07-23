@@ -96,9 +96,7 @@ class Navigation extends Component {
                                 <NavLink id="Company" className="menu-item" to="/Intro">회사소개</NavLink>
                                 <NavLink id="Info" className="menu-item" to="/Info">지입정보</NavLink>
                                 <NavLink id="Car" className="menu-item" to="/Vehicle">당사차량</NavLink>
-                                <NavLink id="Board" className="menu-item" to="/HanbitBoard">한빛게시판</NavLink>
-                                <NavLink id="Notice" className="menu-item" to="/Notice">공지사항</NavLink>
-                                <NavLink id="QnA" className="menu-item" to="/QnA">QnA</NavLink>
+                                <NavLink id="Board" className="menu-item" to="/HanbitBoard">공지사항</NavLink>
                             </BurMenu>
                         </div>
                     </div>

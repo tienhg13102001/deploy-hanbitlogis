@@ -9,6 +9,7 @@ import HistoryContent from './function/HistoryContents'
 import Come from './function/Come.js'
 class Introduction extends Component {
     
+    
     render() {
         return (
             <div className="IntroContatiner">
@@ -16,7 +17,7 @@ class Introduction extends Component {
                     <IntoBanner></IntoBanner>
                 </div>
                 <div className="Intro_Contents">
-                    <IntoMenuBox {...this.props}></IntoMenuBox>
+                    <IntoMenuBox isMobile={this.props} {...this.props}></IntoMenuBox>
                     <Route exact path={`${this.props.match.path}`} component={IntroText}></Route>
                     <Route path={`${this.props.match.path}/ceo`} component={IntroText}></Route>
                     <Route path={`${this.props.match.path}/policy`} component={Delivery}></Route>

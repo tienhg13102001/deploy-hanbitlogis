@@ -11,6 +11,7 @@ import Operaiton from './function/Operaiton';
 import TestGuide from './function/TestGuide';
 
 class Analysis extends Component {
+    
     render() {
         return (
             <div className="Analysis_Contatiner">
