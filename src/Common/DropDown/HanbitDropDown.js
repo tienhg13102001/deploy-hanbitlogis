@@ -2,17 +2,11 @@ import React from 'react';
 import { withStyles, styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import './DropDown.scss'
-import { NavLink } from "react-router-dom";
 
 const StyledMenu = withStyles({
   paper: {
-    width:'100%',
     border: '1px solid #d3d4d5',
-    maxWidth: "100%"
   },
 })((props) => (
   <Menu
@@ -45,20 +39,8 @@ const MyButton = styled(Button)({
   },
 });
 
-const StyledMenuItem = withStyles((theme) => ({
-  root: {
-    width:'100%',
-    color:'#333333',
-    '&:focus': {
-      width:'100%',
-      backgroundColor: "#da2320",
-      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: '#fff'
-      },
-      
-    },
-  },
-}))(MenuItem);
+
+
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -81,38 +63,16 @@ export default function CustomizedMenus() {
         onClick={handleClick}
       >
         
-        지입 정보
+        공지사항
 
       </MyButton>
       <StyledMenu
         id="customized-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
-          <NavLink className="Mobile_link" to="/Info/analysis">
-          <ListItemText primary="지입 분석" />
-          </NavLink>
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
-          <NavLink className="Mobile_link" to="/Info/operation">
-          <ListItemText primary="차량운용분석" />
-          </NavLink>
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
-          <NavLink className="Mobile_link" to="/Info/testguide">
-          <ListItemText primary="자격증가이드" />
-          </NavLink>
-        </StyledMenuItem>
       </StyledMenu>
     </div>
   );
 }
+
+

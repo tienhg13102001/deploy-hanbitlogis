@@ -51,7 +51,6 @@
         
         .TopNaviWrap{
           display: flex;
-          
           .Menu_Logo{
             max-width: 129px;
             width: 100%;
@@ -59,15 +58,12 @@
             cursor: pointer;
           }
         }
-        
-        
         .Member_Box{
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: 300;
         }
-
     }
 
     ////////////////////////////@extend/* Position and sizing of burger button */

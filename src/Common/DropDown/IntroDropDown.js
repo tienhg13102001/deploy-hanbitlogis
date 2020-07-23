@@ -1,43 +1,65 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-
 import { NavLink } from "react-router-dom";
+import './DropDown.scss'
 
 const StyledMenu = withStyles({
   paper: {
+    width:'100%',
     border: '1px solid #d3d4d5',
+    maxWidth: "100%"
   },
+
 })((props) => (
   <Menu
     elevation={0}
     getContentAnchorEl={null}
     anchorOrigin={{
       vertical: 'bottom',
-      horizontal: 'center',
+      horizontal: "center",
     }}
     transformOrigin={{
       vertical: 'top',
-      horizontal: 'center',
+      horizontal: "center",
     }}
     {...props}
   />
 ));
 
+const MyButton = styled(Button)({
+  width:'100%',
+  fontSize:'16px',
+  background: '#da2320',
+  border: 0,
+  borderRadius: 3,
+  color: 'white',
+  height: 48,
+  padding: '0 30px',
+  '&:hover': {
+    backgroundColor: "#da2320",
+  },
+});
+
+
 const StyledMenuItem = withStyles((theme) => ({
   root: {
+    width:"100%",
+    color:'#333333',
     '&:focus': {
-      backgroundColor: theme.palette.primary.main,
+      width:'100%',
+      backgroundColor: "#da2320",
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: theme.palette.common.white,
+        color: '#fff'
       },
     },
   },
 }))(MenuItem);
+
+
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -51,8 +73,8 @@ export default function CustomizedMenus() {
   };
 
   return (
-    <div>
-      <Button
+    <div className="DropDown_container">
+      <MyButton 
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
@@ -62,7 +84,7 @@ export default function CustomizedMenus() {
         
         회사 소개
 
-      </Button>
+      </MyButton>
       <StyledMenu
         id="customized-menu"
         anchorEl={anchorEl}
@@ -71,23 +93,17 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
-          <NavLink to="/Intro/Policy">
+          <NavLink className="Mobile_link" to="/Intro/Policy">
           <ListItemText primary="경영 방침" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
-          <NavLink to="/Intro/history">
+          <NavLink className="Mobile_link" to="/Intro/history">
           <ListItemText primary="회사 연혁" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
-          <NavLink to="/Intro/come">
+          <NavLink className="Mobile_link" to="/Intro/come">
           <ListItemText primary="오시는길" />
           </NavLink>
         </StyledMenuItem>
@@ -95,3 +111,5 @@ export default function CustomizedMenus() {
     </div>
   );
 }
+
+

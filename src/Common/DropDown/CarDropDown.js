@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -10,7 +10,9 @@ import { NavLink } from "react-router-dom";
 
 const StyledMenu = withStyles({
   paper: {
+    width:'100%',
     border: '1px solid #d3d4d5',
+    maxWidth:"100%"
   },
 })((props) => (
   <Menu
@@ -28,12 +30,29 @@ const StyledMenu = withStyles({
   />
 ));
 
+const MyButton = styled(Button)({
+  width:'100%',
+  fontSize:'16px',
+  background: '#da2320',
+  border: 0,
+  borderRadius: 3,
+  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+  color: 'white',
+  height: 48,
+  padding: '0 30px',
+  '&:hover': {
+    backgroundColor: "#da2320",
+  },
+});
+
 const StyledMenuItem = withStyles((theme) => ({
   root: {
+    width:'100%',
+    color:'#333333',
     '&:focus': {
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: '#da2320',
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: theme.palette.common.white,
+        color: '#fff',
       },
     },
   },
@@ -51,8 +70,8 @@ export default function CustomizedMenus() {
   };
 
   return (
-    <div>
-      <Button
+    <div className="DropDown_container">
+      <MyButton
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
@@ -62,7 +81,7 @@ export default function CustomizedMenus() {
         
         당사차량
 
-      </Button>
+      </MyButton>
       <StyledMenu
         id="customized-menu"
         anchorEl={anchorEl}
@@ -73,28 +92,28 @@ export default function CustomizedMenus() {
         <StyledMenuItem>
           <ListItemIcon>
           </ListItemIcon>
-          <NavLink to="/Vehicle/onevehicle">
+          <NavLink className="Mobile_link" to="/Vehicle/onevehicle">
           <ListItemText primary="당사차량[1톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
           <ListItemIcon>
           </ListItemIcon>
-          <NavLink to="/Vehicle/twovehicle">
+          <NavLink className="Mobile_link" to="/Vehicle/twovehicle">
           <ListItemText primary="당사차량[2.5톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
           <ListItemIcon>
           </ListItemIcon>
-          <NavLink to="/Vehicle/threevehicle">
+          <NavLink className="Mobile_link" to="/Vehicle/threevehicle">
           <ListItemText primary="당사차량[4.5톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
           <ListItemIcon>
           </ListItemIcon>
-          <NavLink to="/Vehicle/fourvehicle">
+          <NavLink className="Mobile_link" to="/Vehicle/fourvehicle">
           <ListItemText primary="당사차량[5톤]" />
           </NavLink>
         </StyledMenuItem>

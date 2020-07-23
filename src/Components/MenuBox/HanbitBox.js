@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './HanbitBox.scss'
 import { NavLink } from 'react-router-dom';
+import HanbitDropDown from '../../Common/DropDown/HanbitDropDown';
 
 import ArrowRight from '../../_asset/image/common/red-next-icon.png'
 class HanbitBox extends Component {
-    render() {
+    renderPc() {
         return (
             <div className="HanbitBox">
                 <div className="Title">
@@ -19,6 +20,22 @@ class HanbitBox extends Component {
             </div>
         );
     }
+    renderMobile = () => {
+        return (
+            <div className="HanbitBox">
+                <HanbitDropDown></HanbitDropDown>
+            </div>
+
+        );
+    }
+    render() {
+        const { isMobile } = this.props
+        return (
+          <>
+            {isMobile ? this.renderMobile() : this.renderPc()}
+          </>
+        );
+      }
 }
 
 export default HanbitBox;
