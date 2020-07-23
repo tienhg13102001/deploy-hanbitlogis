@@ -69,8 +69,9 @@
 
 @media screen and (max-width:768px) {
     .Result_Container{
+        padding: 60px 15px 0 15px;
         .Result_TextBox{
-            padding-left: 10px;
+            
             .Result_Text{
                 font-size: 11px;
             }
@@ -79,7 +80,7 @@
             }   
         }
         .Result_ListBox{
-            padding-left: 10px;
+            
             .Area{
                 
                 .One_Area {
@@ -97,7 +98,7 @@
                     }
                 }
                 .Two_Area{
-                    padding-left: 15px;
+                    
                     .Text_Number{
                         padding-bottom: 15px;
                     }

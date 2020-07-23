@@ -25,12 +25,14 @@
     .Board_Container{
         
         .TextBox{
-            left: 100px;
+            left: 20px;
             .Text{
                 font-size: 11px;
+                font-weight: 600;
             }
             .Title{
                 font-size: 28px;
+                font-weight: 900;
             }
         }
     }

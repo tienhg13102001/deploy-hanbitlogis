@@ -32,10 +32,10 @@
 @media screen and (max-width:768px) {
     .Text_Container{
         margin-left: initial;
-        padding-left: 0px;
+        
         
         .Analy_TextBox{
-            padding-left: 10px;
+            padding: 0 15px 0 15px;
             .Analy_Title{
                 font-size: 20px;
             }
@@ -44,8 +44,7 @@
             }
         }
         .Text{
-            padding-left: 10px;
-            padding-right: 10px;
+            padding: 0 15px 0 15px;
             font-size: 12px;
         }
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ResultCard from '../function/ResultCard'
 import './style/AnalysisResult.scss'
 
 class AnalysisResult extends Component {
@@ -8,7 +8,7 @@ class AnalysisResult extends Component {
         { title:'인력관리 효율화로 신뢰성 강화', number:'02', text:'· 운전자에 대하여 급여인상, 퇴직금 (누진), 기타 후생복지비 절감', text2:'· 노사분규등 인력관리가 다소 용이함', text3:'· 정규근무시간 외에도 인력 활용도 용이 (상호간 협의하여)'},
         { title:'경쟁력 강화로 기업 이미지 향상', number:'03', text:'· 경험 있는 운전자를 채용하여 물류배송업무의 능률 향상', text2:'· 고객사 요구에 미흡할시 기업 이미지 및 신뢰도 상실'}
     ]
-    render() {
+    renderPc() {
         return (
             <div className="Result_Container">
                 <div className="Result_TextBox">
@@ -43,6 +43,34 @@ class AnalysisResult extends Component {
             </div>
         );
     }
+
+    renderMobile() {
+        return (
+            <div className="Result_Container">
+                <div className="Result_TextBox">
+                    <div className="Result_Text">
+                        The result of carrying
+                    </div>
+                    <div className="Result_Title">
+                        지입 차량의 <span>효과</span>
+                    </div>
+                </div>
+                <div className="Cards_area">
+                    
+                            <ResultCard
+                            />
+                </div>
+            </div>
+        )
+    }
+    render() {
+        const { isMobile } = this.props
+        return (
+          <>
+            {isMobile ? this.renderMobile() : this.renderPc()}
+          </>
+        );
+      }
 }
 
 export default AnalysisResult;
