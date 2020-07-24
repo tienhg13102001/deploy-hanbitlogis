@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './style/HistoryContents.scss'
-import { Table, Tag } from 'antd';
+import { Table } from 'antd';
 
 const columns = [
   {
     title: 'Year',
     dataIndex: 'year',
     key: 'year',
-    render: text => <a>{text}</a>,
+    // render: text => <a>{text}</a>,
   },
   {
     title: 'Month',

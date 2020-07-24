@@ -1,7 +1,7 @@
 .In_Container{
     max-width: 1050px;
     width: 100%;
-    padding-top: 60px;
+    padding: 60px 0 60px 0;
     margin-left: 100px;
     .In_TitleBox{
         .In_Title{
@@ -17,21 +17,7 @@
             font-size: 20px;
             color: #707070;
         }
-        .Go_Button{
-            display: flex;
-            background-color: #535353;
-            font-size: 16px;
-            color: #ffffff;
-            max-width: 100px;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            height: 44px;
-            >a{
-                color: #ffffff;
-                text-decoration: none;
-            }
-        }
+        
     }
     .In_Contents{
         border-top: solid 1px #535353;
@@ -46,7 +32,7 @@
                 height: 60px;
                 font-weight: 600;
                 display: flex;
-                justify-content: left;
+                justify-content: center;
                 align-items: center;
                 border-bottom: 1px solid #a0a0a0;
                 border-right: 1px solid #a0a0a0;
@@ -66,7 +52,23 @@
     .BottomText{
         padding-top: 21px;
         font-size: 14px;
-        padding-bottom: 70px;
+        padding-bottom: 30px;
+    }
+    .Go_Button{
+        display: flex;
+        background-color: #535353;
+        font-size: 16px;
+        color: #ffffff;
+        max-width: 200px;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: 44px;
+        >a{
+            color: #ffffff;
+            text-decoration: none;
+        }
     }
 }
 
@@ -74,19 +76,24 @@
     .In_Container{
         margin-left: 0;
         .In_TitleBox{
+            padding-left: 15px;
             .In_Title{
                 font-size: 18px;
-                padding-left: 15px;
+                
             }
         }
         .In_SubTitle{
-            padding-left: 10px;
-            padding-bottom: 15px;
+            padding: 0 15px 15px 15px;
+            
             .In_SubText{
-                font-size: 12px;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .Go_Button{
-                
+                max-width: 80px;
+                height: 40px;
                 >a{
                     
                 }
@@ -97,7 +104,7 @@
             .In_Box{
                 
                 .In_Menu{
-                    font-size: 13px;
+                    font-size: 11px;
                     justify-content: center;
                 }
                 .In_Content{
@@ -106,6 +113,7 @@
             }
         }
         .BottomText{
+            padding: 10px 10px 30px 10px;
             font-size: 11px;
         }
     }

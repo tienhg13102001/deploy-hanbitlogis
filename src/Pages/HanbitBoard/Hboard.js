@@ -53,12 +53,12 @@ class Hboard extends Component {
         await axios.get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
 
         .then(response => {
-            console.log(response.data.data.rows)
             if (response && response.data && response.data.data && response.data.data.rows) {
                 this.setState({
                     ...this.state,
                     list : response.data.data.rows
                 })
+                console.log(response.data.data.rows)
             }
             else {
                 console.error('error')
@@ -76,19 +76,18 @@ class Hboard extends Component {
     }
 
     render() {
-        console.log(this.state.list)
         return (
             <div className="Hboard_Contaier">
                 <div className="Hboard_TopLine">
-                    <div className="Hboard_Type">번호</div>
-                    <div className="Hboard_People">작성자</div>
                     <div className="Hboard_Title">제목</div>
+                    <div className="Hboard_People">작성자</div>
                     <div className="Hboard_Date">작성날</div>
                 </div>
                 <div>
                     {this.state.list.map((item, index) => {
+                        
                         return (
-                            <NavLink className="Link" to="/HanbitBoard/InBoard">
+                            <NavLink className="Link" data={item} to={`/HanbitBoard/InBoard?name=${item.name}`}>
                             <BoardText
                                 key={index}
                                 number={item.number}

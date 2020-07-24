@@ -3,7 +3,7 @@ import './style/Delivery.scss'
 import icon01 from '../../../_asset/image/Introduction/point-icon-1.png';
 import icon02 from '../../../_asset/image/Introduction/point-icon-2.png';
 import icon03 from '../../../_asset/image/Introduction/point-icon-3.png';
-
+import arrowicon from '../../../_asset/image/locationInfo/arrow-icon.png';
 import { Steps, Divider } from 'antd';
 
 
@@ -24,7 +24,7 @@ class Delivery extends Component {
         this.setState({ current });
     };
     list = [
-        { id: 0, principleNumber: '제 1 원칙', text: '배송도착시간 예고제 실시' },
+        { id: 0, principleNumber: '제 1 원칙', text: '배송도착시간 예고제를 실시합니다.' },
         { id: 1, principleNumber: '제 2 원칙', text: '각 배송원의 인성 및 service-mind 정기교육 (3개월 단위)' },
         { id: 2, principleNumber: '제 3 원칙', text: '배송 복장의 통일 (유니폼 및 모자 착용)' },
         { id: 3, principleNumber: '제 4 원칙', text: '차량의 청결 상태 점검 (월 1회)' },
@@ -35,9 +35,9 @@ class Delivery extends Component {
         { id: 8, principleNumber: '제 9 원칙', text: '배송 차량 사고에 대비한 비상 연락체계 확립' },
     ]
     checklist = [
-        { icon: icon01, title: '1 Point', text: '배송도착시간 예고제를 실시합니다.' },
-        { icon: icon02, title: '2 Point', text: '차량의 청결 상태를 월 1회 점검합니다.' },
-        { icon: icon03, title: '3 Point', text: '배송 도착시간 예고제를 실시합니다.' },
+        { icon: icon01, title: '1 Point', text: '배송도착시간 예고제를\n 실시합니다.', arrow: arrowicon },
+        { icon: icon02, title: '2 Point', text: '차량의 청결 상태를\n 월 1회 점검합니다.', arrow: arrowicon },
+        { icon: icon03, title: '3 Point', text: '배송 도착시간\n 예고제를 실시합니다.', arrow: arrowicon },
     ]
     followlist = [
         { text: '전 배송처의 지리 (위치) 확보' },
@@ -105,12 +105,36 @@ class Delivery extends Component {
                         </div>
                         <div className="Check_List">
                             {this.checklist.map((item, index) => {
-                                return (
-                                    <div className="Check_Box" key={index}>
-                                        <img className="Check_Icon" src={item.icon} alt='아이콘'></img>
-                                        <div className="Check_Text_map">{item.text}</div>
-                                    </div>
-                                )
+                                if (index === this.checklist.length - 1) {
+                                    return (
+                                        <>
+                                            <div className="Check_Box" key={index}>
+                                                <img className="Check_Icon" src={item.icon} alt='아이콘'></img>
+                                                <div className="Check_Title">{item.title}</div>
+                                                <div className="Check_Text_map">
+                                                    {item.text.split('\n').map(e => <span>{e}<br /></span>)}
+                                                </div>
+                                            </div>
+                                            
+                                        </>
+                                    )
+                                }
+                                else {
+                                    return (
+                                        <>
+                                            <div className="Check_Box" key={index}>
+                                                <img className="Check_Icon" src={item.icon} alt='아이콘'></img>
+                                                <div className="Check_Title">{item.title}</div>
+                                                <div className="Check_Text_map">
+                                                    {item.text.split('\n').map(e => <span>{e}<br /></span>)}
+                                                </div>
+                                            </div>
+                                            <div className="check_arrow_map">
+                                                <img className="arrow_map" src={item.arrow} alt='화살표 이미지'></img>
+                                            </div>
+                                        </>
+                                    )
+                                }
                             })}
                         </div>
                         <Divider />

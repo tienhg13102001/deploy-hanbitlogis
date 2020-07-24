@@ -49,6 +49,7 @@ const StyledMenuItem = withStyles((theme) => ({
   root: {
     width:'100%',
     color:'#333333',
+    justifyContent:'center',
     '&:focus': {
       width:'100%',
       backgroundColor: "#da2320",
@@ -92,22 +93,16 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
           <NavLink className="Mobile_link" to="/Info/analysis">
           <ListItemText primary="지입 분석" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
           <NavLink className="Mobile_link" to="/Info/operation">
           <ListItemText primary="차량운용분석" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
           <NavLink className="Mobile_link" to="/Info/testguide">
           <ListItemText primary="자격증가이드" />
           </NavLink>

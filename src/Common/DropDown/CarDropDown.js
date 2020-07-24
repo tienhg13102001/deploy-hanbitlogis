@@ -49,6 +49,7 @@ const StyledMenuItem = withStyles((theme) => ({
   root: {
     width:'100%',
     color:'#333333',
+    justifyContent:'center',
     '&:focus': {
       backgroundColor: '#da2320',
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
@@ -90,29 +91,21 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
           <NavLink className="Mobile_link" to="/Vehicle/onevehicle">
           <ListItemText primary="당사차량[1톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
           <NavLink className="Mobile_link" to="/Vehicle/twovehicle">
           <ListItemText primary="당사차량[2.5톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
           <NavLink className="Mobile_link" to="/Vehicle/threevehicle">
           <ListItemText primary="당사차량[4.5톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem>
-          <ListItemIcon>
-          </ListItemIcon>
           <NavLink className="Mobile_link" to="/Vehicle/fourvehicle">
           <ListItemText primary="당사차량[5톤]" />
           </NavLink>

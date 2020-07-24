@@ -79,36 +79,9 @@
                 font-size: 20px;
             }   
         }
-        .Result_ListBox{
-            
-            .Area{
-                
-                .One_Area {
-                    .One_Circle{
-                        max-width: 150px;
-                        height: 150px;
-                        font-size: 15px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    .Two_Circle{
-                        max-width: 150px;
-                        height: 150px;
-                    }
-                }
-                .Two_Area{
-                    
-                    .Text_Number{
-                        padding-bottom: 15px;
-                    }
-                    .Text_List{
-                        .One_List{
-                            font-size: 13px;
-                            padding-bottom: 10px;
-                        }
-                    }
-                }
+        .Cards_area{
+            .Cards_wrap{
+                padding-bottom: 10px;
             }
         }
     }

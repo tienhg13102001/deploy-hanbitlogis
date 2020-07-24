@@ -49,6 +49,7 @@ const StyledMenuItem = withStyles((theme) => ({
   root: {
     width:"100%",
     color:'#333333',
+    justifyContent:'center',
     '&:focus': {
       width:'100%',
       backgroundColor: "#da2320",

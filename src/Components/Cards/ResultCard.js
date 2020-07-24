@@ -3,26 +3,34 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-
+import './Cards.scss'
 
 
 const useStyles = makeStyles({
   root: {
     minWidth: 150,
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
     fontSize: 16,
-    paddingBottom:'20px'
+    fontWeight:'600',
+    display:'flex',
+    paddingLeft: '10px',
+    alignItems: 'center',
+    justifyContent:'center',
+    fontFamily:'NanumSquareOTF'
   },
   pos: {
     fontSize: 11,
     marginBottom: 5,
+    fontWeight:'300',
+    fontFamily:'NanumSquareOTF',
+    color: '#535353'
   },
+  number: {
+    color:'#da2320',
+    fontFamily:'NanumSquareOTF',
+    fontWeight:'600'
+  }
 });
 
 export default function SimpleCard() {
@@ -31,9 +39,14 @@ export default function SimpleCard() {
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title} variant="h5" component="h2">
-            <span>01.</span>원가절감으로 기업 경쟁력 향상
+        <div className="Cards_flex">
+        <Typography className={classes.number} variant="h5" component="h2">
+            01
         </Typography>
+        <Typography className={classes.title} variant="h5" component="h2">
+            원가절감으로 기업 경쟁력 향상
+        </Typography>
+        </div>
         <Typography className={classes.pos} color="textSecondary">
         ·초기 차량 구입시 자금 압박 해소 (제세금 및 공과금)
         </Typography>

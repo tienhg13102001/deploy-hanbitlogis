@@ -1,43 +1,75 @@
 import React, { Component } from 'react';
 import './style/InHanbit.scss'
 import BoardPreview from '../../../Common/BoardPrewView';
+import axios from 'axios';
+import { NavLink } from 'react-router-dom';
 
 
 class InHanbit extends Component {
+    state = {
+        list : [],
+        data: null
+    }
+
+    componentDidMount = () => {
+        this.getAllList()
+    }
+    getAllList = async () => {
+        this.getAllList()
+    }
+    getAllList = async () => {
+        const rID = 'hanbit_notice'
+        await axios.get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
+
+        .then(response => {
+            if (response && response.data && response.data.data && response.data.data.rows) {
+                
+            const id = this.props.location.search.slice(6);
+            const data = response.data.data.rows.filter(item => item.name === id)[0]
+                this.setState({
+                    ...this.state,
+                    data
+                })
+            }
+            else {
+                console.error('error')
+            }
+        })
+        .catch( e => console.log(e))
+    }
     render() {
+        const data = this.state.data
+        console.log(data)
         return (
+            this.state.data ? 
             <div className="InHanbit_Container">
                 <div className="InHanbit_TitleBox">
                     <div className="InHanbit_Title">
-                        한빛게시판
+                        공지사항
                     </div>
-                    <div className="InHanbit_Btn">
-                        목록으로
-                    </div>
+                    
                 </div>
                 <div className="InHanbit_Board">
                     <div className="In_TitleBox">
                         <div className="In_Title">
-                            글 제목이 들어갑니다.
+                            제목 : {data.simple_resources.title}
                         </div>
                     </div>
                     <div className="In_Menu">
-                        <div className="In_Menu_People">작성자</div>
+                        <div className="In_Menu_People">작성자 : {data.name}</div>
                     </div>
                     <div className="In_Menu_Text">
-                        안녕하세요.<br/>
-                        한빛 게시판입니다. 이 곳에 내용이 들어갈 예정입니다.<br/>
-                        <br/>
-                        들어갈 내용은 한빛 게시판에 대한 내용이고,<br/>
-                        한빛 게시판에 대한 내용을 제한없이 적을 수 있습니다.<br/>
-                        이상 한빛 게시판에 대한 설명이었습니다.<br/>
-                        <br/>
-                        <br/>
-                        감사합니다.
+                        {data.simple_resources.content}
                     </div>
                 </div>
-                <BoardPreview />
+                <div className="InHanbit_Btn">
+                        <NavLink to="/HanbitBoard">
+                        목록으로
+                        </NavLink>
+                    </div>
             </div>
+            :
+            <div></div>
         );
     }
 }

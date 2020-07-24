@@ -21,7 +21,7 @@ class OpreationChartTwo extends Component {
                 <div className="analysis_chart_box_two">
                     <div className="Chart_Title_title_two">
                         <img src={icon} alt='아이콘'></img>
-                        <div className="Chart_Text_Area">경제성 분석</div>
+                        <div className="Analysis_Chart_Text_Area">경제성 분석</div>
                     </div>
                     <div className="Chart_Box">
                         <div className="Chart_Type">
@@ -40,8 +40,8 @@ class OpreationChartTwo extends Component {
                                 return (
                                     <div className="Text_two_box" key={index}>
                                         <div className="analysis_Chart_text_one">{item.text}</div>
-                                        <div className="analysis_Chart_text_two">{item.text2}</div>
-                                        <div className="analysis_Chart_text_three">{item.text3}</div>
+                                        <div className="analysis_Chart_text_one">{item.text2}</div>
+                                        <div className="analysis_Chart_text_one">{item.text3}</div>
                                     </div>
                                 )
                             })}

@@ -2,21 +2,52 @@ import React, { Component } from 'react';
 import './style/OneVehicle.scss'
 import { data } from './BoardDb'
 import { Link } from 'react-router-dom';
-import BoardButton from '../../../Common/BoardButton';
+import { Pagination } from "../../../Common/Pagination/Pagination";
 
 class OneVehicle extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            item: [],
-            visible: 7,
-        }
-    }
+    state = {
+        currentPage: 0,
+        cardsPerPage: 7,
+        currentPageM: 0,
+        cardsPerPageM: 6,
+        list : []
 
-    loadmore() {
-        this.setState((old) => {
-            return { visible: old.visible + 1 }
-        })
+        // cardsperpage -> 보여주고 싶은 박스 개수
+    };
+    onPageNumberClicked = newPage => event => {
+        this.handlePageNumberClicked(newPage);
+    };
+    onPreviousPageClicked = newPage => event => {
+        this.handlePreviousPageClicked(newPage);
+    };
+    onNextPageClicked = newPage => event => {
+        this.handleNextPageClicked(newPage);
+    };
+    handlePageNumberClicked = (newPage) => {
+        // console.log("onPageNumberClicked", newPage);
+        this.setState({ currentPage: newPage });
+    };
+    handlePreviousPageClicked = (newPage) => {
+        // console.log("onPreviousPageClicked", newPage);
+        this.setState({ currentPage: newPage });
+    };
+    handleNextPageClicked = (newPage) => {
+        //console.log("onNextPageClicked", newPage);
+        this.setState({ currentPage: newPage });
+    };
+    filterData = () =>{
+        let getData = data
+        let startIndex = this.state.currentPage * this.state.cardsPerPage;
+        let endIndex = (this.state.currentPage + 1) * this.state.cardsPerPage;
+
+        return getData.slice(startIndex, endIndex)
+    }
+    renderList = () => {
+        const list = this.state.list
+        let startIndex = this.state.currentPage * this.state.cardsPerPage;
+        let endIndex = (this.state.cardsPerPage + 1) * this.state.cardsPerPage;
+
+        return list.slice(startIndex, endIndex)
     }
 
 
@@ -44,7 +75,14 @@ class OneVehicle extends Component {
                         })}
                     </div>
                 </div>
-                <BoardButton></BoardButton>
+                <Pagination
+                    currentPage={this.state.currentPage}
+                    cardsPerPage={this.state.cardsPerPage}
+                    itemCount={data.length}
+                    onPageNumberClicked={this.onPageNumberClicked}
+                    onPreviousPageClicked={this.onPreviousPageClicked}
+                    onNextPageClicked={this.onNextPageClicked}
+                />
             </div>
         );
     }

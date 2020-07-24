@@ -40,16 +40,17 @@
 
 @media screen and (max-width:768px) {
     .FooterContainer{
+        padding: 0 10px 0 10px;
         .Box{
             .Footer_wrap{
                 display: flex;
                 .LogoBox{
-                    padding-left: 15px;
                     padding-right: 10px;
+                    
                 }
                 .Info{
                     font-size: 11px;
-                    padding-right: 15px;
+                    
                     >br {
                         display: none;
                     }

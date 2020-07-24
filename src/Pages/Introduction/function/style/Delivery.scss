@@ -75,11 +75,11 @@
             .Check_List{
                 display: flex;
                 text-align: center;
-                justify-content: space-between;
+                justify-content: space-around;
                 .Check_Box{
                     
                     .Check_Icon{
-                        padding-bottom: 50px;
+                        padding-bottom: 33px;
                         max-width: 120px;
                         height: 120px;
                     }
@@ -87,11 +87,17 @@
                         padding-bottom: 19px;
                         font-size: 24px;
                         color: #da2320;
+                        font-weight: 600;
                     }
                     .Check_Text_map{
                         font-size: 17px;
                         padding-bottom: 60px;
                     }
+                }
+                .check_arrow_map{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
         }
@@ -142,7 +148,8 @@
 }
 @media screen and (max-width:768px) {
     .DeliContainer{
-        margin-left: 20px;
+        padding: 0 15px 0 15px;
+        margin: initial;
         .Wrap_Line{
             padding-left: 0px;
             .Title{
@@ -181,14 +188,15 @@
                             max-width: 80px;
                             height: 80px;
                             padding-bottom: 25px;
-                        }
-                        .Check_Title{
-                            font-size: 20px;
-                        }
-                        .Check_Text{
-                            font-size: 12px;
-                        }
+                            .Check_Text_map{
+                                font-size: 12px;
+                                >span {
+                                    font-size: 10px;
+                                }
+                            }
+                        }                   
                     }
+                    
                 }
             }
             .Management{

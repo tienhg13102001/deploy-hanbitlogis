@@ -2,16 +2,9 @@
     border-bottom: solid 1px #e5e5e5;
     justify-content: space-around;
     display: flex;
-        .Han_Type{
-            max-width: 50px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60px;
-            }
+        
         .Han_Date{
-            max-width: 150px;
+            max-width: 100px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -19,7 +12,7 @@
             height: 60px;
             }
         .Han_Title{
-            max-width: 400px;
+            max-width: 500px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -27,7 +20,7 @@
             height: 60px;
             }
         .Han_People{
-            max-width: 150px;
+            max-width: 100px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -43,10 +36,6 @@
 
 @media screen and (max-width:768px) {
     .Board{
-        
-            .Han_Type{
-                font-size: 11px;
-                }
             .Han_Date{
                 font-size: 11px;
                 }

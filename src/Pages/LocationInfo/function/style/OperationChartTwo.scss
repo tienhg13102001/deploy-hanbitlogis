@@ -5,7 +5,7 @@
         .Chart_Title_title_two{
             display: flex;
             padding-bottom: 29px;
-            .Chart_Text_Area{
+            .Analysis_Chart_Text_Area{
                 font-size: 20px;
                 color: #da2320;
                 padding-left: 10px;
@@ -26,7 +26,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                max-width: 217px;
+                max-width: 350px;
                 width: 100%;
                 height: 60px;
             }
@@ -34,7 +34,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                max-width: 430px;
+                max-width: 350px;
                 width: 100%;
                 height: 60px;
             }
@@ -86,15 +86,15 @@
 }
 
 
-    @media screen and (max-width:768px) {
-        .Chart_Container{
-            .analysis_chart_box_two{
-            }
+@media screen and (max-width:768px) {
+    .analysis_Chart_two{
+        .analysis_chart_box_two{
+        
             .Chart_Title_title_two{
                 padding-left: 10px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                .Chart_Text_Area{
+                .Analysis_Chart_Text_Area{
                     font-size: 12px;
                     display: flex;
                     justify-content: center;
@@ -104,32 +104,25 @@
             .Chart_Box{
                 
                 .Chart_Type{
-                    font-size: 14px;
+                    
                     .Type_Text_One{
-                        
+                        font-size: 14px;
                     }
                     .Type_Text_Two {
-                        
+                        font-size: 14px;
                     }
                     .Type_Text_Three {
-                        
+                        font-size: 14px;
                     }
                 }
-                .Chart_ListBox{
-                    
-                    .Text_List{
-                       font-size: 11px;
-                        .analysis_chart_text_one{
-                            
-                        }
-                        .analysis_chart_text_two{
-                            
-                        }
-                        .analysis_chart_text_three{
-                            
-                        }
+                .Chart_two_list{
+                    .Text_two_box{
+                        .analysis_Chart_text_one{
+                            font-size: 11px;
+                        }      
                     }
                 }
             }
         }
     }
+}

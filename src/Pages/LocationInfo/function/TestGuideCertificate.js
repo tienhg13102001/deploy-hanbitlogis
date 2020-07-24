@@ -9,9 +9,9 @@ import icon04 from '../../../_asset/image/locationInfo/certificate-icon-4.png';
 
 class TestGuideCertificate extends Component {
     list = [
-        { id: 0, icon: icon01, text: '운전적성 정밀검사 (신규, 특별수검)', arrow: arrowicon, arrowtext: '적합판정' },
+        { id: 0, icon: icon01, text: '운전적성 정밀검사\n (신규, 특별수검)', arrow: arrowicon, arrowtext: '적합판정' },
         { id: 1, icon: icon02, text: '자격 시험 응시', arrow: arrowicon, arrowtext: '합격' },
-        { id: 2, icon: icon03, text: '합격자 교육 (1일 8시간)', arrow: arrowicon },
+        { id: 2, icon: icon03, text: "합격자 교육\n (1일 8시간)", arrow: arrowicon },
         { id: 3, icon: icon04, text: '자격증 발급', arrow: arrowicon, }
     ]
     render() {
@@ -65,7 +65,9 @@ class TestGuideCertificate extends Component {
                                         <div className="Certi_map_area">
                                             <img className="Certi_map_img" src={item.icon} alt='자격 이미지'></img>
                                             <div className="Certi_map_text_box">
-                                                <div className="Certi_map_text">{item.text}</div>
+                                                <div className="Certi_map_text" >
+                                                    {item.text.split('\n').map(e => <span>{e}<br /></span>)}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -85,7 +87,9 @@ class TestGuideCertificate extends Component {
                                     <div className="Certi_map_area">
                                         <img className="Certi_map_img" src={item.icon} alt='자격 이미지'></img>
                                         <div className="Certi_map_text_box">
-                                            <div className="Certi_map_text">{item.text}</div>
+                                            <div className="Certi_map_text">
+                                                { item.text.split('\n').map(e => <span>{e}<br/></span>) }
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="Certi_map_arrow_box">

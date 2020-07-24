@@ -69,9 +69,9 @@
 
 @media screen and (max-width:768px) {
     .TestInfoContainer{
-    
+        padding: 0 15px 0 15px;
         .TestInfo_TitleBox{
-            padding-left: 15px;
+            
             .TestInfo_Title{
                 font-size: 16px;
                 >span{
@@ -80,51 +80,39 @@
             }
         }
         .TestInfo_Banner{
-            padding: 10px;
+            
             >img {
                 
             }
         }
-        .Test_List{
-            flex-direction: column;
-            padding: 0 15px 0 15px;
-            .Test_Number{
-                font-size: 20px;
-            }
-            .Test_Name{
-                font-size: 17px;
-                br{
-                    display: none;
+        .Test_list_divider_box{
+            
+            .Test_list_box{
+                .Test_list_number{
+                    font-size: 20px;
+                }
+                .Test_lsit_Name{
+                    font-size: 18px;
                 }
             }
             .Text_Content{
                 
                 .Content_One{
+                    padding-top: 3px;
+                    padding-left: 18px;
                     font-size: 12px;
-                    .One_Two{
-                        
-                    }
                 }
                 .Content_Two{
-                    
+                    padding-top: 5px;
+                    padding-bottom: 3px;
+                    font-size: 14px;
+                    padding-left: 18px;
                 }
                 .Content_Three{
-                    
-                }
-                
-            }
-            .Text_ContentTwo{
-                
-                .Content_One1{
-                padding-right: 15px;
-                font-size: 12px;
-                }
-                .Content_Two2{
                     font-size: 12px;
+                    padding-left: 18px;
                 }
-                .Content_Three3{
-                    
-                }
+                
             }
         }
     }

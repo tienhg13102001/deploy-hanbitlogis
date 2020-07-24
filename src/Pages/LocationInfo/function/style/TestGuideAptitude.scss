@@ -151,7 +151,7 @@
     .Aptitude_Container{
     
         .Aptitude_Box{
-            
+            padding-top: initial;
             .Aptitude_Icon{
                 padding-top: 20px;
                 padding-bottom: 20px;
@@ -164,7 +164,7 @@
             }
             .Aptitude_Text{
                 padding: 0 15px 0 15px;
-                font-size: 14px;
+                font-size: 12px;
                 padding-bottom: 50px;
             }
         }
@@ -181,24 +181,32 @@
             .Ga_IconBox{
                
                 .Ga_Icon{
-                    padding: 20px;
+                    align-items: center;
+                    padding: 15px;
                     text-align: center;
+                    display: flex;
+                    flex-direction: column;
                     .Ga_Img{
-                        
+                        width: 76px;
+                        height: 76px;
                         
                     }
                     .Ga_Icon_Text{
+                        padding: 10px 0 0 0;
                         font-size: 12px;
                     }
                 }
                 .Dot_Line{
-                    
+                    display: none;
                 }
             }
             .Na_IconBox{
-                
+                display: flex;
+                flex-direction: column;
+                margin: initial;
                 .Na_Icon{
                     padding: 20px;
+                    margin: 10px 0 0 0;
                     .Na_ImgBox{
                         .Na_Img{
                             width: 76px;
@@ -210,7 +218,7 @@
                             font-size: 12px;
                         }
                         .Na_Dot{
-                            
+                            display: none;
                         }
                         .Na_SubText{
                             font-size: 11px;
@@ -218,7 +226,7 @@
                     }
                     
                 }
-                .Na_DotBox{
+                .Na_Dot_box{
                     display: none;
                 }
             }

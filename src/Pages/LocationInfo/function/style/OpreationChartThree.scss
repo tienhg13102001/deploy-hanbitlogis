@@ -140,10 +140,16 @@
 
 @media screen and (max-width:768px) {
     .Chart_Container{
-        .Chart_TextBox2{
+        .Chart_TitleBox{
             
-            .Chart_Text{
-                
+            .Chart_TextBox{
+                padding-left: 15px;
+                .Chart_Text{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                }
             }
             
         }

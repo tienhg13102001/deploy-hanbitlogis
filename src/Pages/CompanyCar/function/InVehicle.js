@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './style/InVehicle.scss'
-import BoardPreview from '../../../Common/BoardPrewView';
 import { NavLink } from 'react-router-dom';
 
 class InVehicle extends Component {
@@ -38,11 +37,7 @@ class InVehicle extends Component {
                     <div className="In_SubText">
                         · bgf리테일cu편의점 상온배송차량
                     </div>
-                    <div className="Go_Button">
-                        <NavLink to="/Vehicle">
-                            목록으로
-                        </NavLink>
-                    </div>
+                    
                 </div>
                 <div className="In_Contents">
                     {this.list.map((item, index) => {
@@ -57,7 +52,11 @@ class InVehicle extends Component {
                 <div className="BottomText">
                     매매 문의 : 1599 - 9964
                 </div>
-                <BoardPreview></BoardPreview>
+                <div className="Go_Button">
+                        <NavLink to="/Vehicle">
+                            목록으로
+                        </NavLink>
+                    </div>
             </div>
         );
     }
