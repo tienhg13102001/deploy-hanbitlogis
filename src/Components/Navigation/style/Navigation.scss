@@ -1,4 +1,5 @@
 .NaviContainer {
+  min-width: 1250px;
   display: flex;
   justify-content: center;
   height: 73px;
@@ -51,10 +52,10 @@
 
     .TopNaviWrap {
       display: flex;
+      margin-left: 50px;
       .Menu_Logo {
         max-width: 129px;
         width: 100%;
-        margin-left: 20px;
         cursor: pointer;
       }
     }
@@ -205,6 +206,7 @@
 
 @media screen and (max-width: 768px) {
   .NaviContainer {
+    min-width: initial;
     .bm-menu-wrap {
       width: 70% !important;
     }
@@ -218,7 +220,13 @@
       padding: 2.5em 1.5em 0;
     }
     .TopNavi {
-      .Menu_Logo {
+      .TopNaviWrap {
+        margin-left: 0px;
+        padding-left: 15px;
+        .Menu_Logo {
+        }
+      }
+      .Member_Box {
       }
     }
   }

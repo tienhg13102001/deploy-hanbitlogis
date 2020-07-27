@@ -1,12 +1,14 @@
-.Mobile_link{
-    color: #333333;
-    text-decoration: none;
+.Mobile_link {
+  color: #333333;
+  text-decoration: none;
 }
 
-.DropDown_container{
-    width: 100%;
+.DropDown_container {
+  width: 100%;
 }
 .MuiPaper-root {
-    left: 0 !important;
+  left: 0 !important;
 }
-
+.MuiButton-contained {
+  box-shadow: none;
+}

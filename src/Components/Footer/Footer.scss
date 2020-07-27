@@ -1,70 +1,70 @@
-.FooterContainer{
-    max-width: 1250px;
-    margin: auto;
-    height: 171px;
-    width: 100%;
-    .Box{
-        display: flex;
-        padding-top: 40px;
-        justify-content: space-between;
-        .Footer_wrap{
-            display: flex;
-            .LogoBox{
-                padding-right: 38px;
-            }
-            .Info{
-                font-size: 14px;
-                font-weight: 200;
-                line-height: 1.71;
-                color: #707070;
-            }
-        }
-        
-    .TermsBox{
-        display: flex;
+.FooterContainer {
+  max-width: 1250px;
+  min-width: 1250px;
+  margin: auto;
+  height: 171px;
+  width: 100%;
+  .Box {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    .Footer_wrap {
+      display: flex;
+      .LogoBox {
+        padding-right: 38px;
+      }
+      .Info {
         font-size: 14px;
-        .One{
-            font-weight: 200;
-            padding: 0 5px 0 5px;
-            color: #707070;
-        }
-        .Two{
-            font-weight: 200;
-            padding: 0 5px 0 5px;
-            color: #707070;
-        }
-        }
+        font-weight: 200;
+        line-height: 1.71;
+        color: #707070;
+      }
     }
-    
+
+    .TermsBox {
+      display: flex;
+      font-size: 14px;
+      .One {
+        font-weight: 200;
+        padding: 0 5px 0 5px;
+        color: #707070;
+      }
+      .Two {
+        font-weight: 200;
+        padding: 0 5px 0 5px;
+        color: #707070;
+      }
+    }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .FooterContainer{
-        padding: 0 10px 0 10px;
-        .Box{
-            .Footer_wrap{
-                display: flex;
-                .LogoBox{
-                    padding-right: 10px;
-                    
-                }
-                .Info{
-                    font-size: 11px;
-                    
-                    >br {
-                        display: none;
-                    }
-                }
-            }
+@media screen and (max-width: 768px) {
+  .FooterContainer {
+    min-width: initial;
+    padding: 0 10px 0 10px;
+    .Box {
+      .Footer_wrap {
+        display: flex;
+        .LogoBox {
+          padding-right: 10px;
         }
-        .TermsBox{
-            font-size: 10px;
-            .One{
-                display: none;
-            }
-            .Two{
-                display: none;
-            }
+        .Info {
+          font-size: 11px;
+
+          > br {
+            display: none;
+          }
         }
+      }
     }
+    .TermsBox {
+      font-size: 10px;
+      .One {
+        display: none;
+      }
+      .Two {
+        display: none;
+      }
+    }
+  }
 }

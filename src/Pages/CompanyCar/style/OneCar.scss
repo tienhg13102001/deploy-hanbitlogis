@@ -1,30 +1,28 @@
-.Vehicle_Contatiner{
-    max-width: 1250px;
+.Vehicle_Contatiner {
+  max-width: 1250px;
+  min-width: 1250px;
+  margin: auto;
+  height: auto;
+  .TopBanner {
+  }
+  .Vehicle_Contents {
+    display: flex;
+  }
+  .Result {
+    max-width: 1050px;
     margin: auto;
-    height: auto;
-    .TopBanner{
-
-    }
-    .Vehicle_Contents{
-        display: flex;
-    }
-    .Result{
-        max-width: 1050px;
-        margin: auto;
-    }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Vehicle_Contatiner{
-        
-        .TopBanner{
-    
-        }
-        .Vehicle_Contents{
-            flex-direction: column;
-        }
-        .Result{
-            
-        }
+@media screen and (max-width: 768px) {
+  .Vehicle_Contatiner {
+    min-width: initial;
+    .TopBanner {
     }
+    .Vehicle_Contents {
+      flex-direction: column;
+    }
+    .Result {
+    }
+  }
 }

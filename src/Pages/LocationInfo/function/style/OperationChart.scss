@@ -68,27 +68,27 @@
         border-bottom: solid 1px #e5e5e5;
         .analysis_chart_text_one {
           display: flex;
-          justify-content: center;
+          justify-content: left;
           align-items: center;
-          max-width: 217px;
+          max-width: 130px;
           width: 100%;
           height: 60px;
           color: #707070;
         }
         .analysis_chart_text_two {
           display: flex;
-          justify-content: center;
+          justify-content: left;
           align-items: center;
-          max-width: 430px;
+          max-width: 280px;
           width: 100%;
           height: 60px;
           color: #707070;
         }
         .analysis_chart_text_three {
           display: flex;
-          justify-content: center;
+          justify-content: left;
           align-items: center;
-          max-width: 400px;
+          max-width: 200px;
           width: 100%;
           height: 60px;
           color: #707070;
@@ -133,10 +133,13 @@
         .Text_List {
           font-size: 11px;
           .analysis_chart_text_one {
+            justify-content: center;
           }
           .analysis_chart_text_two {
+            justify-content: center;
           }
           .analysis_chart_text_three {
+            justify-content: center;
           }
         }
       }

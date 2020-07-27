@@ -60,6 +60,7 @@ class Hboard extends Component {
           response.data.data &&
           response.data.data.rows
         ) {
+          console.log(response.data.data.rows);
           response.data.data.rows = response.data.data.rows.map((item) => {
             const date = new Date(item.lastUpdateDate);
             item.lastUpdateDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;

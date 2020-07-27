@@ -1,10 +1,12 @@
-.BoardContainer{
-    max-width: 1250px;
-    margin: auto;
+.BoardContainer {
+  max-width: 1250px;
+  min-width: 1250px;
+  margin: auto;
 }
 
-@media screen and (max-width:768px) {
-    .BoardContainer{
-        flex-direction: column;
-    }
+@media screen and (max-width: 768px) {
+  .BoardContainer {
+    min-width: initial;
+    flex-direction: column;
+  }
 }

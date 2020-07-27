@@ -121,8 +121,6 @@
       .Chart_TimeBox {
         padding-top: 23px;
         padding-bottom: 23px;
-        max-width: 420px;
-        margin: auto;
         line-height: 1.88;
         .Time {
           font-size: 16px;
@@ -162,12 +160,13 @@
           font-size: 12px;
         }
       }
+      .Example {
+        padding-left: 10px;
+        padding-top: 30px;
+        font-size: 12px;
+      }
     }
-    .Example {
-      padding-left: 10px;
-      padding-top: 30px;
-      font-size: 12px;
-    }
+
     .Chart_Box2 {
       .Chart_Type2 {
         font-size: 14px;
@@ -186,16 +185,24 @@
         .Text_List2 {
           font-size: 10px;
           .One_Text2 {
+            justify-content: left;
+            max-width: 125px;
           }
           .Two_Text2 {
+            justify-content: left;
+            max-width: 240px;
           }
           .Three_Text2 {
+            justify-content: left;
+            max-width: 250px;
           }
-          .Three_Text3 {
-            display: none;
-          }
-          .Three_Plus {
-            display: none;
+          .Wrap {
+            .Three_Text3 {
+              display: none;
+            }
+            .Three_Plus {
+              display: none;
+            }
           }
         }
       }

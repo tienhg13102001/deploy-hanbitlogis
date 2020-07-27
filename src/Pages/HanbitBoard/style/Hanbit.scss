@@ -1,25 +1,22 @@
-.Hanbit_Contatiner{
-    max-width: 1250px;
-    margin: auto;
-    height: auto;
-    .TopBanner{
-
-    }
-    .Hanbit_Contents{
-        display: flex;
-    }
-    
+.Hanbit_Contatiner {
+  max-width: 1250px;
+  min-width: 1250px;
+  margin: auto;
+  height: auto;
+  .TopBanner {
+  }
+  .Hanbit_Contents {
+    display: flex;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Hanbit_Contatiner{
-        
-        .TopBanner{
-    
-        }
-        .Hanbit_Contents{
-            flex-direction: column;
-        }
-        
+@media screen and (max-width: 768px) {
+  .Hanbit_Contatiner {
+    min-width: initial;
+    .TopBanner {
     }
+    .Hanbit_Contents {
+      flex-direction: column;
+    }
+  }
 }

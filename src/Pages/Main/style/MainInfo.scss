@@ -1,55 +1,54 @@
-.MainInfoContainer{
-    background-color: #f5f4f4;
-    height: 300px;
-    text-align: center;
-    .InfoTitle{
-        padding-top: 36px;
-        font-size: 20px;
+.MainInfoContainer {
+  min-width: 1250px;
+  background-color: #f5f4f4;
+  height: 300px;
+  text-align: center;
+  .InfoTitle {
+    padding-top: 36px;
+    font-size: 20px;
+    font-weight: 600;
+    span {
+      color: #da2320;
+    }
+  }
+  .MapBox {
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .ListBox {
+      padding: 30px;
+      .Link {
+        text-decoration: none;
+        color: #535353;
         font-weight: 600;
-        span{
-            color: #da2320;
-        }
+      }
     }
-    .MapBox{
-        max-width: 1250px;
-        width: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        .ListBox{
-            padding: 30px;
-            .Link {
-                text-decoration: none;
-                color: #535353;
-                font-weight: 600;
-            }
-        }
-        .IconBox{
-            padding-bottom: 22px;
-        }
-        .TextBox{
-            
-        }
+    .IconBox {
+      padding-bottom: 22px;
     }
+    .TextBox {
+    }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .MainInfoContainer{
-        height: 500px;
-        .MapBox{
-            flex-wrap: wrap;
-        }
+@media screen and (max-width: 768px) {
+  .MainInfoContainer {
+    min-width: initial;
+    height: 500px;
+    .MapBox {
+      flex-wrap: wrap;
     }
-    
+  }
 }
 
 @media screen and (max-width: 520px) {
-    .MainInfoContainer{
-        height: 800px;
-        .MapBox{
-            flex-wrap: wrap;
-            
-        }
-        
+  .MainInfoContainer {
+    min-width: initial;
+    height: 800px;
+    .MapBox {
+      flex-wrap: wrap;
     }
+  }
 }

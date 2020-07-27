@@ -1,77 +1,73 @@
 .BannerContainer {
-    width: 100%;
-    .BannerBox{
-        height: 400px;
-        .Slick_box{
-            img{
-                width: 100%;
-                height: 400px;
-            }
-        }
-    }
-    
-    .Banner_TextBox{
-        max-width: 450px;
+  min-width: 1250px;
+  width: 100%;
+  .BannerBox {
+    height: 400px;
+    .Slick_box {
+      img {
         width: 100%;
-        position: relative;
-        z-index: 1;
-        top: -280px;
-        right: -310px;
-        .Banner_Title{
-            font-weight: 700;
-            max-width: 500px;
-            width: 100%;
-            font-size: 42.5px;
-            line-height: 1.34;
-            color: #333333;
-            text-align: left;
-            margin-bottom: 30px;
-        }
-        .Banner_Subtitle{
-            font-size: 18.5px;
-            color: #333333;
-        }
+        height: 400px;
+      }
     }
+  }
+
+  .Banner_TextBox {
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: -280px;
+    right: -310px;
+    .Banner_Title {
+      font-weight: 700;
+      max-width: 500px;
+      width: 100%;
+      font-size: 42.5px;
+      line-height: 1.34;
+      color: #333333;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .Banner_Subtitle {
+      font-size: 18.5px;
+      color: #333333;
+    }
+  }
 }
 .slick-dots {
-    bottom : 13px !important;
+  bottom: 13px !important;
 }
-.slick-arrow{
+.slick-arrow {
 }
-.slick-prev{
-    left: 300px;
-    position: relative;
+.slick-prev {
+  left: 300px;
+  position: relative;
 }
 
 .slick-next {
-    
-    position: relative;
-    
+  position: relative;
 }
 
-
-@media screen and (max-width:768px) {
-    .BannerContainer {
-        
-        .BannerBox{
-            
-            }
-        .Banner_TextBox{
-            width: 250px;
-            top: -235px;
-            left: 20px;
-            margin: 0;
-            .Banner_Title{
-                font-size: 23px;
-                margin: 0;
-                
-            }
-            .Banner_Subtitle{
-               display: none;
-            }
-        }
+@media screen and (max-width: 768px) {
+  .BannerContainer {
+    min-width: initial;
+    .BannerBox {
     }
-    .slick-next {
-        left: -30px;
+    .Banner_TextBox {
+      width: 250px;
+      top: -235px;
+      left: 20px;
+      margin: 0;
+      .Banner_Title {
+        font-size: 23px;
+        margin: 0;
+      }
+      .Banner_Subtitle {
+        display: none;
+      }
     }
+  }
+  .slick-next {
+    left: -30px;
+  }
 }

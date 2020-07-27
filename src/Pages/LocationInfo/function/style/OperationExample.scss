@@ -1,246 +1,233 @@
-.Chart_Container{
-    .Chart_TextBox{
+.Chart_Container {
+  .Chart_TextBox {
+    display: flex;
+    padding-top: 61px;
+    .Chart_Text {
+      font-size: 20px;
+      color: #da2320;
+      padding-left: 10px;
+      font-weight: 600;
+    }
+  }
+  .Example_2t {
+    padding-top: 61px;
+    font-size: 18px;
+    padding-bottom: 21px;
+    color: #707070;
+  }
+  .Chart_Box2 {
+    border-bottom: solid 1px #535353;
+    .Chart_Type2 {
+      display: flex;
+
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: space-around;
+      border-top: solid 1px #535353;
+      border-bottom: solid 1px #535353;
+      .Type_Text {
         display: flex;
-        padding-top: 61px;
-        .Chart_Text{
-            font-size: 20px;
-            color: #da2320;
-            padding-left: 10px;
+        justify-content: center;
+        align-items: center;
+        max-width: 190px;
+        width: 100%;
+        height: 60px;
+      }
+      .Type_Text2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 215px;
+        width: 100%;
+        height: 60px;
+      }
+      .Type_Text3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 234px;
+        width: 100%;
+        height: 60px;
+      }
+      .Type_Text4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 390px;
+        width: 100%;
+        height: 60px;
+      }
+    }
+    .Chart_ListBox2 {
+      .Text_List2 {
+        display: flex;
+        border-bottom: solid 1px #e5e5e5;
+        .One_Text2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 200px;
+          width: 100%;
+          height: 60px;
+          color: #707070;
+        }
+        .Two_Text2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 200px;
+          width: 100%;
+          height: 60px;
+          color: #707070;
+        }
+        .Three_Text2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 200px;
+          width: 100%;
+          height: 60px;
+          color: #707070;
+        }
+        .Three_Text3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 400px;
+          width: 100%;
+          height: 60px;
+          margin: auto;
+          color: #707070;
+        }
+        .Three_Plus {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          max-width: 390px;
+          width: 100%;
+          height: 30px;
+          color: #707070;
+        }
+      }
+    }
+    .Chart_TimeBox {
+      padding-top: 23px;
+      padding-bottom: 23px;
+      line-height: 1.88;
+      color: #707070;
+      display: flex;
+      max-width: 1000px;
+      width: 100%;
+      justify-content: space-around;
+      .TimeBox_wrap {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        .Time {
+          font-size: 16px;
+          > span {
             font-weight: 600;
+          }
         }
-        
-    }
-    .Example_2t{
-        padding-top: 61px;
-        font-size: 18px;
-        padding-bottom: 21px;
-        color: #707070;
-    }
-    .Chart_Box2{
-        border-bottom: solid 1px #535353;
-        .Chart_Type2{
-            display: flex;
-            
-            font-size: 16px;
+        .Holiday {
+          font-size: 16px;
+          > span {
             font-weight: 600;
-            justify-content: space-around;
-            border-top: solid 1px #535353;
-            border-bottom: solid 1px #535353;
-            .Type_Text{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 190px;
-                width: 100%;
-                height: 60px;
-            }
-            .Type_Text2 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 215px;
-                width: 100%;
-                height: 60px;
-            }
-            .Type_Text3 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 234px;
-                width: 100%;
-                height: 60px;
-            }
-            .Type_Text4{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 390px;
-                width: 100%;
-                height: 60px;
-            }
+          }
         }
-        .Chart_ListBox2{
-            .Text_List2{
-                display: flex;
-                border-bottom: solid 1px #e5e5e5;
-                .One_Text2{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 190px;
-                    width: 100%;
-                    height: 60px;
-                    color: #707070;
-                }
-                .Two_Text2{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 215px;
-                    width: 100%;
-                    height: 60px;
-                    color: #707070;
-                }
-                .Three_Text2{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 234px;
-                    width: 100%;
-                    height: 60px;
-                    color: #707070;
-                }
-                .Three_Text3{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 400px;
-                    width: 100%;
-                    height: 60px;
-                    margin: auto;
-                    color: #707070;
-                }
-                .Three_Plus{
-                    display: flex;
-                    justify-content: left;
-                    align-items: center;
-                    max-width: 390px;
-                    width: 100%;
-                    height: 30px;
-                    color: #707070;
-                }
-            }
+      }
+      .TimeBox_wrap_two {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        .Distance {
+          font-size: 16px;
+          > span {
+            font-weight: 600;
+          }
         }
-        .Chart_TimeBox{
-            padding-top: 23px;
-            padding-bottom: 23px;
-            line-height: 1.88;
-            color: #707070;
-            display: flex;
-            max-width: 1000px;
-            width: 100%;
-            justify-content: space-around;
-            .TimeBox_wrap{
-                display: flex;
-                flex-direction: column;
-                max-width: 400px;
-                width: 100%;
-                .Time{
-                    font-size: 16px;
-                    >span {
-                        font-weight: 600;
-                    }
-                }
-                .Holiday{
-                    font-size: 16px;
-                    >span {
-                        font-weight: 600;
-                    }
-                }
-            }
-            .TimeBox_wrap_two{
-                display: flex;
-                flex-direction: column;
-                max-width: 400px;
-                width: 100%;
-                .Distance{
-                    font-size: 16px;
-                    >span {
-                        font-weight: 600;
-                    }
-                }
-                .Exception{
-                    font-size: 16px;
-                }
-            }
+        .Exception {
+          font-size: 16px;
         }
+      }
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Chart_Container{
-        .Chart_TextBox2{
-            
-            .Chart_Text{
-                
-            }
-            
-        }
-        .Example_2t{
-            padding-left: 10px;
-            padding-top: 30px;
-            font-size: 12px;
-        }
-        .Chart_Box2{
-            
-            .Chart_Type2{
-                font-size: 14px;
-                
-                
-                .Type_Text{
-                    
-                }
-                .Type_Text2 {
-                    
-                }
-                .Type_Text3 {
-                    
-                }
-                .Type_Text4{
-                    display: none;
-                }
-            }
-            .Chart_ListBox2{
-                .Text_List2{
-                    font-size: 10px;
-                    .One_Text2{
-                        
-                    }
-                    .Two_Text2{
-                        
-                    }
-                    .Three_Text2{
-                        
-                    }
-                    .Three_Text3{
-                        display: none;
-                    }
-                    .Three_Plus{
-                        display: none;
-                    }
-                }
-            }
-            .Chart_TimeBox{
-                
-                .TimeBox_wrap{
-                    padding: 0 15px 0 15px;
-                    .Time{
-                        font-size: 11px;
-                        text-align: left;
-                        >span {
-                            font-size: 12px;
-                        }
-                    }
-                    .Holiday{
-                        font-size: 11px;
-                        >span {
-                            font-size: 12px;
-                        }
-                    }
-                }
-                .TimeBox_wrap_two{
-                    padding-right: 10px;
-                    .Distance{
-                        font-size: 11px;
-                        >span {
-                            font-size: 12px;
-                        }
-                    }
-                    .Exception{
-                        font-size: 11px;
-                    }
-                }
-            }
-        }
+@media screen and (max-width: 768px) {
+  .Chart_Container {
+    .Chart_TextBox2 {
+      .Chart_Text {
+      }
     }
+    .Example_2t {
+      padding-left: 10px;
+      padding-top: 30px;
+      font-size: 12px;
+    }
+    .Chart_Box2 {
+      .Chart_Type2 {
+        font-size: 14px;
+
+        .Type_Text {
+        }
+        .Type_Text2 {
+        }
+        .Type_Text3 {
+        }
+        .Type_Text4 {
+          display: none;
+        }
+      }
+      .Chart_ListBox2 {
+        .Text_List2 {
+          font-size: 10px;
+          .One_Text2 {
+          }
+          .Two_Text2 {
+          }
+          .Three_Text2 {
+          }
+          .Three_Text3 {
+            display: none;
+          }
+          .Three_Plus {
+            display: none;
+          }
+        }
+      }
+      .Chart_TimeBox {
+        .TimeBox_wrap {
+          padding: 0 15px 0 15px;
+          .Time {
+            font-size: 11px;
+            text-align: left;
+            > span {
+              font-size: 12px;
+            }
+          }
+          .Holiday {
+            font-size: 11px;
+            > span {
+              font-size: 12px;
+            }
+          }
+        }
+        .TimeBox_wrap_two {
+          padding-right: 10px;
+          .Distance {
+            font-size: 11px;
+            > span {
+              font-size: 12px;
+            }
+          }
+          .Exception {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
 }

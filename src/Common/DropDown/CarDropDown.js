@@ -38,6 +38,7 @@ const MyButton = styled(Button)({
   color: "white",
   height: 48,
   padding: "0 30px",
+  boxShadow: "none",
   "&:hover": {
     backgroundColor: "#da2320",
   },

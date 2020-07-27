@@ -1,19 +1,20 @@
-.Analysis_Contatiner{
-    max-width: 1250px;
-    margin: auto;
-    height: auto;
-    .TopBanner{
-
-    }
-    .Analy_Contents{
-        display: flex;
-    }
-    
+.Analysis_Contatiner {
+  max-width: 1250px;
+  min-width: 1250px;
+  margin: auto;
+  height: auto;
+  .TopBanner {
+  }
+  .Analy_Contents {
+    display: flex;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Analy_Contents{
-        flex-direction: column;
-
+@media screen and (max-width: 768px) {
+  .Analysis_Contatiner {
+    min-width: initial;
+    .Analy_Contents {
+      flex-direction: column;
     }
+  }
 }
