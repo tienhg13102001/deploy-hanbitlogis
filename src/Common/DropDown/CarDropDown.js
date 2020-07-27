@@ -3,7 +3,6 @@ import { withStyles, styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 import { NavLink } from "react-router-dom";
@@ -50,17 +49,12 @@ const StyledMenuItem = withStyles((theme) => ({
     width:'100%',
     color:'#333333',
     justifyContent:'center',
-    '&:focus': {
-      backgroundColor: '#da2320',
-      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: '#fff',
-      },
-    },
   },
 }))(MenuItem);
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [menuText, setMenuText] = React.useState("당사차량")
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -69,6 +63,11 @@ export default function CustomizedMenus() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const menuOnClick = (text) => {
+    setMenuText(text);
+    setAnchorEl(null);
+  }
 
   return (
     <div className="DropDown_container">
@@ -80,7 +79,7 @@ export default function CustomizedMenus() {
         onClick={handleClick}
       >
         
-        당사차량
+        {menuText}
 
       </MyButton>
       <StyledMenu
@@ -90,22 +89,22 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem>
+        <StyledMenuItem onClick={() => menuOnClick("당사차량[1톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/onevehicle">
           <ListItemText primary="당사차량[1톤]" />
           </NavLink>
         </StyledMenuItem>
-        <StyledMenuItem>
+        <StyledMenuItem onClick={() => menuOnClick("당사차량[2.5톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/twovehicle">
           <ListItemText primary="당사차량[2.5톤]" />
           </NavLink>
         </StyledMenuItem>
-        <StyledMenuItem>
+        <StyledMenuItem onClick={() => menuOnClick("당사차량[4.5톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/threevehicle">
           <ListItemText primary="당사차량[4.5톤]" />
           </NavLink>
         </StyledMenuItem>
-        <StyledMenuItem>
+        <StyledMenuItem onClick={() => menuOnClick("당사차량[5톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/fourvehicle">
           <ListItemText primary="당사차량[5톤]" />
           </NavLink>

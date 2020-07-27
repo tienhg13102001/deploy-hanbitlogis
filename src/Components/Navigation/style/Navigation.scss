@@ -4,6 +4,7 @@
     height: 73px;
     margin: auto;
     position: relative;
+    align-items: center;
     .NaviWrap{
       width : 100%;
       max-width: 1250px;
@@ -45,7 +46,6 @@
         display: flex;
         justify-content: space-between;
         max-width: 1250px;
-        height: 73px;
         width : 100%;
         align-items: center;
         
@@ -54,7 +54,6 @@
           .Menu_Logo{
             max-width: 129px;
             width: 100%;
-            margin: 23px;
             cursor: pointer;
           }
         }

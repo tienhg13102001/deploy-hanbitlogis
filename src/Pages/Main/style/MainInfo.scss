@@ -11,8 +11,11 @@
         }
     }
     .MapBox{
+        max-width: 1250px;
+        width: 100%;
+        margin: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         .ListBox{
             padding: 30px;
             .Link {

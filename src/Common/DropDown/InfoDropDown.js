@@ -50,19 +50,12 @@ const StyledMenuItem = withStyles((theme) => ({
     width:'100%',
     color:'#333333',
     justifyContent:'center',
-    '&:focus': {
-      width:'100%',
-      backgroundColor: "#da2320",
-      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: '#fff'
-      },
-      
-    },
   },
 }))(MenuItem);
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [menuText, setMenuText] = React.useState("지입 정보");
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -71,6 +64,11 @@ export default function CustomizedMenus() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const menuOnClick = (text) => {
+    setMenuText(text);
+    setAnchorEl(null);
+  }
 
   return (
     <div className="DropDown_container">
@@ -82,7 +80,7 @@ export default function CustomizedMenus() {
         onClick={handleClick}
       >
         
-        지입 정보
+        {menuText}
 
       </MyButton>
       <StyledMenu
@@ -92,17 +90,17 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem>
+        <StyledMenuItem onClick={() => menuOnClick("지입 분석")}>
           <NavLink className="Mobile_link" to="/Info/analysis">
           <ListItemText primary="지입 분석" />
           </NavLink>
         </StyledMenuItem>
-        <StyledMenuItem>
+        <StyledMenuItem onClick={() => menuOnClick("차량운용분석")}>
           <NavLink className="Mobile_link" to="/Info/operation">
           <ListItemText primary="차량운용분석" />
           </NavLink>
         </StyledMenuItem>
-        <StyledMenuItem>
+        <StyledMenuItem onClick={() => menuOnClick("자격증가이드")}>  
           <NavLink className="Mobile_link" to="/Info/testguide">
           <ListItemText primary="자격증가이드" />
           </NavLink>
