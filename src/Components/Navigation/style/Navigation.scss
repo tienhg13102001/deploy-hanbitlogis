@@ -1,228 +1,224 @@
-.NaviContainer{
-    display: flex;
-    justify-content: center;
-    height: 73px;
-    margin: auto;
-    position: relative;
-    align-items: center;
-    .NaviWrap{
-      width : 100%;
-      max-width: 1250px;
-    }
-    .NaviContainer_submenu_container{
-      position: absolute;
-      background: #fff;
+.NaviContainer {
+  display: flex;
+  justify-content: center;
+  height: 73px;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  .NaviWrap {
+    width: 100%;
+    max-width: 1250px;
+  }
+  .NaviContainer_submenu_container {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    bottom: -54px;
+    opacity: 0.9;
+    z-index: 2;
+    .NaviContainer_submenu_wrap {
       width: 100%;
-      border-top: 1px solid #e5e5e5;
-      bottom: -54px;
-      opacity: 0.9;
-      z-index: 2;
-      .NaviContainer_submenu_wrap{
-        width : 100%;
-        max-width: 1250px;
-        margin: auto;
-        bottom: 0;
-        display: flex;
-        padding: 17px 0;
-        padding-left: 300px;
-        
-        >div{
-          font-size: 15px;
-          padding-right: 15px;
-        }
-        >a {
-          text-decoration: none;
-          color: #535353;
-          padding: 0 30px;
-        }
-        .Submenu_link{
-          &.active {
-            color: #da2320;
-          }
+      max-width: 1250px;
+      margin: auto;
+      bottom: 0;
+      display: flex;
+      padding: 17px 0;
+      padding-left: 250px;
+
+      > div {
+        font-size: 15px;
+        padding-right: 15px;
+      }
+      > a {
+        text-decoration: none;
+        color: #535353;
+        padding: 0 30px;
+      }
+      .Submenu_link {
+        &.active {
+          color: #da2320;
         }
       }
     }
-    .TopNavi{
-        display: flex;
-        justify-content: space-between;
-        max-width: 1250px;
-        width : 100%;
-        align-items: center;
-        
-        .TopNaviWrap{
-          display: flex;
-          .Menu_Logo{
-            max-width: 129px;
-            width: 100%;
-            cursor: pointer;
-          }
-        }
-        .Member_Box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 300;
-        }
+  }
+  .TopNavi {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: 100%;
+    align-items: center;
+
+    .TopNaviWrap {
+      display: flex;
+      .Menu_Logo {
+        max-width: 129px;
+        width: 100%;
+        margin-left: 20px;
+        cursor: pointer;
+      }
     }
-
-    ////////////////////////////@extend/* Position and sizing of burger button */
-
-}
-
-.bm-burger-button {
-       //메뉴 안보이게하기
-      position: relative;
+    .Member_Box {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: initial;
-      height: initial;
-      outline: none;
-      width: 30px;
-      height: 30px;
-      display: none;
-      button{
-          outline: none;
-          
-      }
+      font-weight: 300;
     }
-  .menu-item{
-    color : #444444;
-    font-weight: bold;
-    text-decoration-line: unset;
-    outline: none !important;
   }
-  .bm-item{
-    
+
+  ////////////////////////////@extend/* Position and sizing of burger button */
 }
-  .bm-cross-button{
-    position: absolute;
-    width: 40px !important;
-    height: 40px !important;
-    right: 8px;
-    top: 0px !important;
-    outline: none !important;
+
+.bm-burger-button {
+  //메뉴 안보이게하기
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: initial;
+  height: initial;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  display: none;
+  button {
+    outline: none;
   }
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: #373a47;
-  }
-  
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
-  
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
-  
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #bdc3c7;
-  }
-  
-  // .bm-icon {
-  //     width: 22px !important;
-  //     height: auto !important;
-  // }
-  
-  /*
+}
+.menu-item {
+  color: #444444;
+  font-weight: bold;
+  text-decoration-line: unset;
+  outline: none !important;
+}
+.bm-item {
+}
+.bm-cross-button {
+  position: absolute;
+  width: 40px !important;
+  height: 40px !important;
+  right: 8px;
+  top: 0px !important;
+  outline: none !important;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  right: 0px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+// .bm-icon {
+//     width: 22px !important;
+//     height: auto !important;
+// }
+
+/*
   Sidebar wrapper styles
   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
   */
-  
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-    width : 512px !important;
-    z-index: 2;
-  }
-  
-  /* General sidebar styles */
-  .bm-menu {
-    background: #fdfdfd;
-    padding: 7.5em 3.5em 0;
-    font-size: 1.15em;
-    overflow: hidden !important;
-  }
-  // .menu-item.active{
-  //   font-weight : 500;
-    
-  // }
 
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 512px !important;
+  top: 0px;
+  z-index: 2;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fdfdfd;
+  padding: 7.5em 3.5em 0;
+  font-size: 1.15em;
+  overflow: hidden !important;
+}
+// .menu-item.active{
+//   font-weight : 500;
+
+// }
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  line-height: 64px;
+  height: 95%;
+  font-family: "NotoSerifCJKkr";
+  :hover {
+    text-decoration-line: line-through;
+    text-decoration-color: #333333;
   }
-  
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-    line-height: 64px;
-    height: 95%;
-    font-family: 'NotoSerifCJKkr';
-    :hover{
-      text-decoration-line:line-through ;
-      text-decoration-color: #333333;
-    }
-  }
-  
-  /* Individual item */
-  .bm-item {
-    
-    display: inline-block;
-    color: #444444;
-    font-weight: 600;
-    text-decoration-line: unset;
-    outline: none !important;
-    // :hover{
-    //   text-decoration: line-through;
-    //   text-decoration-color: #333333;
-    // }
-  }
-  
-  /* Styling of overlay */
-  .bm-overlay {
-    // display: none;
-    // background: rgba(0, 0, 0, 0.3);
-    display : absolute ;
-    left : 0px;
-    top: 0px;
-  }
-  // .menu-item.active{
-  //     color : #333333;
-  //     outline: none;
-  //     text-decoration-line:line-through ;
-      
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: #444444;
+  font-weight: 600;
+  text-decoration-line: unset;
+  outline: none !important;
+  // :hover{
+  //   text-decoration: line-through;
+  //   text-decoration-color: #333333;
   // }
-  .bm-item.active{
-    text-decoration-line:line-through ;
-    text-decoration-color: #333333 ;
-        
-  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  // display: none;
+  // background: rgba(0, 0, 0, 0.3);
+  display: absolute;
+  left: 0px;
+  top: 0px;
+}
+// .menu-item.active{
+//     color : #333333;
+//     outline: none;
+//     text-decoration-line:line-through ;
+
+// }
+.bm-item.active {
+  text-decoration-line: line-through;
+  text-decoration-color: #333333;
+}
 
 @media screen and (max-width: 768px) {
-  .NaviContainer{
-    .bm-menu-wrap{
+  .NaviContainer {
+    .bm-menu-wrap {
       width: 70% !important;
     }
     .bm-burger-button {
       display: initial;
-      >img{
+      > img {
         padding-right: 15px;
       }
-   }
-   .bm-menu {
-    padding: 2.5em 1.5em 0;
-   }
-   .TopNavi{
-    
-    .Menu_Logo{
-      
+    }
+    .bm-menu {
+      padding: 2.5em 1.5em 0;
+    }
+    .TopNavi {
+      .Menu_Logo {
       }
     }
   }

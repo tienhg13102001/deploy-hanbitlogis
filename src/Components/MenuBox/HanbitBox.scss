@@ -1,64 +1,59 @@
-.HanbitBox{
-    width: 200px;
-    height: 300px;
-    .Title{
-        margin-top: 60px;
-        font-weight: 600;
-        font-size: 20px;
-        color: #535353;
-        padding-bottom: 40px;
+.HanbitBox {
+  width: 200px;
+  height: 300px;
+  .Title {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #535353;
+    padding-bottom: 40px;
+  }
+  .HanbitBoard_navlink_container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+    padding-bottom: 19px;
+    position: relative;
+    text-decoration: none;
+    &.active {
+      > div {
+        color: red;
+      }
     }
-    .HanbitBoard_navlink_container{
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        font-size: 14px;
-        padding-bottom: 19px;
-        position: relative;
-        text-decoration: none;
-        &.active{
-            >div{
-                color: red;
-            }
-        }
-        >div{
-            color: black;
-        }
-        >img{
-           position: absolute;
-           left: 100px;
-        }
+    > div {
+      color: black;
     }
-    
+    > img {
+      position: absolute;
+      left: 100px;
+    }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .HanbitBox{
-        padding-top: 10px;
-        display: flex;
-        max-width: 700px;
-        width: 100%;
-        height: 50px;
-        justify-content: space-around;
-        align-items: center;
-        .Title{
-            margin-top: initial;
-            padding-bottom: 0;
-        }
-        .HanbitBoard_navlink_container{
-            padding-bottom: 0;
-            &.active{
-                >div{
-                   
-                }
-            }
-            >div{
-                
-            }
-            >img{
-                display: none;
-            }   
-        }
-        
+@media screen and (max-width: 768px) {
+  .HanbitBox {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    .Title {
+      margin-top: initial;
+      padding-bottom: 0;
     }
+    .HanbitBoard_navlink_container {
+      padding-bottom: 0;
+      &.active {
+        > div {
+        }
+      }
+      > div {
+      }
+      > img {
+        display: none;
+      }
+    }
+  }
 }

@@ -1,55 +1,54 @@
-import React from 'react';
-import { withStyles, styled } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import './DropDown.scss'
+import React from "react";
+import { withStyles, styled } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import "./DropDown.scss";
 import { NavLink } from "react-router-dom";
 
 const StyledMenu = withStyles({
   paper: {
-    width:'100%',
-    border: '1px solid #d3d4d5',
-    maxWidth: "100%"
+    width: "100%",
+    border: "1px solid #d3d4d5",
+    maxWidth: "100%",
   },
 })((props) => (
   <Menu
     elevation={0}
     getContentAnchorEl={null}
     anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'center',
+      vertical: "bottom",
+      horizontal: "center",
     }}
     transformOrigin={{
-      vertical: 'top',
-      horizontal: 'center',
+      vertical: "top",
+      horizontal: "center",
     }}
     {...props}
   />
 ));
 
 const MyButton = styled(Button)({
-  width:'100%',
-  fontSize:'16px',
-  background: '#da2320',
+  width: "100%",
+  fontSize: "16px",
+  background: "#da2320",
   border: 0,
   borderRadius: 3,
-  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-  color: 'white',
+  color: "white",
   height: 48,
-  padding: '0 30px',
-  '&:hover': {
+  padding: "0 30px",
+  "&:hover": {
     backgroundColor: "#da2320",
   },
 });
 
 const StyledMenuItem = withStyles((theme) => ({
   root: {
-    width:'100%',
-    color:'#333333',
-    justifyContent:'center',
+    width: "100%",
+    color: "#333333",
+    justifyContent: "center",
   },
 }))(MenuItem);
 
@@ -68,7 +67,7 @@ export default function CustomizedMenus() {
   const menuOnClick = (text) => {
     setMenuText(text);
     setAnchorEl(null);
-  }
+  };
 
   return (
     <div className="DropDown_container">
@@ -79,9 +78,7 @@ export default function CustomizedMenus() {
         color="primary"
         onClick={handleClick}
       >
-        
         {menuText}
-
       </MyButton>
       <StyledMenu
         id="customized-menu"
@@ -92,17 +89,17 @@ export default function CustomizedMenus() {
       >
         <StyledMenuItem onClick={() => menuOnClick("지입 분석")}>
           <NavLink className="Mobile_link" to="/Info/analysis">
-          <ListItemText primary="지입 분석" />
+            <ListItemText primary="지입 분석" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem onClick={() => menuOnClick("차량운용분석")}>
           <NavLink className="Mobile_link" to="/Info/operation">
-          <ListItemText primary="차량운용분석" />
+            <ListItemText primary="차량운용분석" />
           </NavLink>
         </StyledMenuItem>
-        <StyledMenuItem onClick={() => menuOnClick("자격증가이드")}>  
+        <StyledMenuItem onClick={() => menuOnClick("자격증가이드")}>
           <NavLink className="Mobile_link" to="/Info/testguide">
-          <ListItemText primary="자격증가이드" />
+            <ListItemText primary="자격증가이드" />
           </NavLink>
         </StyledMenuItem>
       </StyledMenu>

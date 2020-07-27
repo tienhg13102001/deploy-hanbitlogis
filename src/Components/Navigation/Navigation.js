@@ -84,7 +84,6 @@ class Navigation extends Component {
     return (
       <div className="NaviContainer">
         {this.renderSubMenu(clickedMenu)}
-
         <div className="NaviWrap">
           <div className="TopNavi">
             <div className="TopNaviWrap">
@@ -93,33 +92,33 @@ class Navigation extends Component {
               </div>
               <Guide onClick={this.handleClickMenu} />
             </div>
-            <div className="Member_Box">
-              <BurMenu
-                className="Menu_Button"
-                right
-                customCrossIcon={<img src={closeicon} alt="closeicon" />}
-                customBurgerIcon={
-                  <img className="MenuIcon" src={menuicon} alt=""></img>
-                }
-              >
-                <NavLink exact={true} id="home" className="menu-item" to="/">
-                  한빛로지스
-                </NavLink>
-                <NavLink id="Company" className="menu-item" to="/Intro">
-                  회사소개
-                </NavLink>
-                <NavLink id="Info" className="menu-item" to="/Info">
-                  지입정보
-                </NavLink>
-                <NavLink id="Car" className="menu-item" to="/Vehicle">
-                  당사차량
-                </NavLink>
-                <NavLink id="Board" className="menu-item" to="/HanbitBoard">
-                  공지사항
-                </NavLink>
-              </BurMenu>
-            </div>
           </div>
+        </div>
+        <div className="Member_Box">
+          <BurMenu
+            className="Menu_Button"
+            right
+            customCrossIcon={<img src={closeicon} alt="closeicon" />}
+            customBurgerIcon={
+              <img className="MenuIcon" src={menuicon} alt=""></img>
+            }
+          >
+            <NavLink exact={true} id="home" className="menu-item" to="/">
+              한빛로지스
+            </NavLink>
+            <NavLink id="Company" className="menu-item" to="/Intro">
+              회사소개
+            </NavLink>
+            <NavLink id="Info" className="menu-item" to="/Info">
+              지입정보
+            </NavLink>
+            <NavLink id="Car" className="menu-item" to="/Vehicle">
+              당사차량
+            </NavLink>
+            <NavLink id="Board" className="menu-item" to="/HanbitBoard">
+              공지사항
+            </NavLink>
+          </BurMenu>
         </div>
       </div>
     );

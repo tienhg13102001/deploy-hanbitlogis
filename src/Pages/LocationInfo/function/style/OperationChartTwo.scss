@@ -1,128 +1,133 @@
-.analysis_Chart_two{
-    
-    .analysis_chart_box_two {
-        padding-top: 61px;
-        .Chart_Title_title_two{
-            display: flex;
-            padding-bottom: 29px;
-            .Analysis_Chart_Text_Area{
-                font-size: 20px;
-                color: #da2320;
-                padding-left: 10px;
-                font-weight: 600;
-            }
+.analysis_Chart_two {
+  .analysis_chart_box_two {
+    padding-top: 61px;
+    .Chart_Title_title_two {
+      display: flex;
+      padding-bottom: 29px;
+      .chart_icon_analysis_area {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > img {
+          width: 23px;
+          height: 21px;
         }
+      }
+      .Analysis_Chart_Text_Area {
+        font-size: 20px;
+        color: #da2320;
+        padding-left: 5px;
+        font-weight: 500;
+      }
     }
-    .Chart_Box{
-        border-bottom: 1px solid #535353;
-        .Chart_Type{
-            display: flex;
-            font-size: 16px;
-            font-weight: 600;
-            justify-content: space-between;
-            border-top: solid 1px #535353;
-            border-bottom: solid 1px #535353;
-            .Type_Text_One{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 350px;
-                width: 100%;
-                height: 60px;
-            }
-            .Type_Text_Two {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 350px;
-                width: 100%;
-                height: 60px;
-            }
-            .Type_Text_Three {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 400px;
-                width: 100%;
-                height: 60px;
-            }
-        }
-        .Chart_two_list{
-            
-            .Text_two_box{
-                display: flex;
-                justify-content: space-around;
-                border-bottom: solid 1px #e5e5e5;
-                .analysis_Chart_text_one{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 217px;
-                    width: 100%;
-                    height: 60px;
-                    color: #707070;
-                }
-                .analysis_Chart_text_two{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 430px;
-                    width: 100%;
-                    height: 60px;
-                    color: #707070;
-                }
-                .analysis_Chart_text_three{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 400px;
-                    width: 100%;
-                    height: 60px;
-                    color: #707070;
-                }
-            }
-        }
+  }
+  .Chart_Box {
+    border-bottom: 1px solid #535353;
+    .Chart_Type {
+      display: flex;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: space-between;
+      border-top: solid 1px #535353;
+      border-bottom: solid 1px #535353;
+      .Type_Text_One {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+        width: 100%;
+        height: 60px;
+      }
+      .Type_Text_Two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+        width: 100%;
+        height: 60px;
+      }
+      .Type_Text_Three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+        width: 100%;
+        height: 60px;
+      }
     }
+    .Chart_two_list {
+      .Text_two_box {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: solid 1px #e5e5e5;
+        .analysis_Chart_text_one_1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 200px;
+          width: 100%;
+          height: 60px;
+          color: #707070;
+        }
+        .analysis_Chart_text_one_2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 210px;
+          width: 100%;
+          height: 60px;
+          color: #707070;
+        }
+        .analysis_Chart_text_one_3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 255px;
+          width: 100%;
+          height: 60px;
+          color: #707070;
+        }
+      }
+    }
+  }
 }
 
-
-@media screen and (max-width:768px) {
-    .analysis_Chart_two{
-        .analysis_chart_box_two{
-        
-            .Chart_Title_title_two{
-                padding-left: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                .Analysis_Chart_Text_Area{
-                    font-size: 12px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-            .Chart_Box{
-                
-                .Chart_Type{
-                    
-                    .Type_Text_One{
-                        font-size: 14px;
-                    }
-                    .Type_Text_Two {
-                        font-size: 14px;
-                    }
-                    .Type_Text_Three {
-                        font-size: 14px;
-                    }
-                }
-                .Chart_two_list{
-                    .Text_two_box{
-                        .analysis_Chart_text_one{
-                            font-size: 11px;
-                        }      
-                    }
-                }
-            }
+@media screen and (max-width: 768px) {
+  .analysis_Chart_two {
+    .analysis_chart_box_two {
+      .Chart_Title_title_two {
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .Analysis_Chart_Text_Area {
+          font-size: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
+      }
+      .Chart_Box {
+        .Chart_Type {
+          .Type_Text_One {
+            font-size: 14px;
+          }
+          .Type_Text_Two {
+            font-size: 14px;
+          }
+          .Type_Text_Three {
+            font-size: 14px;
+          }
+        }
+        .Chart_two_list {
+          .Text_two_box {
+            .analysis_Chart_text_one {
+              font-size: 11px;
+            }
+          }
+        }
+      }
     }
+  }
 }

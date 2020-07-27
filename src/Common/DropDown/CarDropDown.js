@@ -1,60 +1,59 @@
-import React from 'react';
-import { withStyles, styled } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import React from "react";
+import { withStyles, styled } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import ListItemText from "@material-ui/core/ListItemText";
 
 import { NavLink } from "react-router-dom";
 
 const StyledMenu = withStyles({
   paper: {
-    width:'100%',
-    border: '1px solid #d3d4d5',
-    maxWidth:"100%"
+    width: "100%",
+    border: "1px solid #d3d4d5",
+    maxWidth: "100%",
   },
 })((props) => (
   <Menu
     elevation={0}
     getContentAnchorEl={null}
     anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'center',
+      vertical: "bottom",
+      horizontal: "center",
     }}
     transformOrigin={{
-      vertical: 'top',
-      horizontal: 'center',
+      vertical: "top",
+      horizontal: "center",
     }}
     {...props}
   />
 ));
 
 const MyButton = styled(Button)({
-  width:'100%',
-  fontSize:'16px',
-  background: '#da2320',
+  width: "100%",
+  fontSize: "16px",
+  background: "#da2320",
   border: 0,
   borderRadius: 3,
-  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-  color: 'white',
+  color: "white",
   height: 48,
-  padding: '0 30px',
-  '&:hover': {
+  padding: "0 30px",
+  "&:hover": {
     backgroundColor: "#da2320",
   },
 });
 
 const StyledMenuItem = withStyles((theme) => ({
   root: {
-    width:'100%',
-    color:'#333333',
-    justifyContent:'center',
+    width: "100%",
+    color: "#333333",
+    justifyContent: "center",
   },
 }))(MenuItem);
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [menuText, setMenuText] = React.useState("당사차량")
+  const [menuText, setMenuText] = React.useState("당사차량");
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -67,7 +66,7 @@ export default function CustomizedMenus() {
   const menuOnClick = (text) => {
     setMenuText(text);
     setAnchorEl(null);
-  }
+  };
 
   return (
     <div className="DropDown_container">
@@ -78,9 +77,7 @@ export default function CustomizedMenus() {
         color="primary"
         onClick={handleClick}
       >
-        
         {menuText}
-
       </MyButton>
       <StyledMenu
         id="customized-menu"
@@ -91,22 +88,22 @@ export default function CustomizedMenus() {
       >
         <StyledMenuItem onClick={() => menuOnClick("당사차량[1톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/onevehicle">
-          <ListItemText primary="당사차량[1톤]" />
+            <ListItemText primary="당사차량[1톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem onClick={() => menuOnClick("당사차량[2.5톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/twovehicle">
-          <ListItemText primary="당사차량[2.5톤]" />
+            <ListItemText primary="당사차량[2.5톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem onClick={() => menuOnClick("당사차량[4.5톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/threevehicle">
-          <ListItemText primary="당사차량[4.5톤]" />
+            <ListItemText primary="당사차량[4.5톤]" />
           </NavLink>
         </StyledMenuItem>
         <StyledMenuItem onClick={() => menuOnClick("당사차량[5톤]")}>
           <NavLink className="Mobile_link" to="/Vehicle/fourvehicle">
-          <ListItemText primary="당사차량[5톤]" />
+            <ListItemText primary="당사차량[5톤]" />
           </NavLink>
         </StyledMenuItem>
       </StyledMenu>

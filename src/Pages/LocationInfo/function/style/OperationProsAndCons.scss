@@ -1,134 +1,135 @@
-.ProsAndConsContainer{
-    margin-bottom: 80px;
-    .Pros_TitleBox{
+.ProsAndConsContainer {
+  margin-bottom: 80px;
+  .Pros_TitleBox {
+    display: flex;
+    padding-bottom: 21px;
+    padding-top: 30px;
+    .Pros_icon_area {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > img {
+        width: 18px;
+        height: 23px;
+      }
+    }
+    .Pros_Title {
+      padding-left: 5px;
+      font-size: 20px;
+      color: #da2320;
+    }
+  }
+  .Pros_Chart {
+    max-width: 1050px;
+    width: 100%;
+    border-bottom: 1px solid #535353;
+    .Pros_Type {
+      display: flex;
+      height: 60px;
+      border-top: 1px solid #535353;
+      border-bottom: 1px solid #535353;
+      background-color: #f5f4f4;
+      .Pros_Type_One {
+        width: 147px;
         display: flex;
-        padding-bottom: 21px;
-        padding-top: 30px;
-        .Pros_Icon{
-        }
-        .Pros_Title{
-            padding-left: 10px;
-            font-size: 20px;
-            color: #da2320;
-            
-        }
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #535353;
+      }
+      .Pros_Type_Two {
+        width: 432px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #535353;
+      }
+      .Pros_Type_Three {
+        width: 471px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #535353;
+      }
     }
-    .Pros_Chart{
-        max-width: 1050px;
-        width: 100%;
-        border-bottom: 1px solid #535353;
-        .Pros_Type{
-            display: flex;
-            height: 60px;
-            border-top: 1px solid #535353;
-            border-bottom: 1px solid #535353;
-            background-color: #f5f4f4;
-            .Pros_Type_One{
-                width: 147px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 16px;
-                color: #535353;
-            }
-            .Pros_Type_Two{
-                width: 432px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 16px;
-                color: #535353;
-            }
-            .Pros_Type_Three{
-                width: 471px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 16px;
-                color: #535353;
-            }
-        }
-        .Pros_ChatBox{
-            display: flex;
-            height: 60px;
-            max-height: 100px;
-            border-bottom: solid 1px #f5f4f4;
-            .Pros_One{
-                width: 147px;
-                font-size: 16px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #f5f4f4;
-                color: #707070;
-                font-weight: 600;
-            }
-            .Pros_Two{
-                width: 432px;
-                font-size: 15px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                padding: 5px;
-                color: #707070;
-                font-weight: 500;
-            }
-            .Pros_Three{
-                width: 471px;
-                font-size: 15px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                padding: 5px;
-                color: #707070;
-                font-weight: 500;
-            }
-        }
+    .Pros_ChatBox {
+      display: flex;
+      height: 60px;
+      max-height: 100px;
+      border-bottom: solid 1px #f5f4f4;
+      .Pros_One {
+        width: 147px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f4f4;
+        color: #707070;
+        font-weight: 600;
+      }
+      .Pros_Two {
+        width: 432px;
+        font-size: 15px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        padding: 5px;
+        color: #707070;
+        font-weight: 500;
+      }
+      .Pros_Three {
+        width: 471px;
+        font-size: 15px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+        color: #707070;
+        font-weight: 500;
+      }
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .ProsAndConsContainer{
-        .Pros_TitleBox{
-            padding-left: 10px;
-            .Pros_Icon{
-            }
-            .Pros_Title{
-                font-size: 12px;
-                display: flex;
-                align-items: center;
-                justify-content: center;                
-            }
-        }
-        .Pros_Chart{
-            
-            .Pros_Type{
-                font-size: 14px;
-                .Pros_Type_One{
-                    
-                }
-                .Pros_Type_Two{
-                    
-                }
-                .Pros_Type_Three{
-                    
-                }
-            }
-            .Pros_ChatBox{
-                
-                .Pros_One{
-                    font-size: 10px;
-                    
-                }
-                .Pros_Two{
-                    font-size: 10px;
-                }
-                .Pros_Three{
-                    font-size: 10px;
-                }
-            }
-        }
+@media screen and (max-width: 768px) {
+  .ProsAndConsContainer {
+    .Pros_TitleBox {
+      padding-left: 10px;
+      .Pros_Icon {
+      }
+      .Pros_Title {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+    .Pros_Chart {
+      .Pros_Type {
+        font-size: 14px;
+        .Pros_Type_One {
+        }
+        .Pros_Type_Two {
+        }
+        .Pros_Type_Three {
+        }
+      }
+      .Pros_ChatBox {
+        .Pros_One {
+          font-size: 10px;
+        }
+        .Pros_Two {
+          font-size: 10px;
+        }
+        .Pros_Three {
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }

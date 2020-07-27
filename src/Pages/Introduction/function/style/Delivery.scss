@@ -1,227 +1,224 @@
-.DeliContainer{
-    max-width: 1050px;
-    margin-left: 85px;
-    .Wrap_Line{
-        .Title{
-            margin-top: 60px;
-            font-size: 30px;
-            padding-bottom: 28px;
-            span {
-                font-weight: 600;
-                color: #da2320;
-            }
+.DeliContainer {
+  max-width: 1050px;
+  margin-left: 85px;
+  .Wrap_Line {
+    .Title {
+      margin-top: 60px;
+      font-size: 30px;
+      padding-bottom: 28px;
+      span {
+        font-weight: 600;
+        color: #da2320;
+      }
+    }
+    .VisitText {
+      font-size: 20px;
+      padding-bottom: 57px;
+      color: #707070;
+    }
+    .DeliTitle {
+      .Text {
+        font-size: 14px;
+        padding-bottom: 14px;
+      }
+      .Operation {
+        font-size: 30px;
+        padding-bottom: 50px;
+        font-weight: 600;
+      }
+    }
+    .Table {
+      display: flex;
+      max-width: 1050px;
+      width: 100%;
+      .Table_Box {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .Table_Text {
+        border: solid 2px #535353;
+        border-radius: 50%;
+        max-width: 290px;
+        width: 100%;
+        height: 290px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        &:nth-child(1) {
+          color: #da2320;
         }
-        .VisitText{
-        font-size: 20px;
-        padding-bottom: 57px;
-        color: #707070;
+        &:nth-child(4) {
+          color: #da2320;
         }
-        .DeliTitle{
-           .Text{
-                font-size: 14px;
-                padding-bottom: 14px;
-           }
-           .Operation{
-                font-size: 30px;
-                padding-bottom: 50px;
-                font-weight: 600;
-           }
+        &:nth-child(6) {
+          color: #da2320;
         }
-        .Table{
-            display: flex;
-            max-width: 1050px;
-            width: 100%;
-            .Table_Box{
-                display: flex;
-                flex-wrap: wrap;
-                
-            }
-            .Table_Text{
-                border: solid 2px #535353;
-                border-radius: 50%;
-                max-width: 290px;
-                width: 100%;
-                height: 290px;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 20px;
-                font-size: 24px;
-                font-weight: 600;
-                &:nth-child(1) {
-                    color : #da2320;
-                }
-                &:nth-child(4) {
-                    color : #da2320;
-                }
-                &:nth-child(6) {
-                    color : #da2320;
-                }
-            }
+      }
+    }
+    .CheckPoint {
+      .Check_TitleBox {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-weight: 600;
+        .Check_Text {
+          font-size: 20px;
+          text-align: center;
+          color: #da2320;
         }
-        .CheckPoint{
-            .Check_TitleBox{
-                font-size: 30px;
-                padding-top: 60px;
-                padding-bottom: 50px;
-                font-weight: 600;
-                .Check_Text{
-                    text-align: center;
-                    color: #da2320;
-                    
-                }
-            }
-            .Check_List{
-                display: flex;
-                text-align: center;
-                justify-content: space-around;
-                .Check_Box{
-                    
-                    .Check_Icon{
-                        padding-bottom: 33px;
-                        max-width: 120px;
-                        height: 120px;
-                    }
-                    .Check_Title{
-                        padding-bottom: 19px;
-                        font-size: 24px;
-                        color: #da2320;
-                        font-weight: 600;
-                    }
-                    .Check_Text_map{
-                        font-size: 17px;
-                        padding-bottom: 60px;
-                    }
-                }
-                .check_arrow_map{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-        }
-        .Management{
-            display: flex;
-            margin-bottom : 30px;
-            .Table_Box{
-                display: flex;
-                flex-wrap: wrap;
-                
-            }
-            .Table_Text{
-                -webkit-box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.19);
-                -moz-box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.19);
-                box-shadow: 0px 0px 25px -12px rgba(0,0,0,0.19);
-                border-radius: 30px;
-                padding : 0px 15px;
-                width: 290px;
-                height: 290px;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 20px;
-                font-size: 19px;
-                font-weight: 600;
-                &:nth-child(1) {
-                    color : #da2320;
-                }
-            }
-        }
-        .Check_Point {
-            text-align: center;
-            color: #da2320;
-            padding-bottom: 52px;
-        }
-        .Check_Icon {
-            text-align: center;
-            padding-bottom: 58px;
-        }
-        .Check_Title{
-            padding-top: 19px;
-            font-size: 20px;
+      }
+      .Check_List {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        .Check_Box {
+          .Check_Icon {
+            max-width: 120px;
+            height: 120px;
+            padding: 10px;
+          }
+          .Check_Title {
             padding-bottom: 19px;
-            text-align: center;
+            font-size: 24px;
+            color: #da2320;
+            font-weight: 600;
+          }
+          .Check_Text_map {
+            font-size: 17px;
+            padding-bottom: 60px;
+          }
         }
+        .check_arrow_map {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
     }
+    .Management {
+      display: flex;
+      margin-bottom: 30px;
+      .Table_Box {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .Table_Text {
+        -webkit-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.19);
+        box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.19);
+        border-radius: 30px;
+        padding: 0px 15px;
+        width: 290px;
+        height: 290px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        font-size: 19px;
+        font-weight: 600;
+        &:nth-child(1) {
+          color: #da2320;
+        }
+      }
+    }
+    .Check_Point {
+      text-align: center;
+      color: #da2320;
+      padding-bottom: 52px;
+    }
+    .Check_Icon {
+      text-align: center;
+      padding-bottom: 58px;
+    }
+    .Check_Title {
+      padding-top: 19px;
+      font-size: 20px;
+      padding-bottom: 19px;
+      text-align: center;
+    }
+  }
 }
-@media screen and (max-width:768px) {
-    .DeliContainer{
-        padding: 0 15px 0 15px;
-        margin: initial;
-        .Wrap_Line{
-            padding-left: 0px;
-            .Title{
-                font-size: 20px;
-            }
-            .VisitText{
-                font-size: 14px;
-            }
-            .DeliTitle{
-                .Text{
-                    font-size: 11px;
-                }
-                .Operation{
-                    font-size: 20px;
-                }
-            }
-            .Table{
-               .Table_Box{
-                    justify-content: center;
-                    .Table_Text{
-                        font-size: 12px;
-                        max-width: 115px;
-                        width: 100%;
-                        height: 115px;
-                        margin: 10px;
-                    }
-                }
-            }
-            .CheckPoint{
-                .Check_TitleBox{
-                    font-size: 20px;
-                }
-                .Check_List{
-                    .Check_Box{
-                        .Check_Icon{
-                            max-width: 80px;
-                            height: 80px;
-                            padding-bottom: 25px;
-                            .Check_Text_map{
-                                font-size: 12px;
-                                >span {
-                                    font-size: 10px;
-                                }
-                            }
-                        }                   
-                    }
-                    
-                }
-            }
-            .Management{
-                .Table_Box{
-                    justify-content: center;
-                    .Table_Text{
-                        font-size: 12px;
-                        max-width: 115px;
-                        width: 100%;
-                        height: 115px;
-                        margin: 10px;
-                    }
-                }
-            }
-            .CheckPoint{
-                .Check_Icon{
-                    max-width: 80px;
-                    height: 80px;
-                    margin: auto;
-                    padding-bottom: 25px;
-                }
-                .Check_Title{
-                    font-size: 15px;
-                }
-            }
+@media screen and (max-width: 768px) {
+  .DeliContainer {
+    padding: 0 15px 0 15px;
+    margin: initial;
+    .Wrap_Line {
+      padding-left: 0px;
+      .Title {
+        font-size: 20px;
+      }
+      .VisitText {
+        font-size: 14px;
+      }
+      .DeliTitle {
+        .Text {
+          font-size: 11px;
         }
+        .Operation {
+          font-size: 20px;
+        }
+      }
+      .Table {
+        .Table_Box {
+          justify-content: center;
+          .Table_Text {
+            font-size: 12px;
+            max-width: 115px;
+            width: 100%;
+            height: 115px;
+            margin: 10px;
+          }
+        }
+      }
+      .CheckPoint {
+        .Check_TitleBox {
+        }
+        .Check_List {
+          .Check_Box {
+            .Check_Title {
+              font-size: 16px;
+            }
+            .Check_Text_map {
+              font-size: 12px;
+            }
+            .Check_Icon {
+              max-width: 80px;
+              height: 80px;
+              padding: 5px;
+            }
+          }
+          .check_arrow_map {
+            display: none;
+          }
+        }
+      }
+      .Management {
+        .Table_Box {
+          justify-content: center;
+          .Table_Text {
+            font-size: 12px;
+            max-width: 115px;
+            width: 100%;
+            height: 115px;
+            margin: 10px;
+          }
+        }
+      }
+      .CheckPoint {
+        .Check_Icon {
+          max-width: 80px;
+          height: 80px;
+          margin: auto;
+          padding-bottom: 25px;
+        }
+        .Check_Title {
+          font-size: 15px;
+        }
+      }
     }
+  }
 }
