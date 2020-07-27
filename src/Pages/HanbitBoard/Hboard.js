@@ -66,6 +66,7 @@ class Hboard extends Component {
             item.lastUpdateDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
             return item;
           });
+          console.log(response.data.data.rows);
           this.setState({
             ...this.state,
             list: response.data.data.rows,
@@ -104,10 +105,9 @@ class Hboard extends Component {
               >
                 <BoardText
                   key={index}
-                  number={item.number}
                   date={item.lastUpdateDate}
                   title={item.resources[0].data[0]}
-                  people={item.name}
+                  people={item.simple_resources.name}
                 />
               </NavLink>
             );
