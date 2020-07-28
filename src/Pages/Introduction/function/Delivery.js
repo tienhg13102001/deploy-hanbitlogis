@@ -63,19 +63,19 @@ class Delivery extends Component {
   checklist = [
     {
       icon: icon01,
-      title: "1 Point",
+      title: "Point 1",
       text: "배송도착시간 예고제를\n 실시합니다.",
       arrow: arrowicon,
     },
     {
       icon: icon02,
-      title: "2 Point",
+      title: "Point 2",
       text: "차량의 청결 상태를\n 월 1회 점검합니다.",
       arrow: arrowicon,
     },
     {
       icon: icon03,
-      title: "3 Point",
+      title: "Point 3",
       text: "배송 도착시간\n 예고제를 실시합니다.",
       arrow: arrowicon,
     },
@@ -109,12 +109,6 @@ class Delivery extends Component {
             <div className="Text">Delivery luck</div>
             <div className="Operation">운영 방침</div>
           </div>
-          {/* <Steps current={current} onChange={this.onChange}>
-                        <Step title="원칙 1" description="배송 도착시간 예고제 실시" />
-                        <Step title="원칙 2" description="각 배송원의 인성 및 service-mind 정기교육 (3개월 단위)" />
-                        <Step title="원칙 3" description="배송 복장의 통일 (유니폼 및 모자 착용)" />
-                    </Steps> */}
-
           <Steps current={9} onChange={this.onChange} direction="vertical">
             {this.list.map((item, index) => {
               return (
@@ -127,17 +121,6 @@ class Delivery extends Component {
             })}
           </Steps>
           <Divider />
-
-          {/* <div className="Table">
-                        <div className="Table_Box">
-                            {this.list.map((item, index) => {
-                                return (
-                                    <div className="Table_Text" key={index}>{item.text}</div>
-                                )
-                            })}
-                        </div>
-                    </div> */}
-
           <div className="CheckPoint">
             <div className="Check_TitleBox">
               <div className="Check_Text">Check Points</div>
@@ -213,17 +196,6 @@ class Delivery extends Component {
               </div>
             </div>
           </div>
-          {/* <div className="CheckPoint">
-                        <div className="Check_TitleBox">
-                            <div className="Check_Point">
-                                CheckPoint
-                            </div>
-                            <div className="Check_Icon">
-                                <img src={icon} alt='아이콘'></img>
-                            </div>
-                            <div className="Check_Title">전 배송처의 지리 (위치) 를 확보합니다.</div>
-                        </div>
-                    </div> */}
         </div>
       </div>
     );

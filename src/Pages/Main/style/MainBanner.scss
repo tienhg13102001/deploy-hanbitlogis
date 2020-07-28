@@ -12,14 +12,15 @@
   }
 
   .Banner_TextBox {
-    max-width: 450px;
-    width: 100%;
+    width: 1250px;
     position: relative;
     z-index: 1;
-    top: -280px;
-    right: -310px;
+    top: -205px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     .Banner_Title {
-      font-weight: 700;
+      font-weight: 900;
       max-width: 500px;
       width: 100%;
       font-size: 42.5px;
@@ -29,6 +30,7 @@
       margin-bottom: 30px;
     }
     .Banner_Subtitle {
+      font-weight: 300;
       font-size: 18.5px;
       color: #333333;
     }
@@ -37,15 +39,14 @@
 .slick-dots {
   bottom: 13px !important;
 }
-.slick-arrow {
-}
 .slick-prev {
-  left: 300px;
-  position: relative;
+  left: 10% !important;
+  z-index: 3;
 }
 
 .slick-next {
-  position: relative;
+  right: 30% !important;
+  z-index: 3;
 }
 
 @media screen and (max-width: 768px) {

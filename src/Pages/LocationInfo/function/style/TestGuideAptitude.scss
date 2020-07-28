@@ -1,236 +1,226 @@
-.Aptitude_Container{
-    
-    .Aptitude_Box{
-        text-align: center;
-        padding-top: 60px;
-        .Aptitude_Icon{
-            
-            .Icon_aptitude{
-                padding-bottom: 30px;
-            }
+.Aptitude_Container {
+  .Aptitude_Box {
+    text-align: center;
+    padding-top: 60px;
+    .Aptitude_Icon {
+      .Icon_aptitude {
+        padding-bottom: 30px;
+      }
+    }
+    .Aptitude_Title {
+      font-size: 30px;
+      color: #535353;
+      padding-bottom: 30px;
+    }
+    .Aptitude_Text {
+      max-width: 700px;
+      width: 100%;
+      font-size: 16px;
+      color: #a0a0a0;
+      margin: auto;
+      padding-bottom: 60px;
+    }
+  }
+  .Aptitude_Ga {
+    .Ga_Box {
+      display: flex;
+      padding: 50px 0 40px 0;
+      .Ga_Title {
+        font-size: 18px;
+        padding-right: 24px;
+      }
+      .Ga_Text {
+        color: #535353;
+        font-size: 18px;
+      }
+    }
+    .Ga_IconBox {
+      display: flex;
+      justify-content: center;
+      .Ga_Icon {
+        border: solid 1px #ebebeb;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0 20px 0;
+        display: flex;
+        flex: 1;
+        .Ga_Img {
+          max-width: 76px;
+          width: 100%;
         }
-        .Aptitude_Title{
-            font-size: 30px;
-            color: #535353;
-            padding-bottom: 30px;
+        .Ga_Icon_Text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: 600;
         }
-        .Aptitude_Text{
-            max-width: 700px;
+      }
+      .Dot_Line {
+        display: flex;
+        align-self: center;
+        padding: 20px;
+      }
+    }
+    .Na_Icon_area {
+    }
+    .Na_IconBox {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 30px;
+      .Na_Icon {
+        max-width: 485px;
+        width: 100%;
+        border: solid 1px #ebebeb;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        .Na_ImgBox {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .Na_Img {
+            max-width: 76px;
+            max-height: 76px;
             width: 100%;
-            font-size: 16px;
+          }
+        }
+        .Na_Text_wrap {
+          padding-left: 10px;
+          .Na_Text {
+            max-width: 355px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 600;
+            padding-bottom: 14px;
+            color: #535353;
+            text-align: left;
+          }
+          .Na_Dot {
+            padding-bottom: 14px;
+          }
+          .Na_SubText {
+            max-width: 300px;
+            width: 100%;
+            font-size: 12px;
             color: #a0a0a0;
-            margin: auto;
-            padding-bottom: 60px;
+            text-align: left;
+          }
         }
+      }
+      .Na_Dot_box {
+        display: flex;
+        align-items: center;
+
+        .Dot_Line {
+          padding: 20px;
+        }
+      }
     }
-    .Aptitude_Ga{
-        .Ga_Box{
-            display: flex;
-            padding: 50px 0 40px 0;
-            .Ga_Title{
-                font-size: 18px;
-                padding-right: 24px;
-            }
-            .Ga_Text{
-                color: #535353;
-                font-size: 18px;
-            }
-        }
-        .Ga_IconBox{
-            display: flex;
-            justify-content: center;
-            .Ga_Icon{
-                border: solid 1px #ebebeb;
-                border-radius: 10px;
-                padding: 20px;
-                margin: 20px 0 20px 0;
-                display: flex;
-                flex: 1;
-                .Ga_Img{
-                    max-width: 76px;
-                    width: 100%;
-                    
-                }
-                .Ga_Icon_Text{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding-left: 15px;
-                    font-size: 15px;
-                    font-weight: 600;
-                }
-            }
-            .Dot_Line{
-                display: flex;
-                align-self: center;
-                padding: 20px;
-            }
-        }
-        .Na_Icon_area{
-            
-        }
-        .Na_IconBox{
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            margin-bottom: 30px;
-            .Na_Icon{
-                max-width: 485px;
-                width: 100%;
-                border: solid 1px #ebebeb;
-                border-radius: 10px;
-                padding: 20px;
-                display: flex;
-                flex: 1;
-                justify-content: space-around;
-                .Na_ImgBox{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .Na_Img{
-                        max-width: 76px;
-                        max-height: 76px;
-                        width: 100%;
-                    }
-                }
-                .Na_Text_wrap{
-                    padding-left: 10px;
-                    .Na_Text{
-                        max-width: 300px;
-                        width: 100%;
-                        font-size: 14px;
-                        font-weight: 600;
-                        padding-bottom: 14px;
-                        color: #535353;
-                        text-align: left;
-                    }
-                    .Na_Dot{
-                        padding-bottom: 14px;
-                    }
-                    .Na_SubText{
-                        max-width: 300px;
-                        width: 100%;
-                        font-size: 12px;
-                        color: #a0a0a0;
-                        text-align: left;
-                    }
-                }
-                
-            }
-            .Na_Dot_box{
-                display: flex;
-                align-items: center;
-                
-                .Dot_Line{
-                    padding: 20px;
-                }
-            }
-        }
-        
-        .Move_Page{
-            display: flex;
-            justify-content: center;
-            padding: 30px 0 100px 0;
-            a {
-                text-decoration: none;
-            }
-            .Apti_Btn{
-                width: 300px;
-                height: 50px;
-                background-color: #da2320;
-                color: #ffffff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
+
+    .Move_Page {
+      display: flex;
+      justify-content: center;
+      padding: 30px 0 100px 0;
+      a {
+        text-decoration: none;
+      }
+      .Apti_Btn {
+        width: 300px;
+        height: 50px;
+        background-color: #da2320;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Aptitude_Container{
-    
-        .Aptitude_Box{
-            padding-top: initial;
-            .Aptitude_Icon{
-                padding-top: 20px;
-                padding-bottom: 20px;
-                >img{
-                    width: 80%;
-                }
-            }
-            .Aptitude_Title{
-                font-size: 18px;
-            }
-            .Aptitude_Text{
-                padding: 0 15px 0 15px;
-                font-size: 12px;
-                padding-bottom: 50px;
-            }
+@media screen and (max-width: 768px) {
+  .Aptitude_Container {
+    .Aptitude_Box {
+      padding-top: initial;
+      .Aptitude_Icon {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        > img {
+          width: 80%;
         }
-        .Aptitude_Ga{
-            .Ga_Box{
-                padding: 0 15px 0 15px;
-                .Ga_Title{
-                    font-size: 14px;
-                }
-                .Ga_Text{
-                    font-size: 13px;
-                }
-            }
-            .Ga_IconBox{
-               
-                .Ga_Icon{
-                    align-items: center;
-                    padding: 15px;
-                    text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    .Ga_Img{
-                        width: 76px;
-                        height: 76px;
-                        
-                    }
-                    .Ga_Icon_Text{
-                        padding: 10px 0 0 0;
-                        font-size: 12px;
-                    }
-                }
-                .Dot_Line{
-                    display: none;
-                }
-            }
-            .Na_IconBox{
-                display: flex;
-                flex-direction: column;
-                margin: initial;
-                .Na_Icon{
-                    padding: 20px;
-                    margin: 10px 0 0 0;
-                    .Na_ImgBox{
-                        .Na_Img{
-                            width: 76px;
-                            height: 76px;
-                        }
-                    }
-                    .Na_Text_wrap{
-                        .Na_Text{
-                            font-size: 12px;
-                        }
-                        .Na_Dot{
-                            display: none;
-                        }
-                        .Na_SubText{
-                            font-size: 11px;
-                        }
-                    }
-                    
-                }
-                .Na_Dot_box{
-                    display: none;
-                }
-            }
-            
-        }
+      }
+      .Aptitude_Title {
+        font-size: 18px;
+      }
+      .Aptitude_Text {
+        padding: 0 15px 0 15px;
+        font-size: 12px;
+        padding-bottom: 50px;
+      }
     }
+    .Aptitude_Ga {
+      .Ga_Box {
+        padding: 0 15px 0 15px;
+        .Ga_Title {
+          font-size: 14px;
+        }
+        .Ga_Text {
+          font-size: 13px;
+        }
+      }
+      .Ga_IconBox {
+        .Ga_Icon {
+          align-items: center;
+          padding: 15px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          .Ga_Img {
+            width: 76px;
+            height: 76px;
+          }
+          .Ga_Icon_Text {
+            padding: 10px 0 0 0;
+            font-size: 12px;
+          }
+        }
+        .Dot_Line {
+          display: none;
+        }
+      }
+      .Na_IconBox {
+        display: flex;
+        flex-direction: column;
+        margin: initial;
+        .Na_Icon {
+          padding: 20px;
+          margin: 10px 0 0 0;
+          .Na_ImgBox {
+            .Na_Img {
+              width: 76px;
+              height: 76px;
+            }
+          }
+          .Na_Text_wrap {
+            .Na_Text {
+              font-size: 12px;
+            }
+            .Na_Dot {
+              display: none;
+            }
+            .Na_SubText {
+              font-size: 11px;
+            }
+          }
+        }
+        .Na_Dot_box {
+          display: none;
+        }
+      }
+    }
+  }
 }

@@ -1,28 +1,48 @@
 import React, { Component } from "react";
 import "./Board.scss";
-
+import axios from "axios";
 import icon from "../../_asset/image/common/add-icon.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 class Board extends Component {
-  list = [
-    {
-      id: 0,
-      text: "당사는 최고의 물류 전문 회사 국토부장관상 수상 한빛로지스 한빛",
-      date: "2022.04.11",
-    },
-    {
-      id: 1,
-      text: "한빛로지스 국토부장관상 수상! 최고 물류 전문 회사",
-      date: "2022.04.11",
-    },
-    {
-      id: 2,
-      text: "한빛로지스는 향상된 서비스를 제공할 것을 약속드립니다.",
-      date: "2022.04.11",
-    },
-    { id: 3, text: "당사는 최고의 물류 전문 회사입니다.", date: "2022.04.11" },
-  ];
+  state = {
+    list: [],
+  };
+
+  componentDidMount = () => {
+    this.getAllList();
+  };
+  getAllList = async () => {
+    const rID = "hanbit_notice";
+    await axios
+      .get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
+
+      .then((response) => {
+        if (
+          response &&
+          response.data &&
+          response.data.data &&
+          response.data.data.rows
+        ) {
+          // console.log(response.data.data.rows);
+          response.data.data.rows = response.data.data.rows.map((item) => {
+            const date = new Date(item.lastUpdateDate);
+            item.lastUpdateDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+            return item;
+          });
+          // console.log(response.data.data.rows);
+          this.setState({
+            ...this.state,
+            list: response.data.data.rows,
+          });
+          // console.log(response.data.data.rows);
+        } else {
+          console.error("error");
+        }
+      })
+      .catch((e) => console.log(e));
+  };
+
   render() {
     return (
       <div className="Notice">
@@ -33,14 +53,20 @@ class Board extends Component {
           </NavLink>
         </div>
         <div className="TextBox">
-          {this.list.map((item, index) => {
-            return (
-              <div className="Box" key={index}>
-                <div className="Text">{item.text}</div>
-                <div className="Date">{item.date}</div>
-              </div>
-            );
-          })}
+          {this.state.list
+            .filter((data, index) => index < 4)
+            .map((item, index) => {
+              return (
+                <div className="Box" key={index}>
+                  <Link to="/HanbitBoard">
+                    <div className="Text">{item.resources[0].data[0]}</div>
+                  </Link>
+                  <Link to="/HanbitBoard">
+                    <div className="Date">{item.lastUpdateDate}</div>
+                  </Link>
+                </div>
+              );
+            })}
         </div>
       </div>
     );

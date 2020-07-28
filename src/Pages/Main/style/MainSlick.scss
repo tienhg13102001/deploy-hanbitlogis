@@ -7,7 +7,13 @@
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
+  .slick-prev {
+    display: none !important;
+  }
 
+  .slick-next {
+    display: none !important;
+  }
   .Slick_Img {
     max-width: 150px;
     width: 100%;
