@@ -2,11 +2,17 @@
   .Aptitude_Box {
     text-align: center;
     padding-top: 60px;
-    .Aptitude_Icon {
-      .Icon_aptitude {
-        padding-bottom: 30px;
+
+    .Icon_aptitude {
+      max-width: 78px;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 40px;
+      > img {
+        width: 100%;
       }
     }
+
     .Aptitude_Title {
       font-size: 30px;
       color: #535353;

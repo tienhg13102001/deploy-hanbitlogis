@@ -57,11 +57,10 @@ class TestGuideAptitude extends Component {
       <div className="Aptitude_Container">
         <Divider />
         <div className="Aptitude_Box">
-          <div className="Aptitude_Icon">
-            <div className="Icon_aptitude">
-              <img src={icon} alt="적성 검사 아이콘"></img>
-            </div>
+          <div className="Icon_aptitude">
+            <img src={icon} alt="적성 검사 아이콘"></img>
           </div>
+
           <div className="Aptitude_Title">※ 운전적성정밀검사란</div>
           <div className="Aptitude_Text">
             사업용자동차운전자의 심리적 상태와 행동, 습관 등을 과학적인 방법으로
