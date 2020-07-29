@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemText from "@material-ui/core/ListItemText";
-
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import { NavLink } from "react-router-dom";
 
 const StyledMenu = withStyles({
@@ -12,6 +12,9 @@ const StyledMenu = withStyles({
     width: "100%",
     border: "1px solid #d3d4d5",
     maxWidth: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 })((props) => (
   <Menu
@@ -49,6 +52,8 @@ const StyledMenuItem = withStyles((theme) => ({
     width: "100%",
     color: "#333333",
     justifyContent: "center",
+    textAlign: "center",
+    padding: "0 300px",
   },
 }))(MenuItem);
 
@@ -79,6 +84,7 @@ export default function CustomizedMenus() {
         onClick={handleClick}
       >
         {menuText}
+        <KeyboardArrowDownIcon />
       </MyButton>
       <StyledMenu
         id="customized-menu"
@@ -87,26 +93,26 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem onClick={() => menuOnClick("당사차량[1톤]")}>
-          <NavLink className="Mobile_link" to="/Vehicle/onevehicle">
+        <NavLink className="Mobile_link" to="/Vehicle/onevehicle">
+          <StyledMenuItem onClick={() => menuOnClick("당사차량[1톤]")}>
             <ListItemText primary="당사차량[1톤]" />
-          </NavLink>
-        </StyledMenuItem>
-        <StyledMenuItem onClick={() => menuOnClick("당사차량[2.5톤]")}>
-          <NavLink className="Mobile_link" to="/Vehicle/twovehicle">
+          </StyledMenuItem>
+        </NavLink>
+        <NavLink className="Mobile_link" to="/Vehicle/twovehicle">
+          <StyledMenuItem onClick={() => menuOnClick("당사차량[2.5톤]")}>
             <ListItemText primary="당사차량[2.5톤]" />
-          </NavLink>
-        </StyledMenuItem>
-        <StyledMenuItem onClick={() => menuOnClick("당사차량[4.5톤]")}>
-          <NavLink className="Mobile_link" to="/Vehicle/threevehicle">
+          </StyledMenuItem>
+        </NavLink>
+        <NavLink className="Mobile_link" to="/Vehicle/threevehicle">
+          <StyledMenuItem onClick={() => menuOnClick("당사차량[4.5톤]")}>
             <ListItemText primary="당사차량[4.5톤]" />
-          </NavLink>
-        </StyledMenuItem>
-        <StyledMenuItem onClick={() => menuOnClick("당사차량[5톤]")}>
-          <NavLink className="Mobile_link" to="/Vehicle/fourvehicle">
+          </StyledMenuItem>
+        </NavLink>
+        <NavLink className="Mobile_link" to="/Vehicle/fourvehicle">
+          <StyledMenuItem onClick={() => menuOnClick("당사차량[5톤]")}>
             <ListItemText primary="당사차량[5톤]" />
-          </NavLink>
-        </StyledMenuItem>
+          </StyledMenuItem>
+        </NavLink>
       </StyledMenu>
     </div>
   );
