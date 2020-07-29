@@ -7,6 +7,14 @@ import closeicon from "../../_asset/image/common/xbotton.png";
 import logo from "../../_asset/image/common/logo.png";
 import menuicon from "../../_asset/image/common/menu-icon.png";
 import Guide from "../Guide/Guide";
+import HomeWorkRoundedIcon from '@material-ui/icons/HomeWorkRounded';
+import EmojiTransportationRoundedIcon from '@material-ui/icons/EmojiTransportationRounded';
+import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
+import AirportShuttleRoundedIcon from '@material-ui/icons/AirportShuttleRounded';
+import NotificationsNoneRoundedIcon from '@material-ui/icons/NotificationsNoneRounded';
+import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
+import { green } from '@material-ui/core/colors';
+
 
 class Navigation extends Component {
   state = {
@@ -98,25 +106,30 @@ class Navigation extends Component {
           <BurMenu
             className="Menu_Button"
             right
-            customCrossIcon={<img src={closeicon} alt="closeicon" />}
+            customCrossIcon={<CloseRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />}
             customBurgerIcon={
               <img className="MenuIcon" src={menuicon} alt=""></img>
             }
           >
             <NavLink exact={true} id="home" className="menu-item" to="/">
-              한빛로지스
+              <HomeWorkRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <div>홈</div>
             </NavLink>
             <NavLink id="Company" className="menu-item" to="/Intro">
-              회사소개
+              <EmojiTransportationRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <div>회사소개</div>
             </NavLink>
             <NavLink id="Info" className="menu-item" to="/Info">
-              지입정보
+              <HelpOutlineRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <div>지입정보</div>
             </NavLink>
             <NavLink id="Car" className="menu-item" to="/Vehicle">
-              당사차량
+              <AirportShuttleRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <div>당사차량</div>
             </NavLink>
             <NavLink id="Board" className="menu-item" to="/HanbitBoard">
-              공지사항
+              <NotificationsNoneRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <div>공지사항</div>
             </NavLink>
           </BurMenu>
         </div>

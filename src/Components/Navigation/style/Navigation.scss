@@ -95,12 +95,11 @@
   text-decoration-line: unset;
   outline: none !important;
 }
+
 .bm-item {
 }
 .bm-cross-button {
   position: absolute;
-  width: 40px !important;
-  height: 40px !important;
   right: 8px;
   top: 0px !important;
   outline: none !important;
@@ -120,11 +119,11 @@
   height: 24px;
   width: 24px;
   right: 0px !important;
+  color: rgb(220, 49, 50);
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
 }
 
 // .bm-icon {
@@ -152,10 +151,15 @@
   font-size: 1.15em;
   overflow: hidden !important;
 }
-// .menu-item.active{
-//   font-weight : 500;
-
-// }
+.menu-item{
+  display : flex !important;
+  align-items: center;
+  div{
+    margin-left : 15px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
@@ -170,8 +174,9 @@
   height: 95%;
   font-family: "NotoSerifCJKkr";
   :hover {
-    text-decoration-line: line-through;
+    // text-decoration-line: line-through;
     text-decoration-color: #333333;
+    color: rgb(220, 49, 50);
   }
 }
 
@@ -182,10 +187,11 @@
   font-weight: 600;
   text-decoration-line: unset;
   outline: none !important;
-  // :hover{
-  //   text-decoration: line-through;
-  //   text-decoration-color: #333333;
-  // }
+  :hover{
+    // text-decoration: line-through;
+    text-decoration-color: #333333;
+    color: rgb(220, 49, 50);
+  }
 }
 
 /* Styling of overlay */
@@ -203,7 +209,7 @@
 
 // }
 .bm-item.active {
-  text-decoration-line: line-through;
+  // text-decoration-line: line-through;
   text-decoration-color: #333333;
 }
 
@@ -214,7 +220,7 @@
     -moz-box-shadow: 0px 3px 9px -4px rgba(0, 0, 0, 0.11);
     box-shadow: 0px 3px 9px -4px rgba(0, 0, 0, 0.11);
     .bm-menu-wrap {
-      width: 70% !important;
+      width: 55% !important;
     }
     .bm-burger-button {
       display: initial;
