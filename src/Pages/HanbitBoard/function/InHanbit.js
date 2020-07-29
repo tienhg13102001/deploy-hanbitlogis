@@ -54,7 +54,9 @@ class InHanbit extends Component {
             <div className="In_Title">제목 : {data.simple_resources.title}</div>
           </div>
           <div className="In_Menu">
-            <div className="In_Menu_People">작성자 : {data.name}</div>
+            <div className="In_Menu_People">
+              작성자 : {data.simple_resources.name}
+            </div>
           </div>
           <div className="In_Menu_Text">{data.simple_resources.content}</div>
         </div>

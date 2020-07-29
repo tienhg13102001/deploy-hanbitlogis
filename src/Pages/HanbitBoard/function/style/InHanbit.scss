@@ -64,33 +64,43 @@
 
 @media screen and (max-width: 768px) {
   .InHanbit_Container {
+    padding-bottom: 30px;
     .InHanbit_TitleBox {
+      display: none;
       .InHanbit_Title {
         font-size: 24px;
         padding-left: 15px;
-      }
-      .InHanbit_Btn {
-        max-width: 100px;
-        width: 100%;
-        margin-right: 10px;
-        font-size: 14px;
       }
     }
     .InHanbit_Board {
       .In_TitleBox {
         .In_Title {
+          font-size: 16px;
           padding-left: 15px;
+          height: 40px;
         }
       }
       .In_Menu {
         .In_Menu_People {
+          font-size: 14px;
           padding-left: 15px;
+          height: 35px;
         }
       }
       .In_Menu_Text {
-        padding-top: 30px;
-        padding-left: 15px;
+        font-size: 13px;
+        padding: 15px;
+        height: initial;
+        margin-bottom: 30px;
       }
+    }
+    .InHanbit_Btn {
+      max-width: 100px;
+      width: 100%;
+      margin-right: 10px;
+      font-size: 14px;
+      margin: auto;
+      font-size: 12px;
     }
   }
 }
