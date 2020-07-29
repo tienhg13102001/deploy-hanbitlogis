@@ -60,16 +60,18 @@ class OneVehicle extends Component {
                     </div>
                     <div className="Vehicle_TopLine">
                         <div className="Top_Line_one">번호</div>
-                        <div className="Top_Line_two">내용</div>
                         <div className="Top_Line_three">종류</div>
+                        <div className="Top_Line_two">내용</div>
+                        
                     </div>
                     <div className="Vehicle_Board">
                         {data.slice(0, this.state.visible).map((item, index) => {
                             return (
                                 <div className="Board_List" key={index}>
-                                    <Link to="/InVehicle"><div className="List_One">{item.number}</div></Link>
-                                    <Link to="/InVehicle"><div className="List_Two">{item.content}</div></Link>
-                                    <Link to="/InVehicle"><div className="List_Three">{item.kind}</div></Link>
+                                    <Link className="List_One" to="/InVehicle">{item.number}</Link>
+                                    <Link to="/InVehicle" className="List_Three">{item.kind}</Link>
+                                    <Link to="/InVehicle" className="List_Two">{item.content}</Link>
+                                    
                                 </div>
                             )
                         })}

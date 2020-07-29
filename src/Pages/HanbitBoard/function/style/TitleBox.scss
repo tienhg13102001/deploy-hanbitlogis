@@ -10,7 +10,10 @@
 
 @media screen and (max-width:768px) {
     .Hanbit_Contents_Area{
+        margin-top :20px;
+        width: initial;
         .Title_One{
+            display: none;
             font-size: 24px;
             padding-bottom: 15px;
             padding-left: 15px;
