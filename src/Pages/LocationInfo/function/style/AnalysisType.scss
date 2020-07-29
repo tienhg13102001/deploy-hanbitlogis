@@ -1,7 +1,11 @@
+.Analysis_Container{
+    margin : 0px;
+}
 .Type_Container {
     max-width: 1050px;
     width: 100%;
     padding-top: 100px;
+    padding-bottom : 30px;
     .Type_TextBox {
         .Type_Text {
             font-size: 14px;
@@ -17,29 +21,39 @@
             }
         }
     }
-    .Chart {
+    // .Chart {
         .Chart_TitleBox {
             .Chart_Title {
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 15px;
                 color: #707070;
-                padding-bottom: 21px;
             }
         }
         .Chart_Box{
             border-top: solid 1px #535353;
-            border-bottom: solid 1px #535353;
             max-width: 1050px;
             width: 100%;
             .TypeBox{
                 height: 63px;
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: space-between;
                 background-color: #f5f4f4;
+                &:nth-child(1) {
+                    color: #da2320;
+                  }
+                  &:nth-child(4) {
+                    color: #da2320;
+                  }
+                  &:nth-child(6) {
+                    color: #da2320;
+                  }
                 .Type{
                     font-size: 14px;
                     font-weight: 600;
+                    flex : 1;
+                    text-align: center;
+                    
                 }
             }
             .Text_List{
@@ -59,14 +73,16 @@
                 }
             }
         }
-    }
+    // }
 }
 
 @media screen and (max-width:768px) {
+    .Analysis_Container{
+        margin : 0px 15px;
+    }
     .Type_Container{
-        padding-top: 50px;
+        padding-top: 29px;
         .Type_TextBox{
-            padding-left: 10px;
             .Type_Text{
                 font-size: 11px;
             }
@@ -74,7 +90,7 @@
                 font-size: 20px;
             }
         }
-        .Chart {
+        // .Chart {
             .Chart_TitleBox {
                 .Chart_Title {
                     padding-left: 10px;
@@ -86,7 +102,7 @@
                 .TypeBox{
                     
                     .Type{
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                 }
                 .Text_List{
@@ -97,5 +113,5 @@
                 }
             }
         }
-    }
+    // }
 }

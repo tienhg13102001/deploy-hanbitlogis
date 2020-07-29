@@ -1,5 +1,10 @@
 .Result_Container{
     padding-top: 78px;
+    .Cards_area{
+        .Cards_wrap{
+            padding-bottom: 10px;
+        }
+    }
     .Result_TextBox{
         .Result_Text{
             font-size: 14px;
@@ -14,6 +19,7 @@
                 color: #da2320;
             }
         }
+        
     }
     .Result_ListBox{
         .Area{

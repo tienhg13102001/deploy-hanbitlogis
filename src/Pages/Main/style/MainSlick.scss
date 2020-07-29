@@ -26,6 +26,18 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 1715px) {
+  .SlickContainer {
+    display: none;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .SlickContainer {

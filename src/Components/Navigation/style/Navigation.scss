@@ -100,8 +100,8 @@
 }
 .bm-cross-button {
   position: absolute;
-  right: 8px;
-  top: 0px !important;
+  right: 13px !important;
+  top: 23px !important;
   outline: none !important;
 }
 /* Color/shape of burger icon bars */
@@ -118,7 +118,6 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
-  right: 0px !important;
   color: rgb(220, 49, 50);
 }
 
@@ -192,6 +191,7 @@
     text-decoration-color: #333333;
     color: rgb(220, 49, 50);
   }
+  
 }
 
 /* Styling of overlay */
@@ -211,6 +211,7 @@
 .bm-item.active {
   // text-decoration-line: line-through;
   text-decoration-color: #333333;
+  color: rgb(220, 49, 50);
 }
 
 @media screen and (max-width: 768px) {
