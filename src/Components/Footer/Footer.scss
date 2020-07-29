@@ -11,7 +11,12 @@
     .Footer_wrap {
       display: flex;
       .LogoBox {
-        padding-right: 38px;
+        max-width: 118px;
+        width: 100%;
+        margin-right: 38px;
+        > img {
+          width: 100%;
+        }
       }
       .Info {
         font-size: 14px;
@@ -42,9 +47,9 @@
   .FooterContainer {
     min-width: initial;
     padding: 0 15px 0 15px;
-    height : initial;
-    margin-bottom : 20px;
-    .Box {      
+    height: initial;
+    margin-bottom: 20px;
+    .Box {
       padding-top: 10px;
       .Footer_wrap {
         display: flex;
@@ -54,8 +59,6 @@
         }
         .Info {
           font-size: 11px;
-
-          
         }
       }
     }

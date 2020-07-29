@@ -26,22 +26,22 @@ class MainSlick extends Component {
           <div className="Slick_Img">
             <img src={banner01} className="Banner" alt="강릉센터"></img>
           </div>
-          <div>
+          <div className="Slick_Img">
             <img src={banner02} className="Banner" alt="강릉센터"></img>
           </div>
-          <div>
+          <div className="Slick_Img">
             <img src={banner03} className="Banner" alt="강릉센터"></img>
           </div>
-          <div>
+          <div className="Slick_Img">
             <img src={banner01} className="Banner" alt="강릉센터"></img>
           </div>
-          <div>
+          <div className="Slick_Img">
             <img src={banner02} className="Banner" alt="강릉센터"></img>
           </div>
-          <div>
+          <div className="Slick_Img">
             <img src={banner03} className="Banner" alt="강릉센터"></img>
           </div>
-          <div>
+          <div className="Slick_Img">
             <img src={banner01} className="Banner" alt="강릉센터"></img>
           </div>
         </Slider>

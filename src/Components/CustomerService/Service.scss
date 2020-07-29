@@ -1,87 +1,88 @@
-.CustomContainer{
-    background-image: url(../../_asset/image/main/service.png);
-    // max-width: 610px;
-    background-position: right;
+.CustomContainer {
+  background-image: url(../../_asset/image/main/service.png);
+  // max-width: 610px;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 207px;
+  margin: 0px 10px 0px 0px;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  background-size: cover;
+  .TextBox {
+    display: block;
+    padding: 32px 30px 0px 30px;
+    .Title {
+      color: #da2320;
+      font-weight: 600;
+      padding-bottom: 29px;
+    }
+    .Tell {
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 0.75;
+      padding-bottom: 31px;
+      color: #333333;
+    }
+    .TellBox {
+      font-size: 15px;
+      line-height: 1.47;
+      font-weight: 300;
+      color: #707070;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CustomContainer {
+    background-position-x: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 207px;
-    margin: 0px 10px 0px 0px;
+    height: initial;
+    margin: 10px 5px 0px 15px;
     background-color: #f5f4f4;
     border-radius: 10px;
-    .TextBox{
-        display: block;
-        padding: 32px 30px 0px 30px;
-        .Title{
-            color: #da2320;
-            font-weight: 600;
-            padding-bottom: 29px;
-        }
-        .Tell{
-            font-size: 45px;
-            font-weight: 600;
-            line-height: 0.75;
-            padding-bottom: 31px;
-            color: #333333;
-        }
-        .TellBox{
-            font-size: 15px;
-            line-height: 1.47;
-            font-weight: 300;
-            color: #707070;
-        }
+
+    .TextBox {
+      display: block;
+      padding: 10%;
+      .Title {
+        padding-bottom: 5%;
+      }
+      .Tell {
+        font-size: 1rem;
+        padding-bottom: 10%;
+      }
+      .TellBox {
+        font-size: 0.8rem;
+      }
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .CustomContainer{
-        background-position-x: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: initial;
-        margin: 10px 5px 0px 15px;
-        background-color: #f5f4f4;
-        border-radius: 10px;
-        
-        .TextBox{
-            display: block;
-            padding: 10%;
-            .Title{
-                padding-bottom: 5%;
-            }
-            .Tell{
-                font-size: 1rem;
-                padding-bottom: 10%;
-            }
-            .TellBox{
-                font-size: 0.8rem;
-            }
-        }
+@media screen and (max-width: 450px) {
+  .CustomContainer {
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: initial;
+    margin: 10px 15px 0px 15px;
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    width: initial;
+    .TextBox {
+      display: block;
+      padding: 10%;
+      .Title {
+        padding-bottom: 5%;
+      }
+      .Tell {
+        font-size: 1rem;
+        padding-bottom: 5%;
+      }
+      .TellBox {
+        font-size: 0.8rem;
+      }
     }
-}
-
-@media screen and (max-width:450px) {
-    .CustomContainer{
-        background-position-x: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: initial;
-        margin: 10px 15px 0px 15px;
-        background-color: #f5f4f4;
-        border-radius: 10px;
-        width : initial;
-        .TextBox{
-            display: block;
-            padding: 10%;
-            .Title{
-                padding-bottom: 5%;
-            }
-            .Tell{
-                font-size: 1rem;
-                padding-bottom: 5%;
-            }
-            .TellBox{
-                font-size: 0.8rem;
-            }
-        }
-    }
+  }
 }
