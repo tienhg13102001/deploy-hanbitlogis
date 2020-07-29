@@ -1,8 +1,11 @@
 .MainInfoContainer {
-  min-width: 1250px;
-  background-color: #f5f4f4;
-  height: 300px;
-  text-align: center;
+  max-width: 1250px;
+    min-width: 1250px;
+    margin: auto;
+    background-color: #f5f4f4;
+    // height: 300px;
+    text-align: center;
+    border-radius: 10px;
   .InfoTitle {
     padding-top: 36px;
     font-size: 20px;
@@ -12,9 +15,10 @@
     }
   }
   .MapBox {
-    max-width: 1250px;
-    width: 100%;
-    margin: auto;
+    // max-width: 1250px;
+    // width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     justify-content: space-between;
     .ListBox {
@@ -27,23 +31,28 @@
     }
     .IconBox {
       max-width: 120px;
-      margin-bottom: 22px;
+      
+      clip-path: ellipse(58px 58px);
       > img {
         width: 100%;
       }
     }
     .TextBox {
+      margin-top: 22px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .MainInfoContainer {
-    min-width: 1250px;
+    min-width: initial;
+    max-width : initial;
     background-color: #f5f4f4;
-    height: 300px;
+    // height: 300px;
     text-align: center;
+    background-color: initial;
     .InfoTitle {
+      display : none;
       padding-top: 20px;
       padding-bottom: 20px;
       font-size: 20px;
@@ -58,14 +67,18 @@
       margin-left: 10px;
       margin-right: 10px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: initial;
       .ListBox {
-        padding: 30px;
+        padding: 3%;
         background-color: #fff;
         border: 1px solid #fff;
         border-radius: 10px;
         flex: 1;
         margin: 5px;
+        -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.08);
+-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.08);
+box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.08);
         .Link {
           text-decoration: none;
           color: #535353;
@@ -73,13 +86,16 @@
         }
       }
       .IconBox {
-        max-width: 120px;
-        margin-bottom: 22px;
+        max-width: 86px;
+        -webkit-clip-path: ellipse(58px 58px);
+        clip-path: ellipse(33px 36px);
         > img {
           width: 100%;
         }
       }
       .TextBox {
+        margin-bottom: 20px;
+        margin-top: initial;
       }
     }
   }
@@ -88,7 +104,7 @@
 @media screen and (max-width: 520px) {
   .MainInfoContainer {
     min-width: initial;
-    height: 800px;
+    // height: 800px;
     .MapBox {
       flex-wrap: wrap;
     }

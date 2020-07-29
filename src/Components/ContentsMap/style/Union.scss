@@ -1,9 +1,15 @@
 .UnionContainer{
     background-image: url(../../../_asset/image/main/banner-03.png);
-    max-width: 290px;
     width: 100%;
     height: 140px;
-    margin: 15px;
+    flex: 1;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #f5f4f4;
+    border-radius: 10px;
+    margin-left: 10px ;
+    margin-right : 10px;
+    margin-top : 10px;
     .TextBox{
         padding: 36px 0 0 31px;
         .Title_union{

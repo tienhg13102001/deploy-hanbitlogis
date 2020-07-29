@@ -41,19 +41,21 @@
 @media screen and (max-width: 768px) {
   .FooterContainer {
     min-width: initial;
-    padding: 0 10px 0 10px;
-    .Box {
+    padding: 0 15px 0 15px;
+    height : initial;
+    margin-bottom : 20px;
+    .Box {      
+      padding-top: 10px;
       .Footer_wrap {
         display: flex;
         .LogoBox {
           padding-right: 10px;
+          display: none;
         }
         .Info {
           font-size: 11px;
 
-          > br {
-            display: none;
-          }
+          
         }
       }
     }

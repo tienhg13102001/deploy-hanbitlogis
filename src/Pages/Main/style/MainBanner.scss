@@ -52,13 +52,22 @@
 @media screen and (max-width: 768px) {
   .BannerContainer {
     min-width: initial;
+    display: none;
     .BannerBox {
+      height: 400px;
+      .Slick_box {
+        img {
+          width: 100%;
+          height: initial;
+        }
+      }
     }
     .Banner_TextBox {
-      width: 250px;
-      top: -235px;
-      left: 20px;
+      width: 100%;
+      top: -200px;
+      /* left: 20px; */
       margin: 0;
+      padding-left: 15px;
       .Banner_Title {
         font-size: 23px;
         margin: 0;

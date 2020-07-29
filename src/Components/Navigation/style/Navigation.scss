@@ -52,7 +52,7 @@
 
     .TopNaviWrap {
       display: flex;
-
+      align-items: center;
       .Menu_Logo {
         max-width: 119px;
         height: 43px;
@@ -210,6 +210,9 @@
 @media screen and (max-width: 768px) {
   .NaviContainer {
     min-width: initial;
+    -webkit-box-shadow: 0px 3px 9px -4px rgba(0,0,0,0.11);
+-moz-box-shadow: 0px 3px 9px -4px rgba(0,0,0,0.11);
+box-shadow: 0px 3px 9px -4px rgba(0,0,0,0.11);
     .bm-menu-wrap {
       width: 70% !important;
     }

@@ -1,9 +1,12 @@
 .Container{
     background-image: url(../../_asset/image/main/location.png);
-    max-width: 610px;
+    background-position: right;
+    background-repeat: no-repeat;
     width: 100%;
     height: 207px;
-    margin: 0 0 0 15px;;
+    margin: 0px 0px 0px 10px;
+    background-color: #f5f4f4;
+    border-radius: 10px;
     .TextBox{
         display: block;
         padding: 32px 31px ;
@@ -29,20 +32,59 @@
 
 @media screen and (max-width:768px) {
     .Container{
-        margin: 0;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: initial;
+        margin: 10px 15px 0px 5px;
+        background-color: #f5f4f4;
+        border-radius: 10px;
         .TextBox{
-            
+            padding: 10%;
             .Title{
-                
+                padding-bottom: 5%;
             }
             .Location{
-                font-size: 30px;
-                padding-bottom: 30px;
+                font-size: 1rem;
+                padding-bottom: 10%;
                 
             }
             .Adress{
-                font-size: 12px;
+                font-size: 0.8rem
                 
+            }
+            .Adress br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .Container{
+        background-position-x: center;
+        background-repeat: no-repeat;
+        width: initial;
+        height: initial;
+        margin: 10px 15px 0px 15px;
+        background-color: #f5f4f4;
+        border-radius: 10px;
+        .TextBox{
+            padding: 10%;
+            .Title{
+                padding-bottom: 5%;
+            }
+            .Location{
+                font-size: 1rem;
+                padding-bottom: 5%;
+                
+            }
+            .Adress{
+                font-size: 0.8rem
+                
+            }
+            .Adress br {
+                display: none;
             }
         }
     }
