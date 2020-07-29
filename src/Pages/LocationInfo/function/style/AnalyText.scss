@@ -1,51 +1,51 @@
-.Text_Container{
-    max-width: 1050px;
-    width: 100%;
-    margin-left: 20px;
-    .Analy_TextBox{
-        .Analy_Title{
-            margin-top: 60px;
-            font-size: 30px;
-            padding-bottom: 28px;
-            font-weight: 600;
-            >span {
-                color: #da2320;
-            }
-        }
-        .Analy_Text{
-            font-size: 20px;
-            
-            padding-bottom: 29px;
-            color: #707070;
-        }
-       
+.Text_Container {
+  max-width: 1050px;
+  width: 100%;
+  margin-left: 20px;
+  .Analy_TextBox {
+    .Analy_Title {
+      margin-top: 60px;
+      font-size: 30px;
+      padding-bottom: 28px;
+      font-weight: 600;
+      > span {
+        color: #da2320;
+      }
     }
-    .Text{
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.5;
-        color: #707070;
+    .Analy_Text {
+      font-size: 20px;
+
+      padding-bottom: 29px;
+      color: #707070;
     }
-    
+  }
+  .Text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #707070;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Text_Container{
-        margin-left: initial;
-        
-        
-        .Analy_TextBox{
-            padding: 0 15px 0 15px;
-            .Analy_Title{
-                font-size: 20px;
-            }
-            .Analy_Text{
-                font-size: 15px;
-            }
-        }
-        .Text{
-            padding: 0 15px 0 15px;
-            font-size: 12px;
-        }
+@media screen and (max-width: 768px) {
+  .Text_Container {
+    margin-left: initial;
+
+    .Analy_TextBox {
+      padding: 0 15px 0 15px;
+      .Analy_Title {
+        font-size: 20px;
+      }
+      .Analy_Text {
+        font-size: 15px;
+      }
     }
+    .Text {
+      padding: 0 15px 0 15px;
+      font-size: 13px;
+      > br {
+        display: none;
+      }
+    }
+  }
 }
