@@ -87,9 +87,9 @@ class AnalyText extends Component {
         </div>
         <AnalysisResult isMobile={this.isMobile}></AnalysisResult>
         <AnalysisType></AnalysisType>
-        <AnalysisChart></AnalysisChart>
-        <AnalysisChartTwo></AnalysisChartTwo>
-        <AnalysisChartThree></AnalysisChartThree>
+        {/* <AnalysisChart></AnalysisChart> */}
+        {/* <AnalysisChartTwo></AnalysisChartTwo> */}
+        {/* <AnalysisChartThree></AnalysisChartThree> */}
       </div>
     );
   }

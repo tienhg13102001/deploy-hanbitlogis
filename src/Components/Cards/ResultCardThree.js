@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     fontFamily:'NanumSquareOTF'
   },
   pos: {
-    fontSize: 11,
+    fontSize: 13,
     marginBottom: 5,
     fontWeight:'300',
     fontFamily:'NanumSquareOTF',
