@@ -1,35 +1,35 @@
-.TextContainer{
-    max-width: 776px;
-    width: 100%;
-    margin-left: 85px;
-    .Wrap_Line{
-        
-        padding-left: 40px;
-        
-        .Title{
-            margin-top: 60px;
-            font-size: 30px;
-            padding-bottom: 28px;
-            
-            span {
-                color: #da2320;
-            }
-        }
-        .VisitText{
-        font-size: 20px;
-        padding-bottom: 57px;
-        color: #707070;
-        
-        }
-        .Text{
-            width: 830px;
-            font-size: 16px;
-            line-height: 1.5;
-            padding-bottom: 100px;
-            color: #707070;
-            
-        }
+.TextContainer {
+  max-width: 776px;
+  width: 100%;
+  margin-left: 85px;
+  .Wrap_Line {
+    padding-left: 40px;
+
+    .Title {
+      margin-top: 60px;
+      font-size: 30px;
+      padding-bottom: 28px;
+
+      span {
+        color: #da2320;
+      }
     }
+    .VisitText {
+      font-size: 20px;
+      padding-bottom: 57px;
+      color: #707070;
+    }
+    .Text {
+      width: 830px;
+      font-size: 16px;
+      line-height: 1.5;
+      padding-bottom: 100px;
+      color: #707070;
+      > br {
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -56,4 +56,5 @@
         
             
     }
+  }
 }

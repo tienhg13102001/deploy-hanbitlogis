@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import './style/IntroText.scss'
-
+import React, { Component } from "react";
+import "./style/IntroText.scss";
 
 class IntroText extends Component {
     render() {

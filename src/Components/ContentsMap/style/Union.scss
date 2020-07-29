@@ -1,34 +1,35 @@
-.UnionContainer{
-    background-image: url(../../../_asset/image/main/banner-03.png);
-    width: 100%;
-    height: 140px;
-    flex: 1;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-color: #f5f4f4;
-    border-radius: 10px;
-    margin-left: 10px ;
-    margin-right : 10px;
-    margin-top : 10px;
-    .TextBox{
-        padding: 36px 0 0 31px;
-        .Title_union{
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 1.18;
-            padding-bottom: 13px;
-            color: #333333;
-        }
-        .Text{
-            font-size: 15px;
-            color: #333333;
-            font-weight: 500;
-        }
+.UnionContainer {
+  background-image: url(../../../_asset/image/main/banner-03.png);
+  width: 100%;
+  height: 140px;
+  flex: 1;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  .TextBox {
+    padding: 36px 0 0 31px;
+    .Title_union {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.18;
+      padding-bottom: 13px;
+      color: #333333;
     }
+    .Text {
+      font-size: 15px;
+      color: #333333;
+      font-weight: 500;
+    }
+  }
 }
 
-@media screen and (max-width:768px) {
-   .UnionContainer{
-       margin: 0px 15px 15px 0;
-   }
+@media screen and (max-width: 768px) {
+  .UnionContainer {
+    margin: 0px 15px 15px 0;
+  }
 }

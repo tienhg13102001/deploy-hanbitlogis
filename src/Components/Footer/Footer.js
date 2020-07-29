@@ -9,11 +9,11 @@ class Footer extends Component {
       <div className="FooterContainer">
         <div className="Box">
           <div className="Footer_wrap">
-            <div className="LogoBox">
-              <Link to="/">
+            <Link to="/">
+              <div className="LogoBox">
                 <img src={logo} alt="배너 로고"></img>
-              </Link>
-            </div>
+              </div>
+            </Link>
             <div className="Info">
               한빛로지스 (주) 대표이사 : 이정화 사업자번호 : 120-86-31723 TEL :
               1599-9954 FAX : 02-517-1493
