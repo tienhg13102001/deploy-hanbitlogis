@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import "./DropDown.scss";
 import { NavLink } from "react-router-dom";
 
@@ -12,6 +13,9 @@ const StyledMenu = withStyles({
     width: "100%",
     border: "1px solid #d3d4d5",
     maxWidth: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 })((props) => (
   <Menu
@@ -49,6 +53,8 @@ const StyledMenuItem = withStyles((theme) => ({
     width: "100%",
     color: "#333333",
     justifyContent: "center",
+    textAlign: "center",
+    padding: "0 300px",
   },
 }))(MenuItem);
 
@@ -79,6 +85,7 @@ export default function CustomizedMenus() {
         onClick={handleClick}
       >
         {menuText}
+        <KeyboardArrowDownIcon />
       </MyButton>
       <StyledMenu
         id="customized-menu"
@@ -87,21 +94,21 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem onClick={() => menuOnClick("지입 분석")}>
-          <NavLink className="Mobile_link" to="/Info/analysis">
+        <NavLink className="Mobile_link" to="/Info/analysis">
+          <StyledMenuItem onClick={() => menuOnClick("지입 분석")}>
             <ListItemText primary="지입 분석" />
-          </NavLink>
-        </StyledMenuItem>
-        <StyledMenuItem onClick={() => menuOnClick("차량운용분석")}>
-          <NavLink className="Mobile_link" to="/Info/operation">
+          </StyledMenuItem>
+        </NavLink>
+        <NavLink className="Mobile_link" to="/Info/operation">
+          <StyledMenuItem onClick={() => menuOnClick("차량운용분석")}>
             <ListItemText primary="차량운용분석" />
-          </NavLink>
-        </StyledMenuItem>
-        <StyledMenuItem onClick={() => menuOnClick("자격증가이드")}>
-          <NavLink className="Mobile_link" to="/Info/testguide">
+          </StyledMenuItem>
+        </NavLink>
+        <NavLink className="Mobile_link" to="/Info/testguide">
+          <StyledMenuItem onClick={() => menuOnClick("자격증가이드")}>
             <ListItemText primary="자격증가이드" />
-          </NavLink>
-        </StyledMenuItem>
+          </StyledMenuItem>
+        </NavLink>
       </StyledMenu>
     </div>
   );

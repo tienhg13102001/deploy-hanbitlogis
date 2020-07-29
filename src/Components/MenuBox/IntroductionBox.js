@@ -52,7 +52,7 @@ class IntroductionBox extends Component {
   renderMobile = () => {
     return (
       <div className="IntroBox">
-        <IntroDropDown></IntroDropDown>
+        <IntroDropDown {...this.props}></IntroDropDown>
       </div>
     );
   };

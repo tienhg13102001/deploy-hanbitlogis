@@ -5,10 +5,19 @@
 
 .DropDown_container {
   width: 100%;
+  position: relative;
 }
 .MuiPaper-root {
   left: 0 !important;
 }
 .MuiButton-contained {
   box-shadow: none;
+}
+.Arrowicon {
+  position: absolute;
+  right: 20px;
+  display: flex;
+}
+.MuiSvgIcon-root {
+  width: 1.7rem !important;
 }
