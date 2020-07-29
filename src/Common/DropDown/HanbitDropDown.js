@@ -29,7 +29,7 @@ const MyButton = styled(Button)({
   fontSize: "16px",
   background: "#da2320",
   border: 0,
-  borderRadius: 3,
+  borderRadius: 0,
   color: "white",
   height: 48,
   padding: "0 30px",
