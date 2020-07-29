@@ -54,9 +54,12 @@
       display: flex;
 
       .Menu_Logo {
-        max-width: 129px;
-        width: 100%;
+        max-width: 119px;
+        height: 43px;
         cursor: pointer;
+        > img {
+          width: 100%;
+        }
       }
     }
     .Member_Box {

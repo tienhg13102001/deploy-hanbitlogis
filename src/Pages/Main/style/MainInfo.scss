@@ -26,7 +26,11 @@
       }
     }
     .IconBox {
-      padding-bottom: 22px;
+      max-width: 120px;
+      margin-bottom: 22px;
+      > img {
+        width: 100%;
+      }
     }
     .TextBox {
     }
@@ -35,10 +39,48 @@
 
 @media screen and (max-width: 768px) {
   .MainInfoContainer {
-    min-width: initial;
-    height: 500px;
+    min-width: 1250px;
+    background-color: #f5f4f4;
+    height: 300px;
+    text-align: center;
+    .InfoTitle {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      span {
+        color: #da2320;
+      }
+    }
     .MapBox {
-      flex-wrap: wrap;
+      max-width: initial;
+      width: initial;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: initial;
+      .ListBox {
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        flex: 1;
+        margin: 5px;
+        .Link {
+          text-decoration: none;
+          color: #535353;
+          font-weight: 600;
+        }
+      }
+      .IconBox {
+        max-width: 120px;
+        margin-bottom: 22px;
+        > img {
+          width: 100%;
+        }
+      }
+      .TextBox {
+      }
     }
   }
 }
