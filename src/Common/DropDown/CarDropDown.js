@@ -36,7 +36,7 @@ const MyButton = styled(Button)({
   width: "100%",
   fontSize: "16px",
   background: "#da2320",
-  border: 0 ,
+  border: 0,
   borderRadius: 0,
   color: "white",
   height: 48,
@@ -84,7 +84,9 @@ export default function CustomizedMenus() {
         onClick={handleClick}
       >
         {menuText}
-        <KeyboardArrowDownIcon />
+        <div className="Arrowicon">
+          <KeyboardArrowDownIcon />
+        </div>
       </MyButton>
       <StyledMenu
         id="customized-menu"

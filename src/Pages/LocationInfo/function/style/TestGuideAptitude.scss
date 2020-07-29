@@ -203,22 +203,27 @@
         flex-direction: column;
         margin: initial;
         .Na_Icon {
+          max-width: initial;
           padding: 20px;
           margin: 10px 0 0 0;
           .Na_ImgBox {
+            flex: 1;
             .Na_Img {
               width: 76px;
               height: 76px;
             }
           }
           .Na_Text_wrap {
+            flex: 3;
             .Na_Text {
+              max-width: initial;
               font-size: 12px;
             }
             .Na_Dot {
               display: none;
             }
             .Na_SubText {
+              max-width: initial;
               font-size: 11px;
             }
           }

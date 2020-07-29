@@ -85,7 +85,9 @@ export default function CustomizedMenus() {
         onClick={handleClick}
       >
         {menuText}
-        <KeyboardArrowDownIcon />
+        <div className="Arrowicon">
+          <KeyboardArrowDownIcon />
+        </div>
       </MyButton>
       <StyledMenu
         id="customized-menu"
