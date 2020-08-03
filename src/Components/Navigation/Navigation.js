@@ -55,10 +55,10 @@ class Navigation extends Component {
       ];
     } else if (clickedMenu === "Vehicle") {
       subMenu = [
-        { name: "당사차량[1톤]", key: "/Vehicle/onevehicle" },
-        { name: "당사차량[2.5톤]", key: "/Vehicle/twovehicle" },
-        { name: "지입정보[4.5톤]", key: "/Vehicle/threevehicle" },
-        { name: "지입정보[5톤]", key: "/Vehicle/fourvehicle" },
+        { name: "1톤", key: "/Vehicle/onevehicle" },
+        { name: "2.5톤", key: "/Vehicle/twovehicle" },
+        { name: "4.5톤", key: "/Vehicle/threevehicle" },
+        { name: "5톤", key: "/Vehicle/fourvehicle" },
       ];
     } else if (clickedMenu === "HanbitBoard") {
       subMenu = [{ name: "공지사항", key: "/HanbitBoard" }];

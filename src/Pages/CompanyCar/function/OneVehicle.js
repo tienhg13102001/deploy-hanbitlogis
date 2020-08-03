@@ -56,7 +56,7 @@ class OneVehicle extends Component {
             <div className="Vehicle_Container">
                 <div className="Vehicle_TitleBox">
                     <div className="Vehicle_Title">
-                        당사차량 [1톤]
+                        1톤
                     </div>
                     <div className="Vehicle_TopLine">
                         <div className="Top_Line_one">번호</div>

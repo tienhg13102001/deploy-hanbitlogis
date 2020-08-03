@@ -13,19 +13,19 @@ class CarMenu extends Component {
                     당사차량
                 </div>
                 <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/onevehicle`}>
-                    <div className="Line">당사차량[1톤]</div>
+                    <div className="Line">1톤</div>
                     {`${this.props.location.pathname}` === "/Vehicle/onevehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
                 <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/twovehicle`}>
-                    <div className="Line">당사차랑[2.5톤]</div>
+                    <div className="Line">2.5톤</div>
                     {`${this.props.location.pathname}` === "/Vehicle/twovehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
                 <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/threevehicle`}>
-                    <div className="Line">당사차랑[4.5톤]</div>
+                    <div className="Line">4.5톤</div>
                     {`${this.props.location.pathname}` === "/Vehicle/threevehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
                 <NavLink className="Company_Car_navlink_container" to={`${this.props.match.path}/fourvehicle`}>
-                    <div className="Line">당사차랑[5톤]</div>
+                    <div className="Line">5톤</div>
                     {`${this.props.location.pathname}` === "/Vehicle/fourvehicle"  && <img src={ArrowRight} alt="arrowRight"></img>}
                 </NavLink>
             </div>

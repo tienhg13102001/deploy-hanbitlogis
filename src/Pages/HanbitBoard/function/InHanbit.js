@@ -47,7 +47,7 @@ class InHanbit extends Component {
     return this.state.data ? (
       <div className="InHanbit_Container">
         <div className="InHanbit_TitleBox">
-          <div className="InHanbit_Title">공지사항</div>
+          <div className="InHanbit_Title"></div>
         </div>
         <div className="InHanbit_Board">
           <div className="In_TitleBox">
