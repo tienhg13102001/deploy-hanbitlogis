@@ -96,23 +96,23 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <NavLink className="Mobile_link" to="/Vehicle/onevehicle">
-          <StyledMenuItem onClick={() => menuOnClick("당사차량[1톤]")}>
-            <ListItemText primary="당사차량[1톤]" />
+          <StyledMenuItem onClick={() => menuOnClick("1톤")}>
+            <ListItemText primary="1톤" />
           </StyledMenuItem>
         </NavLink>
         <NavLink className="Mobile_link" to="/Vehicle/twovehicle">
-          <StyledMenuItem onClick={() => menuOnClick("당사차량[2.5톤]")}>
-            <ListItemText primary="당사차량[2.5톤]" />
+          <StyledMenuItem onClick={() => menuOnClick("2.5톤")}>
+            <ListItemText primary="2.5톤" />
           </StyledMenuItem>
         </NavLink>
         <NavLink className="Mobile_link" to="/Vehicle/threevehicle">
-          <StyledMenuItem onClick={() => menuOnClick("당사차량[4.5톤]")}>
-            <ListItemText primary="당사차량[4.5톤]" />
+          <StyledMenuItem onClick={() => menuOnClick("4.5톤")}>
+            <ListItemText primary="4.5톤" />
           </StyledMenuItem>
         </NavLink>
         <NavLink className="Mobile_link" to="/Vehicle/fourvehicle">
-          <StyledMenuItem onClick={() => menuOnClick("당사차량[5톤]")}>
-            <ListItemText primary="당사차량[5톤]" />
+          <StyledMenuItem onClick={() => menuOnClick("5톤")}>
+            <ListItemText primary="5톤" />
           </StyledMenuItem>
         </NavLink>
       </StyledMenu>

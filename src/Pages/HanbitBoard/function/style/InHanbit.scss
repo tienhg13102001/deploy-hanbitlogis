@@ -3,10 +3,12 @@
   width: 100%;
   padding-bottom: 100px;
   .InHanbit_TitleBox {
-    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #535353;
+    font-size: 30px;
+    margin-top: 60px;
+    padding-bottom: 30px;
     .InHanbit_Title {
       font-size: 30px;
     }
@@ -18,7 +20,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        font-size: 18px;
+        font-size: 16px;
         color: #707070;
         height: 60px;
         border-bottom: 1px solid #e5e5e5;
@@ -27,8 +29,8 @@
     .In_Menu {
       .In_Menu_People {
         padding-left: 20px;
-        font-size: 14px;
-        color: #535353;
+        font-size: 16px;
+        color: #707070;
         border-bottom: 1px solid #e5e5e5;
         height: 60px;
         display: flex;
@@ -36,11 +38,9 @@
       }
     }
     .In_Menu_Text {
-      padding-left: 20px;
+      padding: 20px;
       font-size: 16px;
-      padding-top: 30px;
       color: #707070;
-      height: 350px;
       border-bottom: 2px solid #535353;
       margin-bottom: 60px;
     }

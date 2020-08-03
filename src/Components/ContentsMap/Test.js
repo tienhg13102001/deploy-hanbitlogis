@@ -5,15 +5,17 @@ class Test extends Component {
     render() {
         return (
             <div className="TestContainer">
-                <div className="TextBox">
-                    <div className="Title_test">
-                        바로<br/>
+                <a href="https://lic.kotsa.or.kr/fre/" target="blank">
+                    <div className="TextBox">
+                        <div className="Title_test">
+                            바로<br />
                         테스트
                     </div>
-                    <div className="Text">
-                        화물운송자격증
+                        <div className="Text">
+                            화물운송자격증
                     </div>
-                </div>
+                    </div>
+                </a>
             </div>
         );
     }
