@@ -44,7 +44,7 @@ class Introduction extends Component {
           />
           <meta
             property="og:image"
-            content="https://drive.google.com/uc?export=download&id=1M08_nZzipZnl73h_RH3kVrZV1Zlxf9WA"
+            content="https://s3.ap-northeast-2.amazonaws.com/hanbitlogis.test/og-img.jpg"
             data-react-helmet="true"
           />
           <meta property="og:url" content="http://lennon.co.kr"></meta>
@@ -61,7 +61,7 @@ class Introduction extends Component {
           />
           <meta
             name="twitter:image"
-            content="https://drive.google.com/uc?export=download&id=1M08_nZzipZnl73h_RH3kVrZV1Zlxf9WA"
+            content="https://s3.ap-northeast-2.amazonaws.com/hanbitlogis.test/og-img.jpg"
             data-react-helmet="true"
           />
         </Helmet>
