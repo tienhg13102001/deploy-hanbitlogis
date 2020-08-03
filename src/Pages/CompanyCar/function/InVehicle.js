@@ -30,7 +30,7 @@ class InVehicle extends Component {
             <div className="In_Container">
                 <div className="In_TitleBox">
                     <div className="In_Title">
-                        당사차량 [1톤]
+                        1톤
                     </div>
                 </div>
                 <div className="In_SubTitle">
