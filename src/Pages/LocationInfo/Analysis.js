@@ -15,10 +15,10 @@ class Analysis extends Component {
       <React.Fragment>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>한빛 로지스 | Hanbit Logis</title>
+          <title>지입정보 | 한빛 로지스 | Hanbit Logis</title>
           <meta
             name="description"
-            content="One-Stop Creative Platform, Comemercial, Visual Effects, Post-Production, AI+CGI"
+            content="한빛로지스, HanbitLogis, Hanbit, logis, 물류회사, 최고의 물류회사"
             data-react-helmet="true"
           />
           <meta
@@ -40,7 +40,7 @@ class Analysis extends Component {
           />
           <meta
             property="og:description"
-            content="One-Stop Creative Platform, Comemercial, Visual Effects, Post-Production, AI+CGI"
+            content="한빛로지스, HanbitLogis, Hanbit, logis, 물류회사, 최고의 물류회사"
             data-react-helmet="true"
           />
           <meta
@@ -57,7 +57,7 @@ class Analysis extends Component {
           />
           <meta
             name="twitter:description"
-            content="One-Stop Creative Platform, Comemercial, Visual Effects, Post-Production, AI+CGI"
+            content="한빛로지스, HanbitLogis, Hanbit, logis, 물류회사, 최고의 물류회사"
             data-react-helmet="true"
           />
           <meta
