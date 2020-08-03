@@ -44,10 +44,10 @@ class OneCar extends Component {
           />
           <meta
             property="og:image"
-            content="https://s3.ap-northeast-2.amazonaws.com/hanbitlogis.test/og-img.jpg"
+            content="https://s3.ap-northeast-2.amazonaws.com/hanbitlogis.test/og-vehicle.jpg"
             data-react-helmet="true"
           />
-          <meta property="og:url" content="http://lennon.co.kr"></meta>
+          <meta property="og:url" content="http://hanbitlogis.co.kr"></meta>
 
           <meta
             name="twitter:title"
@@ -61,7 +61,7 @@ class OneCar extends Component {
           />
           <meta
             name="twitter:image"
-            content="https://s3.ap-northeast-2.amazonaws.com/hanbitlogis.test/og-img.jpg"
+            content="https://s3.ap-northeast-2.amazonaws.com/hanbitlogis.test/og-vehicle.jpg"
             data-react-helmet="true"
           />
         </Helmet>
