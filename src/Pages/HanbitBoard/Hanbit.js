@@ -49,7 +49,7 @@ class Hanbit extends Component {
             content="https://s3.ap-northeast-2.amazonaws.com/hanbitlogis.test/og-board.jpg"
             data-react-helmet="true"
           />
-          <meta property="og:url" content="http://lennon.co.kr"></meta>
+          <meta property="og:url" content="http://hanbitlogis.co.kr"></meta>
 
           <meta
             name="twitter:title"
