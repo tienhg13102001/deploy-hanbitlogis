@@ -169,6 +169,7 @@
       }
     }
     .Aptitude_Ga {
+      margin: 0 15px;
       .Ga_Box {
         padding: 0 15px 0 15px;
         .Ga_Title {
@@ -195,7 +196,10 @@
           }
         }
         .Dot_Line {
-          display: none;
+          padding: 5px;
+          img {
+            display: none;
+          }
         }
       }
       .Na_IconBox {
