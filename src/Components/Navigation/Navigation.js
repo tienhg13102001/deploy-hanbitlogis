@@ -2,19 +2,15 @@ import React, { Component } from "react";
 import { slide as BurMenu } from "react-burger-menu";
 import { NavLink } from "react-router-dom";
 import "./style/Navigation.scss";
-
-import closeicon from "../../_asset/image/common/xbotton.png";
 import logo from "../../_asset/image/common/logo.png";
 import menuicon from "../../_asset/image/common/menu-icon.png";
 import Guide from "../Guide/Guide";
-import HomeWorkRoundedIcon from '@material-ui/icons/HomeWorkRounded';
-import EmojiTransportationRoundedIcon from '@material-ui/icons/EmojiTransportationRounded';
-import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
-import AirportShuttleRoundedIcon from '@material-ui/icons/AirportShuttleRounded';
-import NotificationsNoneRoundedIcon from '@material-ui/icons/NotificationsNoneRounded';
-import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
-import { green } from '@material-ui/core/colors';
-
+import HomeWorkRoundedIcon from "@material-ui/icons/HomeWorkRounded";
+import EmojiTransportationRoundedIcon from "@material-ui/icons/EmojiTransportationRounded";
+import HelpOutlineRoundedIcon from "@material-ui/icons/HelpOutlineRounded";
+import AirportShuttleRoundedIcon from "@material-ui/icons/AirportShuttleRounded";
+import NotificationsNoneRoundedIcon from "@material-ui/icons/NotificationsNoneRounded";
+import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 
 class Navigation extends Component {
   state = {
@@ -106,29 +102,46 @@ class Navigation extends Component {
           <BurMenu
             className="Menu_Button"
             right
-            customCrossIcon={<CloseRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />}
+            customCrossIcon={
+              <CloseRoundedIcon style={{ color: "#dc3132" }} fontSize="small" />
+            }
             customBurgerIcon={
               <img className="MenuIcon" src={menuicon} alt=""></img>
             }
           >
             <NavLink exact={true} id="home" className="menu-item" to="/">
-              <HomeWorkRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <HomeWorkRoundedIcon
+                style={{ color: "#dc3132" }}
+                fontSize="small"
+              />
               <div>홈</div>
             </NavLink>
             <NavLink id="Company" className="menu-item" to="/Intro">
-              <EmojiTransportationRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <EmojiTransportationRoundedIcon
+                style={{ color: "#dc3132" }}
+                fontSize="small"
+              />
               <div>회사소개</div>
             </NavLink>
             <NavLink id="Info" className="menu-item" to="/Info">
-              <HelpOutlineRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <HelpOutlineRoundedIcon
+                style={{ color: "#dc3132" }}
+                fontSize="small"
+              />
               <div>지입정보</div>
             </NavLink>
             <NavLink id="Car" className="menu-item" to="/Vehicle">
-              <AirportShuttleRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <AirportShuttleRoundedIcon
+                style={{ color: "#dc3132" }}
+                fontSize="small"
+              />
               <div>당사차량</div>
             </NavLink>
             <NavLink id="Board" className="menu-item" to="/HanbitBoard">
-              <NotificationsNoneRoundedIcon style={{ color: '#dc3132' }} fontSize="small" />
+              <NotificationsNoneRoundedIcon
+                style={{ color: "#dc3132" }}
+                fontSize="small"
+              />
               <div>공지사항</div>
             </NavLink>
           </BurMenu>
