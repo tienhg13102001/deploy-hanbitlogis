@@ -49,6 +49,12 @@
     max-width: 1250px;
     width: 100%;
     align-items: center;
+    .Login_area {
+      font-size: 13px;
+      > a {
+        color: #535353;
+      }
+    }
 
     .TopNaviWrap {
       display: flex;
@@ -62,6 +68,7 @@
         }
       }
     }
+
     .Member_Box {
       display: flex;
       justify-content: center;
@@ -150,11 +157,11 @@
   font-size: 1.15em;
   overflow: hidden !important;
 }
-.menu-item{
-  display : flex !important;
+.menu-item {
+  display: flex !important;
   align-items: center;
-  div{
-    margin-left : 15px;
+  div {
+    margin-left: 15px;
     font-size: 14px;
     font-weight: 600;
   }
@@ -186,12 +193,11 @@
   font-weight: 600;
   text-decoration-line: unset;
   outline: none !important;
-  :hover{
+  :hover {
     // text-decoration: line-through;
     text-decoration-color: #333333;
     color: rgb(220, 49, 50);
   }
-  
 }
 
 /* Styling of overlay */
@@ -233,6 +239,9 @@
       padding: 2.5em 1.5em 0;
     }
     .TopNavi {
+      .Login_area {
+        display: none;
+      }
       .TopNaviWrap {
         margin-left: 0px;
         padding-left: 15px;
@@ -241,6 +250,9 @@
       }
       .Member_Box {
       }
+    }
+    .Mobile_Login {
+      font-size: 10px;
     }
   }
 }

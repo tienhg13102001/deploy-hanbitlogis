@@ -20,6 +20,15 @@ class IntroductionBox extends Component {
         </NavLink>
         <NavLink
           className="IntroductionBox_navlink_container"
+          to={`${this.props.match.path}/callingcard`}
+        >
+          <div className="Line">명함 신청</div>
+          {`${this.props.location.pathname}` === "/Intro/callingcard" && (
+            <img src={ArrowRight} alt="arrowRight"></img>
+          )}
+        </NavLink>
+        <NavLink
+          className="IntroductionBox_navlink_container"
           to={`${this.props.match.path}/policy`}
         >
           <div className="Line">경영 방침</div>

@@ -39,6 +39,7 @@ class Navigation extends Component {
     if (clickedMenu === "Intro") {
       subMenu = [
         { name: "회사소개", key: "/intro/ceo" },
+        { name: "명함 신청", key: "/intro/callingcard" },
         { name: "경영 방침", key: "/intro/policy" },
         { name: "회사 연혁", key: "/intro/history" },
         { name: "오시는길", key: "/intro/come" },
@@ -96,6 +97,11 @@ class Navigation extends Component {
               </div>
               <Guide onClick={this.handleClickMenu} />
             </div>
+            <div className="Login_area">
+              <NavLink to="/login">
+                <div className="Login">직원 로그인</div>
+              </NavLink>
+            </div>
           </div>
         </div>
         <div className="Member_Box">
@@ -144,6 +150,7 @@ class Navigation extends Component {
               />
               <div>공지사항</div>
             </NavLink>
+            <div className="Mobile_Login">직원 로그인</div>
           </BurMenu>
         </div>
       </div>

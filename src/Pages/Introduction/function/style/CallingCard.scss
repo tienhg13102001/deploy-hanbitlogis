@@ -1,0 +1,39 @@
+.CallingCard_contaier {
+  max-width: 776px;
+  width: 100%;
+  margin-left: 85px;
+  .Calling_titlebox {
+    margin-top: 60px;
+    font-size: 30px;
+    padding-bottom: 28px;
+    > span {
+      color: #da2320;
+    }
+  }
+  .Calling_subtext {
+    width: 830px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 100px;
+    color: #707070;
+  }
+  .Calling_Linkimage {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CallingCard_contaier {
+    padding: 0 15px;
+    margin-left: 0;
+    .Calling_titlebox {
+      font-size: 20px;
+    }
+    .Calling_subtext {
+      max-width: 830px;
+      width: 100%;
+      font-size: 13px;
+    }
+    .Calling_Linkimage {
+    }
+  }
+}

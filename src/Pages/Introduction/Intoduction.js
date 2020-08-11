@@ -8,6 +8,7 @@ import Delivery from "./function/Delivery";
 import HistoryContent from "./function/HistoryContents";
 import Come from "./function/Come.js";
 import { Helmet } from "react-helmet";
+import CallingCard from "./function/CallingCard";
 class Introduction extends Component {
   render() {
     return (
@@ -80,6 +81,10 @@ class Introduction extends Component {
             <Route
               path={`${this.props.match.path}/ceo`}
               component={IntroText}
+            ></Route>
+            <Route
+              path={`${this.props.match.path}/callingcard`}
+              component={CallingCard}
             ></Route>
             <Route
               path={`${this.props.match.path}/policy`}
