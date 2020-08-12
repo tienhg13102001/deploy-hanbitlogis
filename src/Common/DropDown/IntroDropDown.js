@@ -104,11 +104,6 @@ export default function CustomizedMenus() {
             <ListItemText primary="경영 방침" />
           </StyledMenuItem>
         </NavLink>
-        <NavLink className="Mobile_link" to="/Intro/callingcard">
-          <StyledMenuItem onClick={() => menuOnClick("명함 신청")}>
-            <ListItemText primary="명함 신청" />
-          </StyledMenuItem>
-        </NavLink>
         <NavLink className="Mobile_link" to="/Intro/history">
           <StyledMenuItem onClick={() => menuOnClick("회사 연혁")}>
             <ListItemText primary="회사 연혁" />
