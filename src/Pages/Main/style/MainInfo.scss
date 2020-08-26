@@ -1,11 +1,9 @@
 .MainInfoContainer {
-  max-width: 1250px;
-    min-width: 1250px;
-    margin: auto;
-    background-color: #f5f4f4;
-    // height: 300px;
-    text-align: center;
-    border-radius: 10px;
+  width: 100%;
+  margin: auto;
+  background-color: #f5f4f4;
+  // height: 300px;
+  text-align: center;
   .InfoTitle {
     padding-top: 36px;
     font-size: 20px;
@@ -20,9 +18,9 @@
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     .ListBox {
-      padding: 30px;
+      padding: 50px;
       .Link {
         text-decoration: none;
         color: #535353;
@@ -31,7 +29,7 @@
     }
     .IconBox {
       max-width: 120px;
-      
+      border: solid 1px #535353;
       clip-path: ellipse(58px 58px);
       > img {
         width: 100%;
@@ -46,13 +44,13 @@
 @media screen and (max-width: 768px) {
   .MainInfoContainer {
     min-width: initial;
-    max-width : initial;
+    max-width: initial;
     background-color: #f5f4f4;
     // height: 300px;
     text-align: center;
     background-color: initial;
     .InfoTitle {
-      display : none;
+      display: none;
       padding-top: 20px;
       padding-bottom: 20px;
       font-size: 20px;
@@ -76,9 +74,9 @@
         border-radius: 10px;
         flex: 1;
         margin: 5px;
-        -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.08);
--moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.08);
-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.08);
+        -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.08);
         .Link {
           text-decoration: none;
           color: #535353;

@@ -2,7 +2,7 @@
   max-width: 1250px;
   min-width: 1250px;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 50px;
   .One_Line {
     display: flex;
     margin-bottom: 10px;
@@ -28,9 +28,6 @@
       display: none;
     }
   }
-
-
-
 
   @media screen and (max-width: 450px) {
     .Contents {
