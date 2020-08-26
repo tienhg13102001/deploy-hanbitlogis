@@ -21,30 +21,32 @@ class MainSlick extends Component {
       cssEase: "linear",
     };
     return (
-      <div className="SlickContainer">
-        <Slider {...settings}>
-          <div className="Slick_Img">
-            <img src={banner01} className="Banner" alt="강릉센터"></img>
-          </div>
-          <div className="Slick_Img">
-            <img src={banner02} className="Banner" alt="강릉센터"></img>
-          </div>
-          <div className="Slick_Img">
-            <img src={banner03} className="Banner" alt="강릉센터"></img>
-          </div>
-          <div className="Slick_Img">
-            <img src={banner01} className="Banner" alt="강릉센터"></img>
-          </div>
-          <div className="Slick_Img">
-            <img src={banner02} className="Banner" alt="강릉센터"></img>
-          </div>
-          <div className="Slick_Img">
-            <img src={banner03} className="Banner" alt="강릉센터"></img>
-          </div>
-          <div className="Slick_Img">
-            <img src={banner01} className="Banner" alt="강릉센터"></img>
-          </div>
-        </Slider>
+      <div className="Slick_Line">
+        <div className="SlickContainer">
+          <Slider {...settings}>
+            <div className="Slick_Img">
+              <img src={banner01} className="Banner" alt="강릉센터"></img>
+            </div>
+            <div className="Slick_Img">
+              <img src={banner02} className="Banner" alt="강릉센터"></img>
+            </div>
+            <div className="Slick_Img">
+              <img src={banner03} className="Banner" alt="강릉센터"></img>
+            </div>
+            <div className="Slick_Img">
+              <img src={banner01} className="Banner" alt="강릉센터"></img>
+            </div>
+            <div className="Slick_Img">
+              <img src={banner02} className="Banner" alt="강릉센터"></img>
+            </div>
+            <div className="Slick_Img">
+              <img src={banner03} className="Banner" alt="강릉센터"></img>
+            </div>
+            <div className="Slick_Img">
+              <img src={banner01} className="Banner" alt="강릉센터"></img>
+            </div>
+          </Slider>
+        </div>
       </div>
     );
   }

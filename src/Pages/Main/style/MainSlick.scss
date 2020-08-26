@@ -4,8 +4,7 @@
   margin: auto;
   height: 90px;
   padding: 25px 0 25px 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+
   overflow: hidden;
   .Slick_Img {
     max-width: 165px;
@@ -37,6 +36,11 @@
   .slick-next {
     display: none !important;
   }
+}
+
+.Slick_Line {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @media screen and (max-width: 768px) {
