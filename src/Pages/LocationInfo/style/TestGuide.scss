@@ -1,16 +1,25 @@
-.TestGuide_Container{
-    
-    
-    .TopBanner{
+.TestGuide_Container {
+  .TopBanner {
+  }
+  .Analysis_Contents {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    max-width: 1050px;
+    width: 100%;
+  }
+  .Contents {
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .TestGuide_Container {
+    .TopBanner {
     }
-    .Analysis_Contents{
-        display: flex;
-        flex-direction: column;
-        max-width: 1050px;
-        width: 100%;
+    .Analysis_Contents {
+      padding-left: initial;
     }
     .Contents {
-        
     }
+  }
 }

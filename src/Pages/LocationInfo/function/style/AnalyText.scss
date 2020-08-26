@@ -1,7 +1,7 @@
 .Text_Container {
   max-width: 1050px;
   width: 100%;
-  margin-left: 20px;
+  padding-left: 120px;
   .Analy_TextBox {
     .Analy_Title {
       margin-top: 60px;
@@ -29,11 +29,12 @@
 
 @media screen and (max-width: 768px) {
   .Text_Container {
+    padding-left: initial;
     margin-left: initial;
 
     .Analy_TextBox {
-      br{
-        display : none;
+      br {
+        display: none;
       }
       padding: 0 15px 0 15px;
       .Analy_Title {
@@ -43,8 +44,8 @@
         font-size: 15px;
       }
     }
-    br{
-      display : none;
+    br {
+      display: none;
     }
     .Text {
       padding: 0 15px 0 15px;

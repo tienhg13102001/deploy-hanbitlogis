@@ -1,4 +1,5 @@
 .analysis_Chart_two {
+  padding-left: 120px;
   .analysis_chart_box_two {
     padding-top: 61px;
     .Chart_Title_title_two {
@@ -96,6 +97,7 @@
 
 @media screen and (max-width: 768px) {
   .analysis_Chart_two {
+    padding-left: initial;
     .analysis_chart_box_two {
       .Chart_Title_title_two {
         padding-left: 10px;

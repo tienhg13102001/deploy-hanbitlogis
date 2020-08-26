@@ -1,106 +1,98 @@
-.Vehicle_Container{
+.Vehicle_Container {
+  padding-left: 120px;
+  max-width: 1050px;
+  width: 100%;
+  .Vehicle_TitleBox {
+    padding-top: 60px;
+    .Vehicle_Title {
+      font-size: 30px;
+      padding-bottom: 29px;
+    }
+  }
+  .Vehicle_TopLine {
+    display: flex;
+    font-size: 16px;
     max-width: 1050px;
     width: 100%;
-    .Vehicle_TitleBox{
-        padding-top: 60px;
-        .Vehicle_Title{
-            font-size: 30px;
-            padding-bottom: 29px;
-        }
+    height: 60px;
+    justify-content: space-between;
+    border-top: solid 2px #535353;
+    border-bottom: solid 2px #535353;
+    .Top_Line_one {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
     }
-    .Vehicle_TopLine{
-        display: flex;
-        font-size: 16px;
-        max-width: 1050px;
+    .Top_Line_two {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 5;
+    }
+    .Top_Line_three {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+  }
+  .Vehicle_Board {
+    justify-content: space-between;
+    max-width: 1050px;
+    width: 100%;
+    .Board_List {
+      display: flex;
+      max-width: 1050px;
+      width: 100%;
+      justify-content: space-between;
+      border-bottom: solid 1px #e5e5e5;
+      > a {
+        flex: 1;
+        text-decoration: none;
+        color: #535353;
+      }
+      .List_One {
         width: 100%;
         height: 60px;
-        justify-content: space-between;
-        border-top: solid 2px #535353;
-        border-bottom: solid 2px #535353;
-        .Top_Line_one{
-            
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex : 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        > div {
         }
-        .Top_Line_two{
-            
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex : 5;
-        }
-        .Top_Line_three{
-            
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex : 1;
-        }
-    }
-    .Vehicle_Board{
-        justify-content: space-between;
-        max-width:1050px;
+      }
+      .List_Two {
         width: 100%;
-        .Board_List{
-            display: flex;
-            max-width: 1050px;
-            width: 100%;
-            justify-content: space-between;
-            border-bottom: solid 1px #e5e5e5;
-            >a{
-                flex: 1;
-                text-decoration: none;
-                color:#535353;
-            }
-            .List_One{
-                
-                width: 100%;
-                height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex : 1;
-                >div{
-                    
-                }
-            }
-            .List_Two{
-                
-                width: 100%;
-                height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex : 5;
-            }
-            .List_Three{
-                
-                width: 100%;
-                height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex : 1;
-            }
-        }
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 5;
+      }
+      .List_Three {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Vehicle_Container{
-        
-        .Vehicle_TitleBox{
-            
-            .Vehicle_Title{
-                font-size: 24px;
-                padding-left: 15px;
-            }
-        }
-        
+@media screen and (max-width: 768px) {
+  .Vehicle_Container {
+    padding-left: initial;
+    .Vehicle_TitleBox {
+      .Vehicle_Title {
+        font-size: 24px;
+        padding-left: 15px;
+      }
     }
+  }
 }

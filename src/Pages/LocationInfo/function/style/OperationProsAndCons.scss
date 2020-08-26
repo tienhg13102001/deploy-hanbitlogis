@@ -1,4 +1,6 @@
 .ProsAndConsContainer {
+  width: 930px;
+  padding-left: 120px;
   margin-bottom: 80px;
   .Pros_TitleBox {
     display: flex;
@@ -22,8 +24,6 @@
     }
   }
   .Pros_Chart {
-    max-width: 1050px;
-    width: 100%;
     border-bottom: 1px solid #535353;
     .Pros_Type {
       display: flex;
@@ -73,7 +73,7 @@
       }
       .Pros_Two {
         width: 432px;
-        font-size: 15px;
+        font-size: 14px;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -84,7 +84,7 @@
       }
       .Pros_Three {
         width: 471px;
-        font-size: 15px;
+        font-size: 14px;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -98,6 +98,9 @@
 
 @media screen and (max-width: 768px) {
   .ProsAndConsContainer {
+    max-width: 1050px;
+    width: 100%;
+    padding-left: initial;
     .Pros_TitleBox {
       padding-left: 10px;
       .Pros_Icon {
@@ -111,15 +114,18 @@
     }
     .Pros_Chart {
       .Pros_Type {
-        font-size: 14px;
         .Pros_Type_One {
+          font-size: 12px;
         }
         .Pros_Type_Two {
+          font-size: 12px;
         }
         .Pros_Type_Three {
+          font-size: 12px;
         }
       }
       .Pros_ChatBox {
+        border: initial;
         .Pros_One {
           font-size: 10px;
         }

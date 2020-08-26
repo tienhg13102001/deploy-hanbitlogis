@@ -1,77 +1,77 @@
-.HisContainer{
+.HisContainer {
+  max-width: 1050px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  margin-left: 120px;
+  .HisTextBox {
+    padding-top: 60px;
+    .His_Title {
+      font-size: 30px;
+      padding-bottom: 28px;
+      font-weight: 600;
+      > span {
+        color: #da2320;
+        font-weight: 600;
+      }
+    }
+    .His_Text {
+      font-size: 20px;
+      padding-bottom: 60px;
+      color: #707070;
+    }
+  }
+  .His_List {
+    border-top: 1px solid #e5e5e5;
     max-width: 1050px;
     width: 100%;
-    height: auto;
-    padding-bottom: 100px;
-    margin-left: 100px;
-    .HisTextBox{
-        padding-top: 60px;
-        .His_Title{
-            font-size: 30px;
-            padding-bottom: 28px;
-            >span {
-                color: #da2320;
-                font-weight: 600;
-            }
-        }
-        .His_Text{
-            font-size: 20px;
-            padding-bottom: 60px;
-            color: #707070;
-        }
-    }
-    .His_List{
-        border-top: 1px solid #e5e5e5;
-        max-width: 1050px;
+    .List_Box {
+      max-width: 1050px;
+      display: flex;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+      .Box_Year {
+        max-width: 80px;
         width: 100%;
-        .List_Box{
-            max-width: 1050px;
-            display: flex;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #e5e5e5;
-            .Box_Year{
-                max-width: 80px;
-                width: 100%;
-                font-size: 18px;
-                padding-right: 66px;
-            }
-            .Box_Month{
-                font-size: 16px;
-                padding-right: 28px;
-                color: 535353;
-            }
-            .Box_Text{
-                font-size: 16px;
-                max-width: 310px;
-                width: 100%;
-                color: #707070;
-            }
-            .Box_Text2 {
-                font-size: 16px;
-                max-width: 310px;
-                width: 100%;
-                color: #707070;
-            }
-            
-        }
+        font-size: 18px;
+        padding-right: 66px;
+      }
+      .Box_Month {
+        font-size: 16px;
+        padding-right: 28px;
+        color: 535353;
+      }
+      .Box_Text {
+        font-size: 16px;
+        max-width: 310px;
+        width: 100%;
+        color: #707070;
+      }
+      .Box_Text2 {
+        font-size: 16px;
+        max-width: 310px;
+        width: 100%;
+        color: #707070;
+      }
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .HisContainer{
-        margin-left: initial;
-        .HisTextBox{
-            margin-left: 10px;
-            .His_Title{
-                font-size: 20px;
-            }
-            .His_Text{
-                font-size: 15px;
-            }
-        }
-        .His_List{
-        }
+@media screen and (max-width: 768px) {
+  .HisContainer {
+    margin-left: initial;
+    .HisTextBox {
+      margin-left: 10px;
+      .His_Title {
+        font-size: 20px;
+      }
+      .His_Text {
+        font-size: 15px;
+      }
     }
+    .His_List {
+    }
+  }
 }

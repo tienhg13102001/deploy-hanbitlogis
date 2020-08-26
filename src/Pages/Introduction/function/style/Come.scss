@@ -1,64 +1,64 @@
-.ComeContainer{
-    max-width: 1050px;
-    margin-left: 100px;
-    height: auto;
-    .Come_TextBox{
-        padding-top: 65px;
-        
-        .Come_Title{
-            font-size: 30px;
-            padding-bottom: 50px;
-            font-weight: 600;
-        }
-        .Come_Box{
-            display: flex;
-            padding-bottom: 30px;
-            .Come_One{
-                max-width: 88px;
-                width: 100%;
-                font-size: 16px;
-                font-weight: 600;
-                padding-right: 40px;
-                color: #535353;
-            }
-            .Come_Two{
-                font-size: 16px;
-                font-weight: 200;
-                color: #707070;
-            }
-        }
+.ComeContainer {
+  max-width: 1050px;
+
+  height: auto;
+  .Come_TextBox {
+    padding-top: 65px;
+    padding-left: 120px;
+    .Come_Title {
+      font-size: 30px;
+      padding-bottom: 50px;
+      font-weight: 600;
     }
-    .Hanbit_Map{
-        width: 1050px;
-        height: 500px;
-        margin-bottom: 100px;
+    .Come_Box {
+      display: flex;
+      padding-bottom: 30px;
+      .Come_One {
+        max-width: 88px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        padding-right: 40px;
+        color: #535353;
+      }
+      .Come_Two {
+        font-size: 16px;
+        font-weight: 200;
+        color: #707070;
+      }
     }
+  }
+  .Hanbit_Map {
+    width: 1050px;
+    padding-left: 120px;
+    height: 500px;
+    margin-bottom: 100px;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .ComeContainer{
-        margin-left: 0px;
-        .Come_TextBox{
-            padding-left: 20px;
-            .Come_Title{
-                font-size: 20px;
-                padding-bottom: 25px;
-            }
-            .Come_Box{
-                display: flex;
-                padding-bottom: 15px;
-                .Come_One{
-                    font-size: 13px;
-                }
-                .Come_Two{
-                    font-size: 13px;
-                }
-            }
+@media screen and (max-width: 768px) {
+  .ComeContainer {
+    margin-left: 0px;
+    .Come_TextBox {
+      padding-left: 20px;
+      .Come_Title {
+        font-size: 20px;
+        padding-bottom: 25px;
+      }
+      .Come_Box {
+        display: flex;
+        padding-bottom: 15px;
+        .Come_One {
+          font-size: 13px;
         }
-        .Hanbit_Map{
-            max-width: 500px;
-            width: 100%;
-         }
+        .Come_Two {
+          font-size: 13px;
+        }
+      }
     }
-    
+    .Hanbit_Map {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
 }

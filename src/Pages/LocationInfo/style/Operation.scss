@@ -1,21 +1,16 @@
-.Operation_Container{
-    
-    .TopBanner{
-
-    }
-    .CeoContents{
-        
-        margin-left: 200px;
-        padding-top: 50px;
-    }
-    .Contents {
-        
-    }
+.Operation_Container {
+  .TopBanner {
+  }
+  .CeoContents {
+    margin-left: 200px;
+    padding-top: 50px;
+  }
+  .Contents {
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Operation_Container{
-        margin: initial;
-        
-    }
+@media screen and (max-width: 768px) {
+  .Operation_Container {
+    margin: initial;
+  }
 }
