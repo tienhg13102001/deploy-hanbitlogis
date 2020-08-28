@@ -11,17 +11,22 @@
     }
 
     .slick-prev:before {
-      position: absolute;
-      color: black;
-      transform: translateY(-50%);
-      font-size: 28px;
+      display: none;
+      // position: absolute;
+      // color: black;
+      // transform: translateY(-50%);
+      // font-size: 28px;
     }
     .slick-next:before {
-      position: absolute;
-      color: black;
-      z-index: 1;
-      transform: translate(150px, -50%);
-      font-size: 28px;
+      display: none;
+      // position: absolute;
+      // color: black;
+      // z-index: 1;
+      // transform: translate(150px, -50%);
+      // font-size: 28px;
+    }
+    .slick-dots li.slick-active button:before {
+      color: #da2320;
     }
   }
 
@@ -53,14 +58,23 @@
 .slick-dots {
   bottom: 13px !important;
 }
+.slick-arrow {
+  background-size: cover !important;
+}
 .slick-prev {
   left: 10% !important;
   z-index: 3;
+  background-image: url(../../../_asset/image/main/banner-arrow-icon-1.png) !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 
 .slick-next {
   right: 20% !important;
   z-index: 3;
+  background-image: url(../../../_asset/image/main/banner-arrow-icon-2.png) !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 
 @media screen and (max-width: 768px) {

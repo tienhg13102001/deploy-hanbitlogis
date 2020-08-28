@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import prev from "../../_asset/image/main/banner-arrow-icon-1.png";
+
 class MainBanner extends Component {
   list = [
     { swiperimg: swiper01 },
@@ -30,7 +32,9 @@ class MainBanner extends Component {
               return (
                 <div className="Slick_box" key={index}>
                   <img src={item.swiperimg} alt="slick"></img>
-                  <div className="slick-prev"></div>
+                  <div className="slick-prev">
+                    {/* <img src={prev} alt="button_prev" /> */}
+                  </div>
                   <div className="slick-next"></div>
                 </div>
               );
