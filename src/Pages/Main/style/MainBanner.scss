@@ -3,6 +3,9 @@
   width: 100%;
   .BannerBox {
     height: 400px;
+    .slick-slider {
+      height: 100%;
+    }
     .Slick_box {
       img {
         width: 100%;

@@ -32,6 +32,16 @@ class MainBanner extends Component {
               return (
                 <div className="Slick_box" key={index}>
                   <img src={item.swiperimg} alt="slick"></img>
+                  <div className="Banner_TextBox">
+                    <div className="Banner_Title">
+                      한빛로지스 홈페이지가
+                      <br />
+                      새롭게 바뀌었습니다!
+                    </div>
+                    <div className="Banner_Subtitle">
+                      앞으로도 더욱 정진하는 한빛로지스가 되겠습니다.
+                    </div>
+                  </div>
                   <div className="slick-prev">
                     {/* <img src={prev} alt="button_prev" /> */}
                   </div>
@@ -40,16 +50,6 @@ class MainBanner extends Component {
               );
             })}
           </Slider>
-          <div className="Banner_TextBox">
-            <div className="Banner_Title">
-              한빛로지스 홈페이지가
-              <br />
-              새롭게 바뀌었습니다!
-            </div>
-            <div className="Banner_Subtitle">
-              앞으로도 더욱 정진하는 한빛로지스가 되겠습니다.
-            </div>
-          </div>
         </div>
       </div>
     );
