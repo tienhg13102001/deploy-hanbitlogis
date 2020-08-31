@@ -6,6 +6,9 @@
     .slick-slider {
       height: 100%;
     }
+    .slick-list {
+      height: 100%;
+    }
     .Slick_box {
       img {
         width: 100%;
@@ -38,7 +41,7 @@
     position: relative;
     z-index: 1;
     top: -205px;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
 
     .Banner_Title {
@@ -51,11 +54,39 @@
       text-align: left;
       margin-bottom: 30px;
     }
-    .Banner_Subtitle {
-      font-weight: 300;
-      font-size: 18.5px;
-      color: #333333;
-    }
+  }
+
+  .Banner_Subtitle {
+    font-weight: 300;
+    font-size: 18.5px;
+    color: #333333;
+  }
+}
+.Banner_TextBox_right {
+  width: 1250px;
+  position: relative;
+  z-index: 1;
+  top: -205px;
+  left: 80%;
+  transform: translate(-50%, -50%);
+
+  .Banner_Title_right {
+    font-weight: 900;
+    max-width: 500px;
+    width: 100%;
+    font-size: 42.5px;
+    line-height: 1.34;
+    color: #333333;
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  .Banner_Subtitle_right {
+    max-width: 500px;
+    font-weight: 300;
+    font-size: 18.5px;
+    color: #333333;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 .slick-dots {
@@ -65,15 +96,16 @@
   background-size: cover !important;
 }
 .slick-prev {
-  left: 10% !important;
+  left: 14% !important;
   z-index: 3;
   background-image: url(../../../_asset/image/main/banner-arrow-icon-1.png) !important;
+  background-repeat: no-repeat !important;
   width: 30px !important;
   height: 30px !important;
 }
 
 .slick-next {
-  right: 20% !important;
+  right: 18% !important;
   z-index: 3;
   background-image: url(../../../_asset/image/main/banner-arrow-icon-2.png) !important;
   width: 30px !important;
