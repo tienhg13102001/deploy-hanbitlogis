@@ -1,0 +1,37 @@
+.Check_Point_Container {
+  margin: 80px 160px;
+  .New_Check_Title {
+    text-align: center;
+    font-size: 30px;
+    color: #da2320;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  .New_Check_img_Wrap {
+    text-align: center;
+    margin-bottom: 58px;
+    > img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .Point_Text_Box {
+    text-align: center;
+    .Point_Text_title {
+      font-size: 24px;
+      color: #da2320;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .Point_Text_text {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Check_Point_Container {
+    display: none;
+  }
+}

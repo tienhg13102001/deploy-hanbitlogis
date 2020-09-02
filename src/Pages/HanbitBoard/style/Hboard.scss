@@ -1,88 +1,81 @@
-.Hboard_Contaier{
-    
-    .Hboard_TopLine{
-        display: flex;
-        max-width: 1050px;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        height: 60px;
-        border-top: 2px solid #535353;
-        border-bottom: 2px solid #535353;
-        .Hboard_Date{
-            max-width: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .Hboard_Title{
-            max-width: 500px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .Hboard_People{
-            max-width: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }      
+.Hboard_Contaier {
+  .Hboard_TopLine {
+    display: flex;
+    max-width: 1050px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-top: 2px solid #535353;
+    border-bottom: 1px solid #535353;
+    .Hboard_Date {
+      max-width: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .Btn_Area{
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 20px;
-        .Write_Button {
-            display: flex;
-            background-color: #535353;
-            font-size: 16px;
-            color: #ffffff;
-            max-width: 100px;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            height: 44px;
-            >a {
-                text-decoration: none;
-                color: #ffffff;
-            }
-        }
+    .Hboard_Title {
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+    .Hboard_People {
+      max-width: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .Btn_Area {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    .Write_Button {
+      display: flex;
+      background-color: #535353;
+      font-size: 16px;
+      color: #ffffff;
+      max-width: 100px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: 44px;
+      > a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
 }
 
-
-@media screen and (max-width:768px) {
-    .Hboard_Contaier{
-        
-        .Hboard_TopLine{
-            font-size: 14px;
-            border-top: 1px solid #535353;
-    border-bottom: 1px solid #535353;
-            .Hboard_Type{
-                
-            }
-            .Hboard_Date{
-                
-            }
-            .Hboard_Title{
-                
-            }
-            .Hboard_People{
-                
-            }      
-        }
-        .Btn_Area{
-            .Write_Button {
-                font-size: 14px;
-                max-width: 70px;
-                width: 100%;
-                margin-right: 10px;
-                >a {
-                }
-            }
-        }
+@media screen and (max-width: 768px) {
+  .Hboard_Contaier {
+    .Hboard_TopLine {
+      font-size: 14px;
+      border-top: 1px solid #535353;
+      border-bottom: 1px solid #535353;
+      .Hboard_Type {
+      }
+      .Hboard_Date {
+      }
+      .Hboard_Title {
+      }
+      .Hboard_People {
+      }
     }
+    .Btn_Area {
+      .Write_Button {
+        font-size: 14px;
+        max-width: 70px;
+        width: 100%;
+        margin-right: 10px;
+        > a {
+        }
+      }
+    }
+  }
 }

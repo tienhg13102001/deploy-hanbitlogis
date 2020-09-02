@@ -5,6 +5,7 @@ import icon02 from "../../../_asset/image/Introduction/point-icon-2.png";
 import icon03 from "../../../_asset/image/Introduction/point-icon-3.png";
 import arrowicon from "../../../_asset/image/locationInfo/arrow-icon.png";
 import { Steps, Divider } from "antd";
+import NewCheckPoint from "./NewCheckPoint";
 
 const { Step } = Steps;
 
@@ -196,6 +197,7 @@ class Delivery extends Component {
               </div>
             </div>
           </div>
+          <NewCheckPoint></NewCheckPoint>
         </div>
       </div>
     );
