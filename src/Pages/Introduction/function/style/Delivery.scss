@@ -143,6 +143,18 @@
     }
   }
 }
+.ant-steps-item-finish .ant-steps-item-icon {
+  background-color: #fff;
+  border-color: #da2320;
+}
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+  color: #da2320;
+}
+.ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background-color: #da2320;
+}
 
 @media screen and (max-width: 768px) {
   .DeliContainer {

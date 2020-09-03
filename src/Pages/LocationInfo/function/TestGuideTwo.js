@@ -16,7 +16,7 @@ class TestGuideTwo extends Component {
         <div className="TestInfo_Banner">
           <img src={image} className="BannerImg" alt="시험정보"></img>
         </div>
-        <Divider />
+        {/* <Divider /> */}
         <div className="Test_list_divider_box">
           <div className="Test_list_box">
             <div className="Test_list_number">01</div>
@@ -34,7 +34,7 @@ class TestGuideTwo extends Component {
             </div>
           </div>
         </div>
-        <Divider />
+        {/* <Divider /> */}
         <div className="Test_list_divider_box">
           <div className="Test_list_box">
             <div className="Test_list_number">02</div>
@@ -55,7 +55,7 @@ class TestGuideTwo extends Component {
             </div>
           </div>
         </div>
-        <Divider />
+        {/* <Divider /> */}
         <div className="Test_list_divider_box">
           <div className="Test_list_box">
             <div className="Test_list_number">03</div>
@@ -96,7 +96,7 @@ class TestGuideTwo extends Component {
             </div>
           </div>
         </div>
-        <Divider />
+        {/* <Divider /> */}
       </div>
     );
   }

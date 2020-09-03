@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { slide as BurMenu } from "react-burger-menu";
 import { NavLink } from "react-router-dom";
 import "./style/Navigation.scss";
-import logo from "../../_asset/image/common/logo.png";
+import logo from "../../_asset/image/common/logo_icon.svg";
 import menuicon from "../../_asset/image/common/menu-icon.png";
 import Guide from "../Guide/Guide";
 import HomeWorkRoundedIcon from "@material-ui/icons/HomeWorkRounded";

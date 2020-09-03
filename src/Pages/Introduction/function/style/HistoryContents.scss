@@ -58,6 +58,29 @@
     }
   }
 }
+.ant-table-thead {
+  font-size: 16px;
+  font-weight: 600;
+  .ant-table-cell {
+    text-align: center;
+  }
+}
+.ant-table-tbody {
+  .ant-table-cell {
+    color: #707070;
+    padding: 16px 26px;
+  }
+}
+.ant-pagination-item-active a {
+  color: #da2320;
+}
+.ant-pagination-item-active {
+  border-color: #da2320 !important;
+}
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+  color: #da2320 !important;
+}
 
 @media screen and (max-width: 768px) {
   .HisContainer {

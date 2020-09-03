@@ -43,11 +43,11 @@ class TestGuideCertificate extends Component {
         <div className="Certi_TextBox">
           <div className="Certi_List">
             <div className="Certi_One">연령</div>
-            <div className="Certi_Three_">만 21세 이상(접수일 마감 기준)</div>
+            <div className="Certi_Three_">운전면허</div>
           </div>
           <div className="Certi_List2">
             <div className="Certi_Wrap">
-              <div className="Certi_One">운전면허</div>
+              <div className="Certi_One">만 21세 이상(접수일 마감 기준)</div>
             </div>
             <div className="Certi_Wrap2">
               <div className="Certi_Two">
@@ -56,15 +56,15 @@ class TestGuideCertificate extends Component {
               </div>
               <div className="Certi_Three">
                 1. 자가용운전경력 3년 이상인 경우(운전면허 취득일 기준)
-                (소형면허(1종, 2종), 2종 원동기 면허, 연습면허, 면허정지 및
-                취소기간을 제외한 전체기간운전 경력을 인정(2종 보통면허, 1종
-                보통면허ㆍ대형면허ㆍ특수면허 기간만 인정)
+                (소형면허(1종, 2종), 2종 원동기 면허, 연습면허, <br></br>　
+                면허정지 및 취소기간을 제외한 전체기간운전 경력을 인정(2종
+                보통면허, 1종 보통면허ㆍ대형면허ㆍ특수면허 기간만 인정)
               </div>
               <div className="Certi_Three">
                 2. 사업용(영업용)자동차 운전경력 1년 이상 (자가용
-                운전경력(면허취득일 기준) 3년이 되지 않는 응시자로 사업용
-                화물경력을 제외한 버스 및 택시(사업용 자동차)의 운전경력이 1년이
-                경과된 자 )
+                운전경력(면허취득일 기준) 3년이 되지 않는 응시자로<br></br>　
+                사업용 화물경력을 제외한 버스 및 택시(사업용 자동차)의
+                운전경력이 1년이 경과된 자 )
               </div>
             </div>
           </div>

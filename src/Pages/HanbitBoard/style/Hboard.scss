@@ -6,10 +6,18 @@
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    border-top: 2px solid #535353;
-    border-bottom: 1px solid #535353;
+    border-top: 2px solid #a0a0a0;
+    font-weight: 600;
+    border-bottom: 1px solid #a0a0a0;
+    .Hboard_Number {
+      max-width: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .Hboard_Date {
-      max-width: 100px;
+      max-width: 90px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -23,7 +31,7 @@
       align-items: center;
     }
     .Hboard_People {
-      max-width: 100px;
+      max-width: 90px;
       width: 100%;
       display: flex;
       justify-content: center;

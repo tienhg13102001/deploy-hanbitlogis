@@ -1,23 +1,24 @@
-.Hanbit_Contents_Area{
-    max-width: 1050px;
-    width: 100%;
-    .Title_One{
-        font-size: 30px;
-        margin-top: 60px;
-        padding-bottom: 30px;
-    }
+.Hanbit_Contents_Area {
+  max-width: 1050px;
+  width: 100%;
+  padding-left: 90px;
+  .Title_One {
+    font-size: 30px;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    font-weight: 600;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Hanbit_Contents_Area{
-        margin-top :20px;
-        width: initial;
-        .Title_One{
-            display: none;
-            font-size: 24px;
-            padding-bottom: 15px;
-            padding-left: 15px;
-        }
+@media screen and (max-width: 768px) {
+  .Hanbit_Contents_Area {
+    margin-top: 20px;
+    width: initial;
+    .Title_One {
+      display: none;
+      font-size: 24px;
+      padding-bottom: 15px;
+      padding-left: 15px;
     }
+  }
 }
-    

@@ -94,8 +94,113 @@ class AnalysisType extends Component {
     },
     { text: "용차", text2: "필요시에 따라 그때 그때 쓰여지는 영업용 차량" },
   ];
+  renderPc() {
+    return (
+      <div className="Analysis_Container">
+        <div className="Type_Container">
+          <div className="Type_TextBox">
+            <div className="Type_Text">Car type</div>
+            <div className="Type_Title">
+              지입 차량의 <span>종류</span>
+            </div>
+          </div>
 
-  render() {
+          <div className="Chart_TitleBox">
+            <div className="Chart_Title">· 적재 화물에 따른 분류</div>
+          </div>
+
+          {/* <div className="Chart"> */}
+          <div className="Chart_Box">
+            <div className="TypeBox">
+              <div className="Type">화물 / 구분</div>
+              <div className="Type">직영</div>
+              <div className="Type">공급차량</div>
+            </div>
+            {this.list1.map((item, index) => {
+              return (
+                <div className="Text_List">
+                  <div className="One">{item.text}</div>
+                  <div className="One">{item.text2}</div>
+                  <div className="One">{item.text3}</div>
+                </div>
+              );
+            })}
+          </div>
+          {/* </div> */}
+
+          <div className="Chart_TitleBox">
+            <div className="Chart_Title">· 형태의 따른 분류</div>
+          </div>
+
+          <div className="Chart_Box">
+            <div className="Chart">
+              <div className="Chart_Type">
+                <div className="Type_One">차량 형태</div>
+                <div className="Type_Two">설명</div>
+              </div>
+              <div className="Chart_map_text_box">
+                {this.list2.map((item, index) => {
+                  return (
+                    <div className="Text_List" key={index}>
+                      <div className="One">{item.text}</div>
+                      <div className="Two">{item.text2}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          <div className="Chart_TitleBox">
+            <div className="Chart_Title">· 용도의 따른 분류</div>
+          </div>
+
+          <div className="Chart_Box">
+            <div className="Chart">
+              <div className="Chart_Type">
+                <div className="Type_One">차량 형태</div>
+                <div className="Type_Two">설명</div>
+              </div>
+              <div className="Chart_map_text_box">
+                {this.list3.map((item, index) => {
+                  return (
+                    <div className="Text_List" key={index}>
+                      <div className="One">{item.text}</div>
+                      <div className="Two">{item.text2}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          <div className="Chart_TitleBox">
+            <div className="Chart_Title">· 운영 주체에 따른 분류</div>
+          </div>
+
+          <div className="Chart_Box">
+            <div className="Chart">
+              <div className="Chart_Type">
+                <div className="Type_One">차량 형태</div>
+                <div className="Type_Two">설명</div>
+              </div>
+              <div className="Chart_map_text_box">
+                {this.list4.map((item, index) => {
+                  return (
+                    <div className="Text_List" key={index}>
+                      <div className="One">{item.text}</div>
+                      <div className="Two">{item.text2}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  renderMobile() {
     return (
       <div className="Analysis_Container">
         <div className="Type_Container">
@@ -232,6 +337,10 @@ class AnalysisType extends Component {
         </div>
       </div>
     );
+  }
+  render() {
+    const { isMobile } = this.props;
+    return <>{isMobile ? this.renderMobile() : this.renderPc()}</>;
   }
 }
 

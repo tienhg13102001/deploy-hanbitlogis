@@ -1,119 +1,110 @@
-.TestInfoContainer{
-    
-    .TestInfo_TitleBox{
-        .TestInfo_Title{
-            font-weight: 600;
-            font-size: 30px;
-            padding-bottom: 20px;
-            >span{
-                color: #da2320;
-            }
-        }
+.TestInfoContainer {
+  margin-top: 70px;
+  .TestInfo_TitleBox {
+    .TestInfo_Title {
+      font-weight: 600;
+      font-size: 30px;
+      padding-bottom: 20px;
+      > span {
+        color: #da2320;
+      }
     }
-    .TestInfo_Banner{
-        >img {
-            width: 100%;
-        }
+  }
+  .TestInfo_Banner {
+    > img {
+      width: 100%;
     }
-    .Test_list_divider_box{
-        max-width: 1050px;
+  }
+  .Test_list_divider_box {
+    margin-top: 50px;
+    max-width: 1050px;
+    width: 100%;
+    .Test_list_box {
+      display: flex;
+      .Test_list_number {
+        font-size: 30px;
+        font-weight: 900;
+        color: #da2320;
+      }
+      .Test_lsit_Name {
+        padding-left: 10px;
+        font-size: 26px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        color: #535353;
+      }
+    }
+    .Text_Content {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.7;
+      .Content_One {
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 30px;
+        max-width: 970px;
         width: 100%;
-        .Test_list_box{
-            display: flex;
-            .Test_list_number{
-                font-size: 30px;
-                font-weight: 900;
-                color: #da2320;
-            }
-            .Test_lsit_Name{
-                padding-left: 10px;
-                font-size: 26px;
-                font-weight: 600;
-                display: flex;
-                align-items: center;
-                color: #535353;
-            }
-        }
-        .Text_Content{
-            display: flex;
-            flex-direction: column;
-            .Content_One{
-                font-size: 16px;
-                font-weight: 500;
-                padding-left: 35px;
-               
-                max-width: 970px;
-                width: 100%;
-                color: #707070;
-                
-            }
-            .Content_Two{
-                font-size: 16px;
-                color: #da2320;
-                font-weight: 500;
-               
-                padding-left: 35px;
-                
-            }
-            .Content_Three{
-                font-size: 16px;
-                font-weight: 500;
-                color: #a0a0a0;
-               
-                padding-left: 35px;
-                
-            }
-        }
+        color: #707070;
+      }
+      .Content_Two {
+        font-size: 16px;
+        color: #da2320;
+        font-weight: 500;
+
+        padding-left: 35px;
+      }
+      .Content_Three {
+        font-size: 16px;
+        font-weight: 500;
+        color: #a0a0a0;
+
+        padding-left: 45px;
+      }
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .TestInfoContainer{
-        padding: 0 15px 0 15px;
-        .TestInfo_TitleBox{
-            
-            .TestInfo_Title{
-                font-size: 16px;
-                >span{
-                    
-                }
-            }
+@media screen and (max-width: 768px) {
+  .TestInfoContainer {
+    padding: 0 15px 0 15px;
+    .TestInfo_TitleBox {
+      .TestInfo_Title {
+        font-size: 16px;
+        > span {
         }
-        .TestInfo_Banner{
-            
-            >img {
-                
-            }
-        }
-        .Test_list_divider_box{
-            
-            .Test_list_box{
-                .Test_list_number{
-                    font-size: 20px;
-                }
-                .Test_lsit_Name{
-                    font-size: 18px;
-                }
-            }
-            .Text_Content{
-                
-                .Content_One{
-                    padding-top: 3px;
-                    padding-left: 18px;
-                    font-size: 12px;
-                }
-                .Content_Two{
-                    padding-top: 5px;
-                    padding-bottom: 3px;
-                    font-size: 14px;
-                    padding-left: 18px;
-                }
-                .Content_Three{
-                    font-size: 12px;
-                    padding-left: 18px;
-                }
-                
-            }
-        }
+      }
     }
+    .TestInfo_Banner {
+      > img {
+      }
+    }
+    .Test_list_divider_box {
+      .Test_list_box {
+        .Test_list_number {
+          font-size: 20px;
+        }
+        .Test_lsit_Name {
+          font-size: 18px;
+        }
+      }
+      .Text_Content {
+        .Content_One {
+          padding-top: 3px;
+          padding-left: 18px;
+          font-size: 12px;
+        }
+        .Content_Two {
+          padding-top: 5px;
+          padding-bottom: 3px;
+          font-size: 14px;
+          padding-left: 18px;
+        }
+        .Content_Three {
+          font-size: 12px;
+          padding-left: 18px;
+        }
+      }
+    }
+  }
 }

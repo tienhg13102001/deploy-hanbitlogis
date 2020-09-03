@@ -38,16 +38,21 @@ class AnalysisResult extends Component {
             지입 차량의 <span>효과</span>
           </div>
         </div>
-        <div className="Cards_area">
-          <div className="Cards_wrap">
-            <ResultCard />
-          </div>
-          <div className="Cards_wrap">
-            <ResultCardTwo />
-          </div>
-          <div className="Cards_wrap">
-            <ResultCardThree />
-          </div>
+        <div className="Type_Box">
+          {this.list.map((item, index) => {
+            return (
+              <div className="List_box">
+                <div className="List_TextBx">
+                  <div className="List_Number">{item.number}</div>
+                  <div className="List_Title">{item.title}</div>
+                </div>
+                <div className="List_Text">{item.text}</div>
+                <div className="List_Text">{item.text2}</div>
+                <div className="List_Text">{item.text3}</div>
+                <div className="List_Text">{item.text4}</div>
+              </div>
+            );
+          })}
         </div>
       </div>
     );

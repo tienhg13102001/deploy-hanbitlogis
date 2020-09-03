@@ -110,7 +110,7 @@ class Delivery extends Component {
             <div className="Text">Delivery luck</div>
             <div className="Operation">운영 방침</div>
           </div>
-          <Steps current={9} onChange={this.onChange} direction="vertical">
+          <Steps current={9} direction="vertical">
             {this.list.map((item, index) => {
               return (
                 <Step

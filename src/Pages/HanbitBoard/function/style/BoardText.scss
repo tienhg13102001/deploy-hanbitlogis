@@ -1,50 +1,55 @@
-.Board{
-    border-bottom: solid 1px #e5e5e5;
-    justify-content: space-around;
+.Board {
+  border-bottom: solid 1px #e5e5e5;
+  justify-content: space-around;
+  display: flex;
+  .Han_Number {
+    max-width: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     display: flex;
-        
-        .Han_Date{
-            max-width: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60px;
-            }
-        .Han_Title{
-            max-width: 500px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60px;
-            }
-        .Han_People{
-            max-width: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60px;
-            
-    } 
+  }
+  .Han_Date {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  .Han_Title {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    text-align: left;
+  }
+  .Han_People {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+  }
 }
 .Link {
-    text-decoration: none;
-    color: #535353;
+  text-decoration: none;
+  color: #707070;
 }
 
-@media screen and (max-width:768px) {
-    .Board{
-            .Han_Date{
-                font-size: 11px;
-                }
-            .Han_Title{
-                font-size: 11px;
-                }
-            .Han_People{
-                font-size: 11px;
-                
-        } 
+@media screen and (max-width: 768px) {
+  .Board {
+    .Han_Date {
+      font-size: 11px;
     }
+    .Han_Title {
+      font-size: 11px;
+    }
+    .Han_People {
+      font-size: 11px;
+    }
+  }
 }

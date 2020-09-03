@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-import logo from "../../_asset/image/common/logo.png";
+import logo from "../../_asset/image/common/logo_icon.svg";
 
 class Footer extends Component {
   render() {
