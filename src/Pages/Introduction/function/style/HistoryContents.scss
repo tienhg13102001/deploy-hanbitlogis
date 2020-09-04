@@ -81,6 +81,15 @@
 .ant-pagination-item-active:hover a {
   color: #da2320 !important;
 }
+.ant-pagination-item:focus a,
+.ant-pagination-item:hover a {
+  color: #da2320;
+  border-color: #da2320 !important;
+}
+.ant-pagination-item:focus,
+.ant-pagination-item:hover {
+  border-color: #da2320 !important;
+}
 
 @media screen and (max-width: 768px) {
   .HisContainer {
