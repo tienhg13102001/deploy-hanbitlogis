@@ -66,6 +66,7 @@ class Analysis extends Component {
             data-react-helmet="true"
           />
         </Helmet>
+
         <div className="Analysis_Contatiner">
           <div className="TopBanner">
             <AnalysisBanner></AnalysisBanner>

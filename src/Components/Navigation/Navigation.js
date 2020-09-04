@@ -38,10 +38,10 @@ class Navigation extends Component {
     const { isClickedMenu } = this.state;
     if (clickedMenu === "Intro") {
       subMenu = [
-        { name: "CEO 인사말", key: "/intro/ceo" },
-        { name: "경영 방침", key: "/intro/policy" },
-        { name: "회사 연혁", key: "/intro/history" },
-        { name: "오시는길", key: "/intro/come" },
+        { name: "CEO 인사말", key: "/Intro/ceo" },
+        { name: "경영 방침", key: "/Intro/policy" },
+        { name: "회사 연혁", key: "/Intro/history" },
+        { name: "오시는길", key: "/Intro/come" },
       ];
     } else if (clickedMenu === "Info") {
       subMenu = [

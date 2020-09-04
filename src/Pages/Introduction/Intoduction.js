@@ -79,19 +79,19 @@ class Introduction extends Component {
               component={IntroText}
             ></Route>
             <Route
-              path={`${this.props.match.path}/ceo`}
+              path={`${this.props.match.path}/Ceo`}
               component={IntroText}
             ></Route>
             <Route
-              path={`${this.props.match.path}/callingcard`}
+              path={`${this.props.match.path}/Callingcard`}
               component={CallingCard}
             ></Route>
             <Route
-              path={`${this.props.match.path}/policy`}
+              path={`${this.props.match.path}/Policy`}
               component={Delivery}
             ></Route>
             <Route
-              path={`${this.props.match.path}/history`}
+              path={`${this.props.match.path}/History`}
               component={HistoryContent}
             ></Route>
             <Route
