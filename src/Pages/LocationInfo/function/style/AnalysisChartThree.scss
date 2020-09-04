@@ -1,100 +1,92 @@
-.Three_container{
-    margin-bottom: 60px;
-    .Chart_TitleBox{
-        
-        .Chart_Title_text{
-            padding-top: 20px;
-            font-size: 18px;
-            color: #707070 ;
-            padding-bottom: 21px;
-        }
+.Three_container {
+  margin-bottom: 60px;
+  .Chart_TitleBox {
+    .Chart_Title_text {
+      padding-top: 20px;
+      font-size: 18px;
+      color: #707070;
+      padding-bottom: 21px;
     }
-    .Chart{
-        border-top: solid 1px #535353;
-        border-bottom: solid 1px #535353;
-        max-width: 1050px;
-        width: 100%;
-        .Chart_Type{
-            display: flex;
-            background-color: #f5f4f4;
-            .Type_One{
-                width: 200px;
-                height: 60px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: 600;
-            }
-            .Type_Two{
-                width: 850px;
-                height: 60px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: 600;
-            }
-        }
-        .Chart_TextBox{
-            display: flex;
-            flex-direction: column;
-            .Text_List{
-                display: flex;
-                border-bottom: solid 1px #e5e5e5;
-                color: #707070 ;
-                .One_text{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 200px;
-                    height: 60px;
-                }
-                .Two_text{
-                    display: flex;
-                    justify-content: left;
-                    align-items: center;
-                    width: 766px;
-                    height: 60px;
-                }   
-            }
-        }
-
+  }
+  .Chart {
+    border-top: solid 1px #535353;
+    border-bottom: solid 1px #535353;
+    max-width: 1050px;
+    width: 100%;
+    .Chart_Type {
+      display: flex;
+      background-color: #f5f4f4;
+      .Type_One {
+        width: 220px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+      .Type_Two {
+        width: 850px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
     }
+    .Chart_TextBox {
+      display: flex;
+      flex-direction: column;
+      .Text_List {
+        display: flex;
+        border-bottom: solid 1px #e5e5e5;
+        color: #707070;
+        .One_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 200px;
+          height: 60px;
+        }
+        .Two_text {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          width: 766px;
+          height: 60px;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .Three_container{
-        .Chart_TitleBox{
-            
-            .Chart_Title_text{
-                padding-left: 10px;
-                font-size: 14px;
-            }
-        }
-        .Chart{
-            
-            .Chart_Type{
-                
-                .Type_One{
-                    font-size: 12px;
-                }
-                .Type_Two{
-                    font-size: 12px;
-                }
-            }
-            .Chart_TextBox{
-                
-                .Text_List{
-                   
-                    .One_text{
-                        font-size: 11px;
-                    }
-                    .Two_text{
-                        font-size: 11px;
-                        padding-right: 15px;
-                    }   
-                }
-            }
-    
-        }
+@media screen and (max-width: 768px) {
+  .Three_container {
+    .Chart_TitleBox {
+      .Chart_Title_text {
+        padding-left: 10px;
+        font-size: 14px;
+      }
     }
+    .Chart {
+      .Chart_Type {
+        .Type_One {
+          font-size: 12px;
+        }
+        .Type_Two {
+          font-size: 12px;
+        }
+      }
+      .Chart_TextBox {
+        .Text_List {
+          .One_text {
+            font-size: 11px;
+          }
+          .Two_text {
+            font-size: 11px;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
 }
