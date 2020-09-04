@@ -90,7 +90,14 @@
 .ant-pagination-item:hover {
   border-color: #da2320 !important;
 }
-
+.ant-pagination-next:hover .ant-pagination-item-link {
+  color: #da2320;
+  border-color: #da2320;
+}
+.ant-pagination-prev:hover .ant-pagination-item-link {
+  color: #da2320;
+  border-color: #da2320;
+}
 @media screen and (max-width: 768px) {
   .HisContainer {
     margin-left: initial;
