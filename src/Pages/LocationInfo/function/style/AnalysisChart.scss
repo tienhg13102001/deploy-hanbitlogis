@@ -20,13 +20,13 @@
   .Chart_Type {
     display: flex;
     background-color: #f5f4f4;
-
+    border-bottom: 1px solid #535353;
     &:nth-child(2) {
       color: #da2320;
     }
 
     .Type_One {
-      width: 220px;
+      width: 230px;
       height: 60px;
       display: flex;
       align-items: center;

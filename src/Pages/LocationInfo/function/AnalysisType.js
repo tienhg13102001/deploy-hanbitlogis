@@ -112,16 +112,16 @@ class AnalysisType extends Component {
           {/* <div className="Chart"> */}
           <div className="Chart_Box">
             <div className="TypeBox">
-              <div className="Type">화물 / 구분</div>
-              <div className="Type">직영</div>
-              <div className="Type">공급차량</div>
+              <div className="Type_1">화물 / 구분</div>
+              <div className="Type_2">직영</div>
+              <div className="Type_3">공급차량</div>
             </div>
             {this.list1.map((item, index) => {
               return (
-                <div className="Text_List">
-                  <div className="One">{item.text}</div>
-                  <div className="One">{item.text2}</div>
-                  <div className="One">{item.text3}</div>
+                <div className="Text_List" key={index}>
+                  <div className="One_1">{item.text}</div>
+                  <div className="One_2">{item.text2}</div>
+                  <div className="One_3">{item.text3}</div>
                 </div>
               );
             })}

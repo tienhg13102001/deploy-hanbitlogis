@@ -5,7 +5,7 @@
   .Pros_TitleBox {
     display: flex;
     padding-bottom: 21px;
-    padding-top: 30px;
+    padding-top: 61px;
     .Pros_icon_area {
       width: 32px;
       height: 32px;
@@ -28,9 +28,8 @@
     .Pros_Type {
       display: flex;
       height: 60px;
-      border-top: 1px solid #535353;
+      border-top: 2px solid #535353;
       border-bottom: 1px solid #535353;
-      background-color: #f5f4f4;
       .Pros_Type_One {
         width: 147px;
         display: flex;
@@ -77,7 +76,6 @@
         display: flex;
         justify-content: left;
         align-items: center;
-
         padding: 5px;
         color: #707070;
         font-weight: 500;

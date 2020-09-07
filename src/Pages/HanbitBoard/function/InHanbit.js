@@ -47,16 +47,14 @@ class InHanbit extends Component {
     return this.state.data ? (
       <div className="InHanbit_Container">
         <div className="InHanbit_TitleBox">
-          <div className="InHanbit_Title"></div>
+          <div className="InHanbit_Title">공지사항</div>
         </div>
         <div className="InHanbit_Board">
           <div className="In_TitleBox">
-            <div className="In_Title">제목 : {data.simple_resources.title}</div>
+            <div className="In_Title">{data.simple_resources.title}</div>
           </div>
           <div className="In_Menu">
-            <div className="In_Menu_People">
-              작성자 : {data.simple_resources.name}
-            </div>
+            <div className="In_Menu_People">{data.simple_resources.name}</div>
           </div>
           <div className="In_Menu_Text">{data.simple_resources.content}</div>
         </div>

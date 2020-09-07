@@ -92,9 +92,9 @@ class Hboard extends Component {
       <div className="Hboard_Contaier">
         <div className="Hboard_TopLine">
           <div className="Hboard_Number">번호</div>
+          <div className="Hboard_Date">작성날</div>
           <div className="Hboard_Title">제목</div>
           <div className="Hboard_People">작성자</div>
-          <div className="Hboard_Date">작성날</div>
         </div>
         <div>
           {this.state.list.map((item, index) => {

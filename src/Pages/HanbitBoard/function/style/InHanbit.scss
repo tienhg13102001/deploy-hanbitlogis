@@ -11,16 +11,16 @@
     padding-bottom: 30px;
     .InHanbit_Title {
       font-size: 30px;
+      font-weight: 600;
     }
   }
   .InHanbit_Board {
     .In_TitleBox {
       .In_Title {
-        padding-left: 20px;
         display: flex;
         justify-content: left;
         align-items: center;
-        font-size: 16px;
+        font-size: 18px;
         color: #707070;
         height: 60px;
         border-bottom: 1px solid #e5e5e5;
@@ -28,8 +28,7 @@
     }
     .In_Menu {
       .In_Menu_People {
-        padding-left: 20px;
-        font-size: 16px;
+        font-size: 14px;
         color: #707070;
         border-bottom: 1px solid #e5e5e5;
         height: 60px;
@@ -38,10 +37,11 @@
       }
     }
     .In_Menu_Text {
-      padding: 20px;
+      padding-bottom: 450px;
       font-size: 16px;
       color: #707070;
       border-bottom: 2px solid #535353;
+      margin-top: 60px;
       margin-bottom: 60px;
     }
   }

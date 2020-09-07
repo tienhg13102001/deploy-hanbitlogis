@@ -20,15 +20,14 @@ class OpreationChartThree extends Component {
       text: "보험료",
       text2: "91,300 원",
       text3: "60,480 원",
-      text4: "직영 : 업무용 (책임, 종합)",
-      text5: "위탁 : 영업용 (책임, 종합)",
+      text4: "직영 : 업무용 (책임, 종합)\n위탁 : 영업용 (책임, 종합)",
     },
     {
       text: "공과금",
       text2: "9,500 원",
       text3: "4,300 원",
-      text4: "자동차, 환경개선부담금, 검사비, 면허세",
-      text5: "직영 (업무용), 위탁 (영업용)",
+      text4:
+        "자동차, 환경개선부담금, 검사비, 면허세\n직영 (업무용), 위탁 (영업용)",
     },
     {
       text: "정기보수비",
@@ -76,9 +75,13 @@ class OpreationChartThree extends Component {
                     <div className="One_Text2">{item.text}</div>
                     <div className="Two_Text2">{item.text2}</div>
                     <div className="Three_Text2">{item.text3}</div>
-                    <div className="Wrap">
-                      <div className="Three_Text3">{item.text4}</div>
-                      <div className="Three_Plus">{item.text5}</div>
+                    <div className="Three_Text3">
+                      {item.text4.split("\n").map((e) => (
+                        <span>
+                          {e}
+                          <br />
+                        </span>
+                      ))}
                     </div>
                   </div>
                 );

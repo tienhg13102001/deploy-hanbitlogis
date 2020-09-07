@@ -31,7 +31,8 @@
     }
   }
   .Chart_Box {
-    border-top: solid 1px #535353;
+    border-top: solid 2px #535353;
+
     max-width: 1050px;
     width: 100%;
     .TypeBox {
@@ -40,6 +41,7 @@
       align-items: center;
       justify-content: space-between;
       background-color: #f5f4f4;
+      border-bottom: 1px solid #535353;
       //   &:nth-child(1) {
       //     color: #da2320;
       //   }
@@ -49,7 +51,19 @@
       //   &:nth-child(6) {
       //     color: #da2320;
       //   }
-      .Type {
+      .Type_1 {
+        font-size: 14px;
+        font-weight: 600;
+        flex: 1;
+        text-align: center;
+      }
+      .Type_2 {
+        font-size: 14px;
+        font-weight: 600;
+        flex: 2;
+        text-align: center;
+      }
+      .Type_3 {
         font-size: 14px;
         font-weight: 600;
         flex: 1;
@@ -64,10 +78,24 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      .One {
+      .One_1 {
         font-size: 14px;
         color: #707070;
-        width: 500px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      .One_2 {
+        font-size: 14px;
+        color: #707070;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+      }
+      .One_3 {
+        font-size: 14px;
+        color: #707070;
+        flex: 1;
         display: flex;
         justify-content: center;
       }
