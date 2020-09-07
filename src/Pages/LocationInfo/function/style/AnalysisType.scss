@@ -27,12 +27,11 @@
       font-weight: 500;
       font-size: 15px;
       color: #707070;
-      margin: 45px 0 30px 0;
+      margin: 45px 0 21px 0;
     }
   }
   .Chart_Box {
     border-top: solid 2px #535353;
-
     max-width: 1050px;
     width: 100%;
     .TypeBox {
@@ -98,6 +97,30 @@
         flex: 1;
         display: flex;
         justify-content: center;
+      }
+    }
+    .Chart_Type_1 {
+      height: 63px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f4f4;
+      border-bottom: 1px solid #535353;
+      .Type_One_1 {
+        width: 230px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+      .Type_Two_2 {
+        width: 850px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
       }
     }
   }

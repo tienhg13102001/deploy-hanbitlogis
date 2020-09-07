@@ -8,7 +8,7 @@ class Union extends Component {
         <a href="https://www.notion.so/b8310ec859354d4f86fac0443d71d854">
           <div className="TextBox">
             <div className="Title_union">
-              명함제작
+              명함
               <br />
               신청
             </div>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import "./style/Login.scss";
-import { NavLink } from "react-router-dom";
 
 class Login extends Component {
   state = {

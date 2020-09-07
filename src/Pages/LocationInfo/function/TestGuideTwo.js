@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import "./style/TestGuideTwo.scss";
-import { Divider } from "antd";
 import image from "../../../_asset/image/locationInfo/informaion-img.png";
 
 class TestGuideTwo extends Component {

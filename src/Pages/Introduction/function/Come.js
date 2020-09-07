@@ -26,7 +26,7 @@ class Come extends Component {
             <div className="Come_Two">hanbitlogis@naver.com</div>
           </div>
         </div>
-        <div className="Hanbit_Map" style={{ paddingTop: "50px" }}>
+        <div className="Hanbit_Map" style={{ paddingTop: "30px" }}>
           <iframe
             title="HanbitLocation"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.625365785722!2d127.04003211531028!3d37.5167531798072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4751976494d%3A0x121b7bb610d91f44!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsgrzshLHrj5kg7ZWZ64-Z66GcNTbquLggOA!5e0!3m2!1sko!2skr!4v1593485547469!5m2!1sko!2skr"

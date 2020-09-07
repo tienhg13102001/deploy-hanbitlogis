@@ -131,12 +131,11 @@ class AnalysisType extends Component {
           <div className="Chart_TitleBox">
             <div className="Chart_Title">· 형태의 따른 분류</div>
           </div>
-
           <div className="Chart_Box">
             <div className="Chart">
-              <div className="Chart_Type">
-                <div className="Type_One">차량 형태</div>
-                <div className="Type_Two">설명</div>
+              <div className="Chart_Type_1">
+                <div className="Type_One_1">차량 형태</div>
+                <div className="Type_Two_2">설명</div>
               </div>
               <div className="Chart_map_text_box">
                 {this.list2.map((item, index) => {
@@ -157,9 +156,9 @@ class AnalysisType extends Component {
 
           <div className="Chart_Box">
             <div className="Chart">
-              <div className="Chart_Type">
-                <div className="Type_One">차량 형태</div>
-                <div className="Type_Two">설명</div>
+              <div className="Chart_Type_1">
+                <div className="Type_One_1">차량 형태</div>
+                <div className="Type_Two_2">설명</div>
               </div>
               <div className="Chart_map_text_box">
                 {this.list3.map((item, index) => {
@@ -180,9 +179,9 @@ class AnalysisType extends Component {
 
           <div className="Chart_Box">
             <div className="Chart">
-              <div className="Chart_Type">
-                <div className="Type_One">차량 형태</div>
-                <div className="Type_Two">설명</div>
+              <div className="Chart_Type_1">
+                <div className="Type_One_1">차량 형태</div>
+                <div className="Type_Two_2">설명</div>
               </div>
               <div className="Chart_map_text_box">
                 {this.list4.map((item, index) => {
