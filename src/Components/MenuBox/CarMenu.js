@@ -24,7 +24,7 @@ class CarMenu extends Component {
           to={`${this.props.match.path}/twovehicle`}
         >
           <div className="Line">당사차량 [2.5톤]</div>
-          {`${this.props.location.pathname}` === "/Vehicle/twovehicle" && (
+          {`${this.props.location.pathname}`.includes("twovehicle") && (
             <img src={ArrowRight} alt="arrowRight"></img>
           )}
         </NavLink>

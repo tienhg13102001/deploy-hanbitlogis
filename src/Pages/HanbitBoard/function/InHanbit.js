@@ -48,18 +48,31 @@ class InHanbit extends Component {
       <div className="InHanbit_Container">
         <div className="InHanbit_TitleBox">
           <div className="InHanbit_Title">공지사항</div>
+          <NavLink to="/HanbitBoard">
+            <div className="InHanbit_Btn">목록으로</div>
+          </NavLink>
         </div>
         <div className="InHanbit_Board">
           <div className="In_TitleBox">
             <div className="In_Title">{data.simple_resources.title}</div>
           </div>
           <div className="In_Menu">
-            <div className="In_Menu_People">{data.simple_resources.name}</div>
+            <div className="In_Menu_People">{data.simple_resources.name} </div>
+            <div
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                padding: "15px",
+              }}
+            >
+              |
+            </div>
+            <div className="In_Menu_Date">
+              {data.simple_resources.createdAt}
+            </div>
           </div>
           <div className="In_Menu_Text">{data.simple_resources.content}</div>
-        </div>
-        <div className="InHanbit_Btn">
-          <NavLink to="/HanbitBoard">목록으로</NavLink>
         </div>
       </div>
     ) : (

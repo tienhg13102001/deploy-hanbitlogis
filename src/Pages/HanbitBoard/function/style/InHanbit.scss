@@ -9,10 +9,23 @@
     border-bottom: 2px solid #535353;
     font-size: 30px;
     margin-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
     .InHanbit_Title {
       font-size: 30px;
       font-weight: 600;
+    }
+    .InHanbit_Btn {
+      width: 100px;
+      color: #ffffff;
+      background-color: #535353;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      a {
+        color: #fff;
+      }
     }
   }
   .InHanbit_Board {
@@ -25,13 +38,22 @@
         color: #707070;
         height: 60px;
         border-bottom: 1px solid #e5e5e5;
+        line-height: 1.67;
       }
     }
     .In_Menu {
+      display: flex;
+      border-bottom: 1px solid #e5e5e5;
       .In_Menu_People {
         font-size: 14px;
         color: #535353;
-        border-bottom: 1px solid #e5e5e5;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      }
+      .In_Menu_Date {
+        font-size: 14px;
+        color: #535353;
         height: 60px;
         display: flex;
         align-items: center;
@@ -46,26 +68,12 @@
       margin-bottom: 60px;
     }
   }
-  .InHanbit_Btn {
-    max-width: 142px;
-    margin: auto;
-    width: 100%;
-    color: #ffffff;
-    background-color: #535353;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 12px;
-    a {
-      color: #fff;
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {
   .InHanbit_Container {
     padding-bottom: 30px;
+    padding-left: initial;
     .InHanbit_TitleBox {
       display: none;
       .InHanbit_Title {
@@ -93,6 +101,7 @@
         padding: 15px;
         height: initial;
         margin-bottom: 30px;
+        margin-top: initial;
       }
     }
     .InHanbit_Btn {
