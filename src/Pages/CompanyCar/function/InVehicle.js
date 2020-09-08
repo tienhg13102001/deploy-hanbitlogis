@@ -28,7 +28,7 @@ class InVehicle extends Component {
     return (
       <div className="In_Container">
         <div className="In_TitleBox">
-          <div className="In_Title">1톤</div>
+          <div className="In_Title">당사차량 [1톤]</div>
         </div>
         <div className="In_SubTitle">
           <div className="In_SubText">· bgf리테일cu편의점 상온배송차량</div>
@@ -45,7 +45,7 @@ class InVehicle extends Component {
         </div>
         <div className="BottomText">매매 문의 : 1599 - 9964</div>
         <div className="Go_Button">
-          <NavLink to="/Vehicle">목록으로</NavLink>
+          <NavLink to="/Vehicle/onevehicle">목록으로</NavLink>
         </div>
       </div>
     );

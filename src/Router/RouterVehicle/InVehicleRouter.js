@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import OneCarBanner from "../../Pages/CompanyCar/function/OneCarBanner";
 // import CarMenuBox from '../../Components/MenuBox/CarMenu'
 import InVehicle from "../../Pages/CompanyCar/function/InVehicle";
+import CarMenu from "../../Components/MenuBox/CarMenu";
 
 class InVehicleRouter extends Component {
   componentWillMount = () => {
@@ -13,7 +14,8 @@ class InVehicleRouter extends Component {
         <div className="TopBanner">
           <OneCarBanner></OneCarBanner>
         </div>
-        <div className="InVehicle_Contents">
+        <div className="InVehicle_Contents" style={{ display: "flex" }}>
+          <CarMenu {...this.props}></CarMenu>
           <InVehicle></InVehicle>
         </div>
       </div>

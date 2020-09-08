@@ -27,7 +27,9 @@ class Board extends Component {
           // console.log(response.data.data.rows);
           response.data.data.rows = response.data.data.rows.map((item) => {
             const date = new Date(item.lastUpdateDate);
-            item.lastUpdateDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+            item.lastUpdateDate = `${date.getFullYear()}-${
+              date.getMonth() + 1
+            }-${date.getDate()}`;
             return item;
           });
           // console.log(response.data.data.rows);

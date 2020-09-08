@@ -3,6 +3,7 @@ import "./style/OneVehicle.scss";
 import { data } from "./BoardDb";
 import { Link } from "react-router-dom";
 import { Pagination } from "../../../Common/Pagination/Pagination";
+import CarMenu from "../../../Components/MenuBox/CarMenu";
 
 class OneVehicle extends Component {
   state = {
@@ -54,7 +55,7 @@ class OneVehicle extends Component {
     return (
       <div className="Vehicle_Container">
         <div className="Vehicle_TitleBox">
-          <div className="Vehicle_Title">1톤</div>
+          <div className="Vehicle_Title">당사차량 [1톤]</div>
           <div className="Vehicle_TopLine">
             <div className="Top_Line_1">번호</div>
             <div className="Top_Line_2">종류</div>
@@ -65,16 +66,16 @@ class OneVehicle extends Component {
             {data.slice(0, this.state.visible).map((item, index) => {
               return (
                 <div className="Board_List" key={index}>
-                  <Link className="List_One" to="/InVehicle">
+                  <Link className="List_One" to="/InVehicle/onevehicle">
                     {item.number}
                   </Link>
-                  <Link to="/InVehicle" className="List_Two">
+                  <Link to="/InVehicle/onevehicle" className="List_Two">
                     {item.kind}
                   </Link>
-                  <Link to="/InVehicle" className="List_Three">
+                  <Link to="/InVehicle/onevehicle" className="List_Three">
                     {item.content}
                   </Link>
-                  <Link to="/InVehicle" className="List_Four">
+                  <Link to="/InVehicle/onevehicle" className="List_Four">
                     {item.date}
                   </Link>
                 </div>
