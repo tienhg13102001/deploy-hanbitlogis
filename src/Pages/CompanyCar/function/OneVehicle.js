@@ -57,9 +57,9 @@ class OneVehicle extends Component {
           <div className="Vehicle_Title">1톤</div>
           <div className="Vehicle_TopLine">
             <div className="Top_Line_1">번호</div>
-            <div className="Top_Line_2">작성날</div>
+            <div className="Top_Line_2">종류</div>
             <div className="Top_Line_3">내용</div>
-            <div className="Top_Line_4">종류</div>
+            <div className="Top_Line_4">작성날</div>
           </div>
           <div className="Vehicle_Board">
             {data.slice(0, this.state.visible).map((item, index) => {
@@ -69,13 +69,13 @@ class OneVehicle extends Component {
                     {item.number}
                   </Link>
                   <Link to="/InVehicle" className="List_Two">
-                    {item.date}
+                    {item.kind}
                   </Link>
                   <Link to="/InVehicle" className="List_Three">
                     {item.content}
                   </Link>
                   <Link to="/InVehicle" className="List_Four">
-                    {item.kind}
+                    {item.date}
                   </Link>
                 </div>
               );

@@ -62,10 +62,7 @@ class Navigation extends Component {
     return (
       isClickedMenu && (
         <div className="NaviContainer_submenu_container">
-          <div
-            className="NaviContainer_submenu_wrap"
-            // onMouseLeave={this.leaveMenu} => 2차 디테일 수정으로 꺼둠.
-          >
+          <div className="NaviContainer_submenu_wrap" onClick={this.leaveMenu}>
             {subMenu &&
               subMenu.map((item) => {
                 return (

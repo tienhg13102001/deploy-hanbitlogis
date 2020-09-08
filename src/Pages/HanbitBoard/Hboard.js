@@ -62,8 +62,10 @@ class Hboard extends Component {
         ) {
           // console.log(response.data.data.rows);
           response.data.data.rows = response.data.data.rows.map((item) => {
-            const date = new Date(item.lastUpdateDate);
-            item.lastUpdateDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+            const date = new Date(item.simple_resources.createdAt);
+            item.simple_resources.createdAt = `${date.getFullYear()}-${
+              date.getMonth() + 1
+            }-${date.getDate()}`;
             return item;
           });
           // console.log(response.data.data.rows);
@@ -92,9 +94,9 @@ class Hboard extends Component {
       <div className="Hboard_Contaier">
         <div className="Hboard_TopLine">
           <div className="Hboard_Number">번호</div>
-          <div className="Hboard_Date">작성날</div>
           <div className="Hboard_Title">제목</div>
           <div className="Hboard_People">작성자</div>
+          <div className="Hboard_Date">작성날</div>
         </div>
         <div>
           {this.state.list.map((item, index) => {
@@ -107,7 +109,7 @@ class Hboard extends Component {
                 <BoardText
                   key={index}
                   number={this.state.list.length - index}
-                  date={item.lastUpdateDate}
+                  date={item.simple_resources.createdAt}
                   title={item.resources[0].data[0]}
                   people={item.simple_resources.name}
                 />
