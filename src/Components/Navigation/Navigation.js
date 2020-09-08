@@ -17,6 +17,7 @@ class Navigation extends Component {
     isClickedMenu: false,
     clickedMenu: "",
   };
+
   movePage = (pageName) => {
     this.props.history.push({
       pathname: pageName,
@@ -62,7 +63,11 @@ class Navigation extends Component {
     return (
       isClickedMenu && (
         <div className="NaviContainer_submenu_container">
-          <div className="NaviContainer_submenu_wrap" onClick={this.leaveMenu}>
+          <div
+            className="NaviContainer_submenu_wrap"
+            onMouseLeave={this.leaveMenu}
+            onClick={this.leaveMenu}
+          >
             {subMenu &&
               subMenu.map((item) => {
                 return (
@@ -91,7 +96,7 @@ class Navigation extends Component {
               <div onClick={() => this.movePage("/")} className="Menu_Logo">
                 <img src={logo} alt="Logo"></img>
               </div>
-              <Guide onClick={this.handleClickMenu} />
+              <Guide handleClickMenu={this.handleClickMenu} />
             </div>
           </div>
         </div>
