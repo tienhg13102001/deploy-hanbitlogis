@@ -8,15 +8,16 @@ class InHanbit extends Component {
   state = {
     list: [],
     data: null,
+    dataIndex: -1,
   };
 
   componentDidMount = () => {
     this.getAllList();
   };
-  getAllList = async () => {
-    this.getAllList();
-  };
-  getAllList = async () => {
+  // getAllList = async () => {
+  //   this.getAllList();
+  // };
+  getAllList = async (id) => {
     const rID = "hanbit_notice";
     await axios
       .get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
@@ -28,12 +29,24 @@ class InHanbit extends Component {
           response.data.data &&
           response.data.data.rows
         ) {
-          const id = this.props.location.search.slice(6);
+          if (!id) id = this.props.location.search.slice(6);
+          else {
+            this.props.history.push(`/HanbitBoard/InBoard?name=${id}`);
+          }
+          let dataIndex = 0;
+          response.data.data.rows.map((item, ind) => {
+            if (item.name === id) {
+              dataIndex = ind;
+            }
+          });
+
           const data = response.data.data.rows.filter(
             (item) => item.name === id
           )[0];
+          console.log(dataIndex);
           this.setState({
-            ...this.state,
+            dataIndex,
+            list: response.data.data.rows,
             data,
           });
         } else {
@@ -44,7 +57,9 @@ class InHanbit extends Component {
   };
   render() {
     const data = this.state.data;
-    console.log(data);
+    const dataIndex = this.state.dataIndex;
+    console.log(dataIndex);
+
     return this.state.data ? (
       <div className="InHanbit_Container">
         <div className="InHanbit_TitleBox">
@@ -75,7 +90,13 @@ class InHanbit extends Component {
           </div>
           <div className="In_Menu_Text">{data.simple_resources.content}</div>
         </div>
-        <BoardPreview></BoardPreview>
+        {dataIndex !== -1 ? (
+          <BoardPreview
+            list={this.state.list}
+            dataIndex={this.state.dataIndex}
+            getAllList={this.getAllList}
+          ></BoardPreview>
+        ) : null}
       </div>
     ) : (
       <div></div>

@@ -1,95 +1,85 @@
-.BoardPreviewContainer{
-    .BoardPreviewBox{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        max-width: 1024px;
-    }
-    .BoardPreviewContents{
-        display: flex;
-        font-size: 16px;
-        padding: 25px 0;
-        border-top:solid 1px #e3e5e9 ;
-    }
-    .BoardPreviewBtn{
-        margin-right: 20px;
-        padding-left: 25px;
-        cursor: pointer;
-    }
-    .BoardPreviewNext{
-        max-width : 120px;
-        width : 100%;
-        cursor: pointer;
-    }
-    .BoardPreviewTitle{
-        font-family: 'Montserrat-light';
-        cursor: pointer;
-    }
-    //////////////
-    .BoardNextBox{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        max-width: 1024px;
-    }
-    .BoardNextContents{
-        display: flex;
-        font-size: 16px;
-        padding: 25px 0;
-        border-top:solid 1px #e3e5e9 ;
-        border-bottom:solid 1px #e3e5e9 ;
-        margin-bottom: 100px;
-    }
-    .BoardNextBtn{
-        margin-right: 20px;
-        padding-left: 25px;
-        cursor: pointer;
-    }
-    .BoardNextNext{
-        max-width : 120px;
-        width : 100%;
-        cursor: pointer;
-    }
-    .BoardNextTitle{
-        font-family: 'Montserrat-light';
-        cursor: pointer;
-    }
-  
+.BoardPreviewContainer {
+  .BoardPreviewBox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1024px;
+  }
+  .BoardPreviewContents {
+    display: flex;
+    font-size: 16px;
+    padding: 25px 0;
+    border-top: solid 1px #e3e5e9;
+  }
+  .BoardPreviewBtn {
+    margin-right: 20px;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  .BoardPreviewNext {
+    max-width: 120px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .BoardPreviewTitle {
+    font-family: "Montserrat-light";
+    cursor: pointer;
+  }
+  //////////////
+  .BoardNextBox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1024px;
+  }
+  .BoardNextContents {
+    display: flex;
+    font-size: 16px;
+    padding: 25px 0;
+    border-top: solid 1px #e3e5e9;
+    border-bottom: solid 1px #e3e5e9;
+    // margin-bottom: 100px;
+  }
+  .BoardNextBtn {
+    margin-right: 20px;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  .BoardNextNext {
+    max-width: 120px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .BoardNextTitle {
+    font-family: "Montserrat-light";
+    cursor: pointer;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .BoardPreviewContainer{
-        .BoardPreviewBox{
-            
-        }
-        .BoardPreviewContents{
-            font-size: 12px;
-        }
-        .BoardPreviewBtn{
-            
-        }
-        .BoardPreviewNext{
-            
-        }
-        .BoardPreviewTitle{
-            
-        }
-        //////////////
-        .BoardNextBox{
-            
-        }
-        .BoardNextContents{
-            
-        }
-        .BoardNextBtn{
-            
-        }
-        .BoardNextNext{
-            font-size: 12px;
-        }
-        .BoardNextTitle{
-            
-        }
-      
+@media screen and (max-width: 768px) {
+  .BoardPreviewContainer {
+    .BoardPreviewBox {
     }
+    .BoardPreviewContents {
+      font-size: 12px;
+    }
+    .BoardPreviewBtn {
+    }
+    .BoardPreviewNext {
+    }
+    .BoardPreviewTitle {
+    }
+    //////////////
+    .BoardNextBox {
+    }
+    .BoardNextContents {
+    }
+    .BoardNextBtn {
+    }
+    .BoardNextNext {
+      font-size: 12px;
+    }
+    .BoardNextTitle {
+    }
+  }
 }

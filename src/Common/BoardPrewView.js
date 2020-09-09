@@ -1,26 +1,50 @@
 import React, { Component } from "react";
 import "./style/BoardPrewView.scss";
+import { NavLink } from "react-router-dom";
 
 class BoardPreview extends Component {
+  state = {};
+
+  componentDidMount = () => {};
+
+  onClickData = (url) => {
+    this.props.history.push(url);
+  };
+
   render() {
+    const prevData = this.props.list[this.props.dataIndex - 1];
+    const nextData = this.props.list[this.props.dataIndex + 1];
     return (
       <div className="BoardPreviewContainer">
-        <div>
-          <div className="BoardPreviewBox">
-            <div className="BoardPreviewContents">
-              <div className="BoardPreviewBtn">∧</div>
-              <div className="BoardPreviewNext">PREV</div>
-              <div className="BoardPreviewTitle"></div>
+        <div style={({ height: "152px" }, { paddingBottom: "80px" })}>
+          {prevData ? (
+            <div
+              className="BoardPreviewBox"
+              onClick={() => this.props.getAllList(prevData.name)}
+            >
+              <div className="BoardPreviewContents">
+                <div className="BoardPreviewBtn">∧</div>
+                <div className="BoardPreviewNext">PREV</div>
+                <div className="BoardPreviewTitle">
+                  {prevData.simple_resources.title}
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div className="BoardNextBox">
-            <div className="BoardNextContents">
-              <div className="BoardNextBtn">∨</div>
-              <div className="BoardNextNext">NEXT</div>
-              <div className="BoardNextTitle"></div>
+          ) : null}
+          {nextData ? (
+            <div
+              className="BoardNextBox"
+              onClick={() => this.props.getAllList(nextData.name)}
+            >
+              <div className="BoardNextContents">
+                <div className="BoardNextBtn">∨</div>
+                <div className="BoardNextNext">NEXT</div>
+                <div className="BoardNextTitle">
+                  {nextData.simple_resources.title}
+                </div>
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </div>
     );
