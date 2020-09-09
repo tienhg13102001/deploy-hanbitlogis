@@ -48,7 +48,7 @@ class InVehicle extends Component {
           })}
         </div>
         <div className="BottomText">매매 문의 : 1599 - 9964</div>
-        <BoardPreview></BoardPreview>
+        {/* <BoardPreview></BoardPreview> */}
       </div>
     );
   }

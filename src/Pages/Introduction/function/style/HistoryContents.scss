@@ -22,36 +22,40 @@
     }
   }
   .His_List {
-    border-top: 1px solid #e5e5e5;
+    border-top: 2px solid #535353;
+    border-bottom: 2px solid #535353;
     max-width: 1050px;
     width: 100%;
-    .List_Box {
+    .Table_list {
       max-width: 1050px;
       display: flex;
       height: 100px;
       display: flex;
       align-items: center;
       border-bottom: 1px solid #e5e5e5;
+
       .Box_Year {
-        max-width: 80px;
+        flex: 1;
         width: 100%;
         font-size: 18px;
-        padding-right: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #535353;
+        font-weight: 600;
       }
       .Box_Month {
+        flex: 1;
         font-size: 16px;
-        padding-right: 28px;
-        color: 535353;
+        font-weight: 600;
+        color: #535353;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .Box_Text {
         font-size: 16px;
-        max-width: 310px;
-        width: 100%;
-        color: #707070;
-      }
-      .Box_Text2 {
-        font-size: 16px;
-        max-width: 310px;
+        flex: 5;
         width: 100%;
         color: #707070;
       }
