@@ -12,9 +12,9 @@ class FourVehcle extends Component {
           <div className="Vehicle_Title">당사차량 [5톤]</div>
           <div className="Vehicle_TopLine">
             <div className="Top_Line_1">번호</div>
-            <div className="Top_Line_2">작성날</div>
+            <div className="Top_Line_2">종류</div>
             <div className="Top_Line_3">내용</div>
-            <div className="Top_Line_4">종류</div>
+            <div className="Top_Line_4">작성날</div>
           </div>
           <div className="Vehicle_Board1">
             <img src={noicon} alt="아이콘"></img>
