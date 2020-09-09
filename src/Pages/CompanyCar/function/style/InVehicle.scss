@@ -12,8 +12,9 @@
   }
   .In_SubTitle {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     .In_SubText {
       font-size: 20px;
       color: #707070;
@@ -59,9 +60,7 @@
     background-color: #535353;
     font-size: 16px;
     color: #ffffff;
-    max-width: 200px;
-    width: 100%;
-    margin: auto;
+    width: 100px;
     justify-content: center;
     align-items: center;
     height: 44px;

@@ -32,6 +32,9 @@ class InVehicle extends Component {
         </div>
         <div className="In_SubTitle">
           <div className="In_SubText">· bgf리테일cu편의점 상온배송차량</div>
+          <NavLink to="/Vehicle/onevehicle">
+            <div className="Go_Button">목록으로</div>
+          </NavLink>
         </div>
         <div className="In_Contents">
           {this.list.map((item, index) => {
@@ -44,9 +47,6 @@ class InVehicle extends Component {
           })}
         </div>
         <div className="BottomText">매매 문의 : 1599 - 9964</div>
-        <div className="Go_Button">
-          <NavLink to="/Vehicle/onevehicle">목록으로</NavLink>
-        </div>
       </div>
     );
   }
