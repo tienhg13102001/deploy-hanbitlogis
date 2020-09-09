@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style/InHanbit.scss";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import BoardPreview from "../../../Common/BoardPrewView";
 
 class InHanbit extends Component {
   state = {
@@ -74,6 +75,7 @@ class InHanbit extends Component {
           </div>
           <div className="In_Menu_Text">{data.simple_resources.content}</div>
         </div>
+        <BoardPreview></BoardPreview>
       </div>
     ) : (
       <div></div>
