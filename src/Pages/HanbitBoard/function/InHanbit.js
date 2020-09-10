@@ -34,6 +34,13 @@ class InHanbit extends Component {
             this.props.history.push(`/HanbitBoard/InBoard?name=${id}`);
           }
           let dataIndex = 0;
+          response.data.data.rows = response.data.data.rows.map((item) => {
+            const date = new Date(item.simple_resources.createdAt);
+            item.simple_resources.createdAt = `${date.getFullYear()}-${
+              date.getMonth() + 1
+            }-${date.getDate()}`;
+            return item;
+          });
           response.data.data.rows.map((item, ind) => {
             if (item.name === id) {
               dataIndex = ind;

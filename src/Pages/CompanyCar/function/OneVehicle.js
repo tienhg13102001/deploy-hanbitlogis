@@ -3,7 +3,6 @@ import "./style/OneVehicle.scss";
 import { data } from "./BoardDb";
 import { Link } from "react-router-dom";
 import { Pagination } from "../../../Common/Pagination/Pagination";
-import CarMenu from "../../../Components/MenuBox/CarMenu";
 
 class OneVehicle extends Component {
   state = {
@@ -16,12 +15,15 @@ class OneVehicle extends Component {
     // cardsperpage -> 보여주고 싶은 박스 개수
   };
   onPageNumberClicked = (newPage) => (event) => {
+    console.log(newPage);
     this.handlePageNumberClicked(newPage);
   };
   onPreviousPageClicked = (newPage) => (event) => {
+    console.log(newPage);
     this.handlePreviousPageClicked(newPage);
   };
   onNextPageClicked = (newPage) => (event) => {
+    console.log(newPage);
     this.handleNextPageClicked(newPage);
   };
   handlePageNumberClicked = (newPage) => {
@@ -63,24 +65,41 @@ class OneVehicle extends Component {
             <div className="Top_Line_4">작성날</div>
           </div>
           <div className="Vehicle_Board">
-            {data.slice(0, this.state.visible).map((item, index) => {
-              return (
-                <div className="Board_List" key={index}>
-                  <Link className="List_One" to="/InVehicle/onevehicle">
-                    {item.number}
-                  </Link>
-                  <Link to="/InVehicle/onevehicle" className="List_Two">
-                    {item.kind}
-                  </Link>
-                  <Link to="/InVehicle/onevehicle" className="List_Three">
-                    {item.content}
-                  </Link>
-                  <Link to="/InVehicle/onevehicle" className="List_Four">
-                    {item.date}
-                  </Link>
-                </div>
-              );
-            })}
+            {data
+              .slice(
+                (this.state.currentPage + 1) * 5 - 5,
+                (this.state.currentPage + 1) * 5
+              )
+              .map((item, index) => {
+                return (
+                  <div className="Board_List" key={index}>
+                    <Link
+                      className="List_One"
+                      to={`/InVehicle/onevehicle?id=${item.id}`}
+                    >
+                      {item.number}
+                    </Link>
+                    <Link
+                      to={`/InVehicle/onevehicle?id=${item.id}`}
+                      className="List_Two"
+                    >
+                      {item.kind}
+                    </Link>
+                    <Link
+                      to={`/InVehicle/onevehicle?id=${item.id}`}
+                      className="List_Three"
+                    >
+                      {item.content}
+                    </Link>
+                    <Link
+                      to={`/InVehicle/onevehicle?id=${item.id}`}
+                      className="List_Four"
+                    >
+                      {item.date}
+                    </Link>
+                  </div>
+                );
+              })}
           </div>
         </div>
         <Pagination

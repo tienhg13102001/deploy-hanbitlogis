@@ -2,44 +2,34 @@ import React, { Component } from "react";
 import "./style/BoardPrewView.scss";
 
 class BoardPreview extends Component {
-  state = {};
-
-  componentDidMount = () => {};
-
-  onClickData = (url) => {
-    this.props.history.push(url);
-  };
-
   render() {
-    const prevData = this.props.list[this.props.dataIndex - 1];
-    const nextData = this.props.list[this.props.dataIndex + 1];
     return (
       <div className="BoardPreviewContainer">
         <div style={({ height: "152px" }, { paddingBottom: "80px" })}>
-          {prevData ? (
+          {this.props.prevData ? (
             <div
               className="BoardPreviewBox"
-              onClick={() => this.props.getAllList(prevData.name)}
+              onClick={() => this.props.onChangeIndex(this.props.prevData.id)}
             >
               <div className="BoardPreviewContents">
                 <div className="BoardPreviewBtn">∧</div>
                 <div className="BoardPreviewNext">PREV</div>
                 <div className="BoardPreviewTitle">
-                  {prevData.simple_resources.title}
+                  {this.props.prevData.content}
                 </div>
               </div>
             </div>
           ) : null}
-          {nextData ? (
+          {this.props.nextData ? (
             <div
               className="BoardNextBox"
-              onClick={() => this.props.getAllList(nextData.name)}
+              onClick={() => this.props.onChangeIndex(this.props.nextData.id)}
             >
               <div className="BoardNextContents">
                 <div className="BoardNextBtn">∨</div>
                 <div className="BoardNextNext">NEXT</div>
                 <div className="BoardNextTitle">
-                  {nextData.simple_resources.title}
+                  {this.props.nextData.content}
                 </div>
               </div>
             </div>

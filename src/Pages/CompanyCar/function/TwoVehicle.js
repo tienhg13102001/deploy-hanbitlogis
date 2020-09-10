@@ -67,24 +67,29 @@ class TwoVehicle extends Component {
             <div className="Top_Line_4">작성날</div>
           </div>
           <div className="Vehicle_Board">
-            {data2.slice(0, this.state.visible).map((item, index) => {
-              return (
-                <div className="Board_List" key={index}>
-                  <Link className="List_One" to="/InVehicleTwo/twovehicle">
-                    {item.number}
-                  </Link>
-                  <Link className="List_Two" to="/InVehicleTwo/twovehicle">
-                    {item.kind}
-                  </Link>
-                  <Link className="List_Three" to="/InVehicleTwo/twovehicle">
-                    {item.content}
-                  </Link>
-                  <Link className="List_Four" to="/InVehicleTwo/twovehicle">
-                    {item.date}
-                  </Link>
-                </div>
-              );
-            })}
+            {data2
+              .slice(
+                (this.state.currentPage + 1) * 5 - 5,
+                (this.state.currentPage + 1) * 5
+              )
+              .map((item, index) => {
+                return (
+                  <div className="Board_List" key={index}>
+                    <Link className="List_One" to="/InVehicleTwo/twovehicle">
+                      {item.number}
+                    </Link>
+                    <Link className="List_Two" to="/InVehicleTwo/twovehicle">
+                      {item.kind}
+                    </Link>
+                    <Link className="List_Three" to="/InVehicleTwo/twovehicle">
+                      {item.content}
+                    </Link>
+                    <Link className="List_Four" to="/InVehicleTwo/twovehicle">
+                      {item.date}
+                    </Link>
+                  </div>
+                );
+              })}
           </div>
         </div>
         <Pagination

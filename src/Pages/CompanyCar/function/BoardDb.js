@@ -115,3 +115,5 @@ export const data2 = [
     kind: "2.5톤",
   },
 ];
+
+export const data3 = [{}];

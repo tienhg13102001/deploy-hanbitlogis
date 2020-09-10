@@ -1,9 +1,28 @@
 import React, { Component } from "react";
-
+import CarPreview from "../../../Common/CarPreview";
 import "./style/InVehicle.scss";
 import { NavLink } from "react-router-dom";
+import { data } from "./BoardDb";
 
 class InVehicle extends Component {
+  componentDidMount = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = Number(urlParams.get("id"));
+
+    console.log(data.find((item) => item.id === Number(myParam))[0]);
+
+    this.setState({
+      index: myParam,
+    });
+  };
+
+  onChangeIndex = (index) => {
+    this.setState({ index });
+  };
+
+  state = {
+    index: 0,
+  };
   list = [
     { menu: "급수", content: "1톤 내장탑 공산품 배송" },
     { menu: "매물번호", content: "201703" },
@@ -23,7 +42,6 @@ class InVehicle extends Component {
     { menu: "연령 / 기타", content: "무" },
     { menu: "시간", content: "주간" },
   ];
-
   render() {
     return (
       <div className="In_Container">
@@ -47,6 +65,11 @@ class InVehicle extends Component {
           })}
         </div>
         <div className="BottomText">매매 문의 : 1599 - 9964</div>
+        <CarPreview
+          prevData={data[this.state.index - 1]}
+          nextData={data[this.state.index + 1]}
+          onChangeIndex={this.onChangeIndex}
+        ></CarPreview>
       </div>
     );
   }

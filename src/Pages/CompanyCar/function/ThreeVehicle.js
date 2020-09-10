@@ -1,10 +1,57 @@
 import React, { Component } from "react";
 import "./style/ThreeVehicle.scss";
-import BoardButton from "../../../Common/BoardButton";
-
+import { data3 } from "./BoardDb";
 import noicon from "../../../_asset/image/vehicle/no-writing-icon.png";
+import { Pagination } from "../../../Common/Pagination/Pagination";
 
 class ThreeVehicle extends Component {
+  state = {
+    currentPage: 0,
+    cardsPerPage: 7,
+    currentPageM: 0,
+    cardsPerPageM: 6,
+    list: [],
+
+    // cardsperpage -> 보여주고 싶은 박스 개수
+  };
+  onPageNumberClicked = (newPage) => (event) => {
+    console.log(newPage);
+    this.handlePageNumberClicked(newPage);
+  };
+  onPreviousPageClicked = (newPage) => (event) => {
+    console.log(newPage);
+    this.handlePreviousPageClicked(newPage);
+  };
+  onNextPageClicked = (newPage) => (event) => {
+    console.log(newPage);
+    this.handleNextPageClicked(newPage);
+  };
+  handlePageNumberClicked = (newPage) => {
+    // console.log("onPageNumberClicked", newPage);
+    this.setState({ currentPage: newPage });
+  };
+  handlePreviousPageClicked = (newPage) => {
+    // console.log("onPreviousPageClicked", newPage);
+    this.setState({ currentPage: newPage });
+  };
+  handleNextPageClicked = (newPage) => {
+    //console.log("onNextPageClicked", newPage);
+    this.setState({ currentPage: newPage });
+  };
+  filterData = () => {
+    let getData = data3;
+    let startIndex = this.state.currentPage * this.state.cardsPerPage;
+    let endIndex = (this.state.currentPage + 1) * this.state.cardsPerPage;
+
+    return getData.slice(startIndex, endIndex);
+  };
+  renderList = () => {
+    const list = this.state.list;
+    let startIndex = this.state.currentPage * this.state.cardsPerPage;
+    let endIndex = (this.state.cardsPerPage + 1) * this.state.cardsPerPage;
+
+    return list.slice(startIndex, endIndex);
+  };
   render() {
     return (
       <div className="Vehicle_Container">
@@ -21,7 +68,14 @@ class ThreeVehicle extends Component {
             <div className="Vehicle_No">게시물이 없습니다.</div>
           </div>
         </div>
-        <BoardButton></BoardButton>
+        <Pagination
+          currentPage={this.state.currentPage}
+          cardsPerPage={this.state.cardsPerPage}
+          itemCount={data3.length}
+          onPageNumberClicked={this.onPageNumberClicked}
+          onPreviousPageClicked={this.onPreviousPageClicked}
+          onNextPageClicked={this.onNextPageClicked}
+        />
       </div>
     );
   }
