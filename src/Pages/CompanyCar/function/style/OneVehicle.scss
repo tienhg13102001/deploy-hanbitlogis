@@ -111,5 +111,37 @@
         padding-left: 15px;
       }
     }
+    .Vehicle_TopLine {
+      .Top_Line_1 {
+        font-size: 14px;
+      }
+      .Top_Line_2 {
+        font-size: 14px;
+      }
+      .Top_Line_3 {
+        font-size: 14px;
+      }
+      .Top_Line_4 {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+    .Vehicle_Board {
+      .Board_List {
+        > a {
+        }
+        .List_One {
+          > div {
+          }
+        }
+        .List_Two {
+        }
+        .List_Three {
+        }
+        .List_Four {
+          padding: 10px;
+        }
+      }
+    }
   }
 }
