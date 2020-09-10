@@ -104,7 +104,7 @@
 }
 @media screen and (max-width: 768px) {
   .HisContainer {
-    margin-left: initial;
+    padding-left: initial;
     .HisTextBox {
       margin-left: 10px;
       .His_Title {
@@ -115,6 +115,18 @@
       }
     }
     .His_List {
+      .Table_list {
+        .Box_Year {
+          padding-left: 10px;
+          font-size: 13px;
+        }
+        .Box_Month {
+          font-size: 13px;
+        }
+        .Box_Text {
+          font-size: 12px;
+        }
+      }
     }
   }
 }

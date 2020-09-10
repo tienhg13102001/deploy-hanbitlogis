@@ -197,28 +197,26 @@
             justify-content: left;
             max-width: 250px;
           }
-          .Wrap {
-            .Three_Text3 {
-              display: none;
-            }
-            .Three_Plus {
-              display: none;
-            }
+          .Three_Text3 {
+            display: none !important;
           }
         }
       }
       .Chart_TimeBox {
         text-align: center;
-        .Time {
-          font-size: 11px;
-          > span {
+        .TimeBox_wrap {
+          .Time {
+            font-size: 11px;
+            > span {
+            }
+          }
+          .Holiday {
+            font-size: 11px;
+            > span {
+            }
           }
         }
-        .Holiday {
-          font-size: 11px;
-          > span {
-          }
-        }
+
         .Distance {
           font-size: 11px;
           > span {
