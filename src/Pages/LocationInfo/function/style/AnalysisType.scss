@@ -144,20 +144,26 @@
     // .Chart {
     .Chart_TitleBox {
       .Chart_Title {
-        padding-left: 10px;
+        padding-left: initial;
         margin: initial;
         font-size: 14px;
       }
     }
     .Chart_Box {
       .TypeBox {
+        background-color: initial;
         .Type {
+          width: 100%;
+          text-align: center;
           font-size: 12px;
+          font-weight: 600;
         }
       }
       .Text_List {
         .One {
-          font-size: 11px;
+          width: 100%;
+          font-size: 10px;
+          text-align: center;
         }
       }
     }

@@ -202,14 +202,14 @@
         .TimeBox_wrap {
           padding: 0 15px 0 15px;
           .Time {
-            font-size: 11px;
-            text-align: left;
+            font-size: 10px !important;
+            text-align: center;
             > span {
-              font-size: 12px;
+              font-size: 11px;
             }
           }
           .Holiday {
-            font-size: 11px;
+            font-size: 10px !important;
             > span {
               font-size: 12px;
             }
@@ -218,13 +218,13 @@
         .TimeBox_wrap_two {
           padding-right: 10px;
           .Distance {
-            font-size: 11px;
+            font-size: 10px !important;
             > span {
               font-size: 12px;
             }
           }
           .Exception {
-            font-size: 11px;
+            font-size: 11px !important;
           }
         }
       }

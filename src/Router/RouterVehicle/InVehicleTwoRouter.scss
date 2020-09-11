@@ -1,0 +1,17 @@
+.Vehicle_Contatiner {
+  .TopBanner {
+  }
+  .InVehicle_Contents {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Vehicle_Contatiner {
+    .TopBanner {
+    }
+    .InVehicle_Contents {
+      display: initial;
+    }
+  }
+}
