@@ -5,7 +5,10 @@ class Union extends Component {
   render() {
     return (
       <div className="UnionContainer">
-        <a href="https://www.notion.so/b8310ec859354d4f86fac0443d71d854">
+        <a
+          href="https://www.notion.so/b8310ec859354d4f86fac0443d71d854"
+          target="blank"
+        >
           <div className="TextBox">
             <div className="Title_union">
               명함

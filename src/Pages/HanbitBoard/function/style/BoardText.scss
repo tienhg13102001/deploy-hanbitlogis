@@ -43,14 +43,18 @@
 
 @media screen and (max-width: 768px) {
   .Board {
+    .Han_Number {
+      padding: 3px;
+    }
     .Han_Date {
-      font-size: 11px;
+      padding: 3px;
     }
     .Han_Title {
-      font-size: 11px;
+      padding: 3px;
+      text-align: center;
     }
     .Han_People {
-      font-size: 11px;
+      padding: 3px;
     }
   }
 }

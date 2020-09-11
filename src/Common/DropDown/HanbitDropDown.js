@@ -31,7 +31,7 @@ const MyButton = styled(Button)({
   border: 0,
   borderRadius: 0,
   color: "white",
-  height: 48,
+  height: 50,
   padding: "0 30px",
   boxShadow: "none",
   "&:hover": {
