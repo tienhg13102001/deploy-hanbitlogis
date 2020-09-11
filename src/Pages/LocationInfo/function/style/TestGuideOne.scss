@@ -1,55 +1,49 @@
-.TestGuideOneContainer{
-    
-    .Test_TitleBox{
-        margin-top: 60px;
-        .Test_Title{
-            
-            font-size: 30px;
-            font-weight: 600;
-            padding-bottom: 41px;
-            >span{
-                color: #da2320;
-            }
-        }
-        .Test_Text{
-            font-size: 20px;
-            color: #535353;
-            padding-bottom: 29px;
-        }
-        .Test_Example{
-            font-size: 16px;
-            color: #707070;
-            padding-bottom: 18px;
-            >span{
-                color: #a0a0a0;
-            }
-        }
+.TestGuideOneContainer {
+  .Test_TitleBox {
+    margin-top: 60px;
+    .Test_Title {
+      font-size: 30px;
+      font-weight: 600;
+      padding-bottom: 41px;
+      > span {
+        color: #da2320;
+      }
     }
+    .Test_Text {
+      font-size: 20px;
+      color: #535353;
+      padding-bottom: 29px;
+    }
+    .Test_Example {
+      font-size: 16px;
+      color: #707070;
+      padding-bottom: 18px;
+      > span {
+        color: #a0a0a0;
+      }
+    }
+  }
 }
 
-@media screen and (max-width:768px) {
-    .TestGuideOneContainer{
-        
-        .Test_TitleBox{
-            padding-left: 20px;
-            .Test_Title{
-                padding-top: 30px;
-                font-size: 16px;
-                padding-bottom: 20px;
-                >span{
-                    
-                }
-            }
-            .Test_Text{
-                font-size: 13px;
-            }
-            .Test_Example{
-                padding-right: 15px;
-                font-size: 11px;
-                >span{
-                    
-                }
-            }
+@media screen and (max-width: 768px) {
+  .TestGuideOneContainer {
+    .Test_TitleBox {
+      padding-left: 20px;
+      .Test_Title {
+        font-size: 20px;
+        padding-bottom: 20px;
+        > span {
         }
+      }
+      .Test_Text {
+        font-size: 13px;
+      }
+      .Test_Example {
+        padding-right: 15px;
+        font-size: 11px;
+        > span {
+        }
+      }
     }
+  }
 }
