@@ -25,21 +25,6 @@
         color: #707070;
       }
     }
-
-    .TermsBox {
-      display: flex;
-      font-size: 14px;
-      .One {
-        font-weight: 200;
-        padding: 0 5px 0 5px;
-        color: #707070;
-      }
-      .Two {
-        font-weight: 200;
-        padding: 0 5px 0 5px;
-        color: #707070;
-      }
-    }
   }
 }
 
@@ -58,7 +43,8 @@
           display: none;
         }
         .Info {
-          font-size: 11px;
+          padding: 20px 0 20px 0;
+          font-size: 12px;
         }
       }
     }

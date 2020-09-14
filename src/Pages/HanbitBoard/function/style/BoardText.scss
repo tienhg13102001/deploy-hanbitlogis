@@ -51,7 +51,8 @@
     }
     .Han_Title {
       padding: 3px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
     }
     .Han_People {
       padding: 3px;

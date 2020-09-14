@@ -15,13 +15,15 @@ class Footer extends Component {
               </div>
             </Link>
             <div className="Info">
-              한빛로지스 (주) 대표이사 : 이정화 사업자번호 : 120-86-31723 TEL :
-              1599-9954 FAX : 02-517-1493
-              <br />
-              주소 : 서울특별시 강남구 학동로 56길 8, 301 (삼성동, 한양빌딩)
-              e-mail : hanbitlogis@naver.com
-              <br />
-              copyright (c) hanbitlogis. all rights reserved
+              <div>
+                한빛로지스 (주) 대표이사 : 이정화 사업자번호 : 120-86-31723 TEL
+                : 1599-9954 FAX : 02-517-1493
+              </div>
+              <div>
+                주소 : 서울특별시 강남구 학동로 56길 8, 301 (삼성동, 한양빌딩)
+                e-mail : hanbitlogis@naver.com
+              </div>
+              <div>copyright (c) hanbitlogis. all rights reserved</div>
             </div>
           </div>
         </div>

@@ -106,9 +106,10 @@
   .Vehicle_Container {
     padding-left: initial;
     .Vehicle_TitleBox {
+      padding: 60px 20px 0 20px;
       .Vehicle_Title {
         font-size: 24px;
-        padding-left: 15px;
+        padding-left: initial;
       }
     }
     .Vehicle_TopLine {
@@ -135,8 +136,12 @@
           }
         }
         .List_Two {
+          padding-right: initial;
         }
         .List_Three {
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .List_Four {
         }

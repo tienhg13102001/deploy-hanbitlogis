@@ -31,7 +31,7 @@
   .TextContainer {
     margin-left: 0;
     .Wrap_Line {
-      padding: 0 20px 0 20px;
+      padding: 0 25px 0 25px;
       .Title {
         font-size: 20px;
       }
@@ -42,6 +42,7 @@
         max-width: 830px;
         width: 100%;
         font-size: 13px;
+        padding-bottom: 60px;
         br {
           display: none;
         }

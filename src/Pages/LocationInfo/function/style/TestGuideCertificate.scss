@@ -111,13 +111,12 @@
   .CertificateContainer {
     .Certi_TitleBox {
       .Certi_Title {
-        padding-top: 15px;
-        padding-left: 15px;
-        font-size: 16px;
+        padding: 15px 20px 15px 20px;
+        font-size: 20px;
         padding-bottom: 15px;
       }
       .Certi_Text {
-        padding-left: 15px;
+        padding-left: 20px;
         font-size: 13px;
       }
     }
@@ -139,7 +138,7 @@
         .Certi_Wrap {
           .Certi_One {
             font-size: 12px;
-            width: 100px;
+            width: 100%;
             justify-content: center;
           }
         }
