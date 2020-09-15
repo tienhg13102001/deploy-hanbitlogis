@@ -23,6 +23,24 @@
         font-weight: 200;
         line-height: 1.71;
         color: #707070;
+        .Top_Wrap {
+          display: flex;
+          .Ceo {
+            padding-right: 10px;
+          }
+          .Tell {
+          }
+        }
+        .Middle_Wrap {
+          display: flex;
+          .address {
+            padding-right: 10px;
+          }
+          .E-mail {
+          }
+        }
+        .copy {
+        }
       }
     }
   }
@@ -45,16 +63,23 @@
         .Info {
           padding: 20px 0 20px 0;
           font-size: 12px;
+          .Top_Wrap {
+            display: block;
+            .Ceo {
+            }
+            .Tell {
+            }
+          }
+          .Middle_Wrap {
+            display: block;
+            .address {
+            }
+            .E-mail {
+            }
+          }
+          .copy {
+          }
         }
-      }
-    }
-    .TermsBox {
-      font-size: 10px;
-      .One {
-        display: none;
-      }
-      .Two {
-        display: none;
       }
     }
   }

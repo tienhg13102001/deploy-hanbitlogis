@@ -98,18 +98,21 @@
       }
     }
     .In_Contents {
+      margin: 0 20px;
       .In_Box {
         .In_Menu {
           font-size: 10px;
+          flex: 1;
           justify-content: center;
         }
         .In_Content {
           font-size: 11px;
+          flex: 5;
         }
       }
     }
     .BottomText {
-      padding: 10px 10px 30px 10px;
+      padding: 10px 10px 30px 20px;
       font-size: 11px;
     }
   }
