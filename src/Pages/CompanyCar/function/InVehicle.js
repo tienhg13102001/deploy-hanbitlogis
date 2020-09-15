@@ -9,7 +9,7 @@ class InVehicle extends Component {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = Number(urlParams.get("id"));
 
-    console.log(data.find((item) => item.id === Number(myParam))[0]);
+    // console.log(data.find((item) => item.id === Number(myParam))[0]);
 
     this.setState({
       index: myParam,

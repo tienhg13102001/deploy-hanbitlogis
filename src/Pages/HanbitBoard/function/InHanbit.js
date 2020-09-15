@@ -50,7 +50,7 @@ class InHanbit extends Component {
           const data = response.data.data.rows.filter(
             (item) => item.name === id
           )[0];
-          console.log(dataIndex);
+          // console.log(dataIndex);
           this.setState({
             dataIndex,
             list: response.data.data.rows,
@@ -65,7 +65,7 @@ class InHanbit extends Component {
   render() {
     const data = this.state.data;
     const dataIndex = this.state.dataIndex;
-    console.log(dataIndex);
+    // console.log(dataIndex);
 
     return this.state.data ? (
       <div className="InHanbit_Container">

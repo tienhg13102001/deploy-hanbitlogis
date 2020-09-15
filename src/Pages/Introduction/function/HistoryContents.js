@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style/HistoryContents.scss";
-import { Table } from "antd";
 
 const data = [
   {

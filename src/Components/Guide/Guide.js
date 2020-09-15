@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style/Guide.scss";
 
 const Guide = ({ handleClickMenu }) => {

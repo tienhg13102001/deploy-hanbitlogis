@@ -15,15 +15,15 @@ class OneVehicle extends Component {
     // cardsperpage -> 보여주고 싶은 박스 개수
   };
   onPageNumberClicked = (newPage) => (event) => {
-    console.log(newPage);
+    // console.log(newPage);
     this.handlePageNumberClicked(newPage);
   };
   onPreviousPageClicked = (newPage) => (event) => {
-    console.log(newPage);
+    // console.log(newPage);
     this.handlePreviousPageClicked(newPage);
   };
   onNextPageClicked = (newPage) => (event) => {
-    console.log(newPage);
+    // console.log(newPage);
     this.handleNextPageClicked(newPage);
   };
   handlePageNumberClicked = (newPage) => {

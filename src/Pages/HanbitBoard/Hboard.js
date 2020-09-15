@@ -60,7 +60,6 @@ class Hboard extends Component {
           response.data.data &&
           response.data.data.rows
         ) {
-          // console.log(response.data.data.rows);
           response.data.data.rows = response.data.data.rows.map((item) => {
             const date = new Date(item.simple_resources.createdAt);
             item.simple_resources.createdAt = `${date.getFullYear()}-${
@@ -68,12 +67,11 @@ class Hboard extends Component {
             }-${date.getDate()}`;
             return item;
           });
-          // console.log(response.data.data.rows);
+
           this.setState({
             ...this.state,
             list: response.data.data.rows,
           });
-          console.log(response.data.data.rows);
         } else {
           console.error("error");
         }

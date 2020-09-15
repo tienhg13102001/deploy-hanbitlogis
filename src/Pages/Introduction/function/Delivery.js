@@ -15,7 +15,7 @@ class Delivery extends Component {
   };
 
   onChange = (current) => {
-    console.log("onChange:", current);
+    // console.log("onChange:", current);
     this.setState({ current });
   };
   list = [
