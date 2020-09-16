@@ -38,9 +38,9 @@
     background-repeat: no-repeat;
     width: 100%;
     height: initial;
-    margin: 10px 20px 0px 5px;
+    margin: 10px 20px 20px 5px;
     background-color: #f5f4f4;
-    border-radius: 10px;
+    border-radius: initial;
     .TextBox {
       padding: 10%;
       .Title {
@@ -66,9 +66,8 @@
     background-repeat: no-repeat;
     width: initial;
     height: initial;
-    margin: 10px 20px 0px 20px;
+    margin: 10px 20px 20px 20px;
     background-color: #f5f4f4;
-    border-radius: 10px;
     .TextBox {
       padding: 5%;
       .Title {
