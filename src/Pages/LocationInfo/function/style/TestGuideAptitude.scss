@@ -186,6 +186,7 @@
           text-align: center;
           display: flex;
           flex-direction: column;
+          border-radius: initial;
           .Ga_Img {
             width: 76px;
             height: 76px;
@@ -210,6 +211,7 @@
           max-width: initial;
           padding: 20px;
           margin: 10px 0 0 0;
+          border-radius: initial;
           .Na_ImgBox {
             flex: 1;
             .Na_Img {

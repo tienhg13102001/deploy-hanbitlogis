@@ -168,6 +168,8 @@
       font-size: 12px;
     }
     .Chart_Box2 {
+      margin: 0 20px;
+      border-bottom: initial;
       .Chart_Type2 {
         font-size: 14px;
 
@@ -199,6 +201,7 @@
         }
       }
       .Chart_TimeBox {
+        border-bottom: solid 1px #e5e5e5;
         .TimeBox_wrap {
           padding: 0 15px 0 15px;
           .Time {

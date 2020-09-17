@@ -25,7 +25,6 @@
     }
   }
   .Chart_Box {
-    border-bottom: 1px solid #535353;
     .Chart_Type {
       display: flex;
       font-size: 16px;
@@ -111,6 +110,7 @@
         }
       }
       .Chart_Box {
+        border-bottom: initial;
         .Chart_Type {
           .Type_Text_One {
             font-size: 14px;
@@ -123,6 +123,7 @@
           }
         }
         .Chart_two_list {
+          border-bottom: solid 1px #535353;
           .Text_two_box {
             .analysis_Chart_text_one_1 {
               font-size: 11px;

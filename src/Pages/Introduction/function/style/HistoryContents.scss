@@ -116,10 +116,12 @@
       }
     }
     .His_List {
+      width: initial;
+      margin: 0 20px;
       .Table_list {
         .Box_Year {
-          padding-left: 10px;
           font-size: 13px;
+          flex: 1.2;
         }
         .Box_Month {
           font-size: 13px;

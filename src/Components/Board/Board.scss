@@ -47,6 +47,14 @@ a {
     }
     .TextBox {
       padding-bottom: 20px;
+      .Box {
+        .Text {
+          font-size: 13px;
+        }
+        .Date {
+          font-size: 13px;
+        }
+      }
     }
   }
 }
