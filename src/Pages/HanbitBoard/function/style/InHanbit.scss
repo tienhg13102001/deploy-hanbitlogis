@@ -5,7 +5,6 @@
   .InHanbit_TitleBox {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #535353;
     font-size: 30px;
     margin-top: 60px;
     padding-bottom: 18px;
@@ -28,6 +27,7 @@
     }
   }
   .InHanbit_Board {
+    border-top: 2px solid #535353;
     .In_TitleBox {
       .In_Title {
         display: flex;
@@ -74,18 +74,20 @@
     padding-bottom: 30px;
     padding-left: initial;
     .InHanbit_TitleBox {
-      padding: 0 15px 18px 15px;
+      padding: 0 15px 18px 20px;
       .InHanbit_Title {
         font-size: 24px;
         padding-left: 0px;
       }
       .InHanbit_Btn {
+        margin-right: 5px;
         font-size: 12px;
         width: 80px;
         height: 35px;
       }
     }
     .InHanbit_Board {
+      margin: 0 20px;
       .In_TitleBox {
         .In_Title {
           font-size: 16px;

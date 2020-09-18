@@ -58,6 +58,7 @@
 
 @media screen and (max-width: 768px) {
   .BoardPreviewContainer {
+    margin: 0 20px;
     .BoardPreviewBox {
     }
     .BoardPreviewContents {
@@ -68,6 +69,7 @@
     .BoardPreviewNext {
     }
     .BoardPreviewTitle {
+      font-size: 11px;
     }
     //////////////
     .BoardNextBox {
@@ -80,6 +82,7 @@
     .BoardNextNext {
     }
     .BoardNextTitle {
+      font-size: 11px;
     }
   }
 }
