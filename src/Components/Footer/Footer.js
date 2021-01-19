@@ -23,7 +23,7 @@ class Footer extends Component {
               </div>
               <div className="Middle_Wrap">
                 <div className="address">
-                  주소 : 서울특별시 강남구 학동로 56길 8, 301 (삼성동, 한양빌딩)
+                  주소 : 서울 중구 동호로11길 93 1층 101호
                 </div>
                 <div className="E-mail">e-mail : hanbitlogis@naver.com</div>
               </div>
