@@ -10,7 +10,7 @@ class Come extends Component {
           <div className="Come_Box">
             <div className="Come_One">주소</div>
             <div className="Come_Two">
-              서울특별시 강남구 학동로 56길 8, 301(삼성동, 한양빌딩)
+              서울 중구 동호로11길 93 1층 101호
             </div>
           </div>
           <div className="Come_Box">
@@ -29,7 +29,7 @@ class Come extends Component {
         <div className="Hanbit_Map" style={{ paddingTop: "30px" }}>
           <iframe
             title="HanbitLocation"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.625365785722!2d127.04003211531028!3d37.5167531798072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4751976494d%3A0x121b7bb610d91f44!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsgrzshLHrj5kg7ZWZ64-Z66GcNTbquLggOA!5e0!3m2!1sko!2skr!4v1593485547469!5m2!1sko!2skr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.15593894257!2d127.00526381620972!3d37.551389679800714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca305fc07896b%3A0x69fdf1cada7e2fd2!2z7ISc7Jq47Yq567OE7IucIOykkeq1rCDsi6Dri7ky64-ZIOuPme2YuOuhnDEx6ri4IDkzIDHsuLUgMTAx7Zi4!5e0!3m2!1sko!2skr!4v1611045877483!5m2!1sko!2skr"
             width="100%"
             height="100%"
             frameborder="0"
