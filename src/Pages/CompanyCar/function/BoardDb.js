@@ -117,3 +117,10 @@ export const data2 = [
 ];
 
 export const data3 = [{}];
+
+export const vehicleType = {
+  "001": "1톤",
+  "002": "2.5톤",
+  "003": "4.5톤",
+  "004": "5톤",
+}
