@@ -25,7 +25,8 @@ class InVehicle extends Component {
 
 	state = {
 		index: 0,
-		data:{}
+		data:{},
+		type: ''
 	};
 //   list = [
 //     { menu: "급수", content: "1톤 내장탑 공산품 배송" },
@@ -74,8 +75,10 @@ class InVehicle extends Component {
 				})
 
 				if(response.data.data.rows.length > 0){
+					console.log(response.data.data.rows[0].simple_resources)
 					this.setState({
 						...this.state,
+						type: response.data.data.rows[0].simple_resources["type"],
 						data: response.data.data.rows[0].simple_resources,
 					});
 				}
@@ -112,12 +115,12 @@ class InVehicle extends Component {
 	}
 
 	render() {
-		const {data} = this.state;
+		const {type, data} = this.state;
 
 		return (
 		<div className="In_Container">
 			<div className="In_TitleBox">
-			<div className="In_Title">당사차량 [1톤]</div>
+			<div className="In_Title">당사차량 [{vehicleType[type]}]</div>
 			</div>
 			<div className="In_SubTitle">
 			<div className="In_SubText">· {data.title}</div>
