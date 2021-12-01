@@ -3,9 +3,13 @@ import "./style/MainSlick.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import banner01 from "../../_asset/image/main/cooperativelogo-01.png";
-import banner02 from "../../_asset/image/main/cooperativelogo-02.png";
-import banner03 from "../../_asset/image/main/cooperativelogo-03.png";
+// import banner01 from "../../_asset/image/main/cooperativelogo-01.png";
+// import banner02 from "../../_asset/image/main/cooperativelogo-02.png";
+// import banner03 from "../../_asset/image/main/cooperativelogo-03.png";
+import banner01 from "../../_asset/image/main/banner01.png";
+import banner02 from "../../_asset/image/main/banner02.png";
+import banner03 from "../../_asset/image/main/banner03.png";
+import banner04 from "../../_asset/image/main/banner04.png";
 import Slider from "react-slick";
 
 class MainSlick extends Component {
@@ -32,13 +36,7 @@ class MainSlick extends Component {
         bannerimg: banner03,
       },
       {
-        bannerimg: banner01,
-      },
-      {
-        bannerimg: banner02,
-      },
-      {
-        bannerimg: banner03,
+        bannerimg: banner04,
       },
       {
         bannerimg: banner01,
@@ -48,6 +46,9 @@ class MainSlick extends Component {
       },
       {
         bannerimg: banner03,
+      },
+      {
+        bannerimg: banner04,
       },
     ];
     // const rendering = () => {
