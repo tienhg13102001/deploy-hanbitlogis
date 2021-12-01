@@ -20,31 +20,69 @@ class MainSlick extends Component {
       autoplaySpeed: 1000,
       cssEase: "linear",
     };
+
+    const bannerImgs = [
+      {
+        bannerimg: banner01,
+      },
+      {
+        bannerimg: banner02,
+      },
+      {
+        bannerimg: banner03,
+      },
+      {
+        bannerimg: banner01,
+      },
+      {
+        bannerimg: banner02,
+      },
+      {
+        bannerimg: banner03,
+      },
+      {
+        bannerimg: banner01,
+      },
+      {
+        bannerimg: banner02,
+      },
+      {
+        bannerimg: banner03,
+      },
+    ];
+    // const rendering = () => {
+    //   const result = [];
+    //   for (let i = 0; i < bannerImgs.length * 3; i++) {
+    //     result.push(
+    //       <div className="Slick_Img">
+    //         <img
+    //           key={i}
+    //           src={bannerImgs[i > bannerImgs.length].bannerimg}
+    //           className="Banner"
+    //           alt="강릉센터"
+    //         ></img>
+    //       </div>
+    //     );
+    //   }
+    //   return result;
+    // };
     return (
       <div className="Slick_Line">
         <div className="SlickContainer">
           <Slider {...settings}>
-            <div className="Slick_Img">
-              <img src={banner01} className="Banner" alt="강릉센터"></img>
-            </div>
-            <div className="Slick_Img">
-              <img src={banner02} className="Banner" alt="강릉센터"></img>
-            </div>
-            <div className="Slick_Img">
-              <img src={banner03} className="Banner" alt="강릉센터"></img>
-            </div>
-            <div className="Slick_Img">
-              <img src={banner01} className="Banner" alt="강릉센터"></img>
-            </div>
-            <div className="Slick_Img">
-              <img src={banner02} className="Banner" alt="강릉센터"></img>
-            </div>
-            <div className="Slick_Img">
-              <img src={banner03} className="Banner" alt="강릉센터"></img>
-            </div>
-            <div className="Slick_Img">
-              <img src={banner01} className="Banner" alt="강릉센터"></img>
-            </div>
+            {bannerImgs.map((el, index) => {
+              return (
+                <div className="Slick_Img">
+                  <img
+                    key={index}
+                    src={el.bannerimg}
+                    className="Banner"
+                    alt="강릉센터"
+                  ></img>
+                </div>
+              );
+            })}
+            {/* {rendering()} */}
           </Slider>
         </div>
       </div>

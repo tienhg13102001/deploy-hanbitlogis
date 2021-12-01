@@ -35,6 +35,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-deploy": "aws s3 sync build s3://hanbitlogis.test",
+    "deploy": "aws s3 sync build s3://hanbitlogis.co.kr",
+    "all": "npm-run-all -s build deploy",
     "eject": "react-scripts eject",
     "postbuild": "react-snap"
   },
