@@ -5,20 +5,33 @@ const Guide = ({ handleClickMenu }) => {
   return (
     <div className="GuideContainer">
       <div className="GuideTop">
-        <div className="GuideAbout" onClick={() => handleClickMenu("Intro")}>
+        <div
+          className="GuideAbout"
+          onMouseEnter={() => handleClickMenu("Intro")}
+          onClick={() => handleClickMenu("Intro")}
+        >
           <div to="/Intro">회사소개</div>
         </div>
-        <div className="GuideInfo" onClick={() => handleClickMenu("Info")}>
+        <div
+          className="GuideInfo"
+          onMouseEnter={() => handleClickMenu("Info")}
+          onClick={() => handleClickMenu("Info")}
+        >
           <div to="/Info">지입정보</div>
         </div>
-        <div className="GuideCar" onClick={() => handleClickMenu("Vehicle")}>
+        <div
+          className="GuideCar"
+          onMouseEnter={() => handleClickMenu("Vehicle")}
+          onClick={() => handleClickMenu("Vehicle")}
+        >
           <div to="/Vehicle">당사차량</div>
         </div>
         <div
           className="GuideBoard"
+          onMouseEnter={() => handleClickMenu("HanbitBoard")}
           onClick={() => handleClickMenu("HanbitBoard")}
         >
-          <div to="/HanbitBoard">공지사항</div>
+          <div to="/HanbitBoard">게시판</div>
         </div>
       </div>
     </div>

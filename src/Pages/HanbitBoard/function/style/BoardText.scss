@@ -9,6 +9,22 @@
     align-items: center;
     display: flex;
   }
+  .Han_CreatedDate {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  .Han_LastDate {
+    flex: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
   .Han_Date {
     flex: 1;
     width: 100%;

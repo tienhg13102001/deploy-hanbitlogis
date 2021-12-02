@@ -8,11 +8,16 @@ class HanbitBox extends Component {
   renderPc() {
     return (
       <div className="HanbitBox">
-        <div className="Title">공지사항</div>
+        <div className="Title">게시판</div>
         <NavLink className="HanbitBoard_navlink_container" to="/HanbitBoard">
           <div className="Line">공지사항</div>
-          {(`${this.props.location.pathname}` === "/HanbitBoard" ||
-            `${this.props.location.pathname.includes("/InBoard")}`) && (
+          {`${this.props.location.pathname}`.includes("HanbitBoard") && (
+            <img src={ArrowRight} alt="arrowRight"></img>
+          )}
+        </NavLink>
+        <NavLink className="HanbitBoard_navlink_container" to="/HanbitQna">
+          <div className="Line">자유게시판</div>
+          {`${this.props.location.pathname}`.includes("HanbitQna") && (
             <img src={ArrowRight} alt="arrowRight"></img>
           )}
         </NavLink>

@@ -11,8 +11,9 @@
         
     }
     .privacy-wrap{
-        padding-top: 50px;
+        padding-top: 30px;
         text-align: left;
+        max-width: 700px;
         .title{
             font-size: 20px;
             text-align: inherit;
@@ -33,6 +34,7 @@
         .checkbox{
             text-align: inherit;
             display: flex;
+            align-items: center;
             input[type="checkbox"]{
                 
                 ~ label{
@@ -85,14 +87,16 @@
         display: flex;
         justify-content: center;
         .register-button{
-            width: 223px;
+            height: fit-content;
+            max-width: 200px;
+            width : 100%;
             border: 1px solid rgba(51, 51, 51, 0.9);
             color: #1f2738;
             display: flex;
             justify-content: space-between;
             p{
                 font-size: 14px;
-                padding: 9px 22px;
+                padding: 6px 10px;
                 margin: 0;
             }
         }

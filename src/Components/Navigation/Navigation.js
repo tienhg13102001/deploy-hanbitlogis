@@ -58,7 +58,10 @@ class Navigation extends Component {
         { name: "5톤", key: "/Vehicle/fourvehicle" },
       ];
     } else if (clickedMenu === "HanbitBoard") {
-      subMenu = [{ name: "공지사항", key: "/HanbitBoard" }];
+      subMenu = [
+        { name: "공지사항", key: "/HanbitBoard" },
+        { name: "자유게시판", key: "/HanbitQna" },
+      ];
     }
     return (
       isClickedMenu && (

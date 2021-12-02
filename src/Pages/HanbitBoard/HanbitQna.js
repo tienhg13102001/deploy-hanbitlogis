@@ -5,9 +5,9 @@ import { Route } from "react-router-dom";
 
 import BoardBanner from "./function/BoardBanner";
 import HanbitBox from "../../Components/MenuBox/HanbitBox";
-import TitleBox from "./function/TitleBox";
+import QnaLists from "./function/QnaLists";
 import WriteBoard from "./WriteHanbit";
-import InHanbit from "./function/InHanbit";
+import QnaDetail from "./function/QnaDetail";
 import { Helmet } from "react-helmet";
 
 class Hanbit extends Component {
@@ -76,11 +76,11 @@ class Hanbit extends Component {
             <Route
               exact
               path={`${this.props.match.path}`}
-              component={TitleBox}
+              component={QnaLists}
             ></Route>
             <Route
               path={`${this.props.match.path}/InBoard`}
-              component={InHanbit}
+              component={QnaDetail}
             ></Route>
             <Route
               path={`${this.props.match.path}/WriteBoard`}

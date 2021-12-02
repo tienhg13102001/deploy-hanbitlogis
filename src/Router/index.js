@@ -8,6 +8,7 @@ import Vehicle from "./RouterVehicle/VehicleRouter";
 import InVehicleTwo from "./RouterVehicle/InVehicleTwoRouter";
 import InVehicle from "./RouterVehicle/InVehicleRouter";
 import HanbitBoard from "./RouterHanbit/HanbitRouter";
+import HanbitQna from "./RouterHanbit/HanbitQnaRouter";
 import InHanbitBoard from "./RouterHanbit/InHanbitRouter";
 
 var routes = [
@@ -67,6 +68,11 @@ var routes = [
     path: "/InHanbitBoard",
     component: InHanbitBoard,
     menuName: "InHanbitBoard",
+  },
+  {
+    path: "/HanbitQna",
+    component: HanbitQna,
+    menuName: "HanbitQna",
   },
 ];
 
