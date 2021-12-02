@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style/BoardPrewView.scss";
-
+import { Badge } from "antd";
 class BoardPreview extends Component {
   state = {};
 
@@ -38,8 +38,17 @@ class BoardPreview extends Component {
               <div className="BoardNextContents">
                 <div className="BoardNextBtn">∨</div>
                 <div className="BoardNextNext">NEXT</div>
-                <div className="BoardNextTitle">
-                  {nextData.simple_resources.title}
+                <div className="BoardNextTitle" style={{ display: "flex" }}>
+                  <div style={{ marginRight: "10px" }}>
+                    {nextData.simple_resources.title}
+                  </div>
+                  <Badge
+                    className="site-badge-count-109"
+                    count={
+                      nextData.simple_resources.replyAt ? "답변 등록" : null
+                    }
+                    style={{ backgroundColor: "#52c41a" }}
+                  />
                 </div>
               </div>
             </div>
