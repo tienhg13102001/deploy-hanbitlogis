@@ -1,10 +1,11 @@
-import React, { useState, Component } from "react";
+import React, { useEffect, useState, Component } from "react";
 import { useHistory } from "react-router-dom";
 import "./style/WriteHanbit.scss";
 import axios from "axios";
 import { InfoCircleOutlined } from "@ant-design/icons";
 
 import { Form, Input, Checkbox, Button } from "antd";
+import { identifier } from "jscodeshift";
 
 const layout = {
   labelCol: {
@@ -40,11 +41,66 @@ const validateMessages = {
   //     range: "${label} must be between ${min} and ${max}",
   //   },
 };
+
 /* eslint-enable no-template-curly-in-string */
-const Demo = (props) => {
+const WriteHanbit = (props) => {
   const history = useHistory();
-  const onFinish = (values) => {
-    console.log("form data : ", values);
+  const [identifier, setIdentifier] = useState(null);
+  const [dataIndex, setDataIndex] = useState(null);
+  const [singleData, setSingleData] = useState(null);
+  const [isLoading, setIsloading] = useState(null);
+
+  /* eslint-enable no-template-curly-in-string */
+
+  const getAllList = async (id) => {
+    setIsloading(true);
+    const rID = "hanbit_qna";
+    await axios
+      .get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
+
+      .then((response) => {
+        if (
+          response &&
+          response.data &&
+          response.data.data &&
+          response.data.data.rows
+        ) {
+          if (!id) id = props.location.search.slice(6);
+          else {
+            history.push(`/HanbitQna/WriteBoard/InBoard?name=${this.state.id}`);
+          }
+          let dataIndex = 0;
+          response.data.data.rows = response.data.data.rows.map((item) => {
+            const date = new Date(item.simple_resources.createdAt);
+            item.simple_resources.createdAt = `${date.getFullYear()}-${
+              date.getMonth() + 1
+            }-${date.getDate()}`;
+            return item;
+          });
+          response.data.data.rows.map((item, ind) => {
+            if (item.name === id) {
+              dataIndex = ind;
+            }
+          });
+
+          const data = response.data.data.rows.filter(
+            (item) => item.name === id
+          )[0];
+          setSingleData(data);
+          setIdentifier(id);
+          setIsloading(false);
+        } else {
+          console.error("error");
+        }
+      })
+      .catch((e) => console.log(e));
+  };
+  /* eslint-disable */
+  useEffect(() => {
+    getAllList();
+  }, []);
+
+  const createPost = (values) => {
     if (
       values.title.length === 0 ||
       values.name.length === 0 ||
@@ -68,25 +124,58 @@ const Demo = (props) => {
     axios
       .post("http://61.73.79.136:9229/api/resources/add", formData)
       .then((response) => {
-        console.log(response.status === 200);
-        if (response.status === 1000 || response.status === 200) {
+        if (response.data._COM.code === 1000) {
           history.goBack();
         } else {
-          alert("새로고침 후 다시 시도해주세요", response.status === 200);
+          alert("새로고침 후 다시 시도해주세요");
         }
       })
       .catch((e) => console.log(e));
   };
-  return (
+
+  const updatePost = (values) => {
+    if (
+      values.title.length === 0 ||
+      values.name.length === 0 ||
+      values.password.length === 0 ||
+      values.content.length === 0
+    ) {
+      return alert("입력값을 다시 한 번 확인해주세요.");
+    }
+    if (!values.agreement) {
+      return alert("게시판 이용약관에 동의해주세요.");
+    }
+
+    const rID = "hanbit_qna";
+    const formData = new FormData();
+    formData.append("_data", JSON.stringify({ rID, name: identifier }));
+    formData.append("title", values.title);
+    formData.append("body", values.content);
+    // formData.append("createdAt", new Date().toISOString());
+    formData.append("uploaderName", values.name);
+    formData.append("password", values.password);
+    axios
+      .put(`http://61.73.79.136:9229/api/resources/update`, formData)
+      .then((response) => {
+        if (response.data._COM.code === 1000) {
+          history.goBack();
+        } else {
+          console.log("새로고침 후 다시 시도해주세요");
+        }
+      })
+      .catch((e) => console.log(e));
+  };
+
+  return isLoading === false ? (
     <div className="Write_HanbitBoard_Container">
       <div className="Write_HanbitBoard_Title" style={{ marginBottom: "30px" }}>
-        게시판 글쓰기
+        {singleData ? "게시글 수정" : "게시판 글쓰기"}
       </div>
       <Form
         {...layout}
         layout="vertical"
         name="nest-messages"
-        onFinish={onFinish}
+        onFinish={singleData ? updatePost : createPost}
         validateMessages={validateMessages}
       >
         <Form.Item
@@ -98,8 +187,28 @@ const Demo = (props) => {
               message: "제목은 필수 입력사항 입니다.",
             },
           ]}
+          initialValue={singleData ? singleData.simple_resources.title : null}
         >
           <Input placeholder="게시글의 제목을 입력해 주세요." />
+        </Form.Item>
+        <Form.Item
+          name="name"
+          label="닉네임"
+          tooltip={{
+            title: "미입력시 익명으로 표시됩니다.",
+            icon: <InfoCircleOutlined />,
+          }}
+          rules={[
+            {
+              //   required: true,
+              message: "넥네임을 입력해 주세요.",
+            },
+          ]}
+          initialValue={
+            singleData ? singleData.simple_resources.uploaderName : null
+          }
+        >
+          <Input placeholder="미입력시 익명으로 표시됩니다." />
         </Form.Item>
         <Form.Item
           name="password"
@@ -142,22 +251,6 @@ const Demo = (props) => {
         >
           <Input.Password />
         </Form.Item>
-        <Form.Item
-          name="name"
-          label="닉네임"
-          tooltip={{
-            title: "미입력시 익명으로 표시됩니다.",
-            icon: <InfoCircleOutlined />,
-          }}
-          rules={[
-            {
-              //   required: true,
-              message: "넥네임을 입력해 주세요.",
-            },
-          ]}
-        >
-          <Input placeholder="미입력시 익명으로 표시됩니다." />
-        </Form.Item>
 
         <Form.Item
           name="content"
@@ -167,6 +260,7 @@ const Demo = (props) => {
               message: "내용은 필수 입력사항 입니다.",
             },
           ]}
+          initialValue={singleData ? singleData.simple_resources.body : null}
         >
           <Input.TextArea
             placeholder="내용을 입력해 주세요"
@@ -201,7 +295,7 @@ const Demo = (props) => {
         <Form.Item wrapperCol={{ ...layout.wrapperCol }}>
           <div className="register-button-container">
             <Button htmlType="submit" className="register-button">
-              <p>등록</p>
+              <p>{singleData ? "수정" : "등록"}</p>
               <p>&#62;</p>
             </Button>
           </div>
@@ -213,10 +307,12 @@ const Demo = (props) => {
         ></Button>
       </Form>
     </div>
+  ) : (
+    <div></div>
   );
 };
 
-export default Demo;
+export default WriteHanbit;
 // class CommunityReviewWriter extends Component {
 //   state = {
 //     title: "",

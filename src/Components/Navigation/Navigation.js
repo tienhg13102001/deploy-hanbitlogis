@@ -147,7 +147,7 @@ class Navigation extends Component {
                 style={{ color: "#dc3132" }}
                 fontSize="small"
               />
-              <div>공지사항</div>
+              <div>게시판</div>
             </NavLink>
           </BurMenu>
         </div>

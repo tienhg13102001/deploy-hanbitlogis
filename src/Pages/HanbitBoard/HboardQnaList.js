@@ -41,10 +41,8 @@ class HboardQnaList extends Component {
   };
   filterData = () => {
     let getData = [...this.state.list];
-    console.log("getdata : ", getData);
     let startIndex = this.state.currentPage * this.state.cardsPerPage;
     let endIndex = (this.state.currentPage + 1) * this.state.cardsPerPage;
-    console.log("return data : ", getData.slice(startIndex, endIndex));
     return getData.slice(startIndex, endIndex);
   };
 
@@ -71,13 +69,10 @@ class HboardQnaList extends Component {
             return item;
           });
 
-          this.setState(
-            {
-              ...this.state,
-              list: response.data.data.rows,
-            },
-            () => console.log(this.state.list)
-          );
+          this.setState({
+            ...this.state,
+            list: response.data.data.rows,
+          });
         } else {
           console.error("error");
         }
@@ -94,9 +89,6 @@ class HboardQnaList extends Component {
   // };
 
   render() {
-    const nowTime = moment().format("YYYY-MM-DD HH:mm:ss");
-    console.log(nowTime);
-    // 출력 결과: 2020-08-23 12:54:30
     return (
       <div className="Hboard_Contaier">
         <div
@@ -133,7 +125,6 @@ class HboardQnaList extends Component {
         </div>
         <div>
           {this.filterData().map((item, index) => {
-            console.log("test", item);
             return (
               <NavLink
                 className="Link"
@@ -142,7 +133,13 @@ class HboardQnaList extends Component {
               >
                 <QnaText
                   key={index}
-                  number={this.state.list.length - index}
+                  number={
+                    this.state.currentPage === 0
+                      ? this.state.list.length - index
+                      : this.state.list.length -
+                        index -
+                        this.state.currentPage * 10
+                  }
                   createdDate={moment(item.simple_resources.createdAt).format(
                     "YYYY-M-D"
                   )}
@@ -158,7 +155,7 @@ class HboardQnaList extends Component {
         <Pagination
           currentPage={this.state.currentPage}
           cardsPerPage={this.state.cardsPerPage}
-          itemCount={data.length - 1}
+          itemCount={this.state.list.length}
           onPageNumberClicked={this.onPageNumberClicked}
           onPreviousPageClicked={this.onPreviousPageClicked}
           onNextPageClicked={this.onNextPageClicked}

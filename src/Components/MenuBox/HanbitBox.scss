@@ -39,13 +39,19 @@
     height: 50px;
     justify-content: space-around;
     align-items: center;
+    background-color: #efefef;
     .Title {
       margin-top: initial;
       padding-bottom: 0;
       width: 100%;
+      display: none;
     }
+      
     .HanbitBoard_navlink_container {
       padding-bottom: 0;
+      justify-content: center;
+      width : 100%;
+      display: flex;
       &.active {
         > div {
         }
