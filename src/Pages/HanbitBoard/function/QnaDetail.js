@@ -70,7 +70,6 @@ class QnaDetail extends Component {
   };
 
   getAllList = async (id) => {
-    console.log(id);
     const rID = "hanbit_qna";
     await axios
       .get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
