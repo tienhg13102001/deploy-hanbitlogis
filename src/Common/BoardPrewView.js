@@ -24,9 +24,17 @@ class BoardPreview extends Component {
               <div className="BoardPreviewContents">
                 <div className="BoardPreviewBtn">∧</div>
                 <div className="BoardPreviewNext">PREV</div>
-                <div className="BoardPreviewTitle">
+                <div
+                  style={{ marginRight: "10px" }}
+                  className="BoardPreviewTitle"
+                >
                   {prevData.simple_resources.title}
                 </div>
+                <Badge
+                  className="site-badge-count-109"
+                  count={prevData.simple_resources.replyAt ? "답변 등록" : null}
+                  style={{ backgroundColor: "#52c41a" }}
+                />
               </div>
             </div>
           ) : null}
@@ -45,7 +53,7 @@ class BoardPreview extends Component {
                   <Badge
                     className="site-badge-count-109"
                     count={
-                      nextData.simple_resources.replyAt ? "답변 등록" : "null"
+                      nextData.simple_resources.replyAt ? "답변 등록" : null
                     }
                     style={{ backgroundColor: "#52c41a" }}
                   />
