@@ -17,6 +17,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import avatarLogo from "../../../_asset/image/board/Group 2.png";
 class QnaDetail extends Component {
   state = {
     list: [],
@@ -242,12 +243,7 @@ class QnaDetail extends Component {
             <Comment
               // actions={actions}
               author={<div>{data.simple_resources.replyName + " 관리자"}</div>}
-              avatar={
-                <Avatar
-                  src="https://joeschmoe.io/api/v1/random"
-                  alt="Han Solo"
-                />
-              }
+              avatar={<Avatar src={avatarLogo} alt="Han Solo" />}
               content={<p>{data.simple_resources.replyBody}</p>}
               datetime={
                 <Tooltip
