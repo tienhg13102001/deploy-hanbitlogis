@@ -171,141 +171,146 @@ const WriteHanbit = (props) => {
       <div className="Write_HanbitBoard_Title" style={{ marginBottom: "30px" }}>
         {singleData ? "게시글 수정" : "게시판 글쓰기"}
       </div>
-      <Form
-        {...layout}
-        layout="vertical"
-        name="nest-messages"
-        onFinish={singleData ? updatePost : createPost}
-        validateMessages={validateMessages}
-      >
-        <Form.Item
-          name="title"
-          label="제목"
-          rules={[
-            {
-              required: true,
-              message: "제목은 필수 입력사항 입니다.",
-            },
-          ]}
-          initialValue={singleData ? singleData.simple_resources.title : null}
+      <div style={{ padding: "0 20px" }}>
+        {" "}
+        <Form
+          {...layout}
+          layout="vertical"
+          name="nest-messages"
+          onFinish={singleData ? updatePost : createPost}
+          validateMessages={validateMessages}
         >
-          <Input placeholder="게시글의 제목을 입력해 주세요." />
-        </Form.Item>
-        <Form.Item
-          name="name"
-          label="닉네임"
-          tooltip={{
-            title: "미입력시 익명으로 표시됩니다.",
-            icon: <InfoCircleOutlined />,
-          }}
-          rules={[
-            {
-              //   required: true,
-              message: "넥네임을 입력해 주세요.",
-            },
-          ]}
-          initialValue={
-            singleData ? singleData.simple_resources.uploaderName : null
-          }
-        >
-          <Input placeholder="미입력시 익명으로 표시됩니다." />
-        </Form.Item>
-        <Form.Item
-          name="password"
-          label="게시글 비밀번호"
-          tooltip={{
-            title: "수정 삭제를 위해 꼭 기억해 주세요!",
-            icon: <InfoCircleOutlined />,
-          }}
-          rules={[
-            {
-              required: true,
-              message: "게시글 비밀번호는 필수 입력사항 입니다.",
-            },
-          ]}
-          hasFeedback
-        >
-          <Input.Password placeholder="등록 후 수정 삭제를 위해 꼭 기억해 주세요!" />
-        </Form.Item>
-        <Form.Item
-          name="passwordConfirm"
-          label="게시글 비밀번호 확인"
-          dependencies={["password"]}
-          hasFeedback
-          rules={[
-            {
-              required: true,
-              message: "비밀번호를 한번 더 확인해 주세요.",
-            },
-            ({ getFieldValue }) => ({
-              validator(_, value) {
-                if (!value || getFieldValue("password") === value) {
-                  return Promise.resolve();
-                }
-                return Promise.reject(
-                  new Error("입력한 두 개의 비밀번호가 일치하지 않습니다!")
-                );
-              },
-            }),
-          ]}
-        >
-          <Input.Password />
-        </Form.Item>
-
-        <Form.Item
-          name="content"
-          rules={[
-            {
-              required: true,
-              message: "내용은 필수 입력사항 입니다.",
-            },
-          ]}
-          initialValue={singleData ? singleData.simple_resources.body : null}
-        >
-          <Input.TextArea
-            placeholder="내용을 입력해 주세요"
-            style={{ minHeight: "300px" }}
-          />
-        </Form.Item>
-        <div className="privacy-wrap">
-          <div className="title">게시판 이용 약관</div>
-          <div className="privacy-box">
-            <div>
-              1. 오픈된 공개 게시판으로 모든 정보가 타인에게도 공개됩니다.
-              개인정보 입력시 유의해 주세요. <br></br>2. 욕설 및 비방 게시물은
-              별도의 안내 없이 삭제될 수 있습니다.
-            </div>
-          </div>
           <Form.Item
-            name="agreement"
-            valuePropName="checked"
+            name="title"
+            label="제목"
             rules={[
               {
-                validator: (_, value) =>
-                  value
-                    ? Promise.resolve()
-                    : Promise.reject(new Error("약관 동의는 필수 사항입니다.")),
+                required: true,
+                message: "제목은 필수 입력사항 입니다.",
               },
             ]}
-            {...tailFormItemLayout}
+            initialValue={singleData ? singleData.simple_resources.title : null}
           >
-            <Checkbox>게시판 이용약관에 동의합니다.</Checkbox>
+            <Input placeholder="게시글의 제목을 입력해 주세요." />
           </Form.Item>
-        </div>
-        <Form.Item wrapperCol={{ ...layout.wrapperCol }}>
-          <div className="register-button-container">
-            <Button htmlType="submit" className="register-button">
-              <p>{singleData ? "수정" : "등록"}</p>
-              <p>&#62;</p>
-            </Button>
+          <Form.Item
+            name="name"
+            label="닉네임"
+            tooltip={{
+              title: "미입력시 익명으로 표시됩니다.",
+              icon: <InfoCircleOutlined />,
+            }}
+            rules={[
+              {
+                //   required: true,
+                message: "넥네임을 입력해 주세요.",
+              },
+            ]}
+            initialValue={
+              singleData ? singleData.simple_resources.uploaderName : null
+            }
+          >
+            <Input placeholder="미입력시 익명으로 표시됩니다." />
+          </Form.Item>
+          <Form.Item
+            name="password"
+            label="게시글 비밀번호"
+            tooltip={{
+              title: "수정 삭제를 위해 꼭 기억해 주세요!",
+              icon: <InfoCircleOutlined />,
+            }}
+            rules={[
+              {
+                required: true,
+                message: "게시글 비밀번호는 필수 입력사항 입니다.",
+              },
+            ]}
+            hasFeedback
+          >
+            <Input.Password placeholder="등록 후 수정 삭제를 위해 꼭 기억해 주세요!" />
+          </Form.Item>
+          <Form.Item
+            name="passwordConfirm"
+            label="게시글 비밀번호 확인"
+            dependencies={["password"]}
+            hasFeedback
+            rules={[
+              {
+                required: true,
+                message: "비밀번호를 한번 더 확인해 주세요.",
+              },
+              ({ getFieldValue }) => ({
+                validator(_, value) {
+                  if (!value || getFieldValue("password") === value) {
+                    return Promise.resolve();
+                  }
+                  return Promise.reject(
+                    new Error("입력한 두 개의 비밀번호가 일치하지 않습니다!")
+                  );
+                },
+              }),
+            ]}
+          >
+            <Input.Password />
+          </Form.Item>
+
+          <Form.Item
+            name="content"
+            rules={[
+              {
+                required: true,
+                message: "내용은 필수 입력사항 입니다.",
+              },
+            ]}
+            initialValue={singleData ? singleData.simple_resources.body : null}
+          >
+            <Input.TextArea
+              placeholder="내용을 입력해 주세요"
+              style={{ minHeight: "300px" }}
+            />
+          </Form.Item>
+          <div className="privacy-wrap">
+            <div className="title">게시판 이용 약관</div>
+            <div className="privacy-box">
+              <div>
+                1. 오픈된 공개 게시판으로 모든 정보가 타인에게도 공개됩니다.
+                개인정보 입력시 유의해 주세요. <br></br>2. 욕설 및 비방 게시물은
+                별도의 안내 없이 삭제될 수 있습니다.
+              </div>
+            </div>
+            <Form.Item
+              name="agreement"
+              valuePropName="checked"
+              rules={[
+                {
+                  validator: (_, value) =>
+                    value
+                      ? Promise.resolve()
+                      : Promise.reject(
+                          new Error("약관 동의는 필수 사항입니다.")
+                        ),
+                },
+              ]}
+              {...tailFormItemLayout}
+            >
+              <Checkbox>게시판 이용약관에 동의합니다.</Checkbox>
+            </Form.Item>
           </div>
-        </Form.Item>
-        <Button
-          className="register-button"
-          type="primary"
-          htmlType="submit"
-        ></Button>
-      </Form>
+          <Form.Item wrapperCol={{ ...layout.wrapperCol }}>
+            <div className="register-button-container">
+              <Button htmlType="submit" className="register-button">
+                <p>{singleData ? "수정" : "등록"}</p>
+                <p>&#62;</p>
+              </Button>
+            </div>
+          </Form.Item>
+          <Button
+            className="register-button"
+            type="primary"
+            htmlType="submit"
+          ></Button>
+        </Form>
+      </div>
     </div>
   ) : (
     <div></div>

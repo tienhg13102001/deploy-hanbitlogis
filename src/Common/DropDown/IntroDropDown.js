@@ -54,7 +54,7 @@ const StyledMenuItem = withStyles((theme) => ({
     color: "#333333",
     justifyContent: "center",
     textAlign: "center",
-    padding: "0 300px",
+    // padding: "0 300px",
   },
   arrowdownicon: {
     position: "absolute",

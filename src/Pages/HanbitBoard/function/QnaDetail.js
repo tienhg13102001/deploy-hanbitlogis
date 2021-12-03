@@ -53,11 +53,11 @@ class QnaDetail extends Component {
     </Menu>
   );
 
-  deletePost = () => {
+  deletePost = (id) => {
     const rID = "hanbit_qna";
     axios
       .put(`http://61.73.79.136:9229/api/resources/delete`, {
-        query: { rID, name: this.state.id },
+        query: { rID, name: id },
       })
       .then((response) => {
         if (response.data._COM.code === 1000) {
@@ -128,7 +128,7 @@ class QnaDetail extends Component {
       if (this.state.mode === "modify") {
         this.props.history.push(`/HanbitQna/WriteBoard/InBoard?name=${id}`);
       } else if (this.state.mode === "delete") {
-        this.deletePost();
+        this.deletePost(id);
       }
     } else {
       this.setState({ isPasswordValid: false });
@@ -204,7 +204,7 @@ class QnaDetail extends Component {
               <Badge
                 className="site-badge-count-109"
                 count={data.simple_resources.replyAt ? "답변 등록" : null}
-                style={{ backgroundColor: "#52c41a" }}
+                style={{ backgroundColor: "#da2320" }}
               />
             </div>
           </div>

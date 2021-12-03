@@ -59,19 +59,38 @@
 
 @media screen and (max-width: 768px) {
   .Board {
+    display: flex;
+    align-items: center;
+    height : 60px;
     .Han_Number {
       padding: 3px;
     }
-    .Han_Date {
+    .Han_LastDate {
       padding: 3px;
+      display: block;
+      max-width: 220px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height : unset;
     }
     .Han_Title {
       padding: 3px;
-      display: flex;
-      justify-content: center;
+      height : unset;
+      display: block;
+      max-width: 620px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .Han_People {
       padding: 3px;
+      display: block;
+      max-width: 220px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height : unset;
     }
   }
 }

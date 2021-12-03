@@ -2,11 +2,20 @@ import React from "react";
 import { withStyles, styled } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import "./DropDown.scss";
+import { NavLink } from "react-router-dom";
 
 const StyledMenu = withStyles({
   paper: {
+    width: "100%",
     border: "1px solid #d3d4d5",
+    maxWidth: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 })((props) => (
   <Menu
@@ -34,19 +43,40 @@ const MyButton = styled(Button)({
   height: 50,
   padding: "0 30px",
   boxShadow: "none",
+  maxWidth: "100%",
   "&:hover": {
     backgroundColor: "#da2320",
   },
 });
 
+const StyledMenuItem = withStyles((theme) => ({
+  root: {
+    width: "100%",
+    color: "#333333",
+    justifyContent: "center",
+    textAlign: "center",
+    // padding: "0 300px",
+  },
+  arrowdownicon: {
+    position: "absolute",
+    right: "20",
+  },
+}))(MenuItem);
+
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [menuText, setMenuText] = React.useState("공지사항");
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
   const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const menuOnClick = (text) => {
+    setMenuText(text);
     setAnchorEl(null);
   };
 
@@ -59,9 +89,29 @@ export default function CustomizedMenus() {
         color="primary"
         onClick={handleClick}
       >
-        공지사항
+        {menuText}
+        <div className="Arrowicon">
+          <KeyboardArrowDownIcon />
+        </div>
       </MyButton>
-      <StyledMenu id="customized-menu" onClose={handleClose}></StyledMenu>
+      <StyledMenu
+        id="customized-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <NavLink className="Mobile_link" to="/HanbitBoard">
+          <StyledMenuItem onClick={() => menuOnClick("공지사항")}>
+            <ListItemText primary="공지 사항" />
+          </StyledMenuItem>
+        </NavLink>
+        <NavLink className="Mobile_link" to="/HanbitQna">
+          <StyledMenuItem onClick={() => menuOnClick("자유 게시판")}>
+            <ListItemText primary="자유 게시판" />
+          </StyledMenuItem>
+        </NavLink>
+      </StyledMenu>
     </div>
   );
 }

@@ -13,7 +13,7 @@ class QnaText extends Component {
           <Badge
             className="site-badge-count-109"
             count={reply ? "답변 등록" : null}
-            style={{ backgroundColor: "#52c41a" }}
+            style={{ backgroundColor: "#da2320" }}
           />
         </div>
         <div className="Han_People">{people}</div>
