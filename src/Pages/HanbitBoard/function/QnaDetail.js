@@ -70,6 +70,7 @@ class QnaDetail extends Component {
   };
 
   getAllList = async (id) => {
+    console.log(id);
     const rID = "hanbit_qna";
     await axios
       .get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
@@ -81,9 +82,9 @@ class QnaDetail extends Component {
           response.data.data &&
           response.data.data.rows
         ) {
-          if (!id) this.setState({ id: this.props.location.search.slice(6) });
+          if (!id) id = this.props.location.search.slice(6);
           else {
-            this.props.history.push(`/HanbitQna/InBoard?name=${this.state.id}`);
+            this.props.history.push(`/HanbitQna/InBoard?name=${id}`);
           }
           let dataIndex = 0;
           response.data.data.rows = response.data.data.rows.map((item) => {
@@ -94,20 +95,23 @@ class QnaDetail extends Component {
             return item;
           });
           response.data.data.rows.map((item, ind) => {
-            if (item.name === this.state.id) {
+            if (item.name === id ? id : this.state.id) {
               dataIndex = ind;
             }
           });
 
-          const data = response.data.data.rows.filter(
-            (item) => item.name === this.state.id
+          const data = response.data.data.rows.filter((item) =>
+            item.name === id ? id : this.state.id
           )[0];
           // console.log(dataIndex);
-          this.setState({
-            dataIndex,
-            list: response.data.data.rows,
-            data,
-          });
+          this.setState(
+            {
+              dataIndex,
+              list: response.data.data.rows,
+              data,
+            },
+            () => console.log(data)
+          );
         } else {
           console.error("error");
         }
@@ -119,13 +123,11 @@ class QnaDetail extends Component {
     this.setState({ password: e.target.value });
   };
 
-  handlePasswordValidation = () => {
+  handlePasswordValidation = (id) => {
     if (this.state.data.simple_resources.password === this.state.password) {
       this.setState({ isPasswordValid: true }, () => this.handleClose());
       if (this.state.mode === "modify") {
-        this.props.history.push(
-          `/HanbitQna/WriteBoard/InBoard?name=${this.state.id}`
-        );
+        this.props.history.push(`/HanbitQna/WriteBoard/InBoard?name=${id}`);
       } else if (this.state.mode === "delete") {
         this.deletePost();
       }
@@ -183,7 +185,13 @@ class QnaDetail extends Component {
               </DialogContent>
               <DialogActions>
                 <Button onClick={this.handleClose}>취소</Button>
-                <Button onClick={this.handlePasswordValidation}>확인</Button>
+                <Button
+                  onClick={() =>
+                    this.handlePasswordValidation(this.state.data.name)
+                  }
+                >
+                  확인
+                </Button>
               </DialogActions>
             </Dialog>
           </div>

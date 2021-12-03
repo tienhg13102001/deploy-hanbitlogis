@@ -45,7 +45,7 @@ class BoardPreview extends Component {
                   <Badge
                     className="site-badge-count-109"
                     count={
-                      nextData.simple_resources.replyAt ? "답변 등록" : null
+                      nextData.simple_resources.replyAt ? "답변 등록" : "null"
                     }
                     style={{ backgroundColor: "#52c41a" }}
                   />
