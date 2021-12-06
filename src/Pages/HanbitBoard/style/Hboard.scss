@@ -77,20 +77,40 @@
 
 @media screen and (max-width: 768px) {
   .Hboard_Contaier {
+    margin-top : 30px;
     .Hboard_TopLine {
       margin-top : 30px;
       font-size: 14px;
       border-top: 2px solid #535353;
       border-bottom: 1px solid #535353;
+      .Hboard_Number{
+        display: none;
+      }
       .Hboard_Type {
       }
       .Hboard_Date {
       }
       .Hboard_Title {
+        flex:2;
       }
       .Hboard_People {
         padding: 5px;
       }
+      .Hboard_LastDate{
+        display: none;
+      }
+    }
+    .Han_Number{
+      display: none;
+    }
+    .Han_People{
+      flex:1;
+    }
+    .Han_CreatedDate{
+      flex:2;
+    }
+    .Han_LastDate{
+      display: none;
     }
     .Btn_Area {
       .Write_Button {

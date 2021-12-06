@@ -81,16 +81,7 @@ class InHanbit extends Component {
           </div>
           <div className="In_Menu">
             <div className="In_Menu_People">{data.simple_resources.name} </div>
-            <div
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                padding: "15px",
-              }}
-            >
-              |
-            </div>
+
             <div className="In_Menu_Date">
               {data.simple_resources.createdAt}
             </div>

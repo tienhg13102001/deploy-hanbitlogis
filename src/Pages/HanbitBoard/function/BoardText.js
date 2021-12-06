@@ -10,7 +10,7 @@ class BoardText extends Component {
         <div className="Han_Number">{number}</div>
         <div className="Han_Title">{title}</div>
         <div className="Han_People">{people}</div>
-        <div className="Han_LastDate">{date}</div>
+        <div className="Han_CreatedDate">{date}</div>
       </div>
     );
   }

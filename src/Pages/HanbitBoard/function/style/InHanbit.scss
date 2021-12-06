@@ -92,18 +92,25 @@
       .In_TitleBox {
         .In_Title {
           font-size: 16px;
-          padding-left: 15px;
+          // padding-left: 15px;
           height: 60px;
         }
       }
       .In_Menu {
         display: flex;
-        align-items: center;
-        height: 35px;
+        flex-direction: column;
+        align-items: flex-start;
+        // height: 35px;
         justify-content: left;
+        padding : 10px 0px;
+        > div{
+          // margin-left : 10px;
+          height : unset !important;
+        }
         .In_Menu_People {
           font-size: 13px;
-          padding-left: 10px;
+          padding-left: unset;
+          
         }
         .In_Menu_Date {
           font-size: 13px;
@@ -111,7 +118,7 @@
       }
       .In_Menu_Text {
         font-size: 14px;
-        padding: 60px 15px;
+        padding : 30px 0px;
         height: initial;
         margin-bottom: 30px;
         margin-top: initial;

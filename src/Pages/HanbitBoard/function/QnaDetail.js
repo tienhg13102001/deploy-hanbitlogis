@@ -209,10 +209,10 @@ class QnaDetail extends Component {
             </div>
           </div>
           <div className="In_Menu">
-            <div className="In_Menu_People">
+            <div className="In_Menu_People" style={{ marginRight: "10px" }}>
               {data.simple_resources.uploaderName}
             </div>
-            <div
+            {/* <div
               style={{
                 justifyContent: "center",
                 alignItems: "center",
@@ -221,12 +221,12 @@ class QnaDetail extends Component {
               }}
             >
               |
-            </div>
-            <div className="In_Menu_Date">
+            </div> */}
+            <div className="In_Menu_Date" style={{ marginRight: "10px" }}>
               최초 등록일 :{" "}
               {moment(data.simple_resources.createdAt).format("YYYY-MM-DD")}
             </div>
-            <div
+            {/* <div
               style={{
                 justifyContent: "center",
                 alignItems: "center",
@@ -235,7 +235,7 @@ class QnaDetail extends Component {
               }}
             >
               |
-            </div>
+            </div> */}
             <div className="In_Menu_Date">
               최종 업데이트 :
               <Tooltip title={moment(data.lastUpdateDate).format("YYYY-MM-DD")}>
