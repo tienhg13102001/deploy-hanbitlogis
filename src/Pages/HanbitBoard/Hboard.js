@@ -143,32 +143,6 @@ class Hboard extends Component {
           dataSource={dataTable}
           pagination={false}
         />
-        {/* <div className="Hboard_TopLine">
-          <div className="Hboard_Number">번호</div>
-          <div className="Hboard_Title">제목</div>
-          <div className="Hboard_People">작성자</div>
-          <div className="Hboard_Date">작성날</div>
-        </div>
-        <div>
-          {this.state.list.map((item, index) => {
-            return (
-              <NavLink
-                className="Link"
-                data={item}
-                to={`/HanbitBoard/InBoard?name=${item.name}`}
-              >
-                <BoardText
-                  key={index}
-                  number={this.state.list.length - index}
-                  date={item.simple_resources.createdAt}
-
-                  title={item.resources[0].data[0]}
-                  people={item.simple_resources.name}
-                />
-              </NavLink>
-            );
-          })}
-        </div> */}
         <Pagination
           currentPage={this.state.currentPage}
           cardsPerPage={this.state.cardsPerPage}

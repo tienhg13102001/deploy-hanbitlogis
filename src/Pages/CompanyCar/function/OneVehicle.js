@@ -147,71 +147,16 @@ class OneVehicle extends Component {
 
   render() {
     const { list, dataTable } = this.state;
-
-    console.log(dataTable)
     return (
       <div className="Vehicle_Container">
         <div className="Vehicle_TitleBox">
           <div className="Vehicle_Title">당사차량 [1톤]</div>
-          {/* <div className="Vehicle_TopLine">
-					<div className="Top_Line_1">번호</div>
-					<div className="Top_Line_2">종류</div>
-					<div className="Top_Line_3">제목</div>
-					<div className="Top_Line_4">작성일</div>
-				</div> */}
-
           <Table
             className="custom-table"
             columns={columns}
             dataSource={dataTable}
             pagination={false}
           />
-          {/* {list.length > 0 ? (
-            <div className="Vehicle_Board">
-              {list
-                .slice(
-                  (this.state.currentPage + 1) * 5 - 5,
-                  (this.state.currentPage + 1) * 5
-                )
-                .map((item, index) => {
-                  console.log(item);
-                  const data = item.simple_resources;
-                  return (
-                    <div className="Board_List" key={index}>
-                      <Link
-                        className="List_One"
-                        to={`/InVehicle?id=${item.name}`}
-                      >
-                        {this.state.currentPage * 5 + index + 1}
-                      </Link>
-                      <Link
-                        to={`/InVehicle?id=${item.name}`}
-                        className="List_Two"
-                      >
-                        {vehicleType[data.type]}
-                      </Link>
-                      <Link
-                        to={`/InVehicle?id=${item.name}`}
-                        className="List_Three"
-                      >
-                        {data.title}
-                      </Link>
-                      <Link
-                        to={`/InVehicle?id=${item.name}`}
-                        className="List_Four"
-                      >
-                        {data.registDt}
-                      </Link>
-                    </div>
-                  );
-                })}
-            </div>
-          ) : (
-            <div className="Vehicle_Board1">
-              <img src={noicon} alt="아이콘"></img>
-              <div className="Vehicle_No">게시물이 없습니다.</div>
-            </div>
-          )} */}
         </div>
         <Pagination
           currentPage={this.state.currentPage}
