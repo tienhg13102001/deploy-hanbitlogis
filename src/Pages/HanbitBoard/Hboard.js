@@ -6,6 +6,34 @@ import { Pagination } from "../../Common/Pagination/Pagination";
 import "./style/Hboard.scss";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
+import { Table } from "antd";
+
+const columns = [
+  {
+    title: "번호",
+    dataIndex: "index",
+    key: 1,
+    width: "30%",
+  },
+  {
+    title: "종류",
+    dataIndex: "type",
+    key: 2,
+    width: "30%",
+  },
+  {
+    title: "제목",
+    dataIndex: "title",
+    key: 3,
+    width: "15%",
+  },
+  {
+    title: "작성일",
+    key: 4,
+    dataIndex: "date",
+    width: "15%",
+  },
+];
 class Hboard extends Component {
   state = {
     currentPage: 0,
@@ -90,7 +118,13 @@ class Hboard extends Component {
   render() {
     return (
       <div className="Hboard_Contaier">
-        <div className="Hboard_TopLine">
+        <Table
+          className="custom-table"
+          columns={columns}
+          // dataSource={dataSource}
+          pagination={false}
+        />
+        {/* <div className="Hboard_TopLine">
           <div className="Hboard_Number">번호</div>
           <div className="Hboard_Title">제목</div>
           <div className="Hboard_People">작성자</div>
@@ -114,7 +148,7 @@ class Hboard extends Component {
               </NavLink>
             );
           })}
-        </div>
+        </div> */}
         <Pagination
           currentPage={this.state.currentPage}
           cardsPerPage={this.state.cardsPerPage}

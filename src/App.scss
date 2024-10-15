@@ -31,3 +31,18 @@ html {
   font-weight: 300;
   src: url("../src/_asset/fonts/NanumSquareOTF_acL.otf");
 }
+
+.custom-table {
+  .ant-table-thead > tr > th {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #ccc;
+    text-align: start;
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+
+  .ant-table-tbody > tr > td {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+}
