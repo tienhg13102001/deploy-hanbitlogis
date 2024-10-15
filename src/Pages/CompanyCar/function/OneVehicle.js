@@ -6,6 +6,7 @@ import { Pagination } from "../../../Common/Pagination/Pagination";
 import axios from "axios";
 import noicon from "../../../_asset/image/vehicle/no-writing-icon.png";
 import { Table } from "antd";
+import NoticeService from "../../../Modules/API/Notice.service";
 
 const VEHICLE_TYPE = "001";
 
@@ -42,12 +43,13 @@ class OneVehicle extends Component {
     currentPageM: 0,
     cardsPerPageM: 6,
     list: [],
-
+    dataTable: []
     // cardsperpage -> 보여주고 싶은 박스 개수
   };
 
   componentDidMount() {
     this.getAllList();
+    this.getNotices();
   }
 
   onPageNumberClicked = (newPage) => (event) => {
@@ -126,27 +128,27 @@ class OneVehicle extends Component {
       .catch((e) => console.log(e));
   };
 
+  getNotices = async () => {
+    const notice = await NoticeService.getNotices()
+    const mappedData = notice.data.items.map((item, index) => {
+      let newRow = {}
+      newRow.index = index + 1
+      newRow.type = item.fields.detail.nodeType
+      newRow.title = item.fields.title
+      newRow.date = item.fields.date
+      return newRow
+    })
+    this.setState({
+      ...this.state,
+      dataTable: mappedData,
+    })
+  }
+
+
   render() {
-    const { list } = this.state;
-    const paginatedData = [
-      {
-        type: "test",
-        title: "test",
-        date: "10/03/1999",
-      },
-      {
-        type: "test 2",
-        title: "test 2",
-        date: "11/03/1999",
-      },
-    ];
-    const dataSource = paginatedData.map((item, index) => ({
-      key: index,
-      index: index + 1,
-      type: item.type,
-      title: item.title,
-      date: item.date,
-    }));
+    const { list, dataTable } = this.state;
+
+    console.log(dataTable)
     return (
       <div className="Vehicle_Container">
         <div className="Vehicle_TitleBox">
@@ -161,7 +163,7 @@ class OneVehicle extends Component {
           <Table
             className="custom-table"
             columns={columns}
-            dataSource={dataSource}
+            dataSource={dataTable}
             pagination={false}
           />
           {/* {list.length > 0 ? (

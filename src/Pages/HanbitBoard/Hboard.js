@@ -7,6 +7,7 @@ import "./style/Hboard.scss";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { Table } from "antd";
+import NoticeService from "../../Modules/API/Notice.service";
 
 const columns = [
   {
@@ -41,7 +42,7 @@ class Hboard extends Component {
     currentPageM: 0,
     cardsPerPageM: 6,
     list: [],
-
+    dataTable: []
     // cardsperpage -> 보여주고 싶은 박스 개수
   };
   onPageNumberClicked = (newPage) => (event) => {
@@ -75,6 +76,7 @@ class Hboard extends Component {
 
   componentDidMount = () => {
     this.getAllList();
+    this.getNotices()
   };
   getAllList = async () => {
     const rID = "hanbit_notice";
@@ -82,6 +84,7 @@ class Hboard extends Component {
       .get(`http://61.73.79.136:9229/api/resources?rID=${rID}`)
 
       .then((response) => {
+        console.log(response)
         if (
           response &&
           response.data &&
@@ -106,6 +109,21 @@ class Hboard extends Component {
       })
       .catch((e) => console.log(e));
   };
+  getNotices = async () => {
+    const notice = await NoticeService.getNotices()
+    const mappedData = notice.data.items.map((item, index) => {
+      let newRow = {}
+      newRow.index = index + 1
+      newRow.type = item.fields.detail.nodeType
+      newRow.title = item.fields.title
+      newRow.date = item.fields.date
+      return newRow
+    })
+    this.setState({
+      ...this.state,
+      dataTable: mappedData,
+    })
+  }
 
   renderList = () => {
     const list = this.state.list;
@@ -116,12 +134,13 @@ class Hboard extends Component {
   };
 
   render() {
+    const { list, dataTable } = this.state;
     return (
       <div className="Hboard_Contaier">
         <Table
           className="custom-table"
           columns={columns}
-          // dataSource={dataSource}
+          dataSource={dataTable}
           pagination={false}
         />
         {/* <div className="Hboard_TopLine">
@@ -142,6 +161,7 @@ class Hboard extends Component {
                   key={index}
                   number={this.state.list.length - index}
                   date={item.simple_resources.createdAt}
+
                   title={item.resources[0].data[0]}
                   people={item.simple_resources.name}
                 />
